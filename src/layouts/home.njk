@@ -10,11 +10,9 @@
 </head>
 <body class="bg-gray-50 text-gray-900">
     {% include "navbar.njk" %}
-    {% include "components/hero.njk" %}
 
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose lg:prose-xl">
-        {{ content | safe }}
-    </main>
+    <!-- Homepage Content -->
+    {{ content | safe }}
 
     {% include "footer.njk" %}
 </body>

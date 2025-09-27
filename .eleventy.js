@@ -5,36 +5,44 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/js': 'assets/js' });
 
   // Image optimization shortcode
-  eleventyConfig.addAsyncShortcode('optimizedImage', async function(src, alt, sizes = '100vw', className = '') {
-    const metadata = await Image(src, {
-      widths: [320, 640, 960, 1200],
-      formats: ['avif', 'webp', 'jpeg'],
-      outputDir: './site/assets/img/',
-      urlPath: '/assets/img/'
-    });
+  eleventyConfig.addAsyncShortcode(
+    'optimizedImage',
+    async function (src, alt, sizes = '100vw', className = '') {
+      const metadata = await Image(src, {
+        widths: [320, 640, 960, 1200],
+        formats: ['avif', 'webp', 'jpeg'],
+        outputDir: './site/assets/img/',
+        urlPath: '/assets/img/',
+      });
 
-    const imageAttributes = {
-      alt,
-      sizes,
-      loading: 'lazy',
-      decoding: 'async',
-      class: className
-    };
+      const imageAttributes = {
+        alt,
+        sizes,
+        loading: 'lazy',
+        decoding: 'async',
+        class: className,
+      };
 
-    return Image.generateHTML(metadata, imageAttributes);
-  });
+      return Image.generateHTML(metadata, imageAttributes);
+    }
+  );
 
   // Substack embed shortcode
-  eleventyConfig.addShortcode('substackEmbed', function(src, width, height) {
-    const nunjucks = require('nunjucks');
-    const env = new nunjucks.Environment(new nunjucks.FileSystemLoader('src/includes'));
+  eleventyConfig.addShortcode(
+    'dailyToolSubstackEmbed',
+    function (src, width, height) {
+      const nunjucks = require('nunjucks');
+      const env = new nunjucks.Environment(
+        new nunjucks.FileSystemLoader('src/includes')
+      );
 
-    return env.render('components/dailytool-substack.njk', {
-      src: src,
-      width: width,
-      height: height
-    });
-  });
+      return env.render('components/dailytool-substack.njk', {
+        src: src,
+        width: width,
+        height: height,
+      });
+    }
+  );
 
   return {
     dir: {
