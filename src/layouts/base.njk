@@ -3,53 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if title %}{{ title }} - {% endif %}Il Mio Sito</title>
+    <title>{% if title %}{{ title }} - {% endif %}Andrea Ciraolo</title>
     <meta name="description" content="{{ description or 'Un bellissimo sito web costruito con Eleventy e Tailwind CSS' }}">
 
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body class="bg-gray-50 text-gray-900">
-    <header class="bg-white shadow-sm border-b">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-6">
-                <h1 class="text-2xl font-bold text-gray-900">
-                    <a href="/" class="hover:text-blue-600 transition-colors">Andrea Ciraolo</a>
-                </h1>
-                <nav>
-                    <ul class="flex space-x-8">
-                        <li><a href="/" class="text-gray-600 hover:text-gray-900 transition-colors">Homepage</a></li>
-                        <li><a href="/newsletter/" class="text-gray-600 hover:text-gray-900 transition-colors">Newsletter</a></li>
-                        <li><a href="/corsi/" class="text-gray-600 hover:text-gray-900 transition-colors">Corsi</a></li>
-                        <li><a href="/contatti/" class="text-gray-600 hover:text-gray-900 transition-colors">Contatti</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+    {% include "header.njk" %}
 
     <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose lg:prose-xl">
         {{ content | safe }}
     </main>
 
-    <footer class="bg-gray-100 border-t">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <nav class="mb-4 md:mb-0">
-                    <ul class="flex space-x-6 text-sm">
-                        <li><a href="/" class="text-gray-600 hover:text-gray-900 transition-colors">Homepage</a></li>
-                        <li><a href="/newsletter/" class="text-gray-600 hover:text-gray-900 transition-colors">Newsletter</a></li>
-                        <li><a href="/corsi/" class="text-gray-600 hover:text-gray-900 transition-colors">Corsi</a></li>
-                        <li><a href="/contatti/" class="text-gray-600 hover:text-gray-900 transition-colors">Contatti</a></li>
-                        <li><a href="/privacy/" class="text-gray-600 hover:text-gray-900 transition-colors">Privacy Policy</a></li>
-                    </ul>
-                </nav>
-
-                <div class="text-center text-gray-600 text-sm">
-                    <p class="mb-1">© 2024 Andrea Ciraolo</p>
-                    <p>P.IVA: 02699750184</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    {% include "footer.njk" %}
 </body>
 </html>

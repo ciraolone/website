@@ -5,24 +5,6 @@ description: "Crea contenuti che lasciano il segno"
 ---
 
 <div class="not-prose">
-  <!-- Hero Section -->
-  <section class="text-center py-16">
-    <div class="mb-8">
-      <!-- Placeholder for personal photo -->
-      <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-6 flex items-center justify-center">
-        <span class="text-gray-600 text-sm">Foto</span>
-      </div>
-    </div>
-
-    <h1 class="text-4xl font-bold text-gray-900 mb-4">Andrea Ciraolo</h1>
-    <p class="text-xl text-gray-600 mb-8">Crea contenuti che lasciano il segno</p>
-
-    <div class="bg-blue-50 p-6 rounded-lg max-w-2xl mx-auto">
-      <h2 class="text-2xl font-semibold mb-4">Ciao! 👋</h2>
-      <p class="text-lg text-gray-700">Mi chiamo Andrea e faccio video per farti imparare le cose.</p>
-    </div>
-  </section>
-
   <!-- Newsletter Section -->
   <section class="py-12 bg-gray-50 rounded-lg mb-12">
     <div class="text-center">
