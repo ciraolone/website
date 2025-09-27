@@ -56,3 +56,6 @@ bower_components
 # Temporary folders
 tmp/
 temp/
+
+# Obsidian folders (managed separately)
+.obsidian/

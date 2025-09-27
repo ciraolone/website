@@ -1,40 +1,78 @@
 ---
 layout: base.njk
-title: "Benvenuto"
-description: "La homepage del mio fantastico sito web"
+title: "Andrea Ciraolo"
+description: "Crea contenuti che lasciano il segno"
 ---
 
-# Benvenuto nel mio sito! 🌟
+<div class="not-prose">
+  <!-- Hero Section -->
+  <section class="text-center py-16">
+    <div class="mb-8">
+      <!-- Placeholder for personal photo -->
+      <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-6 flex items-center justify-center">
+        <span class="text-gray-600 text-sm">Foto</span>
+      </div>
+    </div>
 
-Questo è un esempio di homepage creata con **Eleventy**, **Tailwind CSS** e **Nunjucks**.
+    <h1 class="text-4xl font-bold text-gray-900 mb-4">Andrea Ciraolo</h1>
+    <p class="text-xl text-gray-600 mb-8">Crea contenuti che lasciano il segno</p>
 
-## Caratteristiche
+    <div class="bg-blue-50 p-6 rounded-lg max-w-2xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-4">Ciao! 👋</h2>
+      <p class="text-lg text-gray-700">Mi chiamo Andrea e faccio video per farti imparare le cose.</p>
+    </div>
+  </section>
 
-- ⚡ **Veloce**: Generato staticamente con Eleventy
-- 🎨 **Bello**: Stilizzato con Tailwind CSS
-- 📱 **Responsive**: Funziona perfettamente su tutti i dispositivi
-- 🔧 **Configurabile**: Easy da personalizzare e estendere
+  <!-- Newsletter Section -->
+  <section class="py-12 bg-gray-50 rounded-lg mb-12">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold mb-4">DailyTool</h2>
+      <p class="text-lg text-gray-600 mb-6">Ogni mattina nella tua mail un tool che può svoltarti la giornata</p>
+      <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+        Iscriviti alla Newsletter
+      </button>
+    </div>
+  </section>
 
-## Iniziare
+  <!-- Course Section -->
+  <section class="py-12 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg mb-12">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold mb-4">🎉 Sblocca il Content Creator che è in te!</h2>
+      <p class="text-lg text-gray-700 mb-6">Corso dedicato a tutti i principianti che fanno fatica a creare contenuti</p>
+      <button class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors">
+        Scopri di più
+      </button>
+    </div>
+  </section>
 
-Questo sito è pronto per essere personalizzato! Puoi:
+  <!-- Social Platforms Section -->
+  <section class="py-12">
+    <h2 class="text-3xl font-bold text-center mb-12">Dove mi trovi</h2>
 
-1. Modificare questo file (`pages/index.md`) per cambiare il contenuto
-2. Aggiungere nuove pagine nella cartella `pages/`
-3. Personalizzare i layout in `src/layouts/`
-4. Aggiungere i tuoi stili in `src/css/`
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- YouTube -->
+      <div class="bg-red-50 p-6 rounded-lg text-center">
+        <h3 class="text-xl font-semibold mb-2 text-red-700">YouTube</h3>
+        <p class="text-gray-600">Tutorial e corsi gratuiti</p>
+      </div>
 
-## Gestione con Obsidian
+      <!-- Telegram -->
+      <div class="bg-blue-50 p-6 rounded-lg text-center">
+        <h3 class="text-xl font-semibold mb-2 text-blue-700">Telegram</h3>
+        <p class="text-gray-600">Interazione personale</p>
+      </div>
 
-Le pagine in formato Markdown nella cartella `pages/` possono essere facilmente gestite con Obsidian, permettendo un workflow di scrittura fluido e organizzato.
+      <!-- Instagram -->
+      <div class="bg-pink-50 p-6 rounded-lg text-center">
+        <h3 class="text-xl font-semibold mb-2 text-pink-700">Instagram</h3>
+        <p class="text-gray-600">Dialogo con la community</p>
+      </div>
 
-> **Nota**: La tipografia è ora gestita automaticamente dalle classi `prose` di Tailwind Typography applicate nel layout principale!
-
-<div class="not-prose mt-8 flex gap-4">
-  <button class="btn btn-primary">Bottone Primario</button>
-  <button class="btn btn-secondary">Bottone Secondario</button>
+      <!-- Spotify -->
+      <div class="bg-green-50 p-6 rounded-lg text-center">
+        <h3 class="text-xl font-semibold mb-2 text-green-700">Spotify</h3>
+        <p class="text-gray-600 text-sm">"Organizzazione per Negati" <br> "Passione Podcast"</p>
+      </div>
+    </div>
+  </section>
 </div>
-
----
-
-*Creato con ❤️ usando Eleventy e Tailwind CSS*
