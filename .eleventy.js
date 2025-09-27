@@ -24,6 +24,18 @@ module.exports = function (eleventyConfig) {
     return Image.generateHTML(metadata, imageAttributes);
   });
 
+  // Substack embed shortcode
+  eleventyConfig.addShortcode('substackEmbed', function(src, width, height) {
+    const nunjucks = require('nunjucks');
+    const env = new nunjucks.Environment(new nunjucks.FileSystemLoader('src/includes'));
+
+    return env.render('components/dailytool-substack.njk', {
+      src: src,
+      width: width,
+      height: height
+    });
+  });
+
   return {
     dir: {
       input: 'pages',
