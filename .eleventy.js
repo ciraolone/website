@@ -3,6 +3,7 @@ const Image = require('@11ty/eleventy-img');
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./src/css/');
   eleventyConfig.addPassthroughCopy({ 'src/js': 'assets/js' });
+  eleventyConfig.addPassthroughCopy({ 'src/img': 'assets/img' });
 
   // Image optimization shortcode
   eleventyConfig.addAsyncShortcode(

@@ -3,7 +3,8 @@
     "allow": [
       "Bash(npm install:*)",
       "Bash(mkdir:*)",
-      "Bash(npm run build:css:*)"
+      "Bash(npm run build:css:*)",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []

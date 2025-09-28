@@ -4,6 +4,10 @@
 
 Questo è un sito web statico costruito con **Eleventy (11ty)** e **Tailwind CSS**.
 
+Cerca sempre nella documentazione ufficiale per implementare le richieste:
+
+- Tailwind CSS: https://tailwindcss.com/docs/
+
 ### Stack Tecnologico
 
 - **Static Site Generator**: Eleventy v3.1.2

@@ -1,1 +1,9 @@
-@import 'tailwind.scss';
+@import "tailwind.scss";
+
+.card {
+  @apply bg-pink-300 border-pink-500 border rounded-lg p-4;
+}
+
+.slogan {
+  @apply bg-pink-300 border-pink-500 border rounded-lg p-4;
+}
