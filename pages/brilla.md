@@ -1,12 +1,12 @@
 ---
 layout: base.njk
-title: 'Brilla su YouTube ✨'
-description: 'Il corso super-accelerato per fare sul serio, con Andrea Ciraolo e Sara Trecate'
-heroImage: 'https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/678befc92ffc211fabaf8bd9_sara_andrea_vs.avif'
-badge: '2ª edizione!'
+title: "Brilla su YouTube ✨"
+description: "Il corso super-accelerato per fare sul serio, con Andrea Ciraolo e Sara Trecate"
+heroImage: "https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/678befc92ffc211fabaf8bd9_sara_andrea_vs.avif"
+badge: "2ª edizione!"
 ---
 
-> I tuoi due esperti preferiti, ancora insieme.
+I tuoi due esperti preferiti, ancora insieme. {.slogan}
 
 **Stare su Youtube è un gran casino eh?** E se ti dicessimo che i tuoi due punti di riferimento per crescere su Youtube hanno fatto una combo e si sono riuniti per aiutarti ad acqusire in tempo record la sicurezza e competenza che ti servono per far brillare il tuo progetto?
 
@@ -16,11 +16,19 @@ Non sarai più solo: sarai accompagnato nel tuo viaggio su Youtube se non dai mi
 
 ## 🥰 Questo corso fa per te se...
 
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+
+<div class="card">
+
 ![](https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/678beace73e5f66b7f6526ed_parti_da_zero.avif)
 
 ### Parti da zero
 
 Hai una grande idea per i tuo canale, ma non sai da dove cominciare.
+
+</div>
+
+<div class="card">
 
 ![](https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/678beadbe5fec0b1f9d398de_ti_senti_solo.avif)
 
@@ -28,11 +36,23 @@ Hai una grande idea per i tuo canale, ma non sai da dove cominciare.
 
 Troppe cose da fare e da imparare. Solo altri creator come te possono capirti.
 
+</div>
+
+<div class="card">
+
 ![](https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/678beaee974502b807b1f8ad_vuoi_di_pi%C3%B9.avif)
 
 ### Vuoi di più
 
 Nonostante gli sforzi, il contatore dlle visualizzazioni piange.
+
+</div>
+
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+<div class="card">
 
 ![](https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/678bec4200ef3f3d9be4dae6_youtube_no.avif)
 
@@ -40,11 +60,19 @@ Nonostante gli sforzi, il contatore dlle visualizzazioni piange.
 
 Questo corso fa per te: ti aiuteremo a crearlo senza fare cavolate.
 
+</div>
+
+<div class="card">
+
 ![](https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/678bec546741b2e93ead5e70_youtube_yes.avif)
 
 ### Hai già il tuo canale
 
 Questo corso fa per te: ti aiuteremo ad ottimizzarlo per la sua crescita.
+
+</div>
+
+</div>
 
 ## 👀 Cosa c'è qui dentro?
 

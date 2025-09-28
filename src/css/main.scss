@@ -1,9 +1,19 @@
 @import "tailwind.scss";
 
 .card {
-  @apply bg-pink-300 border-pink-500 border rounded-lg p-4;
+  @apply bg-slate-100 border border-slate-200 rounded-lg px-4 py-6 text-base text-center;
+
+  img {
+    max-width: 128px;
+    @apply mx-auto mb-4 mt-0;
+  }
+
+  p,
+  h3 {
+    @apply my-0;
+  }
 }
 
 .slogan {
-  @apply bg-pink-300 border-pink-500 border rounded-lg p-4;
+  @apply text-3xl md:text-5xl italic;
 }

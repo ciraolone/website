@@ -1,6 +1,9 @@
 const Image = require('@11ty/eleventy-img');
+const markdownItAttrs = require('markdown-it-attrs');
 
 module.exports = function (eleventyConfig) {
+  // Configure markdown-it with attrs plugin
+  eleventyConfig.amendLibrary('md', mdLib => mdLib.use(markdownItAttrs));
   eleventyConfig.addWatchTarget('./src/css/');
   eleventyConfig.addPassthroughCopy({ 'src/js': 'assets/js' });
   eleventyConfig.addPassthroughCopy({ 'src/img': 'assets/img' });
