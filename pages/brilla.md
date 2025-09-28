@@ -1,13 +1,9 @@
 ---
 layout: base.njk
-title: 'Brilla su YouTube'
+title: 'Brilla su YouTube ✨'
 description: 'Il corso super-accelerato per fare sul serio, con Andrea Ciraolo e Sara Trecate'
-heroTitle: 'Brilla su YouTube ✨'
-heroSubtitle: '2a edizione!'
-heroDescription: 'Il corso super-accelerato per fare sul serio, con Andrea Ciraolo e Sara Trecate'
-heroImage: 'https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/68d79f31b05af7e965c77855_Brilla%20su%20Youtube%20in%2090%20giorni!-p-800.avif'
-heroImageAlt: 'Andrea Ciraolo e Sara Trecate - Brilla su YouTube'
-editionBadge: '2ª edizione!'
+heroImage: 'https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/678befc92ffc211fabaf8bd9_sara_andrea_vs.avif'
+badge: '2ª edizione!'
 ---
 
 > I tuoi due esperti preferiti, ancora insieme.

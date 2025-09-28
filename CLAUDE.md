@@ -1,6 +1,6 @@
 # Website Project - Development Guide
 
-## 🏗️ Architettura del Progetto
+## Architettura del Progetto
 
 Questo è un sito web statico costruito con **Eleventy (11ty)** e **Tailwind CSS**.
 
@@ -12,7 +12,7 @@ Questo è un sito web statico costruito con **Eleventy (11ty)** e **Tailwind CSS
 - **Build Tools**: npm-run-all, concurrently
 - **Code Quality**: ESLint, Prettier
 
-## 📁 Struttura Directory
+## Struttura Directory
 
 ```
 .
@@ -28,3 +28,7 @@ Questo è un sito web statico costruito con **Eleventy (11ty)** e **Tailwind CSS
 ```
 
 **IMPORTANTE**: Le pagine in `pages/` sono gestite con Obsidian.
+
+## Linee guida del codice
+
+Favorire sempre le classi di TailWind CSS. Scrivere il css solo ove indispensabile e chiedendo esplicita conferma all'utente.
