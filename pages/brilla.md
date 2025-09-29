@@ -58,7 +58,7 @@ Nonostante gli sforzi, il contatore dlle visualizzazioni piange.
 
 ### Non hai ancora un canale
 
-Questo corso fa per te: ti aiuteremo a crearlo senza fare cavolate.
+Ti aiuteremo a crearlo senza fare cavolate.
 
 </div>
 
@@ -68,7 +68,7 @@ Questo corso fa per te: ti aiuteremo a crearlo senza fare cavolate.
 
 ### Hai già il tuo canale
 
-Questo corso fa per te: ti aiuteremo ad ottimizzarlo per la sua crescita.
+Ti aiuteremo ad ottimizzarlo per la sua crescita.
 
 </div>
 
@@ -82,25 +82,32 @@ In questa seconda edizione troverai il percorso completo che abbiamo registrato 
 
 Ecco l'elenco completo di cosa è incluso nella tua iscrizione.
 
-**13 Lezioni da seguire quando vuoi**  
+### 13 Lezioni da seguire quando vuoi
+
 Avrai subito disponibili 13 lezioni di oltre 1 ora, dove affronteremo i concetti più importanti che si servono per ottenere risultati su YouTube. Questo è il percorso che abbiamo realizzato durante le prima edizione e contiene tutta l'esperienza che abbiamo accumulato in questi tanti anni di Youtube. Più sotto trovi il programma dettagliato.
 
-**4 Lezioni da seguire in diretta**  
+### 4 Lezioni da seguire in diretta
+
 Dall'aumentare le views al guadagnare con gli sponsor, dallo sfruttare l'AI al gestire gli hater, abbiamo pensato a 4 argomenti caldi e fondamentali su cui fare un approfondimento. Ogni settimana per 30 giorni parteciparai ad una lezione di 1 ora in diretta. Se non riesci ad esserci, puoi guardare la registrazione quando vuoi. Guarda il programma più sotto!
 
-**4 Sessioni di Domande & Risposte**  
+### 4 Sessioni di Domande & Risposte
+
 Al termine di ogni lezione siamo a disposizione per rispondere alle tue domande sull'argomento trattato.
 
-**Gruppo riservato**  
+### Gruppo riservato
+
 Farai parte di un gruppo privato all'interno del quale confrontarti con altri creator nella tua stessa situazione, condividere le tue idee o preoccupazioni e ricevere da tutti i partecipanti (noi compresi) feedback, suggerimenti e supporto. Nel gruppo troverai anche gli oltre 70 partecipanti dell'edizione precedente per poterti confrontare con chi è più avanti in questo percorso. Ovviamente vale anche per te: sarai nel gruppo anche nelle prossime edizioni a fare da guida ai nuovi iscritti!
 
-**Meeting settimanali**  
+### Meeting settimanali
+
 In aggiunta alla lezione settimanale, ogni settimana un appuntamento extra: ci incontriamo tutti insieme in videoconferenza per chiacchierare, fare il punto e condividere i progressi. Siamo a tua disposizione per rispondere a dubbi e perplessità.
 
-**Risorse indispensabili  
-**Gli elenchi completi di programmi e attrezzatura, ma anche i template, le checklist e le risorse che usiamo davvero per noi e per i nostri clienti per gestire la programmazione, realizzazione e pubblicazione dei contenuti. Riceverai anche il certificato di partecipazione!
+### Risorse indispensabili
 
-**Tanti - ma proprio tanti - bonus**  
+Gli elenchi completi di programmi e attrezzatura, ma anche i template, le checklist e le risorse che usiamo davvero per noi e per i nostri clienti per gestire la programmazione, realizzazione e pubblicazione dei contenuti. Riceverai anche il certificato di partecipazione!
+
+### Tanti - ma proprio tanti - bonus
+
 Corsi, libri, video... visto che ti vogliamo già bene, più sotto in questa pagina troverai l'elenco dei regali che abbiamo riservato per te.
 
 ## 🫶 Sara e Andrea la combo perfetta
