@@ -1,60 +1,112 @@
-const Image = require('@11ty/eleventy-img');
-const markdownItAttrs = require('markdown-it-attrs');
+/**
+ * Eleventy Configuration
+ * Best practices: configurazione modulare e organizzata
+ */
 
-module.exports = function (eleventyConfig) {
-  // Configure markdown-it with attrs plugin
-  eleventyConfig.amendLibrary('md', mdLib => mdLib.use(markdownItAttrs));
-  eleventyConfig.addWatchTarget('./src/css/');
-  eleventyConfig.addPassthroughCopy({ 'src/js': 'assets/js' });
-  eleventyConfig.addPassthroughCopy({ 'src/img': 'assets/img' });
+module.exports = function(eleventyConfig) {
+  // ============================================
+  // PASSTHROUGH COPIES
+  // ============================================
+  // Copia file statici (immagini, font, etc.) senza processarli
+  eleventyConfig.addPassthroughCopy("src/assets/images");
+  eleventyConfig.addPassthroughCopy("src/assets/fonts");
+  eleventyConfig.addPassthroughCopy("src/assets/css");
+  eleventyConfig.addPassthroughCopy("src/assets/js");
+  eleventyConfig.addPassthroughCopy({ "src/assets/favicon": "/" });
+  
+  // ============================================
+  // WATCH TARGETS
+  // ============================================
+  // File da monitorare durante lo sviluppo
+  eleventyConfig.addWatchTarget("src/assets/css/");
+  eleventyConfig.addWatchTarget("src/assets/js/");
 
-  // Image optimization shortcode
-  eleventyConfig.addAsyncShortcode(
-    'optimizedImage',
-    async function (src, alt, sizes = '100vw', className = '') {
-      const metadata = await Image(src, {
-        widths: [320, 640, 960, 1200],
-        formats: ['avif', 'webp', 'jpeg'],
-        outputDir: './site/assets/img/',
-        urlPath: '/assets/img/',
-      });
-
-      const imageAttributes = {
-        alt,
-        sizes,
-        loading: 'lazy',
-        decoding: 'async',
-        class: className,
-      };
-
-      return Image.generateHTML(metadata, imageAttributes);
+  // ============================================
+  // FILTERS
+  // ============================================
+  // Filtro per formattare date
+  eleventyConfig.addFilter("dateFormat", function(date, format) {
+    const d = new Date(date);
+    if (format === "year") {
+      return d.getFullYear();
     }
-  );
-
-  // Substack embed shortcode
-  eleventyConfig.addShortcode(
-    'dailyToolSubstackEmbed',
-    function (src, width, height) {
-      const nunjucks = require('nunjucks');
-      const env = new nunjucks.Environment(
-        new nunjucks.FileSystemLoader('src/includes')
-      );
-
-      return env.render('components/dailytool-substack.njk', {
-        src: src,
-        width: width,
-        height: height,
-      });
+    if (format === "iso") {
+      return d.toISOString();
     }
-  );
+    return d.toLocaleDateString("it-IT", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+  });
 
+  // Filtro per limitare testo
+  eleventyConfig.addFilter("limit", function(array, limit) {
+    return array.slice(0, limit);
+  });
+
+  // Filtro per ordinare array
+  eleventyConfig.addFilter("sortByDate", function(array) {
+    return array.sort((a, b) => {
+      return new Date(b.date) - new Date(a.date);
+    });
+  });
+
+  // ============================================
+  // SHORTCODES
+  // ============================================
+  // Shortcode per immagini responsive
+  eleventyConfig.addShortcode("image", function(src, alt, className = "") {
+    return `<img src="${src}" alt="${alt}" class="${className}" loading="lazy">`;
+  });
+
+  // Shortcode per link esterni
+  eleventyConfig.addShortcode("externalLink", function(url, text) {
+    return `<a href="${url}" target="_blank" rel="noopener noreferrer">${text}</a>`;
+  });
+
+  // ============================================
+  // COLLECTIONS
+  // ============================================
+  // Collection per pagine (escludendo quelle con draft: true)
+  eleventyConfig.addCollection("pages", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/**/*.md").filter(item => {
+      return !item.data.draft;
+    });
+  });
+
+  // ============================================
+  // TRANSFORMS
+  // ============================================
+  // Minifica HTML in produzione (esempio base)
+  if (process.env.ELEVENTY_ENV === "production") {
+    eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+      if (outputPath && outputPath.endsWith(".html")) {
+        // Qui potresti aggiungere una libreria di minificazione
+        return content;
+      }
+      return content;
+    });
+  }
+
+  // ============================================
+  // CONFIGURAZIONE
+  // ============================================
   return {
+    // Directory di input
     dir: {
-      input: 'pages',
-      output: 'site',
-      includes: '../src/includes',
-      layouts: '../src/layouts',
-      data: '../src/data',
+      input: "src",
+      includes: "_includes",
+      layouts: "_includes/layouts",
+      data: "_data",
+      output: "_site"
     },
+    // Template engines supportati
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
+    // Permalink prettier
+    pathPrefix: "/"
   };
 };
+

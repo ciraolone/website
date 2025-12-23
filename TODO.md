@@ -1,5 +1,4 @@
-- Privacy e cookie policy
+- [ ] Tutte le best practice per performance e seo
+- [ ] Favicon
 
-- Spostare hero da main a hero.scss
-
-- Belle alcune idee qui: https://rinconelloinc.com/ (es. commenti che scorrono, search fissa in alto)
+- [ ] Importare tutte le pagine
