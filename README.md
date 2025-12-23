@@ -22,7 +22,9 @@ npm run serve
 npm run dev
 ```
 
-Il sito sarà disponibile all'indirizzo: `http://localhost:8080`
+Il sito sarà disponibile su tutti gli indirizzi di rete del server (localhost e IP locali) sulla porta 8080.
+
+**Nota**: Il server di sviluppo supporta il reload automatico. Ogni modifica ai file verrà automaticamente riflessa nel browser.
 
 ### Build per Produzione
 

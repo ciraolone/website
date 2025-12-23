@@ -17,9 +17,29 @@ module.exports = function(eleventyConfig) {
   // ============================================
   // WATCH TARGETS
   // ============================================
-  // File da monitorare durante lo sviluppo
+  // File da monitorare durante lo sviluppo (per hot reload automatico)
   eleventyConfig.addWatchTarget("src/assets/css/");
   eleventyConfig.addWatchTarget("src/assets/js/");
+  eleventyConfig.addWatchTarget("src/assets/images/");
+  
+  // ============================================
+  // SERVER CONFIGURATION (Browsersync)
+  // ============================================
+  // Configurazione del server di sviluppo
+  eleventyConfig.setServerOptions({
+    // Mostra tutti gli host disponibili
+    showAllHosts: true,
+    // Porta di default (può essere sovrascritta con --port)
+    port: 8080,
+    // Abilita il reload automatico quando i file cambiano
+    domDiff: true,
+    // Abilita il live reload (ricarica automatica della pagina)
+    liveReload: true,
+    // Mostra notifiche nel browser quando i file cambiano
+    notify: false,
+    // Apri automaticamente il browser
+    open: false
+  });
 
   // ============================================
   // FILTERS
