@@ -3,7 +3,27 @@
  * Best practices: configurazione modulare e organizzata
  */
 
+const markdownIt = require("markdown-it");
+const markdownItAttrs = require("markdown-it-attrs");
+
 module.exports = function(eleventyConfig) {
+  // ============================================
+  // MARKDOWN CONFIGURATION
+  // ============================================
+  // Configura markdown-it con il plugin per attributi (classi CSS)
+  // Usa delimitatori diversi da { } per evitare conflitti con Nunjucks
+  // Permette di usare sintassi come {: .class-name} o {: #id .class1 .class2}
+  const markdownLibrary = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true
+  }).use(markdownItAttrs, {
+    leftDelimiter: '{:',
+    rightDelimiter: '}',
+    allowedAttributes: ['id', 'class', 'src', 'alt', 'title', 'width', 'height']
+  });
+  
+  eleventyConfig.setLibrary("md", markdownLibrary);
   // ============================================
   // PASSTHROUGH COPIES
   // ============================================

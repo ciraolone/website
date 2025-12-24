@@ -52,4 +52,46 @@ Questa pagina serve a verificare che Tailwind CSS sia correttamente installato e
 
 ---
 
+## Esempi con Markdown puro (senza HTML)
+
+Ora puoi usare classi CSS direttamente nel Markdown usando la sintassi `{: .class-name}`:
+
+### Paragrafo con classi
+
+Paragrafo normale{: .text-blue-500 .font-bold}
+
+### Heading con classi
+
+### Titolo con classi Tailwind{: .text-3xl .text-purple-600 .mb-4}
+
+### Liste con classi
+
+- Primo elemento {: .bg-yellow-100 .p-2 .rounded }
+- Secondo elemento{: .bg-yellow-200 .p-2 .rounded }
+- Terzo elemento{: .bg-yellow-300 .p-2 .rounded }
+
+### Link con classi
+
+[Link stilizzato](https://example.com){: .text-green-600 .hover:text-green-800 .underline}
+
+### Immagine con classi
+
+![Test](https://via.placeholder.com/300){: .rounded-lg .shadow-lg .mx-auto}
+
+### Blocco di codice con classi
+
+```javascript
+console.log("Hello World");
+```
+
+{: .bg-gray-800 .text-white .p-4 .rounded}
+
+### Sintassi avanzata
+
+Puoi anche combinare ID e classi multiple:
+
+Paragrafo speciale{: #my-id .text-xl .font-semibold .text-indigo-600}
+
+---
+
 **Se vedi tutti questi elementi stilizzati correttamente, Tailwind CSS è installato e funzionante! 🎉**
