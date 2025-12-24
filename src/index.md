@@ -4,15 +4,11 @@ title: Andrea Ciraolo. Crea contenuti che lasciano il segno
 description: Pagina principale del sito
 ---
 
-# Ciao! 👋
-
-<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-4 rounded">
-  <p class="text-blue-800 font-semibold">✨ Tailwind CSS è attivo! Questo box blu è stilizzato con classi Tailwind.</p>
+<div class="rounded-3xl overflow-hidden w-full">
+  <video autoplay loop muted playsinline class="w-full h-auto rounded-3xl">
+    <source src="/assets/videos/andrea.mp4" type="video/mp4">
+  </video>
 </div>
-
-## Mi chiamo Andrea e faccio video per farti imparare le cose.
-
-![Andrea Ciraolo](https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/67618bc884e89f17e846a1e5_Andrea.avif)
 
 ## Ogni giorno un tool per migliorarti la vita
 
