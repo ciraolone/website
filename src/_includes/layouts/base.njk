@@ -18,23 +18,25 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="/" class="logo">{{ site.title }}</a>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/chi-siamo/">Chi Siamo</a></li>
-        <li><a href="/contatti/">Contatti</a></li>
+  <header class="bg-blue-600 text-white shadow-lg">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="/" class="logo text-2xl font-bold hover:text-blue-200">{{ site.title }}</a>
+      <ul class="flex gap-6">
+        <li><a href="/" class="hover:text-blue-200 transition-colors">Home</a></li>
+        <li><a href="/chi-siamo/" class="hover:text-blue-200 transition-colors">Chi Siamo</a></li>
+        <li><a href="/contatti/" class="hover:text-blue-200 transition-colors">Contatti</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="container mx-auto px-4 py-8">
     {{ content | safe }}
   </main>
 
-  <footer>
-    <p>&copy; {{ "now" | dateFormat("year") }} {{ site.author }}. Tutti i diritti riservati.</p>
+  <footer class="bg-gray-100 text-gray-700 py-6 mt-12">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; {{ "now" | dateFormat("year") }} {{ site.author }}. Tutti i diritti riservati.</p>
+    </div>
   </footer>
 
   <!-- JavaScript -->

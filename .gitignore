@@ -3,6 +3,9 @@ node_modules/
 package-lock.json
 yarn.lock
 
+# Andrea
+TODO.md
+
 # Build output
 _site/
 dist/
@@ -29,4 +32,3 @@ npm-debug.log*
 # Temporary files
 tmp/
 temp/
-

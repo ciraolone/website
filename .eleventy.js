@@ -8,9 +8,9 @@ module.exports = function(eleventyConfig) {
   // PASSTHROUGH COPIES
   // ============================================
   // Copia file statici (immagini, font, etc.) senza processarli
+  // Nota: il CSS viene compilato direttamente in _site/assets/css/ tramite npm run build:css
   eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
-  eleventyConfig.addPassthroughCopy("src/assets/css");
   eleventyConfig.addPassthroughCopy("src/assets/js");
   eleventyConfig.addPassthroughCopy({ "src/assets/favicon": "/" });
   
@@ -18,7 +18,9 @@ module.exports = function(eleventyConfig) {
   // WATCH TARGETS
   // ============================================
   // File da monitorare durante lo sviluppo (per hot reload automatico)
-  eleventyConfig.addWatchTarget("src/assets/css/");
+  // Nota: il CSS viene compilato direttamente in _site/assets/css/ tramite npm run watch:css
+  eleventyConfig.addWatchTarget("src/assets/css/main.scss");
+  eleventyConfig.addWatchTarget("_site/assets/css/main.css");
   eleventyConfig.addWatchTarget("src/assets/js/");
   eleventyConfig.addWatchTarget("src/assets/images/");
   

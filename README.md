@@ -74,9 +74,21 @@ description: Descrizione della pagina
 ## 🎨 Personalizzazione
 
 - **Configurazione globale**: Modifica `src/_data/site.json`
-- **Stili**: Modifica `src/assets/css/main.css`
+- **Stili**: Modifica `src/assets/css/main.scss` (SCSS con Tailwind CSS)
 - **Layout**: Modifica `src/_includes/layouts/base.njk`
 - **Configurazione Eleventy**: Modifica `.eleventy.js`
+- **Configurazione Tailwind**: Modifica `tailwind.config.js`
+
+### 🎨 Tailwind CSS e SCSS
+
+Il progetto utilizza **Tailwind CSS** con **SCSS** per gli stili:
+
+- **File sorgente**: `src/assets/css/main.scss` - Modifica questo file per aggiungere stili personalizzati
+- **File compilato**: `_site/assets/css/main.css` - Generato automaticamente in `_site/`, non modificare direttamente
+- **Compilazione**: Gli stili vengono compilati automaticamente durante lo sviluppo con `npm run dev` o `npm run serve`
+- **Build manuale**: Esegui `npm run build:css` per compilare solo i CSS
+
+**Uso di Tailwind**: Puoi usare le classi utility di Tailwind direttamente nei template HTML/Nunjucks. Per stili personalizzati, aggiungili nel file `main.scss` usando le direttive `@layer base`, `@layer components`, o `@layer utilities`.
 
 ## 📚 Documentazione
 

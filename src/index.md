@@ -6,6 +6,10 @@ description: Pagina principale del sito
 
 # Ciao! 👋
 
+<div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-4 rounded">
+  <p class="text-blue-800 font-semibold">✨ Tailwind CSS è attivo! Questo box blu è stilizzato con classi Tailwind.</p>
+</div>
+
 ## Mi chiamo Andrea e faccio video per farti imparare le cose.
 
 ![Andrea Ciraolo](https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/67618bc884e89f17e846a1e5_Andrea.avif)

@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Sito web statico generato con Eleventy",
   "scripts": {
-    "build": "eleventy",
-    "serve": "eleventy --serve",
-    "dev": "eleventy --serve",
+    "build:css": "mkdir -p _site/assets/css && sass src/assets/css/main.scss:_site/assets/css/main.css && postcss _site/assets/css/main.css -o _site/assets/css/main.css",
+    "watch:css": "nodemon",
+    "build": "npm run build:css && eleventy",
+    "serve": "concurrently \"npm run watch:css\" \"eleventy --serve\"",
+    "dev": "concurrently \"npm run watch:css\" \"eleventy --serve\"",
     "clean": "rimraf _site"
   },
   "keywords": [
@@ -16,7 +18,13 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
-  },
-  "dependencies": {}
+    "@11ty/eleventy": "^2.0.1",
+    "autoprefixer": "^10.4.23",
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.11",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "sass": "^1.97.1",
+    "tailwindcss": "^3.4.19"
+  }
 }
