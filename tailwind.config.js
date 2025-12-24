@@ -6,12 +6,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // Estendi il tema con le tue variabili personalizzate se necessario
       colors: {
-        primary: 'var(--color-primary)',
-        secondary: 'var(--color-secondary)',
+        primary: '#2563eb',
+        secondary: '#64748b',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
