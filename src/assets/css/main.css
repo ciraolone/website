@@ -5,9 +5,147 @@
 @plugin "@tailwindcss/typography";
 
 /* ============================================
-   Custom Theme Configuration
+   Design System - Design Tokens
    ============================================ */
 @theme {
-  --color-primary: #2563eb;
-  --color-secondary: #64748b;
+  /* === Brand Colors === */
+  --color-primary: #2563eb;      /* Blue 600 */
+  --color-secondary: #64748b;    /* Slate 500 */
+  --color-accent: #fde047;       /* Yellow 300 */
+  --color-accent-dark: #facc15;  /* Yellow 400 */
+
+  /* === Neutral Colors === */
+  --color-bg-main: #ffffff;
+  --color-bg-alt: #f3f4f6;       /* Gray 100 */
+  --color-text-primary: #111827; /* Gray 900 */
+  --color-text-secondary: #6b7280; /* Gray 500 */
+
+  /* === Component Colors === */
+  --color-card-bg: #ffffff;
+  --color-card-border: #000000;
+  --color-card-hover: #fef3c7;   /* Yellow 100 */
+
+  /* === Border Radius === */
+  --radius-sm: 0.5rem;    /* 8px */
+  --radius-md: 0.75rem;   /* 12px */
+  --radius-lg: 1rem;      /* 16px */
+  --radius-xl: 1.5rem;    /* 24px */
+  --radius-2xl: 2rem;     /* 32px */
+  --radius-3xl: 2.5rem;   /* 40px */
+
+  /* === Spacing === */
+  --spacing-card: 1.5rem;        /* p-6 */
+  --spacing-card-sm: 1rem;       /* p-4 */
+  --spacing-section: 2rem;       /* my-8 */
+
+  /* === Borders === */
+  --border-width: 2px;
+  --border-color: #000000;
+
+  /* === Shadows (Neobrutalist Style) === */
+  --shadow-brutal-sm: 4px 4px 0 0 rgb(0 0 0);
+  --shadow-brutal-md: 4px 4px 0 0 rgb(0 0 0), 8px 8px 0 0 rgb(0 0 0);
+  --shadow-brutal-lg: 6px 6px 0 0 rgb(0 0 0), 12px 12px 0 0 rgb(0 0 0);
+
+  /* === Transitions === */
+  --transition-fast: 150ms;
+  --transition-base: 300ms;
+  --transition-slow: 500ms;
+}
+
+/* ============================================
+   Component Classes
+   ============================================ */
+@layer components {
+
+  /* === CARD COMPONENT (moderna con hover) === */
+  .card {
+    @apply bg-white rounded-2xl overflow-hidden shadow-md;
+  }
+
+  .card-interactive {
+    @apply transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl;
+  }
+
+  .card-body {
+    @apply p-6;
+  }
+
+  .card-title {
+    @apply text-xl font-bold text-gray-900 mb-2;
+  }
+
+  .card-description {
+    @apply text-gray-600 text-sm leading-relaxed;
+  }
+
+  .card-image {
+    @apply w-full h-48 object-cover;
+  }
+
+  .card-image-hover {
+    @apply group-hover:scale-110 transition-transform duration-300;
+  }
+
+  /* === BRUTAL COMPONENT (neobrutalist article box) === */
+  .brutal-box {
+    @apply border-2 border-black bg-white my-8;
+    box-shadow: var(--shadow-brutal-md);
+  }
+
+  .brutal-box-sm {
+    @apply border-2 border-black bg-white;
+    box-shadow: var(--shadow-brutal-sm);
+  }
+
+  .brutal-header {
+    @apply bg-yellow-300 p-3;
+  }
+
+  .brutal-body {
+    @apply border-t-2 border-black p-4 sm:p-6;
+  }
+
+  .brutal-tag {
+    @apply text-xs/none font-bold uppercase;
+  }
+
+  .brutal-dots {
+    @apply flex gap-1;
+  }
+
+  .brutal-dot {
+    @apply size-3 border-2 border-black bg-white;
+  }
+
+  /* === BUTTON STYLES === */
+  .btn-primary {
+    @apply inline-block bg-blue-600 text-white px-4 py-2 rounded-lg;
+    @apply hover:bg-blue-700 transition-colors;
+  }
+
+  .btn-brutal {
+    @apply block border-2 border-black bg-white p-4 sm:p-6;
+    @apply hover:bg-yellow-100 focus:ring-2 focus:ring-yellow-300 focus:outline-0;
+    box-shadow: var(--shadow-brutal-sm);
+  }
+
+  /* === LINK STYLES === */
+  .link-hover-light {
+    @apply hover:text-blue-200 transition-colors;
+  }
+
+  .link-brutal {
+    @apply transition-colors duration-300;
+    @apply hover:text-gray-600 hover:underline;
+  }
+
+  /* === VIDEO CONTAINER === */
+  .video-container {
+    @apply rounded-3xl overflow-hidden w-full;
+  }
+
+  .video-responsive {
+    @apply w-full h-auto rounded-3xl;
+  }
 }
