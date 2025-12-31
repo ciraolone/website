@@ -1,0 +1,31 @@
+{#
+  Componente DailyTool Newsletter
+
+  Componente dedicato per embeddare la newsletter DailyTool di Substack.
+  Usa internamente il componente card per mantenere lo stile coerente.
+
+  Parametri:
+  - headerText: testo dell'header (default: "DailyTool Newsletter")
+  - description: descrizione aggiuntiva sotto l'iframe (opzionale)
+  - className: classi CSS aggiuntive per la card (opzionale)
+  - iframeHeight: altezza iframe (default: "320px")
+  - showHeader: mostra header giallo (default: true)
+
+  Uso come macro:
+  {% from "components/dailytool.njk" import dailytool %}
+  {{ dailytool() }}
+  {{ dailytool(description="Iscriviti per ricevere tools quotidiani!") }}
+#}
+
+{% from "components/card.njk" import card %}
+
+{% macro dailytool(headerText="DailyTool Newsletter", description="", className="", iframeHeight="320px", showHeader=true) %}
+  {{ card(
+    iframe="https://dailytool.substack.com/embed",
+    headerText=headerText,
+    description=description,
+    className=className,
+    iframeHeight=iframeHeight,
+    showHeader=showHeader
+  ) }}
+{% endmacro %}

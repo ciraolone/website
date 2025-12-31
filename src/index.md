@@ -5,6 +5,7 @@ description: Pagina principale del sito
 ---
 
 {% from "components/card.njk" import card %}
+{% from "components/dailytool.njk" import dailytool %}
 
 <!-- Sezione Hero: layout largo a due colonne -->
 <section class="w-full px-4 py-8">
@@ -30,7 +31,7 @@ description: Pagina principale del sito
 
 DailyTool è la mia nuova newsletter quotidiana. Ogni mattina nella tua mail un tool che può svoltarti la giornata.
 
-<iframe src="https://dailytool.substack.com/embed" width="100%" height="320px" style="border:1px solid #dee2e6; background:#f8fafc; margin: 0px; padding: 0px;" frameborder="0" scrolling="no"></iframe>
+{{ dailytool() }}
 
 ## Cosa possiamo fare insieme?
 

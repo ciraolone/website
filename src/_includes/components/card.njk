@@ -2,8 +2,10 @@
   Componente Card Riutilizzabile (Stile Neobrutalista)
 
   Parametri:
-  - image: percorso dell'immagine (opzionale, alternativa a video)
-  - video: percorso del video (opzionale, alternativa a image)
+  - image: percorso dell'immagine (opzionale, alternativa a video/iframe)
+  - video: percorso del video (opzionale, alternativa a image/iframe)
+  - iframe: URL iframe da embeddare (opzionale, alternativa a image/video)
+  - iframeHeight: altezza iframe (default: "320px")
   - imageAlt: testo alternativo per l'immagine
   - headerText: testo dell'header giallo (opzionale, default: titolo o vuoto)
   - title: titolo della card (opzionale)
@@ -19,9 +21,10 @@
   Uso come macro:
   {% from "components/card.njk" import card %}
   {{ card(video="/path/to/video.mp4", headerText="Titolo") }}
+  {{ card(iframe="https://example.com/embed", headerText="Newsletter", iframeHeight="320px") }}
 #}
 
-{% macro card(video="", image="", imageAlt="", headerText="", title="", description="", buttonText="", buttonUrl="", cardUrl="", className="", imageClassName="", videoClassName="", showHeader=true) %}
+{% macro card(video="", image="", iframe="", iframeHeight="320px", imageAlt="", headerText="", title="", description="", buttonText="", buttonUrl="", cardUrl="", className="", imageClassName="", videoClassName="", showHeader=true) %}
 {#
   Container principale della card con stile neobrutalista:
   - border-2: bordo nero spesso 2px
@@ -35,13 +38,13 @@
   {% if showHeader !== false and (headerText or title) %}<div class="bg-yellow-300 p-3"><div class="flex items-center justify-between"><strong class="text-xs/none font-bold uppercase">{{ headerText or title }}</strong><div class="flex gap-1"><div class="size-3 border-2 border-black bg-white"></div><div class="size-3 border-2 border-black bg-white"></div></div></div></div>{% endif %}
 
   {#
-    Container video/immagine:
+    Container video/immagine/iframe:
     - bg-black: sfondo nero nasconde il micro-pixel a destra del video
     - overflow-hidden: taglia eventuali overflow
     - leading-[0]: rimuove line-height per eliminare spazi verticali
     - border-t-2: bordo superiore solo se c'è header
   #}
-  {% if video %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-black overflow-hidden leading-[0]">{# Video auto-play in loop, block elimina spazio inline sotto l'elemento #}<video autoplay loop muted playsinline class="w-full h-auto block max-w-full {{ videoClassName }}"><source src="{{ video }}" type="video/mp4"></video></div>{% elif image %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-black overflow-hidden leading-[0]">{# Immagine lazy-loaded, block elimina spazio inline #}<img src="{{ image }}" alt="{{ imageAlt or title or 'Immagine card' }}" class="w-full h-auto block max-w-full {{ imageClassName }}" loading="lazy"></div>{% endif %}
+  {% if video %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-black overflow-hidden leading-[0]">{# Video auto-play in loop, block elimina spazio inline sotto l'elemento #}<video autoplay loop muted playsinline class="w-full h-auto block max-w-full {{ videoClassName }}"><source src="{{ video }}" type="video/mp4"></video></div>{% elif image %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-black overflow-hidden leading-[0]">{# Immagine lazy-loaded, block elimina spazio inline #}<img src="{{ image }}" alt="{{ imageAlt or title or 'Immagine card' }}" class="w-full h-auto block max-w-full {{ imageClassName }}" loading="lazy"></div>{% elif iframe %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-white overflow-hidden leading-[0]">{# Iframe embeddato #}<iframe src="{{ iframe }}" width="100%" height="{{ iframeHeight }}" style="border:0; background:transparent; margin: 0; padding: 0;" frameborder="0" scrolling="no" class="block max-w-full"></iframe></div>{% endif %}
 
   {# Sezione testo e bottone (opzionale) #}
   {% if description or buttonText %}
