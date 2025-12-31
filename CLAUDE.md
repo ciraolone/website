@@ -514,6 +514,212 @@ Quando modifichi il progetto:
 
 ---
 
+## 🤖 Claude Code - Configurazione e Utilizzo
+
+### Cos'è Claude Code
+
+**Claude Code** è l'interfaccia CLI ufficiale di Anthropic per Claude, progettata per sviluppatori che preferiscono lavorare nel terminale. Permette di interagire con Claude direttamente dalla command line, modificare file, eseguire comandi e creare commit senza lasciare il terminale.
+
+### Documentazione Ufficiale
+
+- **[Claude Code Docs](https://code.claude.com/docs/)** - Documentazione completa
+- **[Getting Started](https://code.claude.com/docs/getting-started)** - Guida introduttiva
+- **[Hooks Reference](https://code.claude.com/docs/hooks)** - Sistema di hooks
+- **[Settings](https://code.claude.com/docs/settings)** - Configurazione avanzata
+
+### Configurazione Progetto (`.claude/settings.local.json`)
+
+Il progetto ha configurato Claude Code per ottimizzare il workflow di sviluppo.
+
+#### Permissions
+
+Permessi pre-approvati per comandi comuni:
+
+```json
+{
+  "permissions": {
+    "allow": [
+      "Bash(git mv:*)",       // Rinomina file git
+      "Bash(npm ls:*)",        // Lista pacchetti npm
+      "Bash(cat:*)",           // Visualizza file
+      "Bash(npm install:*)",   // Installa dipendenze
+      "Bash(npm run clean:*)", // Pulisci build
+      "Bash(npm run build:*)", // Build progetto
+      "Bash(git add:*)",       // Stage modifiche
+      "Bash(git rm:*)",        // Rimuovi file
+      "Bash(git commit:*)"     // Crea commit
+    ]
+  }
+}
+```
+
+**Benefici:**
+- ✅ Comandi comuni eseguiti senza richiedere conferma
+- ✅ Workflow più fluido per operazioni ripetitive
+- ✅ Sicurezza mantenuta - solo comandi whitelistati
+
+#### Hooks
+
+Sistema di notifiche sonore per eventi importanti:
+
+```json
+{
+  "hooks": {
+    "Stop": [{
+      "hooks": [{
+        "type": "command",
+        "command": "powershell -c \"(New-Object Media.SoundPlayer 'F:\\Scripts\\automation\\sounds\\super-mario\\smb_kick.wav').PlaySync()\""
+      }]
+    }],
+    "Notification": [{
+      "hooks": [{
+        "type": "command",
+        "command": "powershell -c \"(New-Object Media.SoundPlayer 'F:\\Scripts\\automation\\sounds\\super-mario\\smb_kick.wav').PlaySync()\""
+      }]
+    }]
+  }
+}
+```
+
+**Hook Types:**
+
+1. **`Stop`**: Suona quando Claude si ferma e aspetta input utente
+2. **`Notification`**: Suona quando Claude richiede attenzione
+3. **`UserPromptSubmit`**: Dopo invio messaggio (attualmente vuoto)
+
+**Note sull'ambiente:**
+- I path usano sintassi Windows (`F:\Scripts\...`)
+- Funziona anche quando si accede a file Linux via SSH da Windows
+- PowerShell esegue sul client Windows, anche se i file sono remoti
+
+### Comandi Claude Code Utili
+
+#### Interazione Base
+
+```bash
+# Avvia sessione interattiva
+claude
+
+# Esegui comando singolo
+claude "spiega cosa fa questo file" index.js
+
+# Continua conversazione precedente
+claude --resume
+```
+
+#### Workflow Git
+
+```bash
+# Chiedi a Claude di creare un commit
+claude "crea un commit con le modifiche attuali"
+
+# Review di PR
+claude "rivedi questa pull request" --pr 123
+```
+
+#### Sviluppo
+
+```bash
+# Debugging
+claude "trova il bug in questa funzione" src/utils.js
+
+# Refactoring
+claude "refactora questo codice per migliorare performance"
+
+# Testing
+claude "scrivi test per questa funzione"
+```
+
+### Funzionalità Avanzate
+
+#### Subagents
+
+Claude Code può lanciare subagent specializzati per task complessi:
+
+- **Explore**: Esplora codebase rapidamente
+- **Plan**: Pianifica implementazioni
+- **Code Review**: Rivede codice e suggerisce miglioramenti
+
+#### Skills
+
+Comandi riutilizzabili (slash commands):
+
+```bash
+/commit    # Crea commit intelligente
+/review-pr # Review pull request
+/explain   # Spiega codice
+```
+
+#### Model Context Protocol (MCP)
+
+Integrazione con strumenti esterni:
+- Database
+- API esterne
+- Servizi cloud
+
+### File di Progetto
+
+```
+.claude/
+├── settings.local.json  # Configurazione locale (gitignored)
+├── settings.json        # Configurazione condivisa (committata)
+└── plans/               # Piani di implementazione salvati
+```
+
+### Best Practices
+
+1. **Permissions**: Aggiungi solo comandi sicuri all'allow list
+2. **Hooks**: Usa per notifiche importanti, evita spam
+3. **Context**: Fornisci contesto chiaro nelle richieste
+4. **Iterazione**: Lavora in step incrementali, non task enormi
+5. **Review**: Controlla sempre le modifiche prima del commit
+
+### Troubleshooting
+
+#### I suoni non funzionano
+
+**Verifica:**
+1. Il path al file audio è corretto e accessibile
+2. PowerShell è disponibile sul sistema
+3. Il volume non è mutato
+
+**Riavvio necessario?**
+- No, gli hook sono caricati dinamicamente
+- Chiudi e riapri Claude Code per ricaricare settings
+
+#### Permessi non applicati
+
+**Soluzione:**
+1. Verifica sintassi in `settings.local.json`
+2. Controlla che il pattern match il comando esatto
+3. Usa `*` per wildcard dove necessario
+
+#### Hook non si esegue
+
+**Debug:**
+1. Testa il comando hook manualmente nel terminale
+2. Controlla i log di Claude Code per errori
+3. Verifica che l'hook type sia valido
+
+### Integrazione VS Code
+
+Claude Code è disponibile anche come estensione VS Code:
+
+- **[VS Code Extension](https://marketplace.visualstudio.com/items?itemName=Anthropic.claude-code)**
+- Pannello laterale integrato
+- Sincronizzazione contesto con editor
+- Stessi settings e hooks
+
+### Risorse Aggiuntive
+
+- **[GitHub](https://github.com/anthropics/claude-code)** - Repository ufficiale
+- **[Community](https://discord.gg/claude)** - Discord per supporto
+- **[Examples](https://code.claude.com/docs/examples)** - Esempi pratici
+- **[API Docs](https://docs.anthropic.com/)** - Claude API reference
+
+---
+
 **Ultimo aggiornamento:** 2025-12-31
 **Versione Tailwind:** 4.1.18
 **Versione Eleventy:** 2.0.1
+**Claude Code:** Configurato con hooks e permissions
