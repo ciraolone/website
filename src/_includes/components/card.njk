@@ -1,0 +1,59 @@
+{# 
+  Componente Card Riutilizzabile
+  
+  Parametri:
+  - image: percorso dell'immagine
+  - imageAlt: testo alternativo per l'immagine
+  - title: titolo della card
+  - description: descrizione/testo della card
+  - buttonText: testo del pulsante (opzionale)
+  - buttonUrl: URL del pulsante (opzionale)
+  - cardUrl: URL per rendere l'intera card cliccabile (opzionale, alternativa al pulsante)
+  - className: classi CSS aggiuntive per la card (opzionale)
+  - imageClassName: classi CSS aggiuntive per l'immagine (opzionale)
+#}
+
+{% if cardUrl %}
+  <a href="{{ cardUrl }}" class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 no-underline block {{ className }}">
+{% else %}
+  <div class="bg-white rounded-2xl overflow-hidden shadow-md {{ className }}">
+{% endif %}
+
+  {% if image %}
+    <div class="w-full h-48 overflow-hidden bg-gray-200">
+      <img 
+        src="{{ image }}" 
+        alt="{{ imageAlt or title or 'Immagine card' }}" 
+        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 {{ imageClassName }}"
+        loading="lazy"
+      >
+    </div>
+  {% endif %}
+
+  <div class="p-6">
+    {% if title %}
+      <h3 class="text-xl font-bold text-gray-900 mb-2 {% if cardUrl %}group-hover:text-blue-600 transition-colors{% endif %}">
+        {{ title }}
+      </h3>
+    {% endif %}
+
+    {% if description %}
+      <p class="text-gray-600 text-sm leading-relaxed">
+        {{ description }}
+      </p>
+    {% endif %}
+
+    {% if buttonText and buttonUrl and not cardUrl %}
+      <div class="mt-4">
+        <a href="{{ buttonUrl }}" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+          {{ buttonText }}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+
+{% if cardUrl %}
+  </a>
+{% else %}
+  </div>
+{% endif %}

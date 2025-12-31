@@ -1,6 +1,6 @@
 {
-  "watch": ["src/assets/css/main.scss"],
-  "ext": "scss",
+  "watch": ["src/assets/css/main.css"],
+  "ext": "css",
   "ignore": ["node_modules"],
   "exec": "npm run build:css",
   "delay": 100

@@ -1,0 +1,13 @@
+/* ============================================
+   Tailwind CSS v4
+   ============================================ */
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* ============================================
+   Custom Theme Configuration
+   ============================================ */
+@theme {
+  --color-primary: #2563eb;
+  --color-secondary: #64748b;
+}
