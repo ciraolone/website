@@ -19,7 +19,7 @@
 
 {% from "components/card.njk" import card %}
 
-{% macro dailytool(headerText="DailyTool Newsletter", description="", className="", iframeHeight="320px", showHeader=true) %}
+{% macro dailytool(headerText="DailyTool", description="", className="", iframeHeight="320px", showHeader=true) %}
   {{ card(
     iframe="https://dailytool.substack.com/embed",
     headerText=headerText,
