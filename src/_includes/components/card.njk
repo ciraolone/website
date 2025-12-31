@@ -1,59 +1,82 @@
-{# 
-  Componente Card Riutilizzabile
-  
+{#
+  Componente Card Riutilizzabile (Stile Neobrutalista)
+
   Parametri:
-  - image: percorso dell'immagine
+  - image: percorso dell'immagine (opzionale, alternativa a video)
+  - video: percorso del video (opzionale, alternativa a image)
   - imageAlt: testo alternativo per l'immagine
-  - title: titolo della card
-  - description: descrizione/testo della card
+  - headerText: testo dell'header giallo (opzionale, default: titolo o vuoto)
+  - title: titolo della card (opzionale)
+  - description: descrizione/testo della card (opzionale)
   - buttonText: testo del pulsante (opzionale)
   - buttonUrl: URL del pulsante (opzionale)
-  - cardUrl: URL per rendere l'intera card cliccabile (opzionale, alternativa al pulsante)
+  - cardUrl: URL per rendere l'intera card cliccabile (opzionale)
   - className: classi CSS aggiuntive per la card (opzionale)
   - imageClassName: classi CSS aggiuntive per l'immagine (opzionale)
+  - videoClassName: classi CSS aggiuntive per il video (opzionale)
+  - showHeader: mostra header giallo (default: true se headerText o title)
+
+  Uso come macro:
+  {% from "components/card.njk" import card %}
+  {{ card(video="/path/to/video.mp4", headerText="Titolo") }}
 #}
 
-{% if cardUrl %}
-  <a href="{{ cardUrl }}" class="card card-interactive group no-underline block {{ className }}">
-{% else %}
-  <div class="card {{ className }}">
-{% endif %}
+{% macro card(video="", image="", imageAlt="", headerText="", title="", description="", buttonText="", buttonUrl="", cardUrl="", className="", imageClassName="", videoClassName="", showHeader=true) %}
+{#
+  Container principale della card con stile neobrutalista:
+  - border-2: bordo nero spesso 2px
+  - shadow-[4px_4px_0_0,8px_8px_0_0]: doppia ombra per effetto 3D caratteristico
+  - bg-white: sfondo bianco
+#}
+<article class="border-2 my-8 border-black bg-white shadow-[4px_4px_0_0,8px_8px_0_0] {{ className }}">
 
-  {% if image %}
-    <div class="w-full h-48 overflow-hidden bg-gray-200">
-      <img
-        src="{{ image }}"
-        alt="{{ imageAlt or title or 'Immagine card' }}"
-        class="card-image card-image-hover {{ imageClassName }}"
-        loading="lazy"
-      >
+  {# Header giallo con titolo e box decorativi (opzionale) #}
+  {% if showHeader !== false and (headerText or title) %}
+  <div class="bg-yellow-300 p-3">
+    <div class="flex items-center justify-between">
+      {# Titolo in maiuscolo grassetto #}
+      <strong class="text-xs/none font-bold uppercase">{{ headerText or title }}</strong>
+      {# Box decorativi bianchi con bordo nero (stile neobrutalista) #}
+      <div class="flex gap-1">
+        <div class="size-3 border-2 border-black bg-white"></div>
+        <div class="size-3 border-2 border-black bg-white"></div>
+      </div>
     </div>
+  </div>
   {% endif %}
 
-  <div class="card-body">
-    {% if title %}
-      <h3 class="card-title {% if cardUrl %}group-hover:text-blue-600 transition-colors{% endif %}">
-        {{ title }}
-      </h3>
+  {#
+    Container video/immagine:
+    - bg-black: sfondo nero nasconde il micro-pixel a destra del video
+    - overflow-hidden: taglia eventuali overflow
+    - leading-[0]: rimuove line-height per eliminare spazi verticali
+    - not-prose: disabilita stili Typography di Tailwind
+    - border-t-2: bordo superiore solo se c'è header
+  #}
+  {% if video %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-black overflow-hidden leading-[0] not-prose">{# Video auto-play in loop, block elimina spazio inline sotto l'elemento #}<video autoplay loop muted playsinline class="w-full h-auto block max-w-full {{ videoClassName }}"><source src="{{ video }}" type="video/mp4"></video></div>{% elif image %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-black overflow-hidden leading-[0] not-prose">{# Immagine lazy-loaded, block elimina spazio inline #}<img src="{{ image }}" alt="{{ imageAlt or title or 'Immagine card' }}" class="w-full h-auto block max-w-full {{ imageClassName }}" loading="lazy"></div>{% endif %}
+
+  {# Sezione testo e bottone (opzionale) #}
+  {% if description or buttonText %}
+  <div class="border-t-2 border-black p-4 sm:p-6">
+    {# Titolo interno (mostrato solo se headerText è presente o showHeader è false) #}
+    {% if title and (headerText or showHeader === false) %}
+      <h3 class="text-lg font-semibold text-black">{{ title }}</h3>
     {% endif %}
 
+    {# Descrizione con text-pretty per miglior formattazione #}
     {% if description %}
-      <p class="card-description">
-        {{ description }}
-      </p>
+      <p class="mt-2 text-sm text-pretty">{{ description }}</p>
     {% endif %}
 
-    {% if buttonText and buttonUrl and not cardUrl %}
+    {# Bottone call-to-action stile neobrutalista con hover effect #}
+    {% if buttonText and buttonUrl %}
       <div class="mt-4">
-        <a href="{{ buttonUrl }}" class="btn-primary">
+        <a href="{{ buttonUrl }}" class="inline-block border-2 border-black bg-yellow-300 px-4 py-2 font-bold uppercase text-xs hover:bg-yellow-400 shadow-[2px_2px_0_0] hover:shadow-[4px_4px_0_0] transition-all">
           {{ buttonText }}
         </a>
       </div>
     {% endif %}
   </div>
-
-{% if cardUrl %}
-  </a>
-{% else %}
-  </div>
-{% endif %}
+  {% endif %}
+</article>
+{% endmacro %}

@@ -107,48 +107,6 @@ module.exports = function(eleventyConfig) {
     return `<a href="${url}" target="_blank" rel="noopener noreferrer">${text}</a>`;
   });
 
-  // Shortcode per card riutilizzabile
-  eleventyConfig.addShortcode("card", function(image, imageAlt, title, description, buttonText, buttonUrl, cardUrl, className, imageClassName) {
-    const hasCardUrl = cardUrl && cardUrl !== "";
-    const hasButton = buttonText && buttonUrl && !hasCardUrl;
-    const wrapperTag = hasCardUrl ? "a" : "div";
-    const wrapperClass = hasCardUrl 
-      ? `group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 no-underline block ${className || ""}`
-      : `bg-white rounded-2xl overflow-hidden shadow-md ${className || ""}`;
-    const hrefAttr = hasCardUrl ? `href="${cardUrl}"` : "";
-    
-    let html = `<${wrapperTag} ${hrefAttr} class="${wrapperClass.trim()}">`;
-    
-    if (image && image !== "") {
-      const altText = imageAlt || title || "Immagine card";
-      html += `<div class="w-full h-48 overflow-hidden bg-gray-200">`;
-      html += `<img src="${image}" alt="${altText}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300 ${imageClassName || ""}" loading="lazy">`;
-      html += `</div>`;
-    }
-    
-    html += `<div class="p-6">`;
-    
-    if (title && title !== "") {
-      const titleClass = hasCardUrl ? "text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors" : "text-xl font-bold text-gray-900 mb-2";
-      html += `<h3 class="${titleClass}">${title}</h3>`;
-    }
-    
-    if (description && description !== "") {
-      html += `<p class="text-gray-600 text-sm leading-relaxed">${description}</p>`;
-    }
-    
-    if (hasButton) {
-      html += `<div class="mt-4">`;
-      html += `<a href="${buttonUrl}" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">${buttonText}</a>`;
-      html += `</div>`;
-    }
-    
-    html += `</div>`;
-    html += `</${wrapperTag}>`;
-    
-    return html;
-  });
-
   // ============================================
   // COLLECTIONS
   // ============================================
