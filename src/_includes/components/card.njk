@@ -27,33 +27,21 @@
   - border-2: bordo nero spesso 2px
   - shadow-[4px_4px_0_0,8px_8px_0_0]: doppia ombra per effetto 3D caratteristico
   - bg-white: sfondo bianco
+  - not-prose: disabilita stili Typography di Tailwind su tutta la card
 #}
-<article class="border-2 my-8 border-black bg-white shadow-[4px_4px_0_0,8px_8px_0_0] {{ className }}">
+<article class="border-2 my-8 border-black bg-white shadow-[4px_4px_0_0,8px_8px_0_0] not-prose {{ className }}">
 
-  {# Header giallo con titolo e box decorativi (opzionale) #}
-  {% if showHeader !== false and (headerText or title) %}
-  <div class="bg-yellow-300 p-3">
-    <div class="flex items-center justify-between">
-      {# Titolo in maiuscolo grassetto #}
-      <strong class="text-xs/none font-bold uppercase">{{ headerText or title }}</strong>
-      {# Box decorativi bianchi con bordo nero (stile neobrutalista) #}
-      <div class="flex gap-1">
-        <div class="size-3 border-2 border-black bg-white"></div>
-        <div class="size-3 border-2 border-black bg-white"></div>
-      </div>
-    </div>
-  </div>
-  {% endif %}
+  {# Header giallo con titolo e box decorativi (opzionale) - tutto su una riga per evitare processing Markdown #}
+  {% if showHeader !== false and (headerText or title) %}<div class="bg-yellow-300 p-3"><div class="flex items-center justify-between"><strong class="text-xs/none font-bold uppercase">{{ headerText or title }}</strong><div class="flex gap-1"><div class="size-3 border-2 border-black bg-white"></div><div class="size-3 border-2 border-black bg-white"></div></div></div></div>{% endif %}
 
   {#
     Container video/immagine:
     - bg-black: sfondo nero nasconde il micro-pixel a destra del video
     - overflow-hidden: taglia eventuali overflow
     - leading-[0]: rimuove line-height per eliminare spazi verticali
-    - not-prose: disabilita stili Typography di Tailwind
     - border-t-2: bordo superiore solo se c'è header
   #}
-  {% if video %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-black overflow-hidden leading-[0] not-prose">{# Video auto-play in loop, block elimina spazio inline sotto l'elemento #}<video autoplay loop muted playsinline class="w-full h-auto block max-w-full {{ videoClassName }}"><source src="{{ video }}" type="video/mp4"></video></div>{% elif image %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-black overflow-hidden leading-[0] not-prose">{# Immagine lazy-loaded, block elimina spazio inline #}<img src="{{ image }}" alt="{{ imageAlt or title or 'Immagine card' }}" class="w-full h-auto block max-w-full {{ imageClassName }}" loading="lazy"></div>{% endif %}
+  {% if video %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-black overflow-hidden leading-[0]">{# Video auto-play in loop, block elimina spazio inline sotto l'elemento #}<video autoplay loop muted playsinline class="w-full h-auto block max-w-full {{ videoClassName }}"><source src="{{ video }}" type="video/mp4"></video></div>{% elif image %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-black overflow-hidden leading-[0]">{# Immagine lazy-loaded, block elimina spazio inline #}<img src="{{ image }}" alt="{{ imageAlt or title or 'Immagine card' }}" class="w-full h-auto block max-w-full {{ imageClassName }}" loading="lazy"></div>{% endif %}
 
   {# Sezione testo e bottone (opzionale) #}
   {% if description or buttonText %}
