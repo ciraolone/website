@@ -168,4 +168,19 @@
   .video-responsive {
     @apply w-full h-auto rounded-3xl;
   }
+
+  /* === TYPOGRAPHY COMPONENTS === */
+  .title {
+    @apply text-4xl sm:text-5xl lg:text-6xl;
+    @apply font-black tracking-tight leading-tight;
+    @apply text-gray-900;
+    @apply mb-6;
+  }
+
+  .subtitle {
+    @apply text-lg sm:text-xl lg:text-2xl;
+    @apply font-medium tracking-wide leading-relaxed;
+    @apply text-gray-600;
+    @apply mb-4;
+  }
 }

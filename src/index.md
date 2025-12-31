@@ -8,14 +8,14 @@ description: Pagina principale del sito
 
 <!-- Sezione Hero: layout largo a due colonne -->
 <section class="w-full px-4 py-8">
-  <div class="max-w-7xl mx-auto">
+  <div class="max-w-4xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="flex justify-end">
-        <div class="max-w-80">{{ card(video="/assets/videos/andrea.mp4", headerText="Andrea Ciraolo", className="") }}</div>
-      </div>
       <div class="flex flex-col justify-center">
         <p class="title">Ciao! 👋</p>
         <p class="subtitle">Mi chiamo Andrea e faccio video per farti imparare le cose.</p>
+      </div>
+      <div class="flex justify-end">
+        <div class="max-w-80">{{ card(video="/assets/videos/andrea.mp4", headerText="Andrea Ciraolo", className="") }}</div>
       </div>
     </div>
   </div>
