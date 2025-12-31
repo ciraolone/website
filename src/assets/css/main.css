@@ -1,4 +1,9 @@
 /* ============================================
+   Custom Fonts
+   ============================================ */
+@import "../fonts/press-start-2p/press-start-2p.css";
+
+/* ============================================
    Tailwind CSS v4
    ============================================ */
 @import "tailwindcss";
@@ -8,6 +13,10 @@
    Design System - Design Tokens
    ============================================ */
 @theme {
+  /* === Typography === */
+  --font-family-pixel: 'Press Start 2P', cursive;
+  --font-accent: var(--font-family-pixel); /* Font per titoli e accenti */
+
   /* === Brand Colors === */
   --color-primary: #2563eb; /* Blue 600 */
   --color-secondary: #64748b; /* Slate 500 */
@@ -170,11 +179,17 @@
   }
 
   /* === TYPOGRAPHY COMPONENTS === */
+  h1,
+  h2 {
+    font-family: var(--font-accent);
+  }
+
   .title {
     @apply text-4xl sm:text-5xl lg:text-6xl;
     @apply font-black tracking-tight leading-tight;
     @apply text-gray-900;
     @apply mb-6;
+    font-family: var(--font-accent);
   }
 
   .subtitle {
