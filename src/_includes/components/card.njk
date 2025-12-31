@@ -12,6 +12,7 @@
   - description: descrizione/testo della card (opzionale)
   - buttonText: testo del pulsante (opzionale)
   - buttonUrl: URL del pulsante (opzionale)
+  - buttonVariant: variante stile bottone - "primary" o "secondary" (default: "primary")
   - cardUrl: URL per rendere l'intera card cliccabile (opzionale)
   - className: classi CSS aggiuntive per la card (opzionale)
   - imageClassName: classi CSS aggiuntive per l'immagine (opzionale)
@@ -24,7 +25,9 @@
   {{ card(iframe="https://example.com/embed", headerText="Newsletter", iframeHeight="320px") }}
 #}
 
-{% macro card(video="", image="", iframe="", iframeHeight="320px", imageAlt="", headerText="", title="", description="", buttonText="", buttonUrl="", cardUrl="", className="", imageClassName="", videoClassName="", showHeader=true) %}
+{% from "components/button.njk" import button %}
+
+{% macro card(video="", image="", iframe="", iframeHeight="320px", imageAlt="", headerText="", title="", description="", buttonText="", buttonUrl="", buttonVariant="primary", cardUrl="", className="", imageClassName="", videoClassName="", showHeader=true) %}
 {#
   Container principale della card con stile neobrutalista:
   - border-2: bordo nero spesso 2px
@@ -47,11 +50,11 @@
   {% if video %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-black overflow-hidden leading-[0]">{# Video auto-play in loop, block elimina spazio inline sotto l'elemento #}<video autoplay loop muted playsinline class="w-full h-auto block max-w-full {{ videoClassName }}"><source src="{{ video }}" type="video/mp4"></video></div>{% elif image %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-black overflow-hidden leading-[0]">{# Immagine lazy-loaded, block elimina spazio inline #}<img src="{{ image }}" alt="{{ imageAlt or title or 'Immagine card' }}" class="w-full h-auto block max-w-full {{ imageClassName }}" loading="lazy"></div>{% elif iframe %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-white overflow-hidden leading-[0]">{# Iframe embeddato #}<iframe src="{{ iframe }}" width="100%" height="{{ iframeHeight }}" style="border:0; background:transparent; margin: 0; padding: 0;" frameborder="0" scrolling="no" class="block max-w-full"></iframe></div>{% endif %}
 
   {# Sezione testo e bottone (opzionale) #}
-  {% if description or buttonText %}
+  {% if title or description or buttonText %}
   <div class="border-t-2 border-black p-4 sm:p-6">
-    {# Titolo interno (mostrato solo se headerText è presente o showHeader è false) #}
-    {% if title and (headerText or showHeader === false) %}
-      <h3 class="text-lg font-semibold text-black">{{ title }}</h3>
+    {# Titolo interno (mostrato sempre se presente) #}
+    {% if title %}
+      <h3 class="text-lg font-semibold text-black font-accent">{{ title }}</h3>
     {% endif %}
 
     {# Descrizione con text-pretty per miglior formattazione #}
@@ -59,12 +62,13 @@
       <p class="mt-2 text-sm text-pretty">{{ description }}</p>
     {% endif %}
 
-    {# Bottone call-to-action stile neobrutalista con hover effect #}
+    {# Bottone call-to-action stile neobrutalista #}
     {% if buttonText and buttonUrl %}
-      <div class="mt-4">
-        <a href="{{ buttonUrl }}" class="inline-block border-2 border-black bg-yellow-300 px-4 py-2 font-bold uppercase text-xs hover:bg-yellow-400 shadow-[2px_2px_0_0] hover:shadow-[4px_4px_0_0] transition-all">
-          {{ buttonText }}
-        </a>
+      <div>
+        <a
+          href="{{ buttonUrl }}"
+          class="inline-block border-2 border-black bg-yellow-300 hover:bg-yellow-400 px-5 py-3 font-semibold text-black shadow-[4px_4px_0_0] focus:ring-2 focus:ring-yellow-300 focus:outline-0"
+        >{{ buttonText }}</a>
       </div>
     {% endif %}
   </div>

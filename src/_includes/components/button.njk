@@ -1,0 +1,27 @@
+{#
+  Componente Bottone Riutilizzabile (Stile Neobrutalista)
+
+  Parametri:
+  - text: testo del bottone (richiesto)
+  - url: URL di destinazione (richiesto)
+  - variant: stile del bottone (default: "primary")
+    - "primary": sfondo bianco con hover giallo
+    - "secondary": sfondo giallo con hover giallo scuro
+  - className: classi CSS aggiuntive (opzionale)
+  - target: target del link (default: "_self", usa "_blank" per nuova tab)
+
+  Uso come macro:
+  {% from "components/button.njk" import button %}
+  {{ button("Click Here", "/link") }}
+  {{ button("Scopri di più", "https://example.com", variant="secondary") }}
+#}
+
+{% macro button(text, url, variant="primary", className="", target="_self") %}
+{# Bottone stile neobrutalista con bordo nero, ombra e hover effect #}
+<a
+  href="{{ url }}"
+  {% if target %} target="{{ target }}"{% endif %}
+  {% if target == "_blank" %} rel="noopener noreferrer"{% endif %}
+  class="inline-block border-2 border-black bg-yellow-300 hover:bg-yellow-400 px-5 py-3 font-semibold text-black shadow-[4px_4px_0_0] focus:ring-2 focus:ring-yellow-300 focus:outline-0 {{ className }}"
+>{{ text }}</a>
+{% endmacro %}

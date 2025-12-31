@@ -27,19 +27,19 @@ description: Pagina principale del sito
 
 <hr>
 
-## Ogni giorno un tool per migliorarti la vita
-
-DailyTool è la mia nuova newsletter quotidiana. Ogni mattina nella tua mail un tool che può svoltarti la giornata.
-
 {{ dailytool() }}
 
-## Cosa possiamo fare insieme?
+<!-- ## Cosa possiamo fare insieme? -->
 
-### 🎉 Sblocca il Content Creator che è in te!
-
-L'unico corso di cui hai davvero bisogno per cominciare a creare contenuti. Fa per te se non riesci a cominciare, sei rimasto impantanato oppure senti di procedere col freno a mano tirato.
-
-[Scopri di più](/corso/sblocca)
+{{ card(
+  image="/assets/images/sblocca.png",
+  imageAlt="Sblocca il Content Creator che è in te",
+  headerText="Sblocca il Content Creator che è in te!",
+  title="L'unico corso di cui hai davvero bisogno per cominciare a creare contenuti.",
+  description="Fa per te se non riesci a cominciare, sei rimasto impantanato oppure senti di procedere col freno a mano tirato",
+  buttonText="Scopri di più",
+  buttonUrl="https://cira.link/sblocca"
+) }}
 
 ## Dove vuoi seguirmi?
 
