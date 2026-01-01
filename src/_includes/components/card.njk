@@ -2,76 +2,241 @@
   Componente Card Riutilizzabile (Stile Neobrutalista)
 
   Parametri:
-  - image: percorso dell'immagine (opzionale, alternativa a video/iframe)
-  - video: percorso del video (opzionale, alternativa a image/iframe)
-  - iframe: URL iframe da embeddare (opzionale, alternativa a image/video)
+  - image: percorso immagine (opzionale, alt. a video/iframe)
+  - video: percorso video (opzionale, alt. a image/iframe)
+  - iframe: URL iframe (opzionale, alt. a image/video)
   - iframeHeight: altezza iframe (default: "320px")
-  - imageAlt: testo alternativo per l'immagine
-  - headerText: testo dell'header giallo (opzionale, default: titolo o vuoto)
+  - imageAlt: testo alternativo per immagine
+  - headerText: testo header giallo (default: titolo o vuoto)
   - title: titolo della card (opzionale)
-  - description: descrizione/testo della card (opzionale)
-  - buttonText: testo del pulsante (opzionale)
-  - buttonUrl: URL del pulsante (opzionale)
-  - buttonVariant: variante stile bottone - "primary" o "secondary" (default: "primary")
-  - cardUrl: URL per rendere l'intera card cliccabile (opzionale)
-  - className: classi CSS aggiuntive per la card (opzionale)
-  - imageClassName: classi CSS aggiuntive per l'immagine (opzionale)
-  - videoClassName: classi CSS aggiuntive per il video (opzionale)
-  - showHeader: mostra header giallo (default: true se headerText o title)
+  - description: descrizione della card (opzionale)
+  - buttonText: testo pulsante (opzionale)
+  - buttonUrl: URL pulsante (opzionale)
+  - buttonVariant: "primary" o "secondary" (default: "primary")
+  - cardUrl: URL card cliccabile (opzionale)
+  - className: classi CSS aggiuntive card (opzionale)
+  - imageClassName: classi CSS aggiuntive immagine (opzionale)
+  - videoClassName: classi CSS aggiuntive video (opzionale)
+  - showHeader: mostra header (default: true se headerText/title)
+  - mediaPosition: "top" (default), "bottom", "left", "right"
+  - mediaBreakpoint: "sm", "md" (default), "lg", "xl"
+  - mediaWidth: "1/3" (default), "1/2", "2/5", "1/4"
 
-  Uso come macro:
-  {% from "components/card.njk" import card %}
-  {{ card(video="/path/to/video.mp4", headerText="Titolo") }}
-  {{ card(iframe="https://example.com/embed", headerText="Newsletter", iframeHeight="320px") }}
+  Uso: {% raw %}{% from "components/card.njk" import card %}{% endraw %}
+
+  Esempi:
+  - card(video="/path.mp4", headerText="Titolo")
+  - card(image="/img.jpg", mediaPosition="bottom")
+  - card(image="/img.jpg", mediaPosition="left")
+  - card(video="/vid.mp4", mediaPosition="right", mediaWidth="1/2")
+  - card(iframe="https://example.com", mediaPosition="left")
 #}
 
-{% from "components/button.njk" import button %}
-
-{% macro card(video="", image="", iframe="", iframeHeight="320px", imageAlt="", headerText="", title="", description="", buttonText="", buttonUrl="", buttonVariant="primary", cardUrl="", className="", imageClassName="", videoClassName="", showHeader=true) %}
-{#
-  Container principale della card con stile neobrutalista:
-  - border-2: bordo nero spesso 2px
-  - shadow-[4px_4px_0_0,8px_8px_0_0]: doppia ombra per effetto 3D caratteristico
-  - bg-white: sfondo bianco
-  - not-prose: disabilita stili Typography di Tailwind su tutta la card
-#}
-<article class="border-2 my-8 border-black bg-white shadow-[4px_4px_0_0,8px_8px_0_0] not-prose overflow-hidden rounded-default {{ className }}">
-
-  {# Header con colore primario con titolo e box decorativi (opzionale) - tutto su una riga per evitare processing Markdown #}
-  {% if showHeader !== false and (headerText or title) %}<div class="p-3 bg-primary"><div class="flex items-center justify-between"><strong class="text-xs/none font-bold uppercase">{{ headerText or title }}</strong><div class="flex gap-1"><div class="size-3 border-2 border-black bg-white"></div><div class="size-3 border-2 border-black bg-white"></div></div></div></div>{% endif %}
-
-  {#
-    Container video/immagine/iframe:
-    - bg-black: sfondo nero nasconde il micro-pixel a destra del video
-    - overflow-hidden: taglia eventuali overflow
-    - leading-[0]: rimuove line-height per eliminare spazi verticali
-    - border-t-2: bordo superiore solo se c'è header
-  #}
-  {% if video %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-black overflow-hidden leading-[0]">{# Video auto-play in loop, block elimina spazio inline sotto l'elemento #}<video autoplay loop muted playsinline class="w-full h-auto block max-w-full {{ videoClassName }}"><source src="{{ video }}" type="video/mp4"></video></div>{% elif image %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-black overflow-hidden leading-[0]">{# Immagine lazy-loaded, block elimina spazio inline #}<img src="{{ image }}" alt="{{ imageAlt or title or 'Immagine card' }}" class="w-full h-auto block max-w-full {{ imageClassName }}" loading="lazy"></div>{% elif iframe %}<div class="{% if showHeader !== false and (headerText or title) %}border-t-2 {% endif %}border-black bg-white overflow-hidden leading-[0]">{# Iframe embeddato #}<iframe src="{{ iframe }}" width="100%" height="{{ iframeHeight }}" style="border:0; background:transparent; margin: 0; padding: 0;" frameborder="0" scrolling="no" class="block max-w-full"></iframe></div>{% endif %}
-
-  {# Sezione testo e bottone (opzionale) #}
-  {% if title or description or buttonText %}
-  <div class="border-t-2 border-black p-4 sm:p-6">
-    {# Titolo interno (mostrato sempre se presente) #}
-    {% if title %}
-      <h3 class="text-lg font-semibold text-black font-accent">{{ title }}</h3>
-    {% endif %}
-
-    {# Descrizione con text-pretty per miglior formattazione #}
-    {% if description %}
-      <p class="mt-2 text-sm text-pretty">{{ description }}</p>
-    {% endif %}
-
-    {# Bottone call-to-action stile neobrutalista #}
-    {% if buttonText and buttonUrl %}
-      <div>
-        <a
-          href="{{ buttonUrl }}"
-          class="inline-block border-2 border-black px-5 py-3 font-semibold text-black shadow-[4px_4px_0_0] focus:outline-0 transition-colors duration-300 bg-primary hover:bg-primary-dark focus-ring-primary rounded-default"
-        >{{ buttonText }}</a>
-      </div>
-    {% endif %}
+{# Macro per renderizzare media (elimina duplicazione) #}
+{% macro renderMedia(
+  type,
+  src,
+  alt,
+  mediaClass,
+  mediaElClass,
+  iframeHeight
+) %}
+  {%- if type -%}
+  <div class="{{ mediaClass }}">
+    {%- if type == "video" -%}
+    <video autoplay loop muted playsinline
+      class="{{ mediaElClass }}">
+      <source src="{{ src }}" type="video/mp4">
+    </video>
+    {%- elif type == "image" -%}
+    <img src="{{ src }}" alt="{{ alt }}"
+      class="{{ mediaElClass }}" loading="lazy">
+    {%- elif type == "iframe" -%}
+    <iframe src="{{ src }}" width="100%"
+      height="{{ iframeHeight }}"
+      style="border:0; background:transparent; margin:0; padding:0;"
+      frameborder="0" scrolling="no" class="block max-w-full">
+    </iframe>
+    {%- endif -%}
   </div>
-  {% endif %}
+  {%- endif -%}
+{% endmacro %}
+
+{% macro card(
+  video="",
+  image="",
+  iframe="",
+  iframeHeight="320px",
+  imageAlt="",
+  headerText="",
+  title="",
+  description="",
+  buttonText="",
+  buttonUrl="",
+  buttonVariant="primary",
+  cardUrl="",
+  className="",
+  imageClassName="",
+  videoClassName="",
+  showHeader=true,
+  mediaPosition="top",
+  mediaBreakpoint="md",
+  mediaWidth="1/3"
+) %}
+
+{# Variabili base #}
+{% set mediaType = (
+  "video" if video else
+  ("image" if image else ("iframe" if iframe else ""))
+) %}
+{% set mediaSrc = video or image or iframe %}
+{% set bp = mediaBreakpoint + ":" %}
+{% set hasHeader = (
+  showHeader !== false and (headerText or title)
+) %}
+
+{# Mappa configurazione per posizione media #}
+{% set layoutMap = {
+  "top": {
+    "container": "flex flex-col",
+    "mediaWidth": "w-full",
+    "mediaOrder": "",
+    "contentOrder": "",
+    "mediaBorder": "border-b-2",
+    "contentBorder": "",
+    "mediaResponsive": "",
+    "contentResponsive": ""
+  },
+  "bottom": {
+    "container": "flex flex-col",
+    "mediaWidth": "w-full",
+    "mediaOrder": "order-2",
+    "contentOrder": "order-1",
+    "mediaBorder": "border-t-2",
+    "contentBorder": "",
+    "mediaResponsive": "",
+    "contentResponsive": ""
+  },
+  "left": {
+    "container": "flex flex-col " + bp + "flex-row",
+    "mediaWidth": "w-full " + bp + "w-" + mediaWidth,
+    "mediaOrder": "",
+    "contentOrder": "",
+    "mediaBorder": "border-b-2 " + bp + "border-b-0 " + bp + "border-r-2",
+    "contentBorder": "",
+    "mediaResponsive": bp + "self-stretch " + bp + "h-full",
+    "contentResponsive": bp + "flex-1 " + bp + "flex " +
+                          bp + "flex-col " + bp + "justify-center"
+  },
+  "right": {
+    "container": "flex flex-col " + bp + "flex-row-reverse",
+    "mediaWidth": "w-full " + bp + "w-" + mediaWidth,
+    "mediaOrder": "",
+    "contentOrder": "",
+    "mediaBorder": "border-b-2 " + bp + "border-b-0 " + bp + "border-l-2",
+    "contentBorder": "",
+    "mediaResponsive": bp + "self-stretch " + bp + "h-full",
+    "contentResponsive": bp + "flex-1 " + bp + "flex " +
+                          bp + "flex-col " + bp + "justify-center"
+  }
+} %}
+
+{% set layout = layoutMap[mediaPosition] %}
+
+{# Costruisci classi media #}
+{% set bgColor = (
+  "bg-white" if mediaType == "iframe" else "bg-black"
+) %}
+{% set mediaClass = (
+  layout.mediaWidth + " " + layout.mediaBorder +
+  " border-black " + bgColor + " overflow-hidden " +
+  layout.mediaOrder
+) %}
+{% if mediaPosition == "left" or mediaPosition == "right" %}
+  {% set mediaClass = mediaClass + " " + layout.mediaResponsive %}
+{% else %}
+  {% set mediaClass = mediaClass + " leading-[0]" %}
+{% endif %}
+
+{# Costruisci classi elemento media (video/img) #}
+{% set baseElClass = (
+  "w-full block max-w-full " +
+  (videoClassName if mediaType == "video" else imageClassName)
+) %}
+{% if mediaPosition == "left" or mediaPosition == "right" %}
+  {% set mediaElClass = (
+    baseElClass + " " + bp + "object-cover"
+  ) %}
+{% else %}
+  {% set mediaElClass = baseElClass + " h-auto" %}
+{% endif %}
+
+{# Costruisci classi content
+   ATTENZIONE: NON aggiungere 'w-full' qui - crea conflitto con flex-1
+   nei layout orizzontali. 'prose' ha max-width implicita, quindi serve
+   'max-w-none' per evitare limitazioni indesiderate con flex-1.
+#}
+{% set contentClass = (
+  layout.contentBorder + " border-black p-4 sm:p-6 max-w-none " +
+  layout.contentOrder + " " + layout.contentResponsive
+) %}
+
+{# Container card - inline per evitare tag <p> da Markdown #}
+<article class="w-full border-2 my-8 border-black bg-white
+  shadow-[4px_4px_0_0,8px_8px_0_0] not-prose overflow-hidden
+  rounded-default {{ className }}">
+{%- if hasHeader -%}
+<div class="p-3 bg-primary border-b-2 border-black">
+  <div class="flex items-center justify-between">
+    <strong class="text-xs/none font-bold uppercase">
+      {{- headerText or title -}}
+    </strong>
+    <div class="flex gap-1">
+      <div class="size-3 border-2 border-black bg-white"></div>
+      <div class="size-3 border-2 border-black bg-white"></div>
+    </div>
+  </div>
+</div>
+{%- endif -%}
+
+<div class="{{ layout.container }}">
+  {{- renderMedia(
+    mediaType,
+    mediaSrc,
+    imageAlt or title or 'Immagine card',
+    mediaClass,
+    mediaElClass,
+    iframeHeight
+  ) -}}
+
+  {%- if title or description or buttonText -%}
+  <div class="{{ contentClass }}">
+     {%- if title or description -%}
+    <div class="prose">
+      {%- if title -%}
+    <h3 class="text-lg font-semibold text-black font-accent">
+      {{- title -}}
+    </h3>
+    {%- endif -%}
+    {%- if description -%}
+    {{ description }}
+    {%- endif -%}
+    </div>
+    {%- endif -%}
+    {%- if buttonText and buttonUrl -%}
+    <div class="mt-5 not-prose">
+      <a href="{{ buttonUrl }}"
+        class="inline-block border-2 border-black px-5 py-3
+        font-semibold text-black shadow-[4px_4px_0_0]
+        focus:outline-0 transition-colors duration-300
+        bg-primary hover:bg-primary-dark
+        focus-ring-primary rounded-default">
+        {{- buttonText -}}
+      </a>
+    </div>
+    {%- endif -%}
+  </div>
+  {%- endif -%}
+</div>
 </article>
 {% endmacro %}
