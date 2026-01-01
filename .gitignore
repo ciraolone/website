@@ -5,6 +5,8 @@ yarn.lock
 
 # Andrea
 TODO.md
+.standards
+CLAUDE.md
 
 # Build output
 _site/
