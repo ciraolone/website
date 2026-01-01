@@ -1,22 +1,21 @@
 ---
 layout: base.njk
-title: Andrea Ciraolo. Crea contenuti che lasciano il segno
+title:
 description: Pagina principale del sito
 ---
 
 {% from "components/card.njk" import card %}
-{% from "components/dailytool.njk" import dailytool %}
 
 <!-- Sezione Hero: layout largo a due colonne -->
 <section class="w-full px-4 py-8">
   <div class="max-w-4xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="flex flex-col justify-center">
-        <p class="title">Ciao! 👋</p>
+        <p class="title">Ciao!👋</p>
         <p class="subtitle">Mi chiamo Andrea e faccio video per farti imparare le cose.</p>
       </div>
       <div class="flex justify-end">
-        <div class="max-w-80">{{ card(video="/assets/videos/andrea.mp4", headerText="Andrea Ciraolo", className="") }}</div>
+        <div class="max-w-80">{{ card(video="/assets/videos/andrea.mp4", className="") }}</div>
       </div>
     </div>
   </div>
@@ -25,64 +24,76 @@ description: Pagina principale del sito
 <!-- Sezioni contenuto: larghezza standard per leggibilità -->
 <div class="container mx-auto px-4 py-8 max-w-4xl prose prose-lg">
 
----
-
-{{ dailytool() }}
-
-<!-- ## Cosa possiamo fare insieme? -->
+<!-- --- -->
 
 {{ card(
-  image="/assets/images/sblocca.png",
+  image="/assets/images/dailytool-text.png",
+  mediaPosition="right",
+  imageAlt="Un tool al giorno",
+  headerText="DailyTool",
+  title="Un tool al giorno!",
+  description="DailyTool è la mia nuova newsletter quotidiana. Ogni mattina nella tua mail un tool che può svoltarti la giornata.",
+  buttonText="Scopri di più",
+  buttonUrl="https://cira.link/sblocca",
+  className="my-6"
+) }}
+
+{{ card(
+  image="/assets/images/sblocca_sq.png",
+  mediaPosition="left",
   imageAlt="Sblocca il Content Creator che è in te",
-  headerText="Sblocca il Content Creator che è in te!",
-  title="L'unico corso di cui hai davvero bisogno per cominciare a creare contenuti.",
+  headerText="Sblocca il Content Creator che è in te",
+  title="L'unico corso di cui hai bisogno per cominciare!",
   description="Fa per te se non riesci a cominciare, sei rimasto impantanato oppure senti di procedere col freno a mano tirato",
   buttonText="Scopri di più",
-  buttonUrl="https://cira.link/sblocca"
+  buttonUrl="https://cira.link/sblocca",
+  className="my-6"
 ) }}
 
 ## Dove vuoi seguirmi?
 
-### Youtube
+<div class="grid grid-cols-2 md:grid-cols-3  lg:grid-cols-3 gap-6">
 
-![Youtube Andrea Ciraolo](https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64346e969b83454294578678_youtube.avif)
+{{ card(
+  logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64346e969b83454294578678_youtube.avif",
+  cardUrl="https://cira.link/youtube",
+  imageAlt="Youtube",
+  title="Youtube",
+  description="Su YouTube realizzo tutorial, corsi gratuiti e video per aiutarti a migliorare la comunicazione online."
+) }}
 
-Su YouTube realizzo tutorial, corsi gratuiti e video per aiutarti a migliorare la comunicazione online.
+{{ card(
+  logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64346e964c12c420690e91b2_telegram.avif",
+  imageAlt="Telegram",
+  cardUrl="https://cira.link/telegram",
+  title="Telegram",
+  description="Su Telegram c'è un rapporto un po' più personale con me. Qui puoi dare un'occhiata al mio canale."
+) }}
 
-[Youtube](https://www.cira.link/youtube)
+{{ card(
+  logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64346e96862d253d23916196_instagram.avif",
+  imageAlt="Instagram",
+  cardUrl="https://cira.link/instagram",
+  title="Instagram",
+  description="Su Instagram dialogo con la community e mostro, di tanto in tanto, il dietro le quinte del mio lavoro."
+) }}
 
-### Telegram
+{{ card(
+  logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64346e969b8345406b578679_spotify.avif",
+  imageAlt="Negati",
+  cardUrl="https://cira.link/negati",
+  title="Negati",
+  description="Il podcast dove, con Vale e Matte, vi raccontiamo la nostra esperienza da imprenditori."
+) }}
 
-![Telegram Andrea Ciraolo](https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64346e964c12c420690e91b2_telegram.avif)
+{{ card(
+  logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64346e969b8345406b578679_spotify.avif",
+  imageAlt="Passione Podcast",
+  cardUrl="https://cira.link/passionepodcast",
+  title="Passione Podcast",
+  description="Il podcast su di me che imparo a fare un podcast, partendo da zero."
+) }}
 
-Su Telegram c'è un rapporto un po' più personale con me. Qui puoi dare un'occhiata al mio canale.
-
-[Telegram](https://www.cira.link/telegram)
-
-### Instagram
-
-![Instagram Andrea Ciraolo](https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64346e96862d253d23916196_instagram.avif)
-
-Su Instagram dialogo con la community e mostro, di tanto in tanto, il dietro le quinte del mio lavoro.
-
-[Instagram](https://www.cira.link/instagram)
-
-### Organizzazione per Negati
-
-![Spotify Organizzazione per Negati](https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64346e969b8345406b578679_spotify.avif)
-
-Il podcast dove, con Vale e Matte, vi raccontiamo la nostra esperienza da imprenditori.
-
-[Organizzazione per Negati](https://www.cira.link/negati)
-
-### Passione Podcast
-
-![Passione Podcast](https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64346e969b8345406b578679_spotify.avif)
-
-Il podcast su di me che imparo a fare un podcast, partendo da zero.
-
-[Passione Podcast](https://www.cira.link/passione-podcast)
-
-Grazie per essere passato - o passata - da queste parti. Io sono Andrea, il mio numero di Partita IVA è 02699750184 e non ho ancora capito bene perché te lo devo dire qui. Volendo, qui puoi anche leggere [**le Privacy e Cookie Policies**](https://www.ciraolo.me/privacy/). A presto!
+</div>
 
 </div>

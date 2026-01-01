@@ -7,7 +7,8 @@
   - iframe: URL iframe (opzionale, alt. a image/video)
   - iframeHeight: altezza iframe (default: "320px")
   - imageAlt: testo alternativo per immagine
-  - headerText: testo header giallo (default: titolo o vuoto)
+  - logo: percorso logo/icona (opzionale, mostrato sopra al titolo)
+  - headerText: testo header giallo (opzionale, mostra header solo se presente)
   - title: titolo della card (opzionale)
   - description: descrizione della card (opzionale)
   - buttonText: testo pulsante (opzionale)
@@ -17,10 +18,10 @@
   - className: classi CSS aggiuntive card (opzionale)
   - imageClassName: classi CSS aggiuntive immagine (opzionale)
   - videoClassName: classi CSS aggiuntive video (opzionale)
-  - showHeader: mostra header (default: true se headerText/title)
+  - showHeader: mostra header (default: true se headerText presente)
   - mediaPosition: "top" (default), "bottom", "left", "right"
-  - mediaBreakpoint: "sm", "md" (default), "lg", "xl"
-  - mediaWidth: "1/3" (default), "1/2", "2/5", "1/4"
+    Mobile (<640px): sempre verticale
+    Desktop (≥640px): orizzontale con media larghezza fissa 320px (w-64)
 
   Uso: {% raw %}{% from "components/card.njk" import card %}{% endraw %}
 
@@ -28,7 +29,7 @@
   - card(video="/path.mp4", headerText="Titolo")
   - card(image="/img.jpg", mediaPosition="bottom")
   - card(image="/img.jpg", mediaPosition="left")
-  - card(video="/vid.mp4", mediaPosition="right", mediaWidth="1/2")
+  - card(video="/vid.mp4", mediaPosition="right")
   - card(iframe="https://example.com", mediaPosition="left")
 #}
 
@@ -68,6 +69,7 @@
   iframe="",
   iframeHeight="320px",
   imageAlt="",
+  logo="",
   headerText="",
   title="",
   description="",
@@ -79,9 +81,7 @@
   imageClassName="",
   videoClassName="",
   showHeader=true,
-  mediaPosition="top",
-  mediaBreakpoint="md",
-  mediaWidth="1/3"
+  mediaPosition="top"
 ) %}
 
 {# Variabili base #}
@@ -90,12 +90,14 @@
   ("image" if image else ("iframe" if iframe else ""))
 ) %}
 {% set mediaSrc = video or image or iframe %}
-{% set bp = mediaBreakpoint + ":" %}
 {% set hasHeader = (
-  showHeader !== false and (headerText or title)
+  showHeader !== false and headerText
 ) %}
 
-{# Mappa configurazione per posizione media #}
+{# Mappa configurazione per posizione media
+   Breakpoint: sm (640px) - mobile verticale, desktop orizzontale
+   Layout orizzontale: media larghezza fissa 320px (w-64), content occupa spazio rimanente (flex-1)
+#}
 {% set layoutMap = {
   "top": {
     "container": "flex flex-col",
@@ -118,26 +120,24 @@
     "contentResponsive": ""
   },
   "left": {
-    "container": "flex flex-col " + bp + "flex-row",
-    "mediaWidth": "w-full " + bp + "w-" + mediaWidth,
+    "container": "flex flex-col sm:flex-row",
+    "mediaWidth": "w-full sm:w-64",
     "mediaOrder": "",
     "contentOrder": "",
-    "mediaBorder": "border-b-2 " + bp + "border-b-0 " + bp + "border-r-2",
+    "mediaBorder": "border-b-2 sm:border-b-0 sm:border-r-2",
     "contentBorder": "",
-    "mediaResponsive": bp + "self-stretch " + bp + "h-full",
-    "contentResponsive": bp + "flex-1 " + bp + "flex " +
-                          bp + "flex-col " + bp + "justify-center"
+    "mediaResponsive": "sm:self-stretch sm:h-full",
+    "contentResponsive": "sm:flex-1 sm:flex sm:flex-col sm:justify-center"
   },
   "right": {
-    "container": "flex flex-col " + bp + "flex-row-reverse",
-    "mediaWidth": "w-full " + bp + "w-" + mediaWidth,
+    "container": "flex flex-col sm:flex-row-reverse",
+    "mediaWidth": "w-full sm:w-64",
     "mediaOrder": "",
     "contentOrder": "",
-    "mediaBorder": "border-b-2 " + bp + "border-b-0 " + bp + "border-l-2",
+    "mediaBorder": "border-b-2 sm:border-b-0 sm:border-l-2",
     "contentBorder": "",
-    "mediaResponsive": bp + "self-stretch " + bp + "h-full",
-    "contentResponsive": bp + "flex-1 " + bp + "flex " +
-                          bp + "flex-col " + bp + "justify-center"
+    "mediaResponsive": "sm:self-stretch sm:h-full",
+    "contentResponsive": "sm:flex-1 sm:flex sm:flex-col sm:justify-center"
   }
 } %}
 
@@ -164,9 +164,7 @@
   (videoClassName if mediaType == "video" else imageClassName)
 ) %}
 {% if mediaPosition == "left" or mediaPosition == "right" %}
-  {% set mediaElClass = (
-    baseElClass + " " + bp + "object-cover"
-  ) %}
+  {% set mediaElClass = baseElClass + " sm:object-cover" %}
 {% else %}
   {% set mediaElClass = baseElClass + " h-auto" %}
 {% endif %}
@@ -182,14 +180,14 @@
 ) %}
 
 {# Container card - inline per evitare tag <p> da Markdown #}
-<article class="w-full border-2 my-8 border-black bg-white
-  shadow-[4px_4px_0_0,8px_8px_0_0] not-prose overflow-hidden
-  rounded-default {{ className }}">
+<article class="w-full border-2 border-black bg-white shadow-[4px_4px_0_0,8px_8px_0_0] not-prose overflow-hidden rounded-default {{ className }} {{ 'relative hover:shadow-[6px_6px_0_0,12px_12px_0_0] transition-shadow cursor-pointer' if cardUrl else '' }}">{%- if cardUrl -%}
+<a href="{{ cardUrl }}" class="absolute inset-0 z-10" aria-label="{{ title or 'Card link' }}"></a>
+{%- endif -%}
 {%- if hasHeader -%}
 <div class="p-3 bg-primary border-b-2 border-black">
   <div class="flex items-center justify-between">
     <strong class="text-xs/none font-bold uppercase">
-      {{- headerText or title -}}
+      {{- headerText -}}
     </strong>
     <div class="flex gap-1">
       <div class="size-3 border-2 border-black bg-white"></div>
@@ -209,13 +207,16 @@
     iframeHeight
   ) -}}
 
-  {%- if title or description or buttonText -%}
+  {%- if title or description or buttonText or logo -%}
   <div class="{{ contentClass }}">
-     {%- if title or description -%}
+     {%- if logo or title or description -%}
     <div class="prose">
-      {%- if title -%}
+    {%- if logo -%}
+    <img src="{{ logo }}" alt="{{ title or 'Logo' }}" class="w-12 h-12 mb-3 object-contain mb-3">
+    {%- endif -%}
+    {%- if title -%}
     <h3 class="text-lg font-semibold text-black font-accent">
-      {{- title -}}
+    {{- title -}}
     </h3>
     {%- endif -%}
     {%- if description -%}
@@ -224,9 +225,9 @@
     </div>
     {%- endif -%}
     {%- if buttonText and buttonUrl -%}
-    <div class="mt-5 not-prose">
+    <div class="mt-5 not-prose {{ 'text-right' if mediaPosition == 'left' else '' }}">
       <a href="{{ buttonUrl }}"
-        class="inline-block border-2 border-black px-5 py-3
+        class="relative z-20 inline-block border-2 border-black px-5 py-3
         font-semibold text-black shadow-[4px_4px_0_0]
         focus:outline-0 transition-colors duration-300
         bg-primary hover:bg-primary-dark
