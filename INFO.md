@@ -1,8 +1,6 @@
 # Documentazione Progetto Eleventy + Tailwind CSS
 
-Questo documento descrive l'architettura, le configurazioni e le best practices implementate nel progetto.
-
----
+Sito web realizzato con Eleventy e Tailwind CSS, deployato su Cloudflare pages.
 
 ## 📚 Risorse Principali
 
@@ -10,4 +8,3 @@ Questo documento descrive l'architettura, le configurazioni e le best practices 
 - **[Tailwind CSS v4](https://tailwindcss.com/docs/)** - Framework CSS utility-first
 - **[Nunjucks](https://mozilla.github.io/nunjucks/)** - Template Engine
 - **[Web.dev Best Practices](https://web.dev/)** - Performance e SEO
-

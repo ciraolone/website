@@ -5,7 +5,7 @@ description: Pagina principale del sito
 hero:
   title: "Ciao!👋"
   subtitle: "Mi chiamo Andrea e faccio video per farti imparare le cose."
-  video: "/assets/videos/andrea.mp4"
+  image: "/assets/images/andrea.png"
 ---
 
 {% from "components/card.njk" import card %}
