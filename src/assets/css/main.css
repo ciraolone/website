@@ -288,4 +288,10 @@
     font-family: var(--font-accent);
     font-size: 0.7em;
   }
+
+  /* === FOOTER === */
+  footer {
+    @apply border-t-2 border-black py-6 mt-12 text-gray-700;
+    background-color: var(--color-bg-alt);
+  }
 }
