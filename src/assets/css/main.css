@@ -53,9 +53,8 @@
   --border-color: #000000;
 
   /* === Shadows (Neobrutalist Style) === */
-  --shadow-brutal-sm: 4px 4px 0 0 rgb(0 0 0);
-  --shadow-brutal-md: 4px 4px 0 0 rgb(0 0 0), 8px 8px 0 0 rgb(0 0 0);
-  --shadow-brutal-lg: 6px 6px 0 0 rgb(0 0 0), 12px 12px 0 0 rgb(0 0 0);
+  /* Sovrascriviamo le shadow di Tailwind con lo stile neobrutalist */
+  --shadow: 4px 4px 0 0 rgb(0 0 0);
 
   /* === Transitions === */
   --transition-fast: 150ms;
@@ -114,12 +113,12 @@
 
   /* === CARD COMPONENT (moderna con hover) === */
   .card {
-    @apply bg-white overflow-hidden shadow-md;
+    @apply bg-white overflow-hidden shadow;
     border-radius: var(--radius-default);
   }
 
   .card-interactive {
-    @apply transition-all duration-300 transform hover:-translate-y-2 hover:shadow-xl;
+    @apply transition-all duration-300 transform hover:-translate-y-2;
   }
 
   .card-body {
@@ -144,13 +143,11 @@
 
   /* === BRUTAL COMPONENT (neobrutalist article box) === */
   .brutal-box {
-    @apply border-2 border-black bg-white my-8;
-    box-shadow: var(--shadow-brutal-md);
+    @apply border-2 border-black bg-white my-8 shadow;
   }
 
   .brutal-box-sm {
-    @apply border-2 border-black bg-white;
-    box-shadow: var(--shadow-brutal-sm);
+    @apply border-2 border-black bg-white shadow;
   }
 
   .brutal-header {
@@ -182,9 +179,8 @@
   }
 
   .btn-brutal {
-    @apply block border-2 border-black bg-white p-4 sm:p-6;
+    @apply block border-2 border-black bg-white p-4 sm:p-6 shadow;
     @apply focus:outline-0;
-    box-shadow: var(--shadow-brutal-sm);
     transition: background-color 300ms;
   }
 

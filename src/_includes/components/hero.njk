@@ -43,12 +43,12 @@
       <div class="flex justify-center md:justify-end order-1 md:order-2">
         <div class="w-full xs:max-w-80">
           {%- if video -%}
-          <video autoplay loop muted playsinline class="w-full rounded-default border-2 border-black shadow-[4px_4px_0_0,8px_8px_0_0]">
+          <video autoplay loop muted playsinline class="w-full rounded-default border-2 border-black shadow">
             <source src="{{ video }}" type="video/mp4">
           </video>
           {%- elif image -%}
           <img src="{{ image }}" alt="{{ imageAlt or title or 'Hero image' }}"
-            class="w-full rounded-default border-2 border-black shadow-[4px_4px_0_0,8px_8px_0_0]" loading="lazy">
+            class="w-full rounded-default border-2 border-black shadow" loading="lazy">
           {%- endif -%}
         </div>
       </div>
