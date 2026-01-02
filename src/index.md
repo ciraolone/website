@@ -1,30 +1,14 @@
 ---
 layout: base.njk
-title:
+title: Ciraolone
 description: Pagina principale del sito
+hero:
+  title: "Ciao!👋"
+  subtitle: "Mi chiamo Andrea e faccio video per farti imparare le cose."
+  video: "/assets/videos/andrea.mp4"
 ---
 
 {% from "components/card.njk" import card %}
-
-<!-- Sezione Hero: layout largo a due colonne -->
-<section class="w-full px-4 py-8">
-  <div class="max-w-4xl mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="flex flex-col justify-center">
-        <p class="title">Ciao!👋</p>
-        <p class="subtitle">Mi chiamo Andrea e faccio video per farti imparare le cose.</p>
-      </div>
-      <div class="flex justify-end">
-        <div class="max-w-80">{{ card(video="/assets/videos/andrea.mp4", className="") }}</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Sezioni contenuto: larghezza standard per leggibilità -->
-<div class="container mx-auto px-4 py-8 max-w-4xl prose prose-lg">
-
-<!-- --- -->
 
 {{ card(
   image="/assets/images/dailytool-text.png",
@@ -93,7 +77,5 @@ description: Pagina principale del sito
   title="Passione Podcast",
   description="Il podcast su di me che imparo a fare un podcast, partendo da zero."
 ) }}
-
-</div>
 
 </div>

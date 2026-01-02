@@ -1,0 +1,60 @@
+{#
+  Componente Hero Riutilizzabile
+
+  Parametri:
+  - title: titolo principale (obbligatorio)
+  - subtitle: sottotitolo (opzionale)
+  - image: percorso immagine (opzionale, alt. a video)
+  - video: percorso video (opzionale, alt. a image)
+  - imageAlt: testo alternativo per immagine (opzionale)
+  - className: classi CSS aggiuntive per la sezione (opzionale)
+
+  Uso: {% raw %}{% from "components/hero.njk" import hero %}{% endraw %}
+
+  Esempi:
+  - hero(title="Ciao!", subtitle="Benvenuto")
+  - hero(title="Ciao!", video="/path.mp4", mediaPosition="right")
+  - hero(title="Ciao!", image="/img.jpg", mediaPosition="left")
+#}
+
+{% macro hero(
+  title="",
+  subtitle="",
+  image="",
+  video="",
+  imageAlt="",
+  className=""
+) %}
+
+{% set hasMedia = video or image %}
+
+<section class="w-full py-8 {{ className }}">
+  <div class="content-container">
+    <div class="grid grid-cols-1 items-center {{ 'md:grid-cols-2 gap-6' if hasMedia else '' }}">
+      <div class="flex flex-col justify-center order-2 md:order-1">
+        {%- if title -%}
+        <p class="title">{{ title }}</p>
+        {%- endif -%}
+        {%- if subtitle -%}
+        <p class="subtitle">{{ subtitle }}</p>
+        {%- endif -%}
+      </div>
+      {%- if hasMedia -%}
+      <div class="flex justify-center md:justify-end order-1 md:order-2">
+        <div class="w-full xs:max-w-80">
+          {%- if video -%}
+          <video autoplay loop muted playsinline class="w-full rounded-default border-2 border-black shadow-[4px_4px_0_0,8px_8px_0_0]">
+            <source src="{{ video }}" type="video/mp4">
+          </video>
+          {%- elif image -%}
+          <img src="{{ image }}" alt="{{ imageAlt or title or 'Hero image' }}"
+            class="w-full rounded-default border-2 border-black shadow-[4px_4px_0_0,8px_8px_0_0]" loading="lazy">
+          {%- endif -%}
+        </div>
+      </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% endmacro %}

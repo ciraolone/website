@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="{{ site.language }}">
 {% include "components/head.njk" %}
+{% from "components/hero.njk" import hero as renderHero %}
+{% from "components/sidebar.njk" import sidebar as renderSidebar, sidebarMobileFeatures, sidebarMobileCta %}
 <body class="flex flex-col min-h-screen">
   {% include "components/navbar.njk" %}
 
   <main class="flex-1">
-    {{ content | safe }}
+    {# Hero: renderizzato se presente hero.title nel frontmatter #}
+    {%- if hero.title -%}
+    {{ renderHero(
+      title=hero.title,
+      subtitle=hero.subtitle,
+      video=hero.video,
+      image=hero.image,
+      imageAlt=hero.imageAlt,
+      className=hero.className
+    ) }}
+    {%- endif -%}
+
+    {# Content container #}
+    <div class="content-container py-8">
+      <div class="content prose prose-lg">
+        {{ content | safe }}
+      </div>
+      {% if sidebarData %}
+      <div class="sidebar hidden lg:block">
+        {{ renderSidebar(
+          price=sidebarData.price,
+          ctaText=sidebarData.ctaText,
+          ctaUrl=sidebarData.ctaUrl,
+          paymentNote=sidebarData.paymentNote,
+          urgencyNote=sidebarData.urgencyNote,
+          features=sidebarData.features,
+          secondaryTitle=sidebarData.secondaryTitle,
+          secondarySubtitle=sidebarData.secondarySubtitle,
+          secondaryFeatures=sidebarData.secondaryFeatures
+        ) }}
+      </div>
+      {# Mobile: features + CTA fixed #}
+      <div class="content lg:hidden mt-8">
+        {{ sidebarMobileFeatures(
+          features=sidebarData.features,
+          secondaryTitle=sidebarData.secondaryTitle,
+          secondarySubtitle=sidebarData.secondarySubtitle,
+          secondaryFeatures=sidebarData.secondaryFeatures
+        ) }}
+      </div>
+      {{ sidebarMobileCta(
+        price=sidebarData.price,
+        ctaText=sidebarData.ctaText,
+        ctaUrl=sidebarData.ctaUrl,
+        paymentNote=sidebarData.paymentNote,
+        urgencyNote=sidebarData.urgencyNote
+      ) }}
+      {% endif %}
+    </div>
   </main>
 
   {% include "components/footer.njk" %}
