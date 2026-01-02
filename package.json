@@ -8,7 +8,9 @@
     "build": "npm run build:css && eleventy",
     "serve": "concurrently \"npm run watch:css\" \"eleventy --serve\"",
     "dev": "npm run serve",
-    "clean": "rimraf _site"
+    "clean": "rimraf _site",
+    "lint:css": "stylelint 'src/**/*.css' --config .standards/lint/css/stylelint.config.mjs",
+    "lint:css:fix": "stylelint 'src/**/*.css' --config .standards/lint/css/stylelint.config.mjs --fix"
   },
   "keywords": [
     "eleventy",
@@ -19,6 +21,7 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@dreamsicle.io/stylelint-config-tailwindcss": "^1.1.2",
     "@tailwindcss/postcss": "^4.1.18",
     "@tailwindcss/typography": "^0.5.19",
     "autoprefixer": "^10.4.23",
@@ -27,6 +30,8 @@
     "nodemon": "^3.1.11",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
+    "stylelint": "^16.26.1",
+    "stylelint-config-standard": "^39.0.1",
     "tailwindcss": "^4.1.18"
   }
 }
