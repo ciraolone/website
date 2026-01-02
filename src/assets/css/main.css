@@ -262,4 +262,10 @@
     border-top-style: solid !important;
     border-top-color: var(--border-color) !important;
   }
+
+  /* === STRIKETHROUGH (markdown ~~testo~~) === */
+  s {
+    text-decoration-color: red;
+    text-decoration-thickness: var(--border-width);
+  }
 }

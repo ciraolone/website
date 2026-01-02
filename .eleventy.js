@@ -5,14 +5,15 @@
 
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
+const markdownItStrikethrough = require("markdown-it-strikethrough-alt");
 
 module.exports = function(eleventyConfig) {
   // ============================================
   // MARKDOWN CONFIGURATION
   // ============================================
-  // Configura markdown-it con il plugin per attributi (classi CSS)
-  // Usa delimitatori diversi da { } per evitare conflitti con Nunjucks
-  // Permette di usare sintassi come {: .class-name} o {: #id .class1 .class2}
+  // Configura markdown-it con plugin:
+  // - markdownItAttrs: attributi CSS (usa {:} per evitare conflitti con Nunjucks)
+  // - markdownItStrikethrough: barrato con ~~testo~~
   const markdownLibrary = markdownIt({
     html: true,
     breaks: true,
@@ -21,7 +22,7 @@ module.exports = function(eleventyConfig) {
     leftDelimiter: '{:',
     rightDelimiter: '}',
     allowedAttributes: ['id', 'class', 'src', 'alt', 'title', 'width', 'height']
-  });
+  }).use(markdownItStrikethrough);
   
   eleventyConfig.setLibrary("md", markdownLibrary);
   // ============================================
@@ -66,6 +67,13 @@ module.exports = function(eleventyConfig) {
   // ============================================
   // FILTERS
   // ============================================
+  // Filtro per renderizzare markdown inline (es. **grassetto**, *corsivo*)
+  // Usa renderInline per evitare wrapper <p> indesiderati nei componenti
+  eleventyConfig.addFilter('md', function(content) {
+    if (!content) { return ''; }
+    return markdownLibrary.renderInline(content);
+  });
+
   // Filtro per formattare date
   eleventyConfig.addFilter("dateFormat", function(date, format) {
     const d = new Date(date);

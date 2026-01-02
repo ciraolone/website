@@ -9,8 +9,8 @@
   - imageAlt: testo alternativo per immagine
   - logo: percorso logo/icona (opzionale, mostrato sopra al titolo)
   - headerText: testo header giallo (opzionale, mostra header solo se presente)
-  - title: titolo della card (opzionale)
-  - description: descrizione della card (opzionale)
+  - title: titolo della card (opzionale, supporta markdown inline)
+  - description: descrizione della card (opzionale, supporta markdown inline: **grassetto**, *corsivo*, ~~barrato~~, etc.)
   - buttonText: testo pulsante (opzionale)
   - buttonUrl: URL pulsante (opzionale)
   - buttonVariant: "primary" o "secondary" (default: "primary")
@@ -22,11 +22,13 @@
   - mediaPosition: "top" (default), "bottom", "left", "right"
     Mobile (<640px): sempre verticale
     Desktop (≥640px): orizzontale con media larghezza fissa 320px (w-64)
+  - textAlign: "left" (default), "center", "right"
 
   Uso: {% raw %}{% from "components/card.njk" import card %}{% endraw %}
 
   Esempi:
   - card(video="/path.mp4", headerText="Titolo")
+  - card(title="Centrato", textAlign="center")
   - card(image="/img.jpg", mediaPosition="bottom")
   - card(image="/img.jpg", mediaPosition="left")
   - card(video="/vid.mp4", mediaPosition="right")
@@ -81,7 +83,8 @@
   imageClassName="",
   videoClassName="",
   showHeader=true,
-  mediaPosition="top"
+  mediaPosition="top",
+  textAlign="left"
 ) %}
 
 {# Variabili base #}
@@ -143,6 +146,14 @@
 
 {% set layout = layoutMap[mediaPosition] %}
 
+{# Mappa allineamento testo #}
+{% set alignMap = {
+  "left": "text-left",
+  "center": "text-center",
+  "right": "text-right"
+} %}
+{% set alignClass = alignMap[textAlign] or "text-left" %}
+
 {# Costruisci classi media #}
 {% set bgColor = (
   "bg-white" if mediaType == "iframe" else "bg-black"
@@ -176,7 +187,7 @@
 #}
 {% set contentClass = (
   layout.contentBorder + " border-black p-4 sm:p-6 max-w-none " +
-  layout.contentOrder + " " + layout.contentResponsive
+  layout.contentOrder + " " + layout.contentResponsive + " " + alignClass
 ) %}
 
 {# Container card - inline per evitare tag <p> da Markdown #}
@@ -216,11 +227,11 @@
     {%- endif -%}
     {%- if title -%}
     <h3 class="text-lg font-semibold text-black font-accent">
-    {{- title -}}
+    {{- title | md | safe -}}
     </h3>
     {%- endif -%}
     {%- if description -%}
-    {{ description }}
+    <p>{{ description | md | safe }}</p>
     {%- endif -%}
     </div>
     {%- endif -%}
