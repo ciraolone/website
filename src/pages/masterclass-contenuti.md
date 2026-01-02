@@ -5,40 +5,43 @@ description: Per creare tanti contenuti, di qualità e in poco tempo, non devi p
 hero:
   title: "Crea contenuti come un trattore!"
   subtitle: "Il nostro vero metodo per creare tanti contenuti di qualità, in poco tempo."
+  image: "https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64fdd0be65ba18cc5d7f88de_CREA%20CONTENUTI%20COME%20UN%20TRATTORE%20(1).avif"
+sidebarData:
+  price: "249 €"
+  ctaText: "Acquista subito!"
+  ctaUrl: "https://go.hotmart.com/A82950497Q?ap=d302"
+  paymentNote: "Puoi pagare in 3 rate."
+  tagline: "Questa Masterclass fa per te se... vuoi mettere il turbo alla tua produzione di contenuti!"
+  features:
+    - "8 ore di lezione"
+    - "Strumenti e bonus inclusi"
+    - "Corsi ed ebook in regalo"
+    - "Aggiornamenti periodici in diretta"
+    - "Accesso illimitato e per sempre"
+  secondaryTitle: "Lo prendi una volta, è tuo per sempre"
+  secondarySubtitle: "Hai capito bene: l'acquisto è lifetime."
+  secondaryFeatures:
+    - "Tutto il materiale è tuo per sempre"
 ---
 
 {% from "components/card.njk" import card %}
 {% from "components/accordion.njk" import accordion %}
 
-## 💡 Cosa imparerai
+## Cosa imparerai
 
 Ecco cosa sarai in grado di fare dopo aver seguito la Masteclass.
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+1️⃣ **Creare più contenuti:** acquisirai un flusso di lavoro per produrre molti contenuti anche se sei da solo o in un piccolo team.
 
-{{ card(
-  title="1️⃣ Creare più contenuti",
-  description="Acquisirai un flusso di lavoro per produrre molti contenuti anche se sei da solo o in un piccolo team."
-) }}
+2️⃣ **Più qualità:** realizzerai contenuti migliori e più efficaci perché imparerai a concentrarti sugli elementi davvero essenziali.
 
-{{ card(
-  title="2️⃣ Più qualità",
-  description="Realizzerai contenuti migliori e più efficaci perché imparerai a concentrarti sugli elementi davvero essenziali."
-) }}
+3️⃣ **Risparmio di tempo:** per produrre davvero tanti contenuti devi limitare le perdite di tempo. Ti trasmetteremo il nostro metodo 100% pratico per dimezzare i tempi di produzione.
 
-{{ card(
-  title="3️⃣ Risparmio di tempo",
-  description="Per produrre davvero tanti contenuti devi limitare le perdite di tempo. Ti trasmetteremo il nostro metodo 100% pratico per dimezzare i tempi di produzione."
-) }}
+4️⃣ **Trovare le idee:** la creazione di contenuti è un processo creativo che richiede sempre nuove idee. Da questo parte tutto, anche la nostra Masterclass.
 
-{{ card(
-  title="4️⃣ Trovare le idee",
-  description="La creazione di contenuti è un processo creativo che richiede sempre nuove idee. Da questo parte tutto, anche la nostra Masterclass."
-) }}
+5️⃣ **Multicanale:** imparerai ad automatizzare i processi e riutilizzare i vecchi contenuti così da coprire tutte le piattaforme social in un colpo solo (differenziando: no copia-incolla).
 
-</div>
-
-## 📚 Contenuto del corso
+## Contenuto del corso
 
 Queste sono le sezioni in cui è suddivisa la Masteclass.
 
@@ -54,30 +57,37 @@ Queste sono le sezioni in cui è suddivisa la Masteclass.
 - 10 consigli per spaccare
 - Domande & Risposte
 
-## 🎁 Bonus e strumenti GRATUITI
+## Bonus e strumenti GRATUITI
 
 In questa Masterclass sono inclusi numerosi strumenti e bonus aggiuntivi a cui avrai accesso GRATUITAMENTE.
 
 **Strumenti inclusi nella Masterclass:**
 
-- 🚜 Slide della Masterclass, che puoi consultare con calma
-- 🚜 Checklist per non dimenticare gli step più importanti quando crei i tuoi contenuti
-- 🚜 Raccolta di template, tabelle e planner reali che usiamo per gestire il nostro calendario editoriale
-- 🚜 Lista di tool e libri consigliati da Andrea e Raffaele
+🚜 Slide della Masterclass, che puoi consultare con calma
+
+🚜 Checklist per non dimenticare gli step più importanti quando crei i tuoi contenuti
+
+🚜 Raccolta di template, tabelle e planner reali che usiamo per gestire il nostro calendario editoriale
+
+🚜 Lista di tool e libri consigliati da Andrea e Raffaele
 
 **Corsi in regalo:**
 
-- 🎁 OBS Studio per video e live streaming professionali (di Andrea, vale 199,99€)
-- 🎁 Come fare un video al giorno e non uscire fuori di testa (di Andrea, vale 49,99€)
+🎁 OBS Studio per video e live streaming professionali (di Andrea, vale 199,99€)
+
+🎁 Come fare un video al giorno e non uscire fuori di testa (di Andrea, vale 49,99€)
 
 **Ebook in regalo:**
 
-- 📕 Il marketing accessibile a tutti
-- 📕 Come creare una startup
-- 📕 Introduzione al Growth Hacking
-- 📕 Guida ai bias cognitivi
+📕 Il marketing accessibile a tutti
 
-## 🤷 FAQ: domande frequenti
+📕 Come creare una startup
+
+📕 Introduzione al Growth Hacking
+
+📕 Guida ai bias cognitivi
+
+## FAQ: domande frequenti
 
 {{ accordion(
   items=[
@@ -105,32 +115,22 @@ In questa Masterclass sono inclusi numerosi strumenti e bonus aggiuntivi a cui a
   defaultOpen=0
 ) }}
 
-## 💑 I docenti
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+## I docenti
 
 {{ card(
-  image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/649f3606d38fe7a5925a5eed_Andrea%20Ciraolo.avif",
+  image="/assets/images/andrea.avif",
+  mediaPosition="left",
   imageAlt="Andrea Ciraolo",
   headerText="Andrea Ciraolo",
-  description="Sono **Andrea Ciraolo** e sono un Content Creator. Faccio video per chi vuole creare contenuti. Aiuto professionisti e aziende a crescere online tramite corsi, formazione e consulenze."
+  description="Sono **Andrea Ciraolo** e sono un Content Creator. Faccio video per chi vuole creare contenuti. Aiuto professionisti e aziende a crescere online tramite corsi, formazione e consulenze.",
+  className="my-6"
 ) }}
 
 {{ card(
-  image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64fdd9bae5028769a05e6f57_Raffaele%20Gaito.avif",
+  image="/assets/images/raffaele.avif",
+  mediaPosition="right",
   imageAlt="Raffaele Gaito",
   headerText="Raffaele Gaito",
-  description="Mi chiamo **Raffaele Gaito**, sono un Growth Coach e guido le aziende e i professionisti a migliorare i loro prodotti e i loro processi con un approccio sperimentale. Insegno alla Business School del Sole 24 Ore."
+  description="Mi chiamo **Raffaele Gaito**, sono un Growth Coach e guido le aziende e i professionisti a migliorare i loro prodotti e i loro processi con un approccio sperimentale. Insegno alla Business School del Sole 24 Ore.",
+  className="my-6"
 ) }}
-
-</div>
-
-**Questa Masterclass fa per te se...** vuoi mettere il turbo alla tua produzione di contenuti!
-
-### Incluso nella Masterclass:
-
-- ✅ 8 ore di lezione
-- ✅ Strumenti e bonus
-- ✅ Corsi in regalo
-- ✅ Aggiornamenti periodici in diretta con possibilità di fare domande
-- ✅ Accesso illimitato e per sempre al corso completo

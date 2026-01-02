@@ -15,7 +15,7 @@ Sappiamo come ti senti. Notion è uno strumento potentissimo ma senza le giuste 
 
 **Beh, possiamo aiutarti a trasformare Notion nel tuo centro di comando personale e professionale, modellandolo esattamente sulle tue esigenze!**
 
-## 👀 Cosa c'è qui dentro?
+## Cosa c'è qui dentro?
 
 Vogliamo realizzare una serie di webinar interattivi. Non si tratta del solito corso pre-registrato da guardare passivamente. Insieme, costruiremo passo dopo passo il workspace Notion perfetto.
 
@@ -24,9 +24,9 @@ Vogliamo realizzare una serie di webinar interattivi. Non si tratta del solito c
 - **Template**. Tutti i modelli che mostreremo saranno a tua disposizione per duplicarli nel tuo spazio personale.
 - **Registrazione completa del laboratorio**. Se non riesci a partecipare in diretta o vuoi rivedere alcuni passaggi, la registrazione del laboratorio è tua per sempre.
 
-{{ alert("Le date per il prossimo webinar saranno presto pubbliche! Iscriviti alla lista d'attesa per essere tra i primi a saperlo.", variant="info") }}
+{{ alert("Attenzione: al momento non ci sono webinar in programma.", variant="warning") }}
 
-## 🔧 Con Notion puoi…
+## Con Notion puoi…
 
 - **Prendere appunti e note di qualità.** Dal classico editor di testo alla raccolta avanzata di fonti può diventare la base della tua conoscenza personale.
 - **Gestire i documenti.** Riunioni, procedure interne, checklist, flussi di lavoro per favorire la collaborazione e la trasparenza delle attività.
@@ -41,20 +41,20 @@ Vogliamo realizzare una serie di webinar interattivi. Non si tratta del solito c
 
 ## Chi siamo
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
 {{ card(
-  image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/649f3606d38fe7a5925a5eed_Andrea%20Ciraolo.avif",
+  image="/assets/images/andrea.avif",
+  mediaPosition="left",
   imageAlt="Andrea Ciraolo",
   headerText="Andrea Ciraolo",
-  description="Sono **Andrea Ciraolo** e sono un Content Creator. Faccio video per chi vuole creare contenuti. Aiuto professionisti e aziende a crescere online tramite corsi, formazione e consulenze."
+  description="Sono **Andrea** e sono un Content Creator. Faccio video per chi vuole creare contenuti. Aiuto professionisti e aziende a crescere online tramite corsi, formazione e consulenze.",
+  className="my-6"
 ) }}
 
 {{ card(
-  image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/66014e6dcb33a65fc3c6e84b_Debora%20Montoli.avif",
+  image="/assets/images/debora.avif",
+  mediaPosition="right",
   imageAlt="Debora Montoli",
   headerText="Debora Montoli",
-  description="Mi chiamo **Debora Montoli**, sono super saiyan dell'organizzazione per i professionisti e gli imprenditori in cerca di un tocco magico per trasformare il caos in ordine."
+  description="Mi chiamo **Debora Montoli**, sono super saiyan dell'organizzazione per i professionisti e gli imprenditori in cerca di un tocco magico per trasformare il caos in ordine.",
+  className="my-6"
 ) }}
-
-</div>

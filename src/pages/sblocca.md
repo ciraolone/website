@@ -9,7 +9,7 @@ hero:
 sidebarData:
   price: "19,95 €"
   ctaText: "Acquista subito!"
-  ctaUrl: "#acquista"
+  ctaUrl: "https://ciraolone.gr.page/courses/sblocca"
   features:
     - "13 video-lezioni che puoi guardare quando vuoi"
     - "Più di 6 ore di corso"
@@ -50,7 +50,7 @@ Perché sei già pronto - o pronta - per creare contenuti. Anche se ancora non l
 
 ## Questo corso fa per te se...
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 flex flex-wrap justify-center">
 
 {{ card(
   logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/67688bf606432a9005067b58_Non%20riesci%20a%20cominciare.avif",

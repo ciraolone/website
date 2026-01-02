@@ -5,53 +5,46 @@ description: La masterclass completa per ottimizzare il lavoro e la crescita pro
 hero:
   title: "Lavora come un drago!"
   subtitle: "La masterclass completa per ottimizzare il lavoro e la crescita professionale dei freelance."
+  image: "https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/66053a88c39da81a0953c08b_Lavora%20come%20un%20Drago.avif"
+# sidebarData:
+#   features:
+#     - "8 ore di lezione"
+#     - "Accesso al gruppo Telegram riservato"
+#     - "Strumenti e bonus inclusi"
+#     - "Corsi in regalo"
+#     - "Aggiornamenti periodici in diretta"
+#     - "Accesso illimitato e per sempre"
+#   secondaryTitle: "Lo prendi una volta, è tuo per sempre"
+#   secondarySubtitle: "Hai capito bene: l'acquisto è lifetime."
+#   secondaryFeatures:
+#     - "Tutto il materiale è tuo per sempre"
+#     - "Riceverai gratis tutti i futuri aggiornamenti"
+# **Questa Masterclass fa per te se...** vuoi lavorare meglio in meno tempo!
 ---
 
 {% from "components/card.njk" import card %}
 {% from "components/accordion.njk" import accordion %}
 {% from "components/alert.njk" import alert %}
 
-{{ alert("Le iscrizioni alla Masterclass sono chiuse! Se vuoi ricevere informazioni e aggiornamenti sulle prossime iscrizioni, iscriviti alla lista d'attesa.", variant="warning") }}
+{{ alert("Oh no! Le iscrizioni alla Masterclass sono chiuse in questo momento.", variant="warning") }}
 
-## 💡 Cosa imparerai
+## Cosa imparerai
 
 Ecco cosa sarai in grado di fare dopo aver seguito la Masteclass.
 
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+1️⃣ **Definire una roadmap:** smetti di brancolare nel buio e metti a punto un piano strategico in linea con i tuoi obiettivi.
 
-{{ card(
-  title="1️⃣ Definire una roadmap",
-  description="Smetti di brancolare nel buio e metti a punto un piano strategico in linea con i tuoi obiettivi."
-) }}
+2️⃣ **Organizzare il lavoro:** gestisci meglio il tempo, definisci le priorità e riduci il sovraccarico mentale.
 
-{{ card(
-  title="2️⃣ Organizzare il lavoro",
-  description="Gestisci meglio il tempo, definisci le priorità e riduci il sovraccarico mentale."
-) }}
+3️⃣ **Definire i prezzi:** comprendi una volta per tutte quanto farti pagare e stabilisci delle regole chiare da seguire ad ogni preventivo.
 
-{{ card(
-  title="3️⃣ Definire i prezzi",
-  description="Comprendi una volta per tutte quanto farti pagare e stabilisci delle regole chiare da seguire ad ogni preventivo."
-) }}
+4️⃣ **Fare preventivi:** migliora la presentazione delle tue proposte per farti dire di sì dai clienti.
 
-{{ card(
-  title="4️⃣ Fare preventivi",
-  description="Migliora la presentazione delle tue proposte per farti dire di sì dai clienti."
-) }}
+5️⃣ **Trovare clienti:** frequenta i posti giusti, metti in rilievo quello che sai fare e seleziona le persone in linea con i tuoi valori.
 
-{{ card(
-  title="5️⃣ Trovare clienti",
-  description="Frequenta i posti giusti, metti in rilievo quello che sai fare e seleziona le persone in linea con i tuoi valori."
-) }}
+6️⃣ **Gestire clienti e progetti:** comunica efficacemente sul lavoro, evita i mal di testa delle richieste assurde e rendi più felici i tuoi partner.
 
-{{ card(
-  title="6️⃣ Gestire clienti e progetti",
-  description="Comunica efficacemente sul lavoro, evita i mal di testa delle richieste assurde e rendi più felici i tuoi partner."
-) }}
-
-</div>
-
-## 📚 Contenuto del corso
+## Contenuto del corso
 
 Queste sono le sezioni in cui è suddivisa la Masteclass.
 
@@ -68,7 +61,7 @@ Queste sono le sezioni in cui è suddivisa la Masteclass.
 
 💘 **C'è dell'altro!** Iscrivendoti alla Masterclass hai accesso anche al **gruppo Telegram riservato** che useremo per scambiarci informazioni, link, aggiornamenti e fare domande sui temi del corso!
 
-## ✨ La masterclass fa per te se
+## La masterclass fa per te se
 
 - Hai un lavoro da dipendente che non ti piace e desideri metterti in proprio
 - Lavori, lavori, lavori, ma senti solo tanta stanchezza e frustrazione
@@ -82,27 +75,35 @@ Queste sono le sezioni in cui è suddivisa la Masteclass.
 
 Se hai risposto sì ad almeno una di queste domande, la masterclass "Lavora come un drago" è fatta per te: niente trucchi milionari, ma solo consigli concreti per lavorare meglio.
 
-## 🎁 Bonus e strumenti GRATUITI
+## Bonus e strumenti GRATUITI
 
 In questa Masterclass sono inclusi numerosi strumenti e bonus aggiuntivi a cui avrai accesso GRATUITAMENTE.
 
 **Strumenti inclusi nella Masterclass:**
 
-- 🐲 Slide della Masterclass, che puoi consultare con calma
-- 🐲 Checklist per non dimenticare gli step più importanti in ogni fase delle tue attività
-- 🐲 Raccolta di template, tabelle e planner reali che usiamo per gestire il nostro lavoro
-- 🐲 Lista di tool e libri consigliati da Andrea e Debora
+🐲 Slide della Masterclass, che puoi consultare con calma
+
+🐲 Checklist per non dimenticare gli step più importanti in ogni fase delle tue attività
+
+🐲 Raccolta di template, tabelle e planner reali che usiamo per gestire il nostro lavoro
+
+🐲 Lista di tool e libri consigliati da Andrea e Debora
 
 **Corsi in regalo:**
 
-- 🎁 Organizza il lavoro e la vita con Notion (di Andrea e Debora, vale 49,00€)
-- 🎁 Organizza le e-mail (di Debora, vale 90,00€)
-- 🎁 Organizza file e cartelle del tuo computer (di Debora, vale 35,00€)
-- 🎁 OBS Studio per video e live streaming professionali (di Andrea, vale 199,99€)
-- 🎁 Strategia Patreon (di Andrea, vale 99,99€)
-- 🎁 Come fare un video al giorno e non uscire fuori di testa (di Andrea, vale 49,99€)
+🎁 Organizza il lavoro e la vita con Notion (di Andrea e Debora, vale 49,00€)
 
-## 🤷 FAQ: domande frequenti
+🎁 Organizza le e-mail (di Debora, vale 90,00€)
+
+🎁 Organizza file e cartelle del tuo computer (di Debora, vale 35,00€)
+
+🎁 OBS Studio per video e live streaming professionali (di Andrea, vale 199,99€)
+
+🎁 Strategia Patreon (di Andrea, vale 99,99€)
+
+🎁 Come fare un video al giorno e non uscire fuori di testa (di Andrea, vale 49,99€)
+
+## FAQ: domande frequenti
 
 {{ accordion(
   items=[
@@ -130,33 +131,22 @@ In questa Masterclass sono inclusi numerosi strumenti e bonus aggiuntivi a cui a
   defaultOpen=0
 ) }}
 
-## 💑 I docenti
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+## I docenti
 
 {{ card(
-  image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/649f3606d38fe7a5925a5eed_Andrea%20Ciraolo.avif",
+  image="/assets/images/andrea.avif",
+  mediaPosition="left",
   imageAlt="Andrea Ciraolo",
   headerText="Andrea Ciraolo",
-  description="Sono **Andrea Ciraolo** e sono un Content Creator. Faccio video per chi vuole creare contenuti. Aiuto professionisti e aziende a crescere online tramite corsi, formazione e consulenze."
+  description="Sono **Andrea Ciraolo** e sono un Content Creator. Faccio video per chi vuole creare contenuti. Aiuto professionisti e aziende a crescere online tramite corsi, formazione e consulenze.",
+  className="my-6"
 ) }}
 
 {{ card(
-  image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/66014e6dcb33a65fc3c6e84b_Debora%20Montoli.avif",
+  image="/assets/images/debora.avif",
+  mediaPosition="right",
   imageAlt="Debora Montoli",
   headerText="Debora Montoli",
-  description="Mi chiamo **Debora Montoli**, sono super saiyan dell'organizzazione per i professionisti e gli imprenditori in cerca di un tocco magico per trasformare il caos in ordine."
+  description="Mi chiamo **Debora Montoli**, sono super saiyan dell'organizzazione per i professionisti e gli imprenditori in cerca di un tocco magico per trasformare il caos in ordine.",
+  className="my-6"
 ) }}
-
-</div>
-
-**Questa Masterclass fa per te se...** vuoi lavorare meglio in meno tempo!
-
-### Incluso nella Masterclass:
-
-- ✅ 8 ore di lezione
-- ✅ Accesso al gruppo riservato su Telegram
-- ✅ Strumenti e bonus
-- ✅ Corsi in regalo
-- ✅ Aggiornamenti periodici in diretta con possibilità di fare domande
-- ✅ Accesso illimitato e per sempre al corso completo

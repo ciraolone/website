@@ -6,10 +6,7 @@ hero:
   title: "Channel Check"
 ---
 
-{% from "components/alert.njk" import alert %}
 {% from "components/youtube.njk" import youtube %}
-
-{{ alert("A causa del pochissimo tempo a mia disposizione, l'acquisto di nuove consulenze e channel check è al momento sospeso. Seguimi per non perderti quando riapriranno!", variant="warning") }}
 
 ## Mannaggia! 😣
 

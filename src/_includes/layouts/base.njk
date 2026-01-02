@@ -32,6 +32,7 @@
           ctaUrl=sidebarData.ctaUrl,
           paymentNote=sidebarData.paymentNote,
           urgencyNote=sidebarData.urgencyNote,
+          tagline=sidebarData.tagline,
           features=sidebarData.features,
           secondaryTitle=sidebarData.secondaryTitle,
           secondarySubtitle=sidebarData.secondarySubtitle,
@@ -41,6 +42,7 @@
       {# Mobile: features + CTA fixed #}
       <div class="content lg:hidden mt-8">
         {{ sidebarMobileFeatures(
+          tagline=sidebarData.tagline,
           features=sidebarData.features,
           secondaryTitle=sidebarData.secondaryTitle,
           secondarySubtitle=sidebarData.secondarySubtitle,

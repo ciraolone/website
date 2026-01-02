@@ -10,6 +10,7 @@
   - ctaUrl: URL del pulsante CTA (richiesto)
   - paymentNote: nota sul pagamento (es. "Puoi pagare in 3 rate.")
   - urgencyNote: nota di urgenza (opzionale, es. "Attenzione: le iscrizioni...")
+  - tagline: testo in corsivo prima delle features (opzionale, es. "Questa Masterclass fa per te se...")
   - features: array di stringhe con le feature incluse
   - secondaryTitle: titolo sezione secondaria (opzionale)
   - secondarySubtitle: sottotitolo sezione secondaria (opzionale)
@@ -33,6 +34,7 @@
   ctaUrl,
   paymentNote="",
   urgencyNote="",
+  tagline="",
   features=[],
   secondaryTitle="",
   secondarySubtitle="",
@@ -59,6 +61,11 @@
   <div class="mb-6">
     {{ alert("Attenzione: " + urgencyNote, variant="warning") }}
   </div>
+  {% endif %}
+
+  {# Tagline in corsivo #}
+  {% if tagline %}
+  <p class="text-sm text-gray-700 italic mb-4">{{ tagline }}</p>
   {% endif %}
 
   {# Sezione Features Incluse #}
@@ -104,12 +111,18 @@
 
 {# === MOBILE FEATURES (visibile solo su mobile, sopra il contenuto) === #}
 {% macro sidebarMobileFeatures(
+  tagline="",
   features=[],
   secondaryTitle="",
   secondarySubtitle="",
   secondaryFeatures=[]
 ) %}
 <div class="border-2 border-black bg-white p-4 rounded-default shadow">
+  {# Tagline in corsivo #}
+  {% if tagline %}
+  <p class="text-sm text-gray-700 italic mb-4">{{ tagline }}</p>
+  {% endif %}
+
   {# Sezione Features Incluse #}
   {% if features.length > 0 %}
   <div class="mb-4">

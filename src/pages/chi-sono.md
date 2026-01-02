@@ -44,11 +44,3 @@ Ho cominciato a lavorare nelle case di riposo come animatore per poi diventare c
 Ho diretto la RSA Gli Oleandri di Rozzano (MI) e la RSA I Pioppi di Dresano (MI).
 
 A un certo punto mi sono stufato, mi sono licenziato in tronco senza avere alcuna idea di cosa avrei fatto dopo, ho fatto alcune cose che sono andate male e poi una che è andata bene.
-
-## Perché dovrei piacerti?
-
-Piacerti non è una priorità. Preferisco esserti utile.
-
-Lo faccio portandoti contenuti gratuiti e di qualità, parlando facile, mettendo insieme competenze digitali, psicologiche e strategiche.
-
-Poi, se ti piacciono le persone con evidenti difficoltà relazionali, che producono settimanalmente decine di ore di video e camminano come se non ci fosse un domani, allora potrei anche piacerti.

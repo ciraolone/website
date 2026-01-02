@@ -9,7 +9,7 @@ hero:
 sidebarData:
   price: "499 €"
   ctaText: "Acquista subito!"
-  ctaUrl: "#acquista"
+  ctaUrl: "https://pay.hotmart.com/P97614971Q?off=9pp30lii"
   paymentNote: "Puoi pagare in 3 rate."
   urgencyNote: "le iscrizioni a questo corso chiudono il 4 gennaio!"
   features:
@@ -184,7 +184,7 @@ Iscrivendoti a Brilla su Youtube avrai accesso gratuito e illimitato a tutti que
 
 {{ card(title="~~352,96~~ € 👉 0 €", description="Non so se ti rendi conto! 😱", textAlign="center", className="max-w-sm mx-auto") }}
 
-## 😌 Chi siamo
+## Chi siamo
 
 {{ card(
   image="/assets/images/andrea.avif",
