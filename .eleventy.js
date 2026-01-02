@@ -35,6 +35,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/js");
   eleventyConfig.addPassthroughCopy("src/assets/videos");
   eleventyConfig.addPassthroughCopy({ "src/assets/favicon": "/" });
+
+  // Cloudflare Pages: file _redirects per gestire i redirect lato server
+  // Documentazione: https://developers.cloudflare.com/pages/configuration/redirects/
+  eleventyConfig.addPassthroughCopy({ "src/_redirects": "_redirects" });
   
   // ============================================
   // WATCH TARGETS

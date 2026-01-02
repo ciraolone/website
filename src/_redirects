@@ -1,0 +1,13 @@
+# Cloudflare Pages Redirects
+# Documentazione: https://developers.cloudflare.com/pages/configuration/redirects/
+# Formato: /percorso-origine /percorso-destinazione [codice-stato]
+# Default: 302 (temporaneo). Usa 301 per redirect permanenti.
+
+/corso/notion /notion 301
+/corsi/notion /notion 301
+/corso/corso-notion /notion 301
+/corso-notion /notion 301
+/corso /corsi 301
+/masterclass /corsi 301
+/podcast-fabbro /masterclass/fabbro 301
+/contenuti-trattore /masterclass/trattore 301
