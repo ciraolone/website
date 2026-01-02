@@ -116,6 +116,11 @@ Corsi, libri, video... visto che ti vogliamo già bene, più sotto in questa pag
 
 ## Sara e Andrea la combo perfetta
 
+{{ card(
+  image="/assets/images/andrea_sara_01.avif",
+  imageAlt="Andrea e Sara"
+) }}
+
 Una è precisa, chirurgica e infallibile. L'altro è casinista, creativo ed efficace. Abbiamo tanti valori in comune, ma modi moooolto diversi per realizzarli. 😅
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">

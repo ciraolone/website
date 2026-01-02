@@ -268,4 +268,24 @@
     text-decoration-color: red;
     text-decoration-thickness: var(--border-width);
   }
+
+  /* === LISTE - Spaziatura uniforme alla normale interlinea ===
+     Rimuove il margine extra tra gli elementi delle liste per allinearli
+     alla spaziatura naturale del testo (leading-relaxed).
+     !important necessario per sovrascrivere i :where() di Typography. */
+  .prose li {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* === LISTE ORDINATE - Font accent per i numeri === */
+  .prose ol {
+    list-style-position: inside;
+    padding-left: 0 !important;
+  }
+
+  .prose ol li::marker {
+    font-family: var(--font-accent);
+    font-size: 0.7em;
+  }
 }
