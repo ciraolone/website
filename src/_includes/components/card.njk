@@ -124,22 +124,22 @@
   },
   "left": {
     "container": "flex flex-col sm:flex-row",
-    "mediaWidth": "w-full sm:w-64",
+    "mediaWidth": "w-full sm:w-64 sm:shrink-0",
     "mediaOrder": "",
     "contentOrder": "",
     "mediaBorder": "border-b-2 sm:border-b-0 sm:border-r-2",
     "contentBorder": "",
-    "mediaResponsive": "sm:self-stretch sm:h-full",
+    "mediaResponsive": "sm:relative",
     "contentResponsive": "sm:flex-1 sm:flex sm:flex-col sm:justify-center"
   },
   "right": {
     "container": "flex flex-col sm:flex-row-reverse",
-    "mediaWidth": "w-full sm:w-64",
+    "mediaWidth": "w-full sm:w-64 sm:shrink-0",
     "mediaOrder": "",
     "contentOrder": "",
     "mediaBorder": "border-b-2 sm:border-b-0 sm:border-l-2",
     "contentBorder": "",
-    "mediaResponsive": "sm:self-stretch sm:h-full",
+    "mediaResponsive": "sm:relative",
     "contentResponsive": "sm:flex-1 sm:flex sm:flex-col sm:justify-center"
   }
 } %}
@@ -175,7 +175,8 @@
   (videoClassName if mediaType == "video" else imageClassName)
 ) %}
 {% if mediaPosition == "left" or mediaPosition == "right" %}
-  {% set mediaElClass = baseElClass + " sm:object-cover" %}
+  {# absolute inset-0 + object-cover: l'immagine/video riempie tutta l'altezza del container, croppandosi se necessario #}
+  {% set mediaElClass = baseElClass + " sm:absolute sm:inset-0 sm:h-full sm:object-cover" %}
 {% else %}
   {% set mediaElClass = baseElClass + " h-auto" %}
 {% endif %}
