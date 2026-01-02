@@ -3,7 +3,7 @@ layout: base.njk
 title: Ciraolone
 description: Pagina principale del sito
 hero:
-  title: "Brilla su YouTube ✨"
+  title: "Brilla su YouTube"
   subtitle: "Il corso super-accelerato per fare sul serio, con Andrea Ciraolo e Sara Trecate."
   image: "/assets/images/brilla.png"
 sidebarData:
@@ -31,13 +31,13 @@ sidebarData:
 
 {% from "components/card.njk" import card %}
 
-Stare su Youtube è un gran casino eh? E se ti dicessimo che i tuoi due punti di riferimento per crescere su Youtube hanno fatto una combo e si sono riuniti per aiutarti ad acqusire in tempo record la sicurezza e competenza che ti servono per far brillare il tuo progetto?
+**Stare su Youtube è un gran casino eh?** E se ti dicessimo che i tuoi due punti di riferimento per crescere su Youtube hanno fatto una combo e si sono riuniti per aiutarti ad acqusire in tempo record la sicurezza e competenza che ti servono per far brillare il tuo progetto?
 
-Proprio noi - Andrea Ciraolo e Sara Trecate - saremo i tuoi tutor per i prossimi 30 giorni in un percorso di formazione ricco di lezioni, momenti di confronto e risorse riservate.
+Proprio noi - **Andrea Ciraolo** e **Sara Trecate** - saremo i tuoi tutor per i prossimi 30 giorni in un percorso di formazione ricco di lezioni, momenti di confronto e risorse riservate.
 
 Non sarai più solo: sarai accompagnato nel tuo viaggio su Youtube se non dai migliori, quantomeno dai più simpatici. 😝
 
-## 🥰 Questo corso fa per te se...
+## Questo corso fa per te se...
 
 <div class="grid grid-cols-2 md:grid-cols-3  lg:grid-cols-3 gap-6">
 
@@ -78,7 +78,7 @@ Non sarai più solo: sarai accompagnato nel tuo viaggio su Youtube se non dai mi
 
 </div>
 
-## 👀 Cosa c'è qui dentro?
+## Cosa c'è qui dentro?
 
 Questo è il corso accelerato più denso che troverai in giro. Vogliamo darti più valore possibile e farti ottenere il massimo dai tuoi prossimi 30 giorni.
 
@@ -114,21 +114,21 @@ Gli elenchi completi di programmi e attrezzatura, ma anche i template, le checkl
 
 Corsi, libri, video... visto che ti vogliamo già bene, più sotto in questa pagina troverai l'elenco dei regali che abbiamo riservato per te.
 
-## 🫶 Sara e Andrea la combo perfetta
+## Sara e Andrea la combo perfetta
 
 Una è precisa, chirurgica e infallibile. L'altro è casinista, creativo ed efficace. Abbiamo tanti valori in comune, ma modi moooolto diversi per realizzarli. 😅
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-Sara è una maga dell'organizzazione, da quando ha lanciato il suo canale (i suoi due canali!) pubblica un video alla settimana. Sempre allo stesso giorno, sempre alla stessa ora. È in grado di comprendere le dinamiche e i trend della piattaforma come pochi e definisce il suo calendario editoriale con assoluta consapevolezza. Se ti serve una strategia a prova di errore, è lei che stai cercando.
+**Sara** è una maga dell'organizzazione, da quando ha lanciato il suo canale (i suoi due canali!) pubblica un video alla settimana. Sempre allo stesso giorno, sempre alla stessa ora. È in grado di comprendere le dinamiche e i trend della piattaforma come pochi e definisce il suo calendario editoriale con assoluta consapevolezza. Se ti serve una strategia a prova di errore, è lei che stai cercando.
 
-Andrea alterna settimane in cui pubblica un (lungo) video al giorno ad altre in cui va in letargo. Ha oltre 200.000 iscritti e pensa ancora di averli imbrogliati tutti. La maggior parte delle cose che fa falliscono, ma ne fa così tante che in mezzo è facile trovare qualche successo. Se vuoi dare una bella spallata al tuo progetto, ti serve proprio lui.
+**Andrea** alterna settimane in cui pubblica un (lungo) video al giorno ad altre in cui va in letargo. Ha oltre 200.000 iscritti e pensa ancora di averli imbrogliati tutti. La maggior parte delle cose che fa falliscono, ma ne fa così tante che in mezzo è facile trovare qualche successo. Se vuoi dare una bella spallata al tuo progetto, ti serve proprio lui.
 
 </div>
 
 In coppia diventiamo lo Youtuber perfetto ed è per questo che abbiamo voluto realizzare questo percorso insieme!
 
-## 📚 Il percorso fondamentale
+## Il percorso fondamentale
 
 Il percorso fondamentale comprende le 13+1 lezioni tenute da noi su tutti i concetti più importanti che servono per ottenere risultati su YouTube. Questo è il programma dettagliato.
 
@@ -147,7 +147,7 @@ Il percorso fondamentale comprende le 13+1 lezioni tenute da noi su tutti i conc
 13. 10 modi per guadagnare con YouTube
 14. (Bonus) Partita IVA per content creator - il punto del commercialista
 
-## 🚀 4 lezioni per fare l'upgrade
+## 4 lezioni per fare l'upgrade
 
 Abbiamo pensato ad altri 4 argomenti caldi e fondamentali su cui fare un approfondimento: 4 lezioni bonus a cui puoi partecipare in diretta facendo le tue domande o che puoi guardare registrate subito dopo, quando vuoi. Eccole qui.
 
@@ -156,7 +156,7 @@ Abbiamo pensato ad altri 4 argomenti caldi e fondamentali su cui fare un approfo
 17. Come trovare e gestire gli sponsor (e farsi pagare di più!)
 18. Come gestire le critiche, gli hater e la paura del giudizio
 
-## 💡 Cosa otterrai con questo corso
+## Cosa otterrai con questo corso
 
 💡 La tua presenza su YouTube sarà brillante, come meriti.
 💡 Conoscerai le tecniche per aumentare views e iscritti.
@@ -167,15 +167,15 @@ Abbiamo pensato ad altri 4 argomenti caldi e fondamentali su cui fare un approfo
 💡 Imparerai come muoverti agilmente e non ti farai sopraffare da YouTube.
 💡 Avrai coltivato buone relazioni (e possibili collaborazioni) con content creator simili a te.
 
-## 🎁 I bonus in regalo
+## I bonus in regalo
 
 Iscrivendoti a Brilla su Youtube avrai accesso gratuito e illimitato a tutti questi bonus!
 
-🎁 Il corso di Andrea "Sblocca il Content Creator che è in te!" per sbloccare il tuo vero potenziale prima ancora di cominciare. (Vale 19,00€)
-🎁 Il corso di Andrea "OBS Studio per video e live streaming professionali" per usare alla grande il più famoso programma per registrare video e andare in diretta. (Vale 199,00€)
-🎁 Il libro di Sara "Kit di Sopravvivenza su Youtube", una collezione di risorse per migliorare il tuo canale Youtube adesso. Uno strumento indispensabile per tutti gli youtuber. (Vale 49,99€)
-🎁 Il libro di Sara "Guadagna subito con Youtube", una irripetibile risorsa per iniziare subito a guadagnare su Youtube senza dover attendere i requisiti di monetizzazione. (Vale 69,99€)
-🎁 3 animazioni (pulsante “iscriviti”, "clicca la campanella" e "lascia un like") e 1 filigrana per i tuoi video dal sito di Sara - [creatoridicontenuti.it](https://creatoridicontenuti.it) - aumenta le interazioni sui tuoi video in modo professionale (Vale 14,98€)
+🎁 Il corso di Andrea "**Sblocca il Content Creator che è in te!**" per sbloccare il tuo vero potenziale prima ancora di cominciare. (Vale 19,00€)
+🎁 Il corso di Andrea "**OBS Studio per video e live streaming professionali**" per usare alla grande il più famoso programma per registrare video e andare in diretta. (**Vale 199,00€**)
+🎁 Il libro di Sara "**Kit di Sopravvivenza su Youtube**", una collezione di risorse per migliorare il tuo canale Youtube adesso. Uno strumento indispensabile per tutti gli youtuber. (**Vale 49,99€**)
+🎁 Il libro di Sara "**Guadagna subito con Youtube**", una irripetibile risorsa per iniziare subito a guadagnare su Youtube senza dover attendere i requisiti di monetizzazione. (**Vale 69,99€**)
+🎁 3 animazioni (**pulsante “iscriviti”**, **"clicca la campanella"** e **"lascia un like"**) e 1 filigrana per i tuoi video dal sito di Sara - [creatoridicontenuti.it](https://creatoridicontenuti.it) - aumenta le interazioni sui tuoi video in modo professionale (**Vale 14,98€**)
 
 {{ card(title="~~352,96~~ € 👉 0 €", description="Non so se ti rendi conto! 😱", textAlign="center", className="max-w-sm mx-auto") }}
 

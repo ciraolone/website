@@ -240,7 +240,7 @@
   }
 
   .title {
-    @apply text-4xl sm:text-5xl lg:text-6xl;
+    @apply text-4xl sm:text-5xl lg:text-5xl;
     @apply font-black tracking-tight leading-tight;
     @apply text-gray-900;
     @apply mb-6;
