@@ -191,7 +191,7 @@
 ) %}
 
 {# Container card - inline per evitare tag <p> da Markdown #}
-<article class="w-full border-2 border-black bg-white shadow not-prose overflow-hidden rounded-default {{ className }} {{ 'relative hover:shadow transition-shadow cursor-pointer' if cardUrl else '' }}">{%- if cardUrl -%}
+<div class="w-full border-2 border-black bg-white shadow not-prose overflow-hidden rounded-default {{ className }} {{ 'relative hover:shadow transition-shadow cursor-pointer' if cardUrl else '' }}">{%- if cardUrl -%}
 <a href="{{ cardUrl }}" class="absolute inset-0 z-10" aria-label="{{ title or 'Card link' }}"></a>
 {%- endif -%}
 {%- if hasHeader -%}
@@ -250,5 +250,5 @@
   </div>
   {%- endif -%}
 </div>
-</article>
+</div>
 {% endmacro %}

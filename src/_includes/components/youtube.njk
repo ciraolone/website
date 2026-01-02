@@ -1,0 +1,85 @@
+{#
+  Componente YouTube Embed (Stile Neobrutalista)
+
+  Estrae automaticamente l'ID video da vari formati URL YouTube:
+  - https://www.youtube.com/watch?v=VIDEO_ID
+  - https://youtu.be/VIDEO_ID
+  - https://youtube.com/embed/VIDEO_ID
+  - https://www.youtube.com/watch?v=VIDEO_ID&t=123
+
+  Parametri:
+  - url: URL completo del video YouTube (obbligatorio)
+  - title: titolo del video per accessibilità (opzionale, default: "Video YouTube")
+  - headerText: testo header giallo (opzionale)
+  - caption: testo descrittivo sotto al video (opzionale)
+  - className: classi CSS aggiuntive container (opzionale)
+
+  Uso: {% raw %}{% from "components/youtube.njk" import youtube %}{% endraw %}
+
+  Esempi:
+  - {{ youtube(url="https://youtu.be/abc123") }}
+  - {{ youtube(url="https://www.youtube.com/watch?v=abc123", title="Il mio video") }}
+  - {{ youtube(url="https://youtu.be/abc123", headerText="Video del corso") }}
+  - {{ youtube(url="https://youtu.be/abc123", caption="Descrizione del video") }}
+#}
+
+{% macro youtube(
+  url="",
+  title="Video YouTube",
+  headerText="",
+  caption="",
+  className=""
+) %}
+
+{# Estrai ID video da URL
+   Gestisce: youtu.be/ID, youtube.com/watch?v=ID, youtube.com/embed/ID
+#}
+{% set videoId = "" %}
+{% if "youtu.be/" in url %}
+  {% set videoId = url | replace(r/.*youtu\.be\//, "") | replace(r/[?&].*/, "") %}
+{% elif "watch?v=" in url or "watch?.*v=" in url %}
+  {% set videoId = url | replace(r/.*[?&]v=/, "") | replace(r/[&].*/, "") %}
+{% elif "/embed/" in url %}
+  {% set videoId = url | replace(r/.*\/embed\//, "") | replace(r/[?&].*/, "") %}
+{% endif %}
+
+{# URL embed con parametri privacy-friendly:
+   - rel=0: non mostrare video suggeriti da altri canali
+   - modestbranding=1: branding YouTube ridotto
+   youtube-nocookie.com: dominio che non salva cookie di tracciamento
+#}
+{% set embedUrl = "https://www.youtube-nocookie.com/embed/" + videoId + "?rel=0&modestbranding=1" %}
+{% set hasHeader = headerText %}
+
+{# aspect-video: classe Tailwind per aspect ratio 16:9 #}
+<div class="w-full border-2 border-black bg-black shadow not-prose overflow-hidden rounded-default {{ className }}">
+  {%- if hasHeader -%}
+  <div class="p-3 bg-primary border-b-2 border-black">
+    <div class="flex items-center justify-between">
+      <strong class="text-xs/none font-bold uppercase">
+        {{- headerText -}}
+      </strong>
+      <div class="flex gap-1">
+        <div class="size-3 border-2 border-black bg-white"></div>
+        <div class="size-3 border-2 border-black bg-white"></div>
+      </div>
+    </div>
+  </div>
+  {%- endif -%}
+  <iframe
+    src="{{ embedUrl }}"
+    title="{{ title }}"
+    class="aspect-video w-full"
+    frameborder="0"
+    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+  {%- if caption -%}
+  <div class="p-4 bg-white border-t-2 border-black">
+    <p class="text-sm text-black">{{ caption }}</p>
+  </div>
+  {%- endif -%}
+</div>
+{% endmacro %}
