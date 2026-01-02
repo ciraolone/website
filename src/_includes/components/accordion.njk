@@ -1,0 +1,51 @@
+{#
+  Componente Accordion/Toggle
+
+  Parametri:
+  - items: array di oggetti con title e content
+    - title: titolo dell'elemento (obbligatorio)
+    - content: contenuto da mostrare quando aperto (obbligatorio, supporta HTML/markdown)
+  - defaultOpen: indice dell'elemento aperto di default (opzionale, 0-indexed)
+  - className: classi CSS aggiuntive container (opzionale)
+  - allowMultiple: permetti apertura multipla (default: false)
+
+  Uso: {% raw %}{% from "components/accordion.njk" import accordion %}{% endraw %}
+
+  Esempi:
+  - accordion(items=[{title: "Titolo 1", content: "Contenuto 1"}, {title: "Titolo 2", content: "Contenuto 2"}])
+  - accordion(items=myItems, defaultOpen=0)
+  - accordion(items=myItems, allowMultiple=true)
+#}
+
+{% macro accordion(
+  items=[],
+  defaultOpen=null,
+  className="",
+  allowMultiple=false
+) %}
+
+<div class="{{ className }}"
+  data-accordion
+  {% if allowMultiple %}data-allow-multiple{% endif %}>
+  {%- for item in items -%}
+  {% set isOpen = (loop.index0 == defaultOpen) %}
+  <details class="group"
+    {% if isOpen %}open{% endif %}>
+    <summary class="flex items-center gap-2 py-2 cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden">
+      <span class="w-3 h-3 text-current transition-transform duration-200 -rotate-90 group-open:rotate-0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+        </svg>
+      </span>
+      <span class="font-semibold">
+        {{ "0" if loop.index < 10 else "" }}{{ loop.index }}. {{ item.title }}
+      </span>
+    </summary>
+    <div class="pl-5 pb-2 text-gray-700">
+      {{ item.content | safe }}
+    </div>
+  </details>
+  {%- endfor -%}
+</div>
+
+{% endmacro %}
