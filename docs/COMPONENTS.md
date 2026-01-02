@@ -36,6 +36,7 @@ src/_includes/
 ```
 
 **Quando usare:**
+
 - Componente sempre identico (navbar, footer, head)
 - Non servono parametri
 - Accesso automatico a tutte le variabili del contesto
@@ -56,6 +57,7 @@ src/_includes/
 ```
 
 **Quando usare:**
+
 - Componente configurabile (card, button, alert)
 - Servono parametri/varianti
 - Maggiore controllo e type-safety
@@ -65,6 +67,7 @@ src/_includes/
 ## 🎯 Best Practices
 
 ### 1. **Single Responsibility**
+
 Ogni componente fa una sola cosa:
 
 ```
@@ -129,6 +132,7 @@ Ogni componente fa una sola cosa:
 ### Layout Base Componentizzato
 
 **`layouts/base.njk`:**
+
 ```njk
 <!DOCTYPE html>
 <html lang="{{ site.language }}">
@@ -148,6 +152,7 @@ Ogni componente fa una sola cosa:
 ```
 
 **Risultato:**
+
 - ✅ Leggibile: Struttura chiara in 10 righe
 - ✅ Manutenibile: Modifica navbar in un solo file
 - ✅ Riutilizzabile: Componenti usabili in altri layout
@@ -155,6 +160,7 @@ Ogni componente fa una sola cosa:
 ### Componente Parametrico Avanzato
 
 **`components/card.njk`:**
+
 ```njk
 {% macro card(
   title,
@@ -180,6 +186,7 @@ Ogni componente fa una sola cosa:
 ```
 
 **Utilizzo:**
+
 ```njk
 {% from "components/card.njk" import card %}
 
@@ -202,12 +209,15 @@ Ogni componente fa una sola cosa:
 ## 🚀 Workflow Consigliato
 
 ### Step 1: Identifica componenti ripetuti
+
 Cerca pattern ripetuti in più pagine:
+
 - Navbar/Footer → Sempre uguali
 - Card progetti → Sempre stessa struttura
 - Form contatti → Riutilizzabile
 
 ### Step 2: Estrai in componenti
+
 ```bash
 src/_includes/components/
 ├── navbar.njk     # Include statico
@@ -216,9 +226,11 @@ src/_includes/components/
 ```
 
 ### Step 3: Refactora layout
+
 Sostituisci codice duplicato con `{% include %}` o macro.
 
 ### Step 4: Documenta
+
 Aggiungi commenti con parametri e esempi.
 
 ---
@@ -261,20 +273,25 @@ Aggiungi commenti con parametri e esempi.
 ## ⚠️ Errori Comuni
 
 ### ❌ Componenti troppo specifici
+
 ```njk
 {# homepage-hero-section-with-video.njk #}
 {# ☝️ Usabile solo in una pagina! #}
 ```
+
 **✅ Meglio:** `hero.njk` configurabile con parametri.
 
 ### ❌ Troppe dipendenze implicite
+
 ```njk
 {# card.njk che assume esistano variabili globali #}
 <div class="{{ globalTheme }}">  {# ❌ #}
 ```
+
 **✅ Meglio:** Passa tutto come parametro.
 
 ### ❌ Logica complessa nei componenti
+
 ```njk
 {# navbar.njk #}
 {% for page in collections.all %}
@@ -283,6 +300,7 @@ Aggiungi commenti con parametri e esempi.
   {% endif %}
 {% endfor %}
 ```
+
 **✅ Meglio:** Logica in `.eleventy.js` (collection/filter), componente solo per rendering.
 
 ---

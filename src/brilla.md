@@ -175,13 +175,26 @@ Iscrivendoti a Brilla su Youtube avrai accesso gratuito e illimitato a tutti que
 🎁 Il corso di Andrea "OBS Studio per video e live streaming professionali" per usare alla grande il più famoso programma per registrare video e andare in diretta. (Vale 199,00€)
 🎁 Il libro di Sara "Kit di Sopravvivenza su Youtube", una collezione di risorse per migliorare il tuo canale Youtube adesso. Uno strumento indispensabile per tutti gli youtuber. (Vale 49,99€)
 🎁 Il libro di Sara "Guadagna subito con Youtube", una irripetibile risorsa per iniziare subito a guadagnare su Youtube senza dover attendere i requisiti di monetizzazione. (Vale 69,99€)
-🎁 3 animazioni (pulsante “iscriviti”, "clicca la campanella" e "lascia un like") e 1 filigrana per i tuoi video dal sito di Sara - creatoridicontenuti.it - aumenta le interazioni sui tuoi video in modo professionale (Vale 14,98€)
+🎁 3 animazioni (pulsante “iscriviti”, "clicca la campanella" e "lascia un like") e 1 filigrana per i tuoi video dal sito di Sara - [creatoridicontenuti.it](https://creatoridicontenuti.it) - aumenta le interazioni sui tuoi video in modo professionale (Vale 14,98€)
 
-~~352,96 €~~ 👉 0 €
-Non so se ti rendi conto! 😱
+{{ card(title="~~352,96~~ € 👉 0 €", description="Non so se ti rendi conto! 😱", textAlign="center", className="max-w-sm mx-auto") }}
 
 ## 😌 Chi siamo
 
-Sono Andrea e sono un Content Creator. Faccio video per chi vuole creare contenuti. Aiuto professionisti e aziende a crescere online tramite corsi, formazione e consulenze.
+{{ card(
+  image="/assets/images/andrea.avif",
+  mediaPosition="left",
+  imageAlt="Andrea Ciraolo",
+  headerText="Andrea Ciraolo",
+  description="Sono **Andrea** e sono un Content Creator. Faccio video per chi vuole creare contenuti. Aiuto professionisti e aziende a crescere online tramite corsi, formazione e consulenze.",
+  className="my-6"
+) }}
 
-Sono Sara, creo contenuti online e gestisco canali Youtube dal 2016. Il mio obiettivo è darti tutti gli strumenti che ti servono per crescere organicamente su Youtube, per valorizzare i tuoi contenuti e per migliorare la tua presenza online.
+{{ card(
+  image="/assets/images/sara.avif",
+  mediaPosition="right",
+  imageAlt="Sara Trecate",
+  headerText="Sara Trecate",
+  description="Sono **Sara**, creo contenuti online e gestisco canali Youtube dal 2016. Il mio obiettivo è darti tutti gli strumenti che ti servono per crescere organicamente su Youtube, per valorizzare i tuoi contenuti e per migliorare la tua presenza online.",
+  className="my-6"
+) }}
