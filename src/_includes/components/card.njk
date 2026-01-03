@@ -35,6 +35,9 @@
   - card(iframe="https://example.com", mediaPosition="left")
 #}
 
+{# Import del componente button per riutilizzo #}
+{% from "components/button.njk" import button %}
+
 {# Macro per renderizzare media (elimina duplicazione) #}
 {% macro renderMedia(
   type,
@@ -192,7 +195,7 @@
 ) %}
 
 {# Container card - inline per evitare tag <p> da Markdown #}
-<div class="w-full border-2 border-black bg-white shadow not-prose overflow-hidden rounded-default {{ className }} {{ 'relative hover:shadow transition-shadow cursor-pointer' if cardUrl else '' }}">{%- if cardUrl -%}
+<div class="w-full border-2 border-black shadow not-prose overflow-hidden rounded-default {{ className }} {{ 'relative bg-primary hover:bg-primary-light hover:shadow-none hover:translate-x-1 hover:translate-y-1 cursor-pointer' if cardUrl else 'bg-white' }}">{%- if cardUrl -%}
 <a href="{{ cardUrl }}" class="absolute inset-0 z-10" aria-label="{{ title or 'Card link' }}"></a>
 {%- endif -%}
 {%- if hasHeader -%}
@@ -238,14 +241,7 @@
     {%- endif -%}
     {%- if buttonText and buttonUrl -%}
     <div class="mt-5 not-prose {{ 'text-right' if mediaPosition == 'left' else '' }}">
-      <a href="{{ buttonUrl }}"
-        class="relative z-20 inline-block border-2 border-black px-5 py-3
-        font-semibold text-black shadow
-        focus:outline-0 transition-colors duration-300
-        bg-primary hover:bg-primary-dark
-        focus-ring-primary rounded-default">
-        {{- buttonText -}}
-      </a>
+      {{ button(buttonText, buttonUrl, className="relative z-20") }}
     </div>
     {%- endif -%}
   </div>

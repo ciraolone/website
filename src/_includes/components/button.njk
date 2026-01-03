@@ -19,5 +19,5 @@
 {% macro button(text, url, variant="primary", className="", target="_self") %}
 {#- Bottone stile neobrutalista con bordo nero, ombra e hover effect -#}
 {#- IMPORTANTE: tutto su una riga per evitare che Markdown interpreti le newlines come paragrafi -#}
-<a href="{{ url }}"{% if target %} target="{{ target }}"{% endif %}{% if target == "_blank" %} rel="noopener noreferrer"{% endif %} class="inline-block border-2 border-black px-5 py-3 font-semibold text-black shadow focus:outline-0 transition-colors duration-300 bg-primary hover:bg-primary-dark focus-ring-primary rounded-default {{ className }}">{{ text }}</a>
+<a href="{{ url }}"{% if target %} target="{{ target }}"{% endif %}{% if target == "_blank" %} rel="noopener noreferrer"{% endif %} class="inline-block border-2 border-black px-5 py-3 font-semibold text-black shadow focus:outline-0 bg-primary hover:bg-primary-light hover:shadow-none hover:translate-x-1 hover:translate-y-1 focus-ring-primary rounded-default {{ className }}">{{ text }}</a>
 {%- endmacro %}
