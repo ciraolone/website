@@ -9,6 +9,7 @@ hero:
 ---
 
 {% from "components/card.njk" import card %}
+{% from "components/cardGrid.njk" import cardGrid %}
 
 {{ card(
   image="/assets/images/dailytool-text.png",
@@ -36,8 +37,7 @@ hero:
 
 ## Dove vuoi seguirmi?
 
-<div class="grid grid-cols-2 md:grid-cols-3  lg:grid-cols-3 gap-6">
-
+{% call cardGrid() %}
 {{ card(
   logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64346e969b83454294578678_youtube.avif",
   cardUrl="https://cira.link/youtube",
@@ -45,37 +45,32 @@ hero:
   title="Youtube",
   description="Su YouTube realizzo tutorial, corsi gratuiti e video per aiutarti a migliorare la comunicazione online."
 ) }}
-
 {{ card(
   logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64346e964c12c420690e91b2_telegram.avif",
-  imageAlt="Telegram",
   cardUrl="https://cira.link/telegram",
+  imageAlt="Telegram",
   title="Telegram",
   description="Su Telegram c'è un rapporto un po' più personale con me. Qui puoi dare un'occhiata al mio canale."
 ) }}
-
 {{ card(
   logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64346e96862d253d23916196_instagram.avif",
-  imageAlt="Instagram",
   cardUrl="https://cira.link/instagram",
+  imageAlt="Instagram",
   title="Instagram",
   description="Su Instagram dialogo con la community e mostro, di tanto in tanto, il dietro le quinte del mio lavoro."
 ) }}
-
 {{ card(
   logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64346e969b8345406b578679_spotify.avif",
-  imageAlt="Negati",
   cardUrl="https://cira.link/negati",
+  imageAlt="Negati",
   title="Negati",
   description="Il podcast dove, con Vale e Matte, vi raccontiamo la nostra esperienza da imprenditori."
 ) }}
-
 {{ card(
   logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64346e969b8345406b578679_spotify.avif",
-  imageAlt="Passione Podcast",
   cardUrl="https://cira.link/passionepodcast",
+  imageAlt="Passione Podcast",
   title="Passione Podcast",
   description="Il podcast su di me che imparo a fare un podcast, partendo da zero."
 ) }}
-
-</div>
+{% endcall %}

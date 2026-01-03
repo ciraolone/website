@@ -7,9 +7,9 @@ hero:
 ---
 
 {% from "components/card.njk" import card %}
+{% from "components/cardGrid.njk" import cardGrid %}
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
+{% call cardGrid() %}
 {{ card(
   image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/67689af467d23a39c2e3bb84_Sblocca%20il%20content%20creator%20che%20%C3%A8%20in%20te.avif",
   imageAlt="Sblocca il Content Creator che è in te",
@@ -18,7 +18,6 @@ hero:
   buttonText="Scopri di più",
   buttonUrl="/sblocca/"
 ) }}
-
 {{ card(
   image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64fdd0be65ba18cc5d7f88de_CREA%20CONTENUTI%20COME%20UN%20TRATTORE%20(1).avif",
   imageAlt="Crea contenuti come un trattore",
@@ -27,7 +26,6 @@ hero:
   buttonText="Scopri di più",
   buttonUrl="/pages/masterclass-contenuti/"
 ) }}
-
 {{ card(
   image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64fc69c20a3ae14953aa99ce_Andrea%20e%20Matteo.avif",
   imageAlt="Fai podcast come un fabbro - Andrea e Matteo",
@@ -36,7 +34,6 @@ hero:
   buttonText="Scopri di più",
   buttonUrl="/pages/masterclass-podcast/"
 ) }}
-
 {{ card(
   image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/66053a88c39da81a0953c08b_Lavora%20come%20un%20Drago.avif",
   imageAlt="Lavora come un drago",
@@ -45,7 +42,6 @@ hero:
   buttonText="Scopri di più",
   buttonUrl="/pages/masterclass-lavoro/"
 ) }}
-
 {{ card(
   image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64678dab588afd10979df15e_Notion-con-Debora.avif",
   imageAlt="Organizza il lavoro e la vita con Notion",
@@ -54,7 +50,6 @@ hero:
   buttonText="Scopri di più",
   buttonUrl="/pages/notion/"
 ) }}
-
 {{ card(
   image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/646780c4c3848d5d52f3e8ce_Copertina-OBS-1536x865.avif",
   imageAlt="OBS Studio per video e live streaming",
@@ -63,5 +58,4 @@ hero:
   buttonText="Scopri di più",
   buttonUrl="https://cira.link/obs"
 ) }}
-
-</div>
+{% endcall %}

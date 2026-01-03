@@ -24,6 +24,7 @@ sidebarData:
 ---
 
 {% from "components/card.njk" import card %}
+{% from "components/cardGrid.njk" import cardGrid %}
 {% from "components/youtube.njk" import youtube %}
 {% from "components/accordion.njk" import accordion %}
 
@@ -51,30 +52,26 @@ Perché sei già pronto - o pronta - per creare contenuti. Anche se ancora non l
 
 ## Questo corso fa per te se...
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 flex flex-wrap justify-center">
-
+{% call cardGrid() %}
 {{ card(
   logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/67688bf606432a9005067b58_Non%20riesci%20a%20cominciare.avif",
   imageAlt="Non riesci a cominciare",
   title="Non riesci a cominciare",
   description="Ci sbatti la testa da settimane ma per un motivo o per un altro non sei ancora partito."
 ) }}
-
 {{ card(
   logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/67688c5027d120c7e31c947d_Sei%20rimasto%20impantanato.avif",
   imageAlt="Sei rimasto impantanato",
   title="Sei rimasto impantanato",
   description="Hai cominciato, ma poi ti sei impantanato davanti a qualche ostacolo più o meno grande."
 ) }}
-
 {{ card(
   logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/67688c0a5fe758642482ccf7_Vai%20col%20freno%20a%20mano%20tirato.avif",
   imageAlt="Vai col freno a mano tirato",
   title="Vai col freno a mano tirato",
   description="Lo stai facendo, ma senti di non essere al top. Senti che potresti ottenere - e dare - di più."
 ) }}
-
-</div>
+{% endcall %}
 
 ## 📺 Il programma del corso
 

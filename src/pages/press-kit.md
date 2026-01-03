@@ -7,6 +7,7 @@ hero:
 ---
 
 {% from "components/card.njk" import card %}
+{% from "components/cardGrid.njk" import cardGrid %}
 
 ## Bio breve
 
@@ -38,26 +39,21 @@ Se vuoi linkare alcune delle cose che faccio, scegli tra questi link quelli più
 
 Se hai bisogno di una foto, puoi scegliere tra queste.
 
-<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-
+{% call cardGrid() %}
 {{ card(
   image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64347dfcb19cb9ef12c4b3a7_Andrea2.avif",
   imageAlt="Andrea Ciraolo - Foto 1"
 ) }}
-
 {{ card(
   image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/646f6b803bae31011c604c60_11.avif",
   imageAlt="Andrea Ciraolo - Foto 2"
 ) }}
-
 {{ card(
   image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/646f6bc36668c5c2924a9f4e_09.avif",
   imageAlt="Andrea Ciraolo - Foto 3"
 ) }}
-
 {{ card(
   image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/646f6c0d31d2e21620d38e6f_02.avif",
   imageAlt="Andrea Ciraolo - Foto 4"
 ) }}
-
-</div>
+{% endcall %}
