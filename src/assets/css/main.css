@@ -32,11 +32,13 @@
     var(--color-primary) 50%,
     white
   ); /* 30% più chiaro, calcolato automaticamente */
+
   --color-primary-dark: color-mix(
     in srgb,
     var(--color-primary) 80%,
     black
   ); /* 30% più scuro, calcolato automaticamente */
+
   --color-secondary: #64748b; /* Slate 500 */
   --color-accent: #2563eb; /* Blue 600 */
 
@@ -338,5 +340,28 @@
     100% {
       transform: translateX(-100%);
     }
+  }
+
+  /* === LQIP (Low Quality Image Placeholder) ===
+     Effetto blur-up: mostra un placeholder sfocato mentre l'immagine vera carica.
+     - Il wrapper ha lo sfondo base64 sfocato (inline style)
+     - L'immagine è sempre visibile (opacity: 1) per evitare problemi con cache/onload
+     - Il placeholder sfocato si vede solo durante il caricamento effettivo */
+  .lqip-wrapper {
+    overflow: hidden;
+  }
+
+  .lqip-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* Immagine sempre visibile - il blur sotto si vede solo durante caricamento */
+    opacity: 1;
+  }
+
+  /* Quando il wrapper ha dimensioni fisse (es. logo 48x48), l'immagine deve adattarsi */
+  .lqip-wrapper.h-full .lqip-image {
+    height: 100%;
+    object-fit: contain;
   }
 }

@@ -5,7 +5,7 @@ description: Per creare tanti contenuti, di qualità e in poco tempo, non devi p
 hero:
   title: "Crea contenuti come un trattore!"
   subtitle: "Il nostro vero metodo per creare tanti contenuti di qualità, in poco tempo."
-  image: "https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64fdd0be65ba18cc5d7f88de_CREA%20CONTENUTI%20COME%20UN%20TRATTORE%20(1).avif"
+  image: "/assets/images/trattore.avif"
 sidebarData:
   price: "249 €"
   ctaText: "Acquista subito!"

@@ -7,6 +7,70 @@ const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownItStrikethrough = require("markdown-it-strikethrough-alt");
 const Image = require("@11ty/eleventy-img");
+const fs = require("fs");
+const path = require("path");
+const { getPlaiceholder } = require("plaiceholder");
+
+// Cache per i placeholder LQIP (evita di rigenerarli ad ogni build)
+const LQIP_CACHE_DIR = ".cache/lqip";
+if (!fs.existsSync(LQIP_CACHE_DIR)) {
+  fs.mkdirSync(LQIP_CACHE_DIR, { recursive: true });
+}
+
+/**
+ * Genera un placeholder LQIP (Low Quality Image Placeholder) in modo sincrono.
+ * Usa una cache su disco per evitare di rigenerare ad ogni build.
+ * @param {string} srcPath - Percorso del file immagine sorgente
+ * @returns {string} - Data URL base64 del placeholder
+ */
+function getLqipSync(srcPath) {
+  // Genera un nome file cache basato sul path
+  const cacheFileName = srcPath.replace(/[\/\\:]/g, "_") + ".txt";
+  const cachePath = path.join(LQIP_CACHE_DIR, cacheFileName);
+
+  // Se esiste in cache, leggi e ritorna
+  if (fs.existsSync(cachePath)) {
+    return fs.readFileSync(cachePath, "utf-8");
+  }
+
+  // Altrimenti genera il placeholder con sharp (sincrono)
+  // Sharp non ha API sincrone native, usiamo execSync per eseguire node in modo bloccante
+  let base64 = "";
+  const { execSync } = require("child_process");
+
+  // Scriviamo uno script temporaneo che genera il placeholder
+  const tempScript = `
+    const sharp = require("sharp");
+    const fs = require("fs");
+    sharp("${srcPath.replace(/\\/g, "\\\\")}")
+      .resize(10, 10, { fit: "cover" })
+      .blur(1)
+      .toBuffer()
+      .then(buffer => {
+        const base64 = "data:image/jpeg;base64," + buffer.toString("base64");
+        fs.writeFileSync("${cachePath.replace(/\\/g, "\\\\")}", base64);
+        console.log(base64);
+      });
+  `;
+
+  try {
+    // Esegui node in modo sincrono per generare il placeholder
+    base64 = execSync(`node -e '${tempScript.replace(/'/g, "\\'")}'`, {
+      encoding: "utf-8",
+      cwd: process.cwd()
+    }).trim();
+  } catch (e) {
+    // Fallback: ritorna un placeholder grigio
+    base64 = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3Crect fill='%23f3f4f6'/%3E%3C/svg%3E";
+  }
+
+  // Leggi dalla cache se è stato scritto
+  if (fs.existsSync(cachePath)) {
+    return fs.readFileSync(cachePath, "utf-8");
+  }
+
+  return base64;
+}
 
 module.exports = function(eleventyConfig) {
   // ============================================
@@ -108,10 +172,72 @@ module.exports = function(eleventyConfig) {
   });
 
   // ============================================
+  // FILTRO SINCRONO PER IMMAGINI OTTIMIZZATE
+  // ============================================
+  // Filtro per generare HTML di immagini ottimizzate con LQIP (usabile nelle macro Nunjucks)
+  // - Immagini locali (/assets/...): ottimizzate con LQIP blur-up
+  // - Immagini esterne (http/https): passate direttamente senza ottimizzazione
+  //
+  // Uso: {{ "/assets/images/foto.jpg" | optimizedImage("alt text", "css-class") | safe }}
+  eleventyConfig.addFilter("optimizedImage", function(src, alt = "", className = "") {
+    // Immagini esterne: passa direttamente senza ottimizzazione
+    // Quando le sposterai in locale, verranno automaticamente ottimizzate
+    if (src.startsWith("http://") || src.startsWith("https://")) {
+      return `<img src="${src}" alt="${alt}" class="${className}" loading="lazy">`;
+    }
+
+    // Immagini locali: ottimizza con eleventy-img + LQIP
+    const srcPath = src.startsWith("/") ? "src" + src : src;
+
+    // Genera LQIP placeholder
+    const lqipBase64 = getLqipSync(srcPath);
+
+    const options = {
+      widths: [400, 800, 1200, null],
+      formats: ["avif", "webp", "jpeg"],
+      outputDir: "./_site/assets/images/optimized/",
+      urlPath: "/assets/images/optimized/",
+      filenameFormat: function(id, src, width, format) {
+        const name = src.split("/").pop().split(".")[0];
+        return `${name}-${width}w.${format}`;
+      }
+    };
+
+    Image(srcPath, options);
+    const metadata = Image.statsSync(srcPath, options);
+
+    const largestImage = metadata.jpeg[metadata.jpeg.length - 1];
+    const smallestJpeg = metadata.jpeg[0];
+
+    const avifSrcset = metadata.avif.map(img => `${img.url} ${img.width}w`).join(", ");
+    const webpSrcset = metadata.webp.map(img => `${img.url} ${img.width}w`).join(", ");
+    const jpegSrcset = metadata.jpeg.map(img => `${img.url} ${img.width}w`).join(", ");
+
+    return `<div class="lqip-wrapper ${className}" style="position:relative;background-image:url(${lqipBase64});background-size:cover;background-position:center;">
+      <picture>
+        <source type="image/avif" srcset="${avifSrcset}" sizes="auto">
+        <source type="image/webp" srcset="${webpSrcset}" sizes="auto">
+        <img
+          src="${smallestJpeg.url}"
+          srcset="${jpegSrcset}"
+          sizes="auto"
+          alt="${alt}"
+          width="${largestImage.width}"
+          height="${largestImage.height}"
+          loading="lazy"
+          decoding="async"
+          class="lqip-image"
+        >
+      </picture>
+    </div>`;
+  });
+
+  // ============================================
   // SHORTCODES
   // ============================================
-  // Shortcode per immagini ottimizzate con eleventy-img
+  // Shortcode per immagini ottimizzate con eleventy-img + LQIP (blur placeholder)
   // Genera automaticamente formati WebP/AVIF e dimensioni responsive
+  // LQIP: mostra un placeholder sfocato mentre l'immagine vera carica
   // Uso nei template: {% image "src/assets/images/foto.jpg", "Descrizione immagine" %}
   // Con classe CSS: {% image "src/assets/images/foto.jpg", "Descrizione", "my-class" %}
   // Con larghezze custom: {% image "src/assets/images/foto.jpg", "Descrizione", "", [400, 800] %}
@@ -120,6 +246,11 @@ module.exports = function(eleventyConfig) {
     if (!alt) {
       throw new Error(`Immagine ${src} richiede un attributo alt per l'accessibilità`);
     }
+
+    // Genera LQIP (Low Quality Image Placeholder)
+    // Legge l'immagine e crea un placeholder base64 sfocato (~1KB)
+    const imageBuffer = fs.readFileSync(src);
+    const { base64 } = await getPlaiceholder(imageBuffer, { size: 10 });
 
     const metadata = await Image(src, {
       // Larghezze generate (null = originale)
@@ -147,19 +278,31 @@ module.exports = function(eleventyConfig) {
     // Questo permette al browser di riservare lo spazio corretto prima del caricamento (no CLS)
     const largestImage = metadata.jpeg[metadata.jpeg.length - 1];
 
-    // Genera tag <picture> con srcset per responsive images
-    const imageAttributes = {
-      alt,
-      class: className,
-      loading: "lazy",
-      decoding: "async",
-      // Width e height permettono al browser di calcolare l'aspect ratio
-      // e riservare lo spazio prima del caricamento (previene CLS)
-      width: largestImage.width,
-      height: largestImage.height
-    };
+    // Genera srcset per ogni formato
+    const avifSrcset = metadata.avif.map(img => `${img.url} ${img.width}w`).join(", ");
+    const webpSrcset = metadata.webp.map(img => `${img.url} ${img.width}w`).join(", ");
+    const jpegSrcset = metadata.jpeg.map(img => `${img.url} ${img.width}w`).join(", ");
+    const smallestJpeg = metadata.jpeg[0];
 
-    return Image.generateHTML(metadata, imageAttributes);
+    // HTML con LQIP: container con sfondo blur + immagine sopra
+    // L'immagine è sempre visibile, il blur si vede solo durante il caricamento
+    return `<div class="lqip-wrapper ${className}" style="position:relative;background-image:url(${base64});background-size:cover;background-position:center;">
+      <picture>
+        <source type="image/avif" srcset="${avifSrcset}" sizes="auto">
+        <source type="image/webp" srcset="${webpSrcset}" sizes="auto">
+        <img
+          src="${smallestJpeg.url}"
+          srcset="${jpegSrcset}"
+          sizes="auto"
+          alt="${alt}"
+          width="${largestImage.width}"
+          height="${largestImage.height}"
+          loading="lazy"
+          decoding="async"
+          class="lqip-image"
+        >
+      </picture>
+    </div>`;
   });
 
   // Shortcode per link esterni

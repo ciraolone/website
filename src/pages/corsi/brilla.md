@@ -46,31 +46,31 @@ Non sarai più solo: sarai accompagnato nel tuo viaggio su Youtube se non dai mi
 
 {% call cardGrid() %}
 {{ card(
-  logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/678beace73e5f66b7f6526ed_parti_da_zero.avif",
+  logo="/assets/images/pulcino.avif",
   imageAlt="Parti da zero",
   title="Parti da zero",
   description="Hai una grande idea per i tuo canale, ma non sai da dove cominciare."
 ) }}
 {{ card(
-  logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/678beadbe5fec0b1f9d398de_ti_senti_solo.avif",
+  logo="/assets/images/solo.avif",
   imageAlt="Ti senti solo",
   title="Ti senti solo",
   description="Troppe cose da fare e da imparare. Solo altri creator come te possono capirti."
 ) }}
 {{ card(
-  logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/678beaee974502b807b1f8ad_vuoi_di_pi%C3%B9.avif",
+  logo="/assets/images/lumaca.avif",
   imageAlt="Vuoi di più",
   title="Vuoi di più",
   description="Nonostante gli sforzi, il contatore dlle visualizzazioni piange."
 ) }}
 {{ card(
-  logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/678bec4200ef3f3d9be4dae6_youtube_no.avif",
+  logo="/assets/images/youtube-no.avif",
   imageAlt="Non hai ancora un canale",
   title="Non hai ancora un canale",
   description="Questo corso fa per te: ti aiuteremo a crearlo senza fare cavolate."
 ) }}
 {{ card(
-  logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/678bec546741b2e93ead5e70_youtube_yes.avif",
+  logo="/assets/images/youtube-si.avif",
   imageAlt="Hai già il tuo canale",
   title="Hai già il tuo canale",
   description="Questo corso fa per te: ti aiuteremo ad ottimizzarlo per la sua crescita."

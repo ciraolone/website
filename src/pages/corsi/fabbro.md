@@ -5,7 +5,7 @@ description: Prendi in mano il microfono e picchia giù duro per raggiungere i t
 hero:
   title: "Fai podcast come un fabbro!"
   subtitle: "Prendi in mano il microfono e picchia giù duro per raggiungere i tuoi obiettivi."
-  image: "https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64fc69c20a3ae14953aa99ce_Andrea%20e%20Matteo.avif"
+  image: "/assets/images/fabbro.avif"
 # sidebarData:
 #   alert: "Le iscrizioni alla Masterclass sono chiuse in questo momento!"
 #   tagline: "Questa Masterclass fa per te se... vuoi creare il tuo primo podcast o migliorare quello che hai già!"

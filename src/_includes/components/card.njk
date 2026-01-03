@@ -3,6 +3,8 @@
 
   Parametri:
   - image: percorso immagine (opzionale, alt. a video/iframe)
+    Se inizia con /assets/, viene ottimizzata automaticamente con eleventy-img
+    Se è URL esterno (http/https), viene usata così com'è
   - video: percorso video (opzionale, alt. a image/iframe)
   - iframe: URL iframe (opzionale, alt. a image/video)
   - iframeHeight: altezza iframe (default: "320px")
@@ -29,8 +31,8 @@
   Esempi:
   - card(video="/path.mp4", headerText="Titolo")
   - card(title="Centrato", textAlign="center")
-  - card(image="/img.jpg", mediaPosition="bottom")
-  - card(image="/img.jpg", mediaPosition="left")
+  - card(image="/assets/images/foto.jpg", mediaPosition="bottom") -- ottimizzata automaticamente
+  - card(image="https://example.com/img.jpg", mediaPosition="left") -- URL esterno, non ottimizzata
   - card(video="/vid.mp4", mediaPosition="right")
   - card(iframe="https://example.com", mediaPosition="left")
 #}
@@ -55,8 +57,8 @@
       <source src="{{ src }}" type="video/mp4">
     </video>
     {%- elif type == "image" -%}
-    <img src="{{ src }}" alt="{{ alt }}"
-      class="{{ mediaElClass }}" loading="lazy">
+    {# Tutte le immagini (locali e remote) passano per optimizedImage #}
+    {{- src | optimizedImage(alt, mediaElClass) | safe -}}
     {%- elif type == "iframe" -%}
     <iframe src="{{ src }}" width="100%"
       height="{{ iframeHeight }}"
@@ -227,7 +229,10 @@
      {%- if logo or title or description -%}
     <div class="prose">
     {%- if logo -%}
-    <img src="{{ logo }}" alt="{{ title or 'Logo' }}" class="w-12 h-12 mb-3 object-contain">
+    {# Tutti i logo (locali e remoti) passano per optimizedImage #}
+    <div class="w-12 h-12 mb-3">
+    {{- logo | optimizedImage(title or 'Logo', "w-full h-full object-contain") | safe -}}
+    </div>
     {%- endif -%}
     {%- if title -%}
     <h3 class="text-md font-semibold text-black font-accent">

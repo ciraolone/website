@@ -54,19 +54,19 @@ Perché sei già pronto - o pronta - per creare contenuti. Anche se ancora non l
 
 {% call cardGrid() %}
 {{ card(
-  logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/67688bf606432a9005067b58_Non%20riesci%20a%20cominciare.avif",
+  logo="/assets/images/stanco.avif",
   imageAlt="Non riesci a cominciare",
   title="Non riesci a comin&shy;cia&shy;re",
   description="Ci sbatti la testa da settimane ma per un motivo o per un altro non sei ancora partito."
 ) }}
 {{ card(
-  logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/67688c5027d120c7e31c947d_Sei%20rimasto%20impantanato.avif",
+  logo="/assets/images/ko.avif",
   imageAlt="Sei rimasto impantanato",
   title="Sei rimasto impanta&shy;na&shy;to",
   description="Hai cominciato, ma poi ti sei impantanato davanti a qualche ostacolo più o meno grande."
 ) }}
 {{ card(
-  logo="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/67688c0a5fe758642482ccf7_Vai%20col%20freno%20a%20mano%20tirato.avif",
+  logo="/assets/images/scale.avif",
   imageAlt="Vai col freno a mano tirato",
   title="Vai col freno a mano tirato",
   description="Lo stai facendo, ma senti di non essere al top. Senti che potresti ottenere - e dare - di più."
