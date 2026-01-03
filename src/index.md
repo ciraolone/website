@@ -1,6 +1,5 @@
 ---
 layout: base.njk
-title: Ciraolone
 description: Pagina principale del sito
 # hero:
 #   title: "Ciao!👋"
