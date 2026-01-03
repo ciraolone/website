@@ -67,6 +67,41 @@
 }
 
 /* ============================================
+   Global Text Handling
+   Gestione parole lunghe: spezza le parole quando necessario
+   e aggiunge sillabazione automatica (richiede lang="it" su html)
+   ============================================ */
+
+@layer base {
+  /* 1. LIVELLO BASE (Safety) - Applicalo globalmente */
+  /* Impedisce che URL o stringhe lunghe rompano il layout orizzontale */
+  * {
+    overflow-wrap: anywhere;
+  }
+
+  /* 2. LIVELLO TITOLI (Controllo Estetico) */
+  /* Impedisce sillabazioni automatiche brutte nei titoli e nelle card */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .card-title {
+    hyphens: manual;
+  }
+
+  /* 3. LIVELLO TESTO LUNGO (Densità e Lettura) */
+  /* Attiva la sillabazione solo dove serve davvero risparmiare spazio */
+  p,
+  li {
+    hyphens: auto;
+    /* Opzionale (Chrome 114+): evita orfane di una sola parola a fine riga */
+    text-wrap: pretty;
+  }
+}
+
+/* ============================================
    Component Classes
    ============================================ */
 @layer components {
