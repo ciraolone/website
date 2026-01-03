@@ -110,7 +110,7 @@
      ============================================
   */
   .content-container {
-    @apply max-w-6xl mx-auto px-4;
+    @apply max-w-6xl mx-auto px-8;
     @apply flex flex-col lg:flex-row justify-center gap-8;
   }
 
