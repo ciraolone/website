@@ -4,6 +4,7 @@
   Parametri:
   - title: titolo principale (obbligatorio)
   - subtitle: sottotitolo (opzionale)
+  - tagline: testo in corsivo centrato sotto l'hero (opzionale)
   - image: percorso immagine (opzionale, alt. a video)
   - video: percorso video (opzionale, alt. a image)
   - imageAlt: testo alternativo per immagine (opzionale)
@@ -15,11 +16,13 @@
   - hero(title="Ciao!", subtitle="Benvenuto")
   - hero(title="Ciao!", video="/path.mp4", mediaPosition="right")
   - hero(title="Ciao!", image="/img.jpg", mediaPosition="left")
+  - hero(title="Ciao!", tagline="Un motto accattivante")
 #}
 
 {% macro hero(
   title="",
   subtitle="",
+  tagline="",
   image="",
   video="",
   imageAlt="",
@@ -29,6 +32,7 @@
 {% set hasMedia = video or image %}
 
 <section class="w-full py-8 {{ className }}">
+
   <div class="content-container">
     <div class="grid grid-cols-1 items-center {{ 'md:grid-cols-2 gap-6' if hasMedia else '' }}">
       <div class="flex flex-col justify-center order-2 md:order-1">
@@ -55,6 +59,15 @@
       {%- endif -%}
     </div>
   </div>
+
+  {%- if tagline -%}
+  <div class="bg-primary df-border-y font-accent mt-8 py-4">
+    <div class="content-container">
+      <p class="text-center text-xl italic text-gray-700">{{ tagline }}</p>
+    </div>
+  </div>
+  {%- endif -%}
+
 </section>
 
 {% endmacro %}

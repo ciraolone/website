@@ -6,6 +6,7 @@ hero:
   title: "Brilla su YouTube"
   subtitle: "Il corso super-accelerato per fare sul serio, con Andrea Ciraolo e Sara Trecate."
   image: "/assets/images/brilla.png"
+  tagline: "I tuoi due esperti preferiti, ancora insieme."
 sidebarData:
   price: "499 €"
   ctaText: "Acquista subito!"

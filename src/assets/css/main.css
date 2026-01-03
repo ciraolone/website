@@ -1,4 +1,12 @@
 /* ============================================
+   CONVENZIONE NAMING: Prefisso df-
+   ============================================
+   Le classi custom di questo progetto usano il prefisso "df-" (default).
+   Questo le distingue dalle classi di Tailwind e altri framework.
+   Esempio: .df-border, .df-border-t, .df-border-b
+   ============================================ */
+
+/* ============================================
    Custom Fonts
    ============================================ */
 @import "../fonts/press-start-2p/press-start-2p.css";
@@ -48,10 +56,6 @@
   --spacing-card-sm: 1rem; /* p-4 */
   --spacing-section: 2rem; /* my-8 */
 
-  /* === Borders === */
-  --border-width: 2px;
-  --border-color: #000000;
-
   /* === Shadows (Neobrutalist Style) === */
   /* Sovrascriviamo le shadow di Tailwind con lo stile neobrutalist */
   --shadow: 4px 4px 0 0 rgb(0 0 0);
@@ -86,7 +90,7 @@
   }
 
   .sidebar {
-    @apply w-full lg:w-72 flex-shrink-0 mx-auto;
+    @apply w-full lg:w-72 shrink-0 mx-auto;
   }
 
   /* === CARD COMPONENT (moderna con hover) === */
@@ -185,6 +189,35 @@
     border-radius: var(--radius-default);
   }
 
+  /* === df-border: Bordi standard del progetto (border-2 border-black) === */
+  .df-border {
+    @apply border-2 border-black;
+  }
+
+  .df-border-t {
+    @apply border-t-2 border-black;
+  }
+
+  .df-border-b {
+    @apply border-b-2 border-black;
+  }
+
+  .df-border-l {
+    @apply border-l-2 border-black;
+  }
+
+  .df-border-r {
+    @apply border-r-2 border-black;
+  }
+
+  .df-border-x {
+    @apply border-x-2 border-black;
+  }
+
+  .df-border-y {
+    @apply border-y-2 border-black;
+  }
+
   /* Focus Ring Primary */
   .focus-ring-primary:focus {
     box-shadow: 0 0 0 2px var(--color-primary);
@@ -234,17 +267,12 @@
 
   /* === HORIZONTAL RULE === */
   hr {
-    @apply my-8;
-    border: none !important;
-    border-top-width: var(--border-width) !important;
-    border-top-style: solid !important;
-    border-top-color: var(--border-color) !important;
+    @apply my-8 border-none border-t-2 border-black;
   }
 
   /* === STRIKETHROUGH (markdown ~~testo~~) === */
   s {
-    text-decoration-color: red;
-    text-decoration-thickness: var(--border-width);
+    @apply decoration-red-500 decoration-2;
   }
 
   /* === LISTE - Spaziatura uniforme alla normale interlinea ===
