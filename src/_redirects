@@ -3,11 +3,22 @@
 # Formato: /percorso-origine /percorso-destinazione [codice-stato]
 # Default: 302 (temporaneo). Usa 301 per redirect permanenti.
 
+# Redirect da URL originali (verificati da /originals/) → nuovi URL
+
+/parliamoci /contatti 301
+
+/corso /corsi 301
+/masterclass /corsi 301
+
+/corso/brilla /brilla 301
+/corso/sblocca /sblocca 301
+/masterclass/trattore /trattore 301
+/masterclass/fabbro /fabbro 301
+/masterclass/drago /drago 301
+/podcast-fabbro /fabbro 301
+/contenuti-trattore /trattore 301
+
 /corso/notion /notion 301
 /corsi/notion /notion 301
 /corso/corso-notion /notion 301
 /corso-notion /notion 301
-/corso /corsi 301
-/masterclass /corsi 301
-/podcast-fabbro /masterclass/fabbro 301
-/contenuti-trattore /masterclass/trattore 301
