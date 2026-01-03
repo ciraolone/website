@@ -7,31 +7,34 @@ hero:
   subtitle: "Il corso super-accelerato per fare sul serio, con Andrea Ciraolo e Sara Trecate."
   image: "/assets/images/brilla.png"
   tagline: "I tuoi due esperti preferiti, ancora insieme."
-sidebarData:
-  price: "499 €"
-  ctaText: "Acquista subito!"
-  ctaUrl: "https://pay.hotmart.com/P97614971Q?off=9pp30lii"
-  paymentNote: "Puoi pagare in 3 rate."
-  urgencyNote: "le iscrizioni a questo corso chiudono il 4 gennaio!"
-  features:
-    - "13 lezioni sui fondamentali"
-    - "4 lezioni extra di approfondimento, in diretta"
-    - "4 sessioni di Q&A"
-    - "4 meeting di gruppo con noi"
-    - "Accesso al gruppo riservato"
-    - "Risorse indispensabili"
-    - "Certificato di partecipazione"
-    - "Tanti bonus per te!"
-  secondaryTitle: "Lo prendi una volta, è tuo per sempre"
-  secondarySubtitle: "Hai capito bene: l'acquisto è lifetime."
-  secondaryFeatures:
-    - "Tutto il materiale è tuo per sempre"
-    - "L'accesso al gruppo è illimitato nel tempo"
-    - "Riceverai anche le lezioni delle nuove edizioni del corso!"
+# sidebarData:
+#   price: "499 €"
+#   ctaText: "Acquista subito!"
+#   ctaUrl: "https://pay.hotmart.com/P97614971Q?off=9pp30lii"
+#   paymentNote: "Puoi pagare in 3 rate."
+#   urgencyNote: "le iscrizioni a questo corso chiudono il 4 gennaio!"
+#   features:
+#     - "13 lezioni sui fondamentali"
+#     - "4 lezioni extra di approfondimento, in diretta"
+#     - "4 sessioni di Q&A"
+#     - "4 meeting di gruppo con noi"
+#     - "Accesso al gruppo riservato"
+#     - "Risorse indispensabili"
+#     - "Certificato di partecipazione"
+#     - "Tanti bonus per te!"
+#   secondaryTitle: "Lo prendi una volta, è tuo per sempre"
+#   secondarySubtitle: "Hai capito bene: l'acquisto è lifetime."
+#   secondaryFeatures:
+#     - "Tutto il materiale è tuo per sempre"
+#     - "L'accesso al gruppo è illimitato nel tempo"
+#     - "Riceverai anche le lezioni delle nuove edizioni del corso!"
 ---
 
+{% from "components/alert.njk" import alert %}
 {% from "components/card.njk" import card %}
 {% from "components/cardGrid.njk" import cardGrid %}
+
+{{ alert("Oh no! Le iscrizioni a Brilla su Youtube sono chiuse in questo momento. Seguici per sapere se e quando riapriranno!", variant="warning") }}
 
 **Stare su Youtube è un gran casino eh?** E se ti dicessimo che i tuoi due punti di riferimento per crescere su Youtube hanno fatto una combo e si sono riuniti per aiutarti ad acqusire in tempo record la sicurezza e competenza che ti servono per far brillare il tuo progetto?
 
