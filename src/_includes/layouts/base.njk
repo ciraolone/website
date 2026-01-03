@@ -21,12 +21,16 @@
     {%- endif -%}
 
     {# Content container #}
-    <div class="content-container py-8">
-      <div class="content prose prose-lg">
+    <div class="max-w-6xl mx-auto px-8 flex flex-col lg:flex-row justify-center gap-8 py-8">
+      {# prose: applica classi tipografiche (default: true) #}
+      {# maxW: larghezza massima del content (default: "xl") #}
+      {% set proseClasses = "prose prose-lg" if prose !== false else "" %}
+      {% set maxWClass = "max-w-" + (maxW if maxW else "xl") %}
+      <div class="flex-1 min-w-0 mx-auto {{ proseClasses }} {{ maxWClass }}">
         {{ content | safe }}
       </div>
       {% if sidebarData %}
-      <div class="sidebar hidden lg:block">
+      <div class="w-full lg:w-72 shrink-0 mx-auto hidden lg:block">
         {{ renderSidebar(
           price=sidebarData.price,
           ctaText=sidebarData.ctaText,
@@ -41,7 +45,7 @@
         ) }}
       </div>
       {# Mobile: features + CTA fixed #}
-      <div class="content lg:hidden mt-8">
+      <div class="flex-1 min-w-0 mx-auto lg:hidden mt-8">
         {{ sidebarMobileFeatures(
           tagline=sidebarData.tagline,
           features=sidebarData.features,
