@@ -6,6 +6,7 @@
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownItStrikethrough = require("markdown-it-strikethrough-alt");
+const Image = require("@11ty/eleventy-img");
 
 module.exports = function(eleventyConfig) {
   // ============================================
@@ -109,9 +110,56 @@ module.exports = function(eleventyConfig) {
   // ============================================
   // SHORTCODES
   // ============================================
-  // Shortcode per immagini responsive
-  eleventyConfig.addShortcode("image", function(src, alt, className = "") {
-    return `<img src="${src}" alt="${alt}" class="${className}" loading="lazy">`;
+  // Shortcode per immagini ottimizzate con eleventy-img
+  // Genera automaticamente formati WebP/AVIF e dimensioni responsive
+  // Uso nei template: {% image "src/assets/images/foto.jpg", "Descrizione immagine" %}
+  // Con classe CSS: {% image "src/assets/images/foto.jpg", "Descrizione", "my-class" %}
+  // Con larghezze custom: {% image "src/assets/images/foto.jpg", "Descrizione", "", [400, 800] %}
+  eleventyConfig.addShortcode("image", async function(src, alt, className = "", widths = [400, 800, 1200]) {
+    // Validazione: alt è obbligatorio per accessibilità
+    if (!alt) {
+      throw new Error(`Immagine ${src} richiede un attributo alt per l'accessibilità`);
+    }
+
+    const metadata = await Image(src, {
+      // Larghezze generate (null = originale)
+      widths: [...widths, null],
+      // Formati: AVIF (più leggero), WebP (compatibile), JPEG (fallback)
+      formats: ["avif", "webp", "jpeg"],
+      // Output nella cartella _site/assets/images/optimized/
+      outputDir: "./_site/assets/images/optimized/",
+      // URL pubblico delle immagini
+      urlPath: "/assets/images/optimized/",
+      // Nome file: hash del contenuto per cache-busting automatico
+      filenameFormat: function(id, src, width, format) {
+        const name = src.split("/").pop().split(".")[0];
+        return `${name}-${width}w.${format}`;
+      },
+      // Cache su disco: evita di ri-processare immagini già ottimizzate
+      // La cartella .cache va aggiunta a .gitignore
+      cacheOptions: {
+        duration: "1y",
+        directory: ".cache"
+      }
+    });
+
+    // Prende le dimensioni dall'immagine più grande (l'originale) per calcolare l'aspect ratio
+    // Questo permette al browser di riservare lo spazio corretto prima del caricamento (no CLS)
+    const largestImage = metadata.jpeg[metadata.jpeg.length - 1];
+
+    // Genera tag <picture> con srcset per responsive images
+    const imageAttributes = {
+      alt,
+      class: className,
+      loading: "lazy",
+      decoding: "async",
+      // Width e height permettono al browser di calcolare l'aspect ratio
+      // e riservare lo spazio prima del caricamento (previene CLS)
+      width: largestImage.width,
+      height: largestImage.height
+    };
+
+    return Image.generateHTML(metadata, imageAttributes);
   });
 
   // Shortcode per link esterni

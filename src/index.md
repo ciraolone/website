@@ -10,13 +10,18 @@ description: Pagina principale del sito
 {% from "components/card.njk" import card %}
 {% from "components/cardGrid.njk" import cardGrid %}
 
-{{ card(
-  image="/assets/images/andrea.png",
-  mediaPosition="top",
-  imageAlt="Andrea Ciraolo",
-  title="Ciao!👋 Mi chiamo Andrea e faccio video per farti imparare le cose.",
-  className="my-6"
-) }}
+<div class="w-full border-2 border-black shadow not-prose overflow-hidden rounded-default bg-white my-6">
+  <div class="flex flex-col">
+    <div class="w-full border-b-2 border-black bg-black overflow-hidden leading-0">
+      {% image "src/assets/images/andrea.png", "Andrea Ciraolo", "w-full block max-w-full h-auto" %}
+    </div>
+    <div class="border-black p-4 sm:p-6 max-w-none text-left">
+      <div class="prose">
+        <h3 class="text-md font-semibold text-black font-accent">Ciao!👋 Mi chiamo Andrea e faccio video per farti imparare le cose.</h3>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## Cosa possiamo fare assieme
 
