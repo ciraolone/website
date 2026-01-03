@@ -16,6 +16,4 @@ Mi farà molto piacere se mi scrivi per salutarmi, presentarti, ringraziarmi, co
 
 Se cerchi supporto, non scrivermi. Prova piuttosto a fare una ricerca su YouTube scrivendo la tua domanda seguita da "Andrea Ciraolo": potresti trovare un mio video con la risposta.
 
-Se desideri un supporto personalizzato e un accompagnamento individuale, allora [puoi richiedere una consulenza in questa pagina](https://cira.link/collaboriamo).
-
 C'è dell'altro? Bene! Allora puoi scrivermi qui: [team@ciraolo.me](mailto:team@ciraolo.me)

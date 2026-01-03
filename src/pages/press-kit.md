@@ -29,7 +29,7 @@ Per saperne di più puoi visitare la pagina [Chi sono](/pages/chi-sono/).
 
 Se vuoi linkare alcune delle cose che faccio, scegli tra questi link quelli più adatti alla nostra collaborazione.
 
-- **Sito** [https://ciraolo.me/](https://ciraolo.me/)
+- **Sito** [https://ciraolone.com](https://ciraolone.com)
 - **Youtube** [https://www.cira.link/youtube](https://www.cira.link/youtube)
 - **Newsletter** [https://www.cira.link/newsletter](https://www.cira.link/newsletter)
 - **Telegram** [https://www.cira.link/telegram](https://www.cira.link/telegram)
