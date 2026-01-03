@@ -6,6 +6,7 @@ hero:
   title: "Sblocca il Content Creator che è in te!"
   subtitle: "Sei già pronto per creare contenuti. Anche se ancora non lo sai."
   image: "/assets/images/sblocca.png"
+  tagline: "L'unico corso di cui hai davvero bisogno per cominciare!"
 sidebarData:
   price: "19,95 €"
   ctaText: "Acquista subito!"
