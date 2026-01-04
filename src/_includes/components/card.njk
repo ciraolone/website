@@ -8,6 +8,7 @@
   - iframeHeight: altezza iframe (default: "320px")
   - imageAlt: testo alternativo per immagine
   - logo: percorso logo/icona (opzionale, mostrato sopra al titolo)
+  - logoEmoji: emoji come logo (opzionale, alternativa a logo immagine)
   - headerText: testo header giallo (opzionale, mostra header solo se presente)
   - title: titolo della card (opzionale, supporta markdown inline)
   - description: descrizione della card (opzionale, supporta markdown inline: **grassetto**, *corsivo*, ~~barrato~~, etc.)
@@ -33,6 +34,7 @@
   - card(image="/img.jpg", mediaPosition="left")
   - card(video="/vid.mp4", mediaPosition="right")
   - card(iframe="https://example.com", mediaPosition="left")
+  - card(logoEmoji="🚀", title="Con emoji")
 #}
 
 {# Import del componente button per riutilizzo #}
@@ -74,6 +76,7 @@
   iframeHeight="320px",
   imageAlt="",
   logo="",
+  logoEmoji="",
   headerText="",
   title="",
   description="",
@@ -221,11 +224,14 @@
     iframeHeight
   ) -}}
 
-  {%- if title or description or buttonText or logo -%}
+  {%- if title or description or buttonText or logo or logoEmoji -%}
   <div class="{{ contentClass }}">
-     {%- if logo or title or description -%}
+     {%- if logo or logoEmoji or title or description -%}
     <div class="prose">
-    {%- if logo -%}
+    {%- if logoEmoji -%}
+    {#- Emoji come logo: usa il sistema df-emoji con dimensione 2xl (48px) per coerenza con logo immagine -#}
+    <span class="df-emoji df-emoji-2xl df-emoji-block mb-3" role="img" aria-label="{{ title or 'Logo' }}">{{ logoEmoji }}</span>
+    {%- elif logo -%}
     {{ logo | responsiveImg({ alt: title or 'Logo', sizes: '48px', className: 'w-12 h-12 mb-3 object-contain' }) | safe }}
     {%- endif -%}
     {%- if title -%}
