@@ -10,7 +10,8 @@
     "dev": "npm run serve",
     "clean": "rimraf _site",
     "lint:css": "stylelint 'src/**/*.css' --config .standards/lint/css/stylelint.config.mjs",
-    "lint:css:fix": "stylelint 'src/**/*.css' --config .standards/lint/css/stylelint.config.mjs --fix"
+    "lint:css:fix": "stylelint 'src/**/*.css' --config .standards/lint/css/stylelint.config.mjs --fix",
+    "favicon": "node scripts/generate-favicon.js"
   },
   "keywords": [
     "eleventy",
