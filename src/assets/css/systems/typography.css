@@ -1,0 +1,71 @@
+/* ============================================
+   TYPOGRAPHY COMPONENTS
+   ============================================
+   Stili per titoli, sottotitoli, prose, hr, etc.
+   ============================================ */
+
+@layer components {
+  /* === HEADING FONT === */
+  h1,
+  h2 {
+    font-family: var(--font-accent);
+  }
+
+  /* === TITLE === */
+  .title {
+    @apply text-3xl sm:text-4xl lg:text-4xl;
+    @apply font-black tracking-tight leading-tight;
+    @apply text-gray-900;
+    @apply mb-6;
+    font-family: var(--font-accent);
+  }
+
+  /* === SUBTITLE === */
+  .subtitle {
+    @apply text-lg sm:text-xl lg:text-2xl;
+    @apply font-medium tracking-wide leading-relaxed;
+    @apply text-gray-600;
+    @apply mb-4;
+  }
+
+  /* === HORIZONTAL RULE === */
+  hr {
+    @apply my-8 border-none border-t-2 border-black;
+  }
+
+  /* === STRIKETHROUGH (markdown ~~testo~~) === */
+  s {
+    @apply decoration-red-500 decoration-2;
+  }
+
+  /* === LISTE - Spaziatura uniforme alla normale interlinea ===
+     Rimuove il margine extra tra gli elementi delle liste per allinearli
+     alla spaziatura naturale del testo (leading-relaxed).
+     !important necessario per sovrascrivere i :where() di Typography. */
+
+  .prose li {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* === LISTE ORDINATE - Font accent per i numeri === */
+  .prose ol {
+    list-style-position: inside;
+    padding-left: 0 !important;
+  }
+
+  .prose ol li::marker {
+    font-family: var(--font-accent);
+    font-size: 0.7em;
+  }
+
+  /* === UTILITY: Font Accent === */
+  .font-accent {
+    font-family: var(--font-accent);
+  }
+
+  /* Alias per retrocompatibilita (usare font-accent per nuovi elementi) */
+  .font-pixel {
+    font-family: var(--font-accent);
+  }
+}

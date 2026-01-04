@@ -1,0 +1,100 @@
+/* ============================================
+   BASE - Design Tokens e Global Styles
+   ============================================
+   Contiene:
+   - @theme con design tokens (colori, spacing, etc.)
+   - @layer base con stili globali (text handling)
+   ============================================ */
+
+/* ============================================
+   Design System - Design Tokens
+   ============================================ */
+@theme {
+  /* === Typography === */
+  --font-accent: "Press Start 2P", sans-serif; /* Font per titoli e accenti */
+
+  /* === Brand Colors === */
+  --color-primary: #fde047; /* Yellow 300 - Primary Brand Color */
+  --color-primary-light: color-mix(
+    in srgb,
+    var(--color-primary) 50%,
+    white
+  ); /* 30% piu chiaro, calcolato automaticamente */
+  --color-primary-dark: color-mix(
+    in srgb,
+    var(--color-primary) 80%,
+    black
+  ); /* 30% piu scuro, calcolato automaticamente */
+  --color-secondary: #64748b; /* Slate 500 */
+  --color-accent: #2563eb; /* Blue 600 */
+
+  /* === Neutral Colors === */
+  --color-bg-main: #ffffff;
+  --color-bg-alt: #f3f4f6; /* Gray 100 */
+  --color-text-primary: #111827; /* Gray 900 */
+  --color-text-secondary: #6b7280; /* Gray 500 */
+
+  /* === Component Colors === */
+  --color-card-bg: #ffffff;
+  --color-card-border: #000000;
+  --color-card-hover: #fef3c7; /* Yellow 100 */
+
+  /* === Border Radius === */
+  --radius-default: 0px; /* Brutalist style - sharp corners */
+  --radius-sm: 0.5rem; /* 8px */
+  --radius-md: 0.75rem; /* 12px */
+  --radius-lg: 1rem; /* 16px */
+  --radius-xl: 1.5rem; /* 24px */
+  --radius-2xl: 2rem; /* 32px */
+  --radius-3xl: 2.5rem; /* 40px */
+
+  /* === Spacing === */
+  --spacing-card: 1.5rem; /* p-6 */
+  --spacing-card-sm: 1rem; /* p-4 */
+  --spacing-section: 2rem; /* my-8 */
+
+  /* === Shadows (Neobrutalist Style) === */
+  /* Sovrascriviamo le shadow di Tailwind con lo stile neobrutalist */
+  --shadow: 4px 4px 0 0 rgb(0 0 0);
+  --shadow-top-left: -4px -4px 0 0 rgb(0 0 0);
+
+  /* === Transitions === */
+  --transition-fast: 150ms;
+  --transition-base: 300ms;
+  --transition-slow: 500ms;
+}
+
+/* ============================================
+   Global Text Handling
+   Gestione parole lunghe: spezza le parole quando necessario
+   e aggiunge sillabazione automatica (richiede lang="it" su html)
+   ============================================ */
+
+@layer base {
+  /* 1. LIVELLO BASE (Safety) - Applicalo globalmente */
+  /* Impedisce che URL o stringhe lunghe rompano il layout orizzontale */
+  * {
+    overflow-wrap: anywhere;
+  }
+
+  /* 2. LIVELLO TITOLI (Controllo Estetico) */
+  /* Impedisce sillabazioni automatiche brutte nei titoli e nelle card */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .card-title {
+    hyphens: manual;
+  }
+
+  /* 3. LIVELLO TESTO LUNGO (Densita e Lettura) */
+  /* Attiva la sillabazione solo dove serve davvero risparmiare spazio */
+  p,
+  li {
+    hyphens: auto;
+    /* Opzionale (Chrome 114+): evita orfane di una sola parola a fine riga */
+    text-wrap: pretty;
+  }
+}

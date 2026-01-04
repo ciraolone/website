@@ -1,0 +1,27 @@
+/* ============================================
+   BUTTON STYLES
+   ============================================
+   Stili per bottoni: primary e brutal.
+   ============================================ */
+
+@layer components {
+  .btn-primary {
+    @apply inline-block bg-blue-600 text-white px-4 py-2;
+    @apply hover:bg-blue-700 transition-colors;
+    border-radius: var(--radius-default);
+  }
+
+  .btn-brutal {
+    @apply block border-2 border-black bg-white p-4 sm:p-6 shadow;
+    @apply focus:outline-0;
+    transition: background-color 300ms;
+  }
+
+  .btn-brutal:hover {
+    background-color: var(--color-primary-dark);
+  }
+
+  .btn-brutal:focus {
+    box-shadow: 0 0 0 2px var(--color-primary);
+  }
+}

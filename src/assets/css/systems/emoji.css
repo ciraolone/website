@@ -1,0 +1,90 @@
+/* ============================================
+   EMOJI SYSTEM (df-emoji)
+   ============================================
+   Sistema per usare emoji come icone in modo consistente e accessibile.
+
+   PERCHE QUESTO APPROCCIO:
+   - Le emoji hanno rendering diverso su ogni OS (Apple, Google, Windows)
+   - Senza normalizzazione, dimensioni e allineamento sono imprevedibili
+   - L'accessibilita richiede attributi ARIA appropriati
+
+   USO:
+   - Decorativa: <span class="df-emoji" aria-hidden="true">🎯</span>
+   - Con significato: <span class="df-emoji" role="img" aria-label="target">🎯</span>
+   - Come icona inline: <span class="df-emoji df-emoji-inline">📧</span> Email
+   - Dimensioni: df-emoji-sm, df-emoji-lg, df-emoji-xl
+   ============================================ */
+
+@layer components {
+  /* Base: normalizza il rendering delle emoji */
+  .df-emoji {
+    /* Font stack ottimizzato per emoji colorate su tutti i sistemi */
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
+      "Android Emoji", EmojiSymbols, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    /* Previene che il browser applichi stili tipografici */
+    font-variant: normal;
+    text-transform: none;
+    /* Dimensione base prevedibile */
+    font-size: 1.2em;
+    line-height: 1;
+    /* Allineamento verticale consistente col testo */
+    vertical-align: -0.1em;
+    /* Previene selezione accidentale e text-decoration ereditati */
+    text-decoration: none;
+    /* Display inline per uso nel testo */
+    display: inline;
+    /* Disabilita legature che possono alterare alcune emoji */
+    font-variant-ligatures: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Emoji come icona a blocco (per layout flex/grid) */
+  .df-emoji-block {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Emoji inline con spaziatura automatica dal testo */
+  .df-emoji-inline {
+    margin-right: 0.3em;
+  }
+
+  /* === DIMENSIONI ===
+     Scala proporzionale per diversi contesti */
+  .df-emoji-xs {
+    font-size: 0.875em; /* ~14px - note a pie pagina */
+  }
+
+  .df-emoji-sm {
+    font-size: 1em; /* ~16px - testo normale */
+  }
+
+  /* .df-emoji gia a 1.2em - dimensione default */
+
+  .df-emoji-lg {
+    font-size: 1.5em; /* ~24px - titoli sezione */
+  }
+
+  .df-emoji-xl {
+    font-size: 2em; /* ~32px - hero, intestazioni */
+  }
+
+  .df-emoji-2xl {
+    font-size: 3em; /* ~48px - decorazioni grandi */
+  }
+
+  /* === ACCESSIBILITA ===
+     Le emoji decorative vanno nascoste agli screen reader.
+     NOTA: usare sempre aria-hidden="true" nel markup per emoji puramente decorative.
+     L'attributo aria-hidden="true" e sufficiente per nasconderle. */
+
+  /* === VARIANTE: Emoji non selezionabile ===
+     Per emoji usate come icone UI che non dovrebbero essere copiate */
+  .df-emoji-icon {
+    user-select: none;
+    pointer-events: none;
+  }
+}

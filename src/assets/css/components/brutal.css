@@ -1,0 +1,37 @@
+/* ============================================
+   BRUTAL COMPONENT
+   ============================================
+   Stile neobrutalist per box articoli.
+   Header colorato + body con bordo.
+   ============================================ */
+
+@layer components {
+  .brutal-box {
+    @apply border-2 border-black bg-white my-8 shadow;
+  }
+
+  .brutal-box-sm {
+    @apply border-2 border-black bg-white shadow;
+  }
+
+  .brutal-header {
+    @apply p-3;
+    background-color: var(--color-primary);
+  }
+
+  .brutal-body {
+    @apply border-t-2 border-black p-4 sm:p-6;
+  }
+
+  .brutal-tag {
+    @apply text-xs/none font-bold uppercase;
+  }
+
+  .brutal-dots {
+    @apply flex gap-1;
+  }
+
+  .brutal-dot {
+    @apply size-3 border-2 border-black bg-white;
+  }
+}

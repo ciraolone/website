@@ -1,0 +1,94 @@
+/* ============================================
+   ANIMATIONS
+   ============================================
+   Animazioni CSS riutilizzabili.
+   Include: marquee, pulse, wave, spin.
+   ============================================ */
+
+@layer components {
+  /* === ANIMATION: Marquee (scrolling text) === */
+  .animate-marquee {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* === EMOJI: Pulse per attirare attenzione === */
+  .df-emoji-pulse {
+    animation: df-emoji-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes df-emoji-pulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+  }
+
+  /* === EMOJI: Wave (mano che saluta) === */
+  .df-emoji-wave {
+    display: inline-block;
+    animation: df-emoji-wave 1.8s ease-in-out infinite;
+    transform-origin: 70% 70%;
+  }
+
+  @keyframes df-emoji-wave {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(20deg);
+    }
+
+    75% {
+      transform: rotate(-10deg);
+    }
+  }
+
+  /* === ICON: Rotazione continua (loading spinner) === */
+  .df-icon-spin {
+    animation: df-icon-spin 1s linear infinite;
+  }
+
+  @keyframes df-icon-spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* === ICON: Pulse (attirare attenzione) === */
+  .df-icon-pulse {
+    animation: df-icon-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes df-icon-pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+  }
+}

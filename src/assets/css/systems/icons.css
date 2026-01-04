@@ -1,0 +1,94 @@
+/* ============================================
+   ICON SYSTEM (df-icon) - Tabler Icons
+   ============================================
+   Icone SVG inline via eleventy-plugin-icons.
+
+   PERCHE SVG INLINE:
+   - Controllo totale su colore (currentColor), dimensioni, stroke
+   - Nessuna richiesta HTTP aggiuntiva
+   - Aspetto identico su tutti i browser/OS (a differenza delle emoji)
+
+   USO NEI TEMPLATE:
+     {% icon "tabler:home" %}
+     {% icon "tabler:arrow-right", class="df-icon-lg" %}
+     {% icon "tabler:mail", stroke-width="1.5" %}
+
+   CATALOGO: https://tabler.io/icons
+   ============================================ */
+
+@layer components {
+  /* Base: normalizza le icone SVG inline */
+  .df-icon {
+    /* Dimensione default: segue il font corrente */
+    width: 1em;
+    height: 1em;
+    /* Allineamento verticale con il testo */
+    vertical-align: -0.125em;
+    /* Eredita il colore dal testo */
+    stroke: currentcolor;
+    /* Previene shrink in flex container */
+    flex-shrink: 0;
+    /* Display inline per uso nel testo */
+    display: inline-block;
+  }
+
+  /* Icona con spaziatura automatica dal testo (a sinistra del testo) */
+  .df-icon-inline {
+    margin-right: 0.3em;
+  }
+
+  /* Icona con spaziatura a sinistra (a destra del testo) */
+  .df-icon-inline-end {
+    margin-left: 0.3em;
+  }
+
+  /* === DIMENSIONI ===
+     Scala fissa per controllo preciso */
+  .df-icon-xs {
+    width: 0.75rem; /* 12px */
+    height: 0.75rem;
+  }
+
+  .df-icon-sm {
+    width: 1rem; /* 16px */
+    height: 1rem;
+  }
+
+  /* .df-icon gia a 1em - dimensione default (segue font-size) */
+
+  .df-icon-md {
+    width: 1.25rem; /* 20px */
+    height: 1.25rem;
+  }
+
+  .df-icon-lg {
+    width: 1.5rem; /* 24px - dimensione nativa Tabler */
+    height: 1.5rem;
+  }
+
+  .df-icon-xl {
+    width: 2rem; /* 32px */
+    height: 2rem;
+  }
+
+  .df-icon-2xl {
+    width: 3rem; /* 48px */
+    height: 3rem;
+  }
+
+  /* === SPESSORE LINEA ===
+     Override per lo stroke-width delle icone Tabler */
+  .df-icon-thin {
+    stroke-width: 1;
+  }
+
+  .df-icon-light {
+    stroke-width: 1.5;
+  }
+
+  /* Default Tabler e 2, gia impostato nel plugin */
+
+  .df-icon-bold {
+    stroke-width: 2.5;
+  }
+}
