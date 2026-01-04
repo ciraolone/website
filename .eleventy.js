@@ -161,7 +161,7 @@ module.exports = function(eleventyConfig) {
   // Filter per immagini responsive (usabile nelle macro Nunjucks)
   // Uso: {{ src | responsiveImg({ alt: "...", sizes: "100vw", className: "..." }) | safe }}
   eleventyConfig.addFilter("responsiveImg", function(src, options = {}) {
-    const { alt = "", sizes = "100vw", className = "", loading = "lazy" } = options;
+    const { alt = "", sizes = "100vw", className = "", loading = "lazy", fetchpriority = "" } = options;
 
     // Salta URL esterni: restituisce <img> semplice
     if (src.startsWith("http://") || src.startsWith("https://")) {
@@ -189,12 +189,19 @@ module.exports = function(eleventyConfig) {
     const metadata = Image.statsSync(imagePath, opts);
 
     // Attributi per l'elemento img
+    // width/height prevengono CLS (Cumulative Layout Shift)
+    const largestImage = metadata.jpeg[metadata.jpeg.length - 1];
     const imageAttributes = {
       alt,
       sizes: isSmall ? undefined : sizes,  // No sizes per immagini piccole
       loading,
       decoding: "async",
-      class: className || undefined
+      class: className || undefined,
+      width: largestImage.width,
+      height: largestImage.height,
+      // fetchpriority="high" per immagini above-the-fold (migliora LCP)
+      // Solo se esplicitamente passato (evita fetchpriority="undefined")
+      ...(fetchpriority ? { fetchpriority } : {})
     };
 
     // Genera HTML <picture> con srcset
