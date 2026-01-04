@@ -9,8 +9,12 @@
     "serve": "concurrently \"npm run watch:css\" \"eleventy --serve\"",
     "dev": "npm run serve",
     "clean": "rimraf _site",
+    "lint": "concurrently \"npm run lint:css\" \"npm run lint:html\"",
+    "lint:fix": "concurrently \"npm run lint:css:fix\" \"npm run lint:html:fix\"",
     "lint:css": "stylelint 'src/**/*.css' --config .standards/lint/css/stylelint.config.mjs",
     "lint:css:fix": "stylelint 'src/**/*.css' --config .standards/lint/css/stylelint.config.mjs --fix",
+    "lint:html": "djlint src/ --extension=njk --lint --configuration .standards/lint/html/.djlintrc",
+    "lint:html:fix": "djlint src/ --extension=njk --reformat --configuration .standards/lint/html/.djlintrc && npm run lint:html",
     "favicon": "node scripts/generate-favicon.js"
   },
   "keywords": [
