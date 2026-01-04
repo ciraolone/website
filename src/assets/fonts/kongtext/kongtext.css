@@ -1,0 +1,7 @@
+@font-face {
+  font-family: Kongtext;
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("./kongtext.ttf") format("truetype");
+}

@@ -1,0 +1,8 @@
+{
+  "accent": {
+    "name": "Press Start 2P",
+    "file": "/assets/fonts/press-start-2p/PressStart2P-Regular.ttf",
+    "format": "truetype",
+    "preload": true
+  }
+}

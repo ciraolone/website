@@ -6,8 +6,10 @@
 
   <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
 
-  <!-- Preconnect per performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Preload Accent Font: carica il font titoli prima del CSS per ridurre il flash -->
+  {% if fonts.accent.preload %}
+  <link rel="preload" href="{{ fonts.accent.file }}" as="font" type="font/{{ fonts.accent.format }}" crossorigin>
+  {% endif %}
 
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/main.css">

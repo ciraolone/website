@@ -7,7 +7,16 @@
    ============================================ */
 
 /* ============================================
-   Custom Fonts
+   ACCENT FONT
+   ============================================
+   Font decorativo per titoli e accenti.
+   Configurazione centralizzata: per cambiare font, modifica:
+   1. @import qui sotto (punta al nuovo CSS del font)
+   2. --font-accent nel @theme (nome font-family)
+   3. _data/fonts.json (path per il preload)
+
+   Il CSS del font (@font-face) usa font-display: fallback
+   per evitare flash: 100ms invisibile, poi fallback se lento.
    ============================================ */
 @import "../fonts/press-start-2p/press-start-2p.css";
 
@@ -22,8 +31,7 @@
    ============================================ */
 @theme {
   /* === Typography === */
-  --font-family-pixel: "Press Start 2P", cursive;
-  --font-accent: var(--font-family-pixel); /* Font per titoli e accenti */
+  --font-accent: "Press Start 2P", sans-serif; /* Font per titoli e accenti */
 
   /* === Brand Colors === */
   --color-primary: #fde047; /* Yellow 300 - Primary Brand Color */
@@ -318,9 +326,14 @@
     font-size: 0.7em;
   }
 
-  /* === UTILITY: Font Pixel === */
+  /* === UTILITY: Font Accent === */
+  .font-accent {
+    font-family: var(--font-accent);
+  }
+
+  /* Alias per retrocompatibilità (usare font-accent per nuovi elementi) */
   .font-pixel {
-    font-family: var(--font-family-pixel);
+    font-family: var(--font-accent);
   }
 
   /* === ANIMATION: Marquee (scrolling text) === */
@@ -364,5 +377,258 @@
   /* Fade-in quando l'immagine è caricata (classe aggiunta via JS) */
   .lqip-container img.loaded {
     opacity: 1;
+  }
+
+  /* ============================================
+     EMOJI SYSTEM (df-emoji)
+     ============================================
+     Sistema per usare emoji come icone in modo consistente e accessibile.
+
+     PERCHÉ QUESTO APPROCCIO:
+     - Le emoji hanno rendering diverso su ogni OS (Apple, Google, Windows)
+     - Senza normalizzazione, dimensioni e allineamento sono imprevedibili
+     - L'accessibilità richiede attributi ARIA appropriati
+
+     USO:
+     - Decorativa: <span class="df-emoji" aria-hidden="true">🎯</span>
+     - Con significato: <span class="df-emoji" role="img" aria-label="target">🎯</span>
+     - Come icona inline: <span class="df-emoji df-emoji-inline">📧</span> Email
+     - Dimensioni: df-emoji-sm, df-emoji-lg, df-emoji-xl
+     ============================================ */
+
+  /* Base: normalizza il rendering delle emoji */
+  .df-emoji {
+    /* Font stack ottimizzato per emoji colorate su tutti i sistemi */
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
+      "Android Emoji", EmojiSymbols, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    /* Previene che il browser applichi stili tipografici */
+    font-variant: normal;
+    text-transform: none;
+    /* Dimensione base prevedibile */
+    font-size: 1.2em;
+    line-height: 1;
+    /* Allineamento verticale consistente col testo */
+    vertical-align: -0.1em;
+    /* Previene selezione accidentale e text-decoration ereditati */
+    text-decoration: none;
+    /* Display inline per uso nel testo */
+    display: inline;
+    /* Disabilita legature che possono alterare alcune emoji */
+    font-variant-ligatures: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Emoji come icona a blocco (per layout flex/grid) */
+  .df-emoji-block {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Emoji inline con spaziatura automatica dal testo */
+  .df-emoji-inline {
+    margin-right: 0.3em;
+  }
+
+  /* === DIMENSIONI ===
+     Scala proporzionale per diversi contesti */
+  .df-emoji-xs {
+    font-size: 0.875em; /* ~14px - note a piè pagina */
+  }
+
+  .df-emoji-sm {
+    font-size: 1em; /* ~16px - testo normale */
+  }
+
+  /* .df-emoji già a 1.2em - dimensione default */
+
+  .df-emoji-lg {
+    font-size: 1.5em; /* ~24px - titoli sezione */
+  }
+
+  .df-emoji-xl {
+    font-size: 2em; /* ~32px - hero, intestazioni */
+  }
+
+  .df-emoji-2xl {
+    font-size: 3em; /* ~48px - decorazioni grandi */
+  }
+
+  /* === ACCESSIBILITÀ ===
+     Le emoji decorative vanno nascoste agli screen reader.
+     NOTA: usare sempre aria-hidden="true" nel markup per emoji puramente decorative.
+     L'attributo aria-hidden="true" è sufficiente per nasconderle. */
+
+  /* === VARIANTE: Emoji non selezionabile ===
+     Per emoji usate come icone UI che non dovrebbero essere copiate */
+  .df-emoji-icon {
+    user-select: none;
+    pointer-events: none;
+  }
+
+  /* === ANIMAZIONE: Pulse per attirare attenzione === */
+  .df-emoji-pulse {
+    animation: df-emoji-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes df-emoji-pulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.1);
+    }
+  }
+
+  /* === ANIMAZIONE: Wave (mano che saluta) === */
+  .df-emoji-wave {
+    display: inline-block;
+    animation: df-emoji-wave 1.8s ease-in-out infinite;
+    transform-origin: 70% 70%;
+  }
+
+  @keyframes df-emoji-wave {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(20deg);
+    }
+
+    75% {
+      transform: rotate(-10deg);
+    }
+  }
+
+  /* ============================================
+     ICON SYSTEM (df-icon) - Tabler Icons
+     ============================================
+     Icone SVG inline via eleventy-plugin-icons.
+
+     PERCHÉ SVG INLINE:
+     - Controllo totale su colore (currentColor), dimensioni, stroke
+     - Nessuna richiesta HTTP aggiuntiva
+     - Aspetto identico su tutti i browser/OS (a differenza delle emoji)
+
+     USO NEI TEMPLATE:
+       {% icon "tabler:home" %}
+       {% icon "tabler:arrow-right", class="df-icon-lg" %}
+       {% icon "tabler:mail", stroke-width="1.5" %}
+
+     CATALOGO: https://tabler.io/icons
+     ============================================ */
+
+  /* Base: normalizza le icone SVG inline */
+  .df-icon {
+    /* Dimensione default: segue il font corrente */
+    width: 1em;
+    height: 1em;
+    /* Allineamento verticale con il testo */
+    vertical-align: -0.125em;
+    /* Eredita il colore dal testo */
+    stroke: currentcolor;
+    /* Previene shrink in flex container */
+    flex-shrink: 0;
+    /* Display inline per uso nel testo */
+    display: inline-block;
+  }
+
+  /* Icona con spaziatura automatica dal testo (a sinistra del testo) */
+  .df-icon-inline {
+    margin-right: 0.3em;
+  }
+
+  /* Icona con spaziatura a sinistra (a destra del testo) */
+  .df-icon-inline-end {
+    margin-left: 0.3em;
+  }
+
+  /* === DIMENSIONI ===
+     Scala fissa per controllo preciso */
+  .df-icon-xs {
+    width: 0.75rem; /* 12px */
+    height: 0.75rem;
+  }
+
+  .df-icon-sm {
+    width: 1rem; /* 16px */
+    height: 1rem;
+  }
+
+  /* .df-icon già a 1em - dimensione default (segue font-size) */
+
+  .df-icon-md {
+    width: 1.25rem; /* 20px */
+    height: 1.25rem;
+  }
+
+  .df-icon-lg {
+    width: 1.5rem; /* 24px - dimensione nativa Tabler */
+    height: 1.5rem;
+  }
+
+  .df-icon-xl {
+    width: 2rem; /* 32px */
+    height: 2rem;
+  }
+
+  .df-icon-2xl {
+    width: 3rem; /* 48px */
+    height: 3rem;
+  }
+
+  /* === SPESSORE LINEA ===
+     Override per lo stroke-width delle icone Tabler */
+  .df-icon-thin {
+    stroke-width: 1;
+  }
+
+  .df-icon-light {
+    stroke-width: 1.5;
+  }
+
+  /* Default Tabler è 2, già impostato nel plugin */
+
+  .df-icon-bold {
+    stroke-width: 2.5;
+  }
+
+  /* === ANIMAZIONI === */
+
+  /* Rotazione continua (loading spinner) */
+  .df-icon-spin {
+    animation: df-icon-spin 1s linear infinite;
+  }
+
+  @keyframes df-icon-spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Pulse (attirare attenzione) */
+  .df-icon-pulse {
+    animation: df-icon-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes df-icon-pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
   }
 }

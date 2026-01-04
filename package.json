@@ -36,6 +36,8 @@
   },
   "dependencies": {
     "@11ty/eleventy-img": "^6.0.4",
+    "@tabler/icons": "^3.36.1",
+    "eleventy-plugin-icons": "^4.5.7",
     "markdown-it-strikethrough-alt": "^1.0.0"
   }
 }

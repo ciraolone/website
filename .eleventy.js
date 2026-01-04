@@ -8,6 +8,7 @@ const markdownItAttrs = require("markdown-it-attrs");
 const markdownItStrikethrough = require("markdown-it-strikethrough-alt");
 const Image = require("@11ty/eleventy-img");
 const path = require("path");
+const pluginIcons = require("eleventy-plugin-icons");
 
 module.exports = function(eleventyConfig) {
   // ============================================
@@ -27,6 +28,43 @@ module.exports = function(eleventyConfig) {
   }).use(markdownItStrikethrough);
   
   eleventyConfig.setLibrary("md", markdownLibrary);
+
+  // ============================================
+  // ICONS (Tabler Icons via eleventy-plugin-icons)
+  // ============================================
+  // Documentazione: https://github.com/uncenter/eleventy-plugin-icons
+  // Catalogo icone: https://tabler.io/icons
+  //
+  // USO NEI TEMPLATE:
+  //   {% icon "tabler:arrow-right" %}
+  //   {% icon "tabler:home", class="my-class", stroke-width="1.5" %}
+  //
+  // NOTA: Le icone Tabler sono outline di default (stroke).
+  // Per cambiare spessore linea: stroke-width="1" (sottile) a "2.5" (spesso)
+  eleventyConfig.addPlugin(pluginIcons, {
+    sources: [{
+      name: "tabler",
+      path: "node_modules/@tabler/icons/icons/outline"
+    }],
+    icon: {
+      shortcode: "icon",
+      delimiter: ":"
+    },
+    // Classe CSS di default per tutte le icone
+    // Genera: class="df-icon df-icon-{name}"
+    class: (name) => `df-icon df-icon-${name}`,
+    // Attributi di default per tutte le icone Tabler
+    attributesBySource: {
+      tabler: {
+        "stroke-width": "2",
+        "stroke": "currentColor",
+        "fill": "none"
+      }
+    },
+    // Errore se icona non trovata (utile in sviluppo)
+    errorNotFound: true
+  });
+
   // ============================================
   // PASSTHROUGH COPIES
   // ============================================
