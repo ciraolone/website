@@ -339,4 +339,30 @@
       transform: translateX(-100%);
     }
   }
+
+  /* === LQIP: Low Quality Image Placeholder ===
+     Placeholder pixelato che sfuma nell'immagine reale.
+     - Container: sfondo con immagine tiny scalata (pixelated)
+     - Immagine: fade-in quando caricata */
+  .lqip-container {
+    overflow: hidden;
+  }
+
+  .lqip-container picture {
+    position: absolute;
+    inset: 0;
+  }
+
+  .lqip-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    /* transition: opacity 3s ease-out; */
+  }
+
+  /* Fade-in quando l'immagine è caricata (classe aggiunta via JS) */
+  .lqip-container img.loaded {
+    opacity: 1;
+  }
 }

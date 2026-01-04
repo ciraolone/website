@@ -160,6 +160,11 @@ module.exports = function(eleventyConfig) {
 
   // Filter per immagini responsive (usabile nelle macro Nunjucks)
   // Uso: {{ src | responsiveImg({ alt: "...", sizes: "100vw", className: "..." }) | safe }}
+  //
+  // LQIP (Low Quality Image Placeholder):
+  // - Genera versione tiny (20px) inline come base64
+  // - CSS image-rendering: pixelated per effetto pixel art
+  // - Immagine reale caricata sopra con fade-in via CSS
   eleventyConfig.addFilter("responsiveImg", function(src, options = {}) {
     const { alt = "", sizes = "100vw", className = "", loading = "lazy", fetchpriority = "" } = options;
 
@@ -175,37 +180,88 @@ module.exports = function(eleventyConfig) {
     const sizesNum = parseInt(sizes, 10);
     const isSmall = !isNaN(sizesNum) && sizesNum <= 64;
 
-    // Configurazione per questa immagine
+    // Configurazione per immagine principale
     const opts = {
       ...imageConfig,
       // Per immagini piccole: solo 1 versione (no srcset)
       widths: isSmall ? ["auto"] : imageConfig.widths
     };
 
+    // Configurazione per LQIP (tiny 20px, solo JPEG per base64 compatto)
+    // Skip LQIP per immagini piccole (già leggere)
+    const lqipOpts = {
+      widths: [20],
+      formats: ["jpeg"],
+      outputDir: "./_site/assets/images/",
+      urlPath: "/assets/images/",
+      sharpJpegOptions: { quality: 60 },
+      filenameFormat: function(id, src, width, format) {
+        const name = path.basename(src, path.extname(src));
+        return `${name}-lqip-${id}.${format}`;
+      }
+    };
+
     // Avvia generazione (asincrona in background, non blocca)
     Image(imagePath, opts);
+    if (!isSmall) {
+      Image(imagePath, lqipOpts);
+    }
 
     // Ottieni metadati sincronamente
     const metadata = Image.statsSync(imagePath, opts);
-
-    // Attributi per l'elemento img
-    // width/height prevengono CLS (Cumulative Layout Shift)
     const largestImage = metadata.jpeg[metadata.jpeg.length - 1];
+
+    // Per immagini piccole: output semplice senza LQIP
+    if (isSmall) {
+      const imageAttributes = {
+        alt,
+        loading,
+        decoding: "async",
+        class: className || undefined,
+        width: largestImage.width,
+        height: largestImage.height,
+        ...(fetchpriority ? { fetchpriority } : {})
+      };
+      return Image.generateHTML(metadata, imageAttributes);
+    }
+
+    // LQIP: leggi immagine tiny e converti in base64
+    const lqipMetadata = Image.statsSync(imagePath, lqipOpts);
+    const lqipImage = lqipMetadata.jpeg[0];
+    // Leggi il file generato e converti in base64
+    const fs = require("fs");
+    let lqipBase64 = "";
+    try {
+      // Il file potrebbe non esistere ancora al primo build, usiamo il path
+      const lqipPath = path.join(lqipOpts.outputDir, path.basename(lqipImage.url));
+      if (fs.existsSync(lqipPath)) {
+        const lqipBuffer = fs.readFileSync(lqipPath);
+        lqipBase64 = `data:image/jpeg;base64,${lqipBuffer.toString("base64")}`;
+      }
+    } catch (e) {
+      // Fallback: nessun LQIP se errore
+    }
+
+    // Genera HTML picture standard
     const imageAttributes = {
       alt,
-      sizes: isSmall ? undefined : sizes,  // No sizes per immagini piccole
+      sizes,
       loading,
       decoding: "async",
-      class: className || undefined,
+      class: `${className} lqip-img`.trim(),
       width: largestImage.width,
       height: largestImage.height,
-      // fetchpriority="high" per immagini above-the-fold (migliora LCP)
-      // Solo se esplicitamente passato (evita fetchpriority="undefined")
       ...(fetchpriority ? { fetchpriority } : {})
     };
+    const pictureHtml = Image.generateHTML(metadata, imageAttributes);
 
-    // Genera HTML <picture> con srcset
-    return Image.generateHTML(metadata, imageAttributes);
+    // Se abbiamo LQIP, wrappa in container con placeholder
+    if (lqipBase64) {
+      const aspectRatio = (largestImage.height / largestImage.width * 100).toFixed(2);
+      return `<div class="lqip-container" style="position:relative;padding-bottom:${aspectRatio}%;background-image:url('${lqipBase64}');background-size:cover;image-rendering:pixelated;">${pictureHtml}</div>`;
+    }
+
+    return pictureHtml;
   });
 
   // ============================================

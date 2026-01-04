@@ -12,11 +12,26 @@
   });
 
   function init() {
-    // Qui puoi aggiungere la logica di inizializzazione
-    console.log('Sito caricato con successo!');
-    
-    // Esempio: gestione menu mobile (se necessario)
-    // setupMobileMenu();
+    // LQIP: fade-in quando le immagini sono caricate
+    setupLqipFadeIn();
+  }
+
+  // LQIP: aggiunge classe 'loaded' quando l'immagine è completamente caricata
+  // Questo attiva il fade-in CSS da opacity:0 a opacity:1
+  function setupLqipFadeIn() {
+    const lqipImages = document.querySelectorAll('.lqip-container img');
+
+    lqipImages.forEach(function(img) {
+      // Se già caricata (es. da cache), mostra subito
+      if (img.complete && img.naturalHeight !== 0) {
+        img.classList.add('loaded');
+      } else {
+        // Altrimenti aspetta il load
+        img.addEventListener('load', function() {
+          img.classList.add('loaded');
+        });
+      }
+    });
   }
 
   // Esempio di funzione helper
