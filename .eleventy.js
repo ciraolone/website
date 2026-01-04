@@ -6,6 +6,8 @@
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownItStrikethrough = require("markdown-it-strikethrough-alt");
+const Image = require("@11ty/eleventy-img");
+const path = require("path");
 
 module.exports = function(eleventyConfig) {
   // ============================================
@@ -28,9 +30,13 @@ module.exports = function(eleventyConfig) {
   // ============================================
   // PASSTHROUGH COPIES
   // ============================================
-  // Copia file statici (immagini, font, etc.) senza processarli
+  // Copia file statici (font, js, video, etc.) senza processarli
   // Nota: il CSS viene compilato direttamente in _site/assets/css/ tramite npm run build:css
-  eleventyConfig.addPassthroughCopy("src/assets/images");
+  //
+  // IMMAGINI: Le immagini vengono generate da eleventy-img direttamente in _site/assets/images/
+  // Manteniamo passthrough solo per file che NON devono essere ottimizzati (SVG, placeholders)
+  eleventyConfig.addPassthroughCopy("src/assets/images/*.svg");
+  eleventyConfig.addPassthroughCopy("src/assets/images/placeholders");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
   eleventyConfig.addPassthroughCopy("src/assets/js");
   eleventyConfig.addPassthroughCopy("src/assets/videos");
@@ -104,6 +110,95 @@ module.exports = function(eleventyConfig) {
     return array.sort((a, b) => {
       return new Date(b.date) - new Date(a.date);
     });
+  });
+
+  // ============================================
+  // IMMAGINI RESPONSIVE (eleventy-img)
+  // ============================================
+  // PERCHÉ: Le immagini PNG originali sono troppo pesanti (fino a 2.5MB).
+  // Questo filter genera versioni ottimizzate AVIF/WebP/JPEG con srcset.
+  //
+  // COME FUNZIONA:
+  // - statsSync() permette uso sincrono nelle macro Nunjucks
+  // - Image() avvia generazione in background, statsSync() legge i metadati
+  // - La cache interna evita rigenerazioni inutili
+  //
+  // COMPORTAMENTO:
+  // - URL esterni (http/https): restituisce <img> semplice (salta ottimizzazione)
+  // - Immagini piccole (sizes ≤ 64px): genera solo 1 versione (no srcset)
+  // - Immagini normali: genera <picture> con srcset completo
+  //
+  // ATTENZIONE se modifichi:
+  // - Cambiare widths richiede rebuild completo (rm -rf _site/assets/images/*.avif *.webp)
+  // - L'hash nel nome file permette cache immutable (1 anno)
+
+  const imageConfig = {
+    // Formati output: AVIF (più piccolo), WebP (compatibile), JPEG (fallback)
+    // Ordine importante: browser sceglie il primo supportato
+    formats: ["avif", "webp", "jpeg"],
+
+    // Larghezze generate: 320, 640, 960 + originale
+    widths: [320, 640, 960, "auto"],
+
+    // Directory output (dentro _site)
+    outputDir: "./_site/assets/images/",
+    urlPath: "/assets/images/",
+
+    // Qualità per formato
+    sharpAvifOptions: { quality: 50 },  // AVIF 50 ≈ JPEG 80 percepito
+    sharpWebpOptions: { quality: 80 },
+    sharpJpegOptions: { quality: 80 },
+
+    // Nome file con hash per cache busting (permette max-age=31536000, immutable)
+    filenameFormat: function(id, src, width, format) {
+      const name = path.basename(src, path.extname(src));
+      return `${name}-${width}w-${id}.${format}`;
+    }
+    // NOTA: La cache per immagini locali funziona automaticamente:
+    // se l'immagine sorgente non è cambiata e l'output esiste, salta l'elaborazione
+  };
+
+  // Filter per immagini responsive (usabile nelle macro Nunjucks)
+  // Uso: {{ src | responsiveImg({ alt: "...", sizes: "100vw", className: "..." }) | safe }}
+  eleventyConfig.addFilter("responsiveImg", function(src, options = {}) {
+    const { alt = "", sizes = "100vw", className = "", loading = "lazy" } = options;
+
+    // Salta URL esterni: restituisce <img> semplice
+    if (src.startsWith("http://") || src.startsWith("https://")) {
+      return `<img src="${src}" alt="${alt}" class="${className}" loading="${loading}">`;
+    }
+
+    // Risolvi percorso relativo (src può essere /assets/images/...)
+    const imagePath = src.startsWith("/") ? `./src${src}` : src;
+
+    // Calcola se è un'immagine piccola (sizes ≤ 64px)
+    const sizesNum = parseInt(sizes, 10);
+    const isSmall = !isNaN(sizesNum) && sizesNum <= 64;
+
+    // Configurazione per questa immagine
+    const opts = {
+      ...imageConfig,
+      // Per immagini piccole: solo 1 versione (no srcset)
+      widths: isSmall ? ["auto"] : imageConfig.widths
+    };
+
+    // Avvia generazione (asincrona in background, non blocca)
+    Image(imagePath, opts);
+
+    // Ottieni metadati sincronamente
+    const metadata = Image.statsSync(imagePath, opts);
+
+    // Attributi per l'elemento img
+    const imageAttributes = {
+      alt,
+      sizes: isSmall ? undefined : sizes,  // No sizes per immagini piccole
+      loading,
+      decoding: "async",
+      class: className || undefined
+    };
+
+    // Genera HTML <picture> con srcset
+    return Image.generateHTML(metadata, imageAttributes);
   });
 
   // ============================================

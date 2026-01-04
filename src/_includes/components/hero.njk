@@ -51,8 +51,10 @@
             <source src="{{ video }}" type="video/mp4">
           </video>
           {%- elif image -%}
-          <img src="{{ image }}" alt="{{ imageAlt or title or 'Hero image' }}"
-            class="w-full rounded-default border-2 border-black shadow" loading="lazy">
+          {{ image | responsiveImg({
+            alt: imageAlt or title or 'Hero image',
+            className: 'w-full rounded-default border-2 border-black shadow'
+          }) | safe }}
           {%- endif -%}
         </div>
       </div>

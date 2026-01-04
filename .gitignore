@@ -12,6 +12,9 @@ CLAUDE.md
 _site/
 dist/
 
+# Cache (eleventy-img)
+.cache/
+
 # Environment variables
 .env
 .env.local
