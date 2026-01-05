@@ -4,7 +4,10 @@
 {% from "components/hero.njk" import hero as renderHero %}
 {% from "components/sidebar.njk" import sidebar as renderSidebar, sidebarMobileFeatures, sidebarMobileCta %}
 <body class="flex flex-col min-h-screen">
+  {# hideNavbar: nasconde la navbar (usato in homepage) #}
+  {% if not hideNavbar %}
   {% include "components/navbar.njk" %}
+  {% endif %}
 
   <main class="flex-1">
     {# Hero: renderizzato se presente hero.title nel frontmatter #}

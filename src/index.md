@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 description: Pagina principale del sito
+hideNavbar: true
 # hero:
 #   title: "Ciao!👋"
 #   subtitle: "Mi chiamo Andrea e faccio video per farti imparare le cose."
