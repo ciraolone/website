@@ -4,8 +4,9 @@
   "description": "Sito web statico generato con Eleventy",
   "scripts": {
     "build:css": "mkdir -p _site/assets/css && postcss src/assets/css/main.css -o _site/assets/css/main.css",
+    "build:js": "mkdir -p _site/assets/js && terser src/assets/js/main.js --compress --mangle --comments false -o _site/assets/js/main.js",
     "watch:css": "nodemon",
-    "build": "npm run build:css && eleventy",
+    "build": "ELEVENTY_ENV=production npm run build:css && ELEVENTY_ENV=production eleventy && npm run build:js",
     "serve": "concurrently \"npm run watch:css\" \"eleventy --serve\"",
     "dev": "npm run serve",
     "clean": "rimraf _site",
@@ -31,13 +32,16 @@
     "@tailwindcss/typography": "^0.5.19",
     "autoprefixer": "^10.4.23",
     "concurrently": "^9.2.1",
+    "cssnano": "^7.1.2",
+    "html-minifier-terser": "^7.2.0",
     "markdown-it-attrs": "^4.3.1",
     "nodemon": "^3.1.11",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "stylelint": "^16.26.1",
     "stylelint-config-standard": "^39.0.1",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.1.18",
+    "terser": "^5.44.1"
   },
   "dependencies": {
     "@11ty/eleventy-img": "^6.0.4",

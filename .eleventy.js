@@ -76,7 +76,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/images/*.svg");
   eleventyConfig.addPassthroughCopy("src/assets/images/placeholders");
   eleventyConfig.addPassthroughCopy("src/assets/fonts");
-  eleventyConfig.addPassthroughCopy("src/assets/js");
+  // NOTA: JS viene processato da terser in produzione (vedi npm run build:js)
+  // In sviluppo, il passthrough copia i file originali con i commenti
+  if (process.env.ELEVENTY_ENV !== "production") {
+    eleventyConfig.addPassthroughCopy("src/assets/js");
+  }
   eleventyConfig.addPassthroughCopy("src/assets/videos");
   eleventyConfig.addPassthroughCopy({ "src/assets/favicon": "/" });
   eleventyConfig.addPassthroughCopy({ 'src/site.webmanifest': 'site.webmanifest' });
@@ -329,12 +333,25 @@ module.exports = function(eleventyConfig) {
   // ============================================
   // TRANSFORMS
   // ============================================
-  // Minifica HTML in produzione (esempio base)
+  // Minifica HTML in produzione: rimuove commenti, spazi inutili, attributi vuoti
+  // Attivo solo con ELEVENTY_ENV=production (vedi npm run build in package.json)
+  //
+  // NOTA: I commenti condizionali IE vengono preservati per retrocompatibilità
+  // Se modifichi: testare sempre con "npm run build" prima di deployare
   if (process.env.ELEVENTY_ENV === "production") {
-    eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    const htmlmin = require("html-minifier-terser");
+
+    eleventyConfig.addTransform("htmlmin", async function(content, outputPath) {
       if (outputPath && outputPath.endsWith(".html")) {
-        // Qui potresti aggiungere una libreria di minificazione
-        return content;
+        return await htmlmin.minify(content, {
+          removeComments: true,              // Rimuove tutti i commenti HTML
+          collapseWhitespace: true,          // Rimuove spazi bianchi inutili
+          removeEmptyAttributes: true,       // Rimuove attributi vuoti (es. class="")
+          collapseBooleanAttributes: true,   // checked="checked" → checked
+          removeAttributeQuotes: true,       // Rimuove virgolette non necessarie
+          minifyJS: true,                    // Minifica <script> inline
+          minifyCSS: true                    // Minifica <style> inline
+        });
       }
       return content;
     });
