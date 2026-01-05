@@ -14,6 +14,8 @@
   function init() {
     // LQIP: fade-in quando le immagini sono caricate
     setupLqipFadeIn();
+    // Menu dropdown accessibile via click (mobile) e hover (desktop)
+    setupMobileMenu();
   }
 
   // LQIP: aggiunge classe 'loaded' quando l'immagine è completamente caricata
@@ -34,9 +36,54 @@
     });
   }
 
-  // Esempio di funzione helper
+  // Menu dropdown: funziona con click su mobile e hover su desktop
+  // - Click sul bottone: apre/chiude il menu
+  // - Click fuori dal menu: chiude il menu
+  // - Tasto Escape: chiude il menu
   function setupMobileMenu() {
-    // Logica per menu mobile
+    var toggle = document.getElementById('menu-toggle');
+    var dropdown = document.getElementById('menu-dropdown');
+
+    if (!toggle || !dropdown) return;
+
+    // Click sul bottone Menu
+    toggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var isOpen = dropdown.classList.contains('block');
+
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    // Click fuori dal menu: chiude
+    document.addEventListener('click', function(e) {
+      if (!toggle.contains(e.target) && !dropdown.contains(e.target)) {
+        closeMenu();
+      }
+    });
+
+    // Tasto Escape: chiude il menu
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeMenu();
+        toggle.focus();
+      }
+    });
+
+    function openMenu() {
+      dropdown.classList.remove('hidden');
+      dropdown.classList.add('block');
+      toggle.setAttribute('aria-expanded', 'true');
+    }
+
+    function closeMenu() {
+      dropdown.classList.add('hidden');
+      dropdown.classList.remove('block');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
   }
 
 })();

@@ -1,38 +1,38 @@
-<header class="border-b-2 border-black bg-primary">
+<header class="border-y-2 border-black bg-primary">
   <nav class="flex justify-between items-center">
-    <a href="/" class="flex items-center gap-3 text-lg font-bold font-accent text-black transition-colors hover:text-gray-600">
+    <a href="/" class="flex items-center gap-3 text-md font-bold font-accent text-black transition-colors hover:text-gray-600">
       {{ "/assets/images/andrea.png" | responsiveImg({
         alt: '',
         sizes: '56px',
-        className: 'h-14 w-14 object-cover border-r-2 border-black',
+        className: 'block h-14 w-14 object-cover border-r-2 border-black',
         loading: 'eager',
         fetchpriority: 'high'
       }) | safe }}
       {{ site.title }}
     </a>
-    <ul class="flex gap-6 pr-4">
-      <li class="relative group">
-        <button class="px-3 py-2 font-bold border-2 border-black bg-primary hover:bg-primary-dark">
-          Menu ▼
+    {# <ul class="flex gap-6 pr-4">
+      <li class="relative">
+        <button id="menu-toggle" aria-expanded="false" aria-controls="menu-dropdown" class="px-3 py-2 font-bold border-2 border-black bg-primary hover:bg-primary-dark whitespace-nowrap">
+          Menu
         </button>
-        <ul class="absolute right-0 hidden group-hover:block bg-white border-2 border-black shadow-brutal min-w-48 z-50">
+        <ul id="menu-dropdown" class="absolute right-0 hidden bg-white border-2 border-black shadow-brutal min-w-48 z-50">
           <li><a href="/" class="block px-4 py-2 hover:bg-primary border-b border-black">Home</a></li>
+          <li><a href="/corsi/" class="block px-4 py-2 hover:bg-primary border-b border-black">Corsi</a></li>
           <li><a href="/sblocca/" class="block px-4 py-2 hover:bg-primary border-b border-black">Sblocca</a></li>
           <li><a href="/brilla/" class="block px-4 py-2 hover:bg-primary border-b border-black">Brilla</a></li>
-          <li><a href="/corsi/" class="block px-4 py-2 hover:bg-primary border-b border-black">Corsi</a></li>
-          <li><a href="/chi-sono/" class="block px-4 py-2 hover:bg-primary border-b border-black">Chi sono</a></li>
-          <li><a href="/contatti/" class="block px-4 py-2 hover:bg-primary border-b border-black">Contatti</a></li>
+          <li><a href="/trattore/" class="block px-4 py-2 hover:bg-primary border-b border-black">MC Contenuti</a></li>
+          <li><a href="/fabbro/" class="block px-4 py-2 hover:bg-primary border-b border-black">MC Podcast</a></li>
+          <li><a href="/drago/" class="block px-4 py-2 hover:bg-primary border-b border-black">MC Lavoro</a></li>
+          <li><a href="/notion/" class="block px-4 py-2 hover:bg-primary border-b border-black">Notion</a></li>
           <li><a href="/consulenza/" class="block px-4 py-2 hover:bg-primary border-b border-black">Consulenza</a></li>
           <li><a href="/channel-check/" class="block px-4 py-2 hover:bg-primary border-b border-black">Channel Check</a></li>
           <li><a href="/risponde-ciraolo/" class="block px-4 py-2 hover:bg-primary border-b border-black">Risponde Ciraolo</a></li>
-          <li><a href="/notion/" class="block px-4 py-2 hover:bg-primary border-b border-black">Notion</a></li>
-          <li><a href="/masterclass-podcast/" class="block px-4 py-2 hover:bg-primary border-b border-black">MC Podcast</a></li>
-          <li><a href="/masterclass-contenuti/" class="block px-4 py-2 hover:bg-primary border-b border-black">MC Contenuti</a></li>
-          <li><a href="/masterclass-lavoro/" class="block px-4 py-2 hover:bg-primary border-b border-black">MC Lavoro</a></li>
+          <li><a href="/about/" class="block px-4 py-2 hover:bg-primary border-b border-black">Chi sono</a></li>
+          <li><a href="/contatti/" class="block px-4 py-2 hover:bg-primary border-b border-black">Contatti</a></li>
           <li><a href="/press-kit/" class="block px-4 py-2 hover:bg-primary border-b border-black">Press Kit</a></li>
           <li><a href="/privacy/" class="block px-4 py-2 hover:bg-primary">Privacy</a></li>
         </ul>
       </li>
-    </ul>
+    </ul> #}
   </nav>
 </header>
