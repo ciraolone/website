@@ -25,9 +25,9 @@ hideNavbar: true
   image="/assets/images/dailytool-text.png",
   mediaPosition="right",
   imageAlt="Un tool al giorno",
-  headerText="DailyTool",
+  headerText="DailyTool - Newsletter",
   title="Scoprire nuovi tool, ogni giorno.",
-  description="La mia nuova newsletter quotidiana: ogni mattina nella tua mail un tool che può svoltarti la giornata.",
+  description="Ogni mattina nella tua mail un tool che può svoltarti la giornata.",
   buttonText="Scopri di più",
   buttonUrl="https://cira.link/dailytool",
   className="my-6"
