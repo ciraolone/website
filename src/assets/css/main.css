@@ -8,15 +8,15 @@
    ├── main.css          # Entry point (questo file)
    ├── base.css          # Design tokens (@theme) e layer base
    ├── components/       # Componenti UI isolati
-   │   ├── cards.css
    │   ├── brutal.css
-   │   └── buttons.css
+   │   ├── buttons.css
+   │   └── cards.css
    └── systems/          # Stili trasversali (usati ovunque)
-       ├── typography.css
+       ├── animations.css
        ├── emoji.css
        ├── icons.css
-       ├── utilities.css
-       └── animations.css
+       ├── typography.css
+       └── utilities.css
 
    CONVENZIONE NAMING: Prefisso df-
    Le classi custom usano il prefisso "df-" (default).

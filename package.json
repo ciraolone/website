@@ -4,7 +4,7 @@
   "description": "Sito web statico generato con Eleventy",
   "scripts": {
     "build:css": "mkdir -p _site/assets/css && postcss src/assets/css/main.css -o _site/assets/css/main.css",
-    "build:js": "mkdir -p _site/assets/js && terser src/assets/js/main.js --compress --mangle --comments false -o _site/assets/js/main.js",
+    "build:js": "mkdir -p _site/assets/js && terser src/assets/js/main.js --compress --mangle --comments false -o _site/assets/js/main.js && terser src/assets/js/video-archive.js --compress --mangle --comments false -o _site/assets/js/video-archive.js",
     "watch:css": "nodemon",
     "build": "ELEVENTY_ENV=production npm run build:css && ELEVENTY_ENV=production eleventy && npm run build:js",
     "serve": "concurrently \"npm run watch:css\" \"eleventy --serve\"",
