@@ -10,7 +10,7 @@ hero:
 sidebarData:
   price: "19,95 €"
   ctaText: "Acquista subito!"
-  ctaUrl: "https://ciraolone.gr.page/courses/sblocca"
+  ctaUrl: "https://sblocca.ciraolone.com/register?p=11121"
   features:
     - "13 video-lezioni che puoi guardare quando vuoi"
     - "Più di 6 ore di corso"
