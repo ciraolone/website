@@ -12,8 +12,7 @@
   "use strict";
 
   // === CONFIGURAZIONE ===
-  const API_ENDPOINT_GETALL =
-    "https://n8n.ciraolo.cloud/webhook/yt-video-getall";
+  const API_ENDPOINT_GETALL = "https://n8n.ciraolo.cloud/webhook/yt-video-getall";
   const MAX_INITIAL_RENDER = 20;
 
   // === STATO GLOBALE ===
@@ -116,9 +115,7 @@
           </button>
         </div>
       `;
-      document
-        .getElementById("retryBtn")
-        .addEventListener("click", caricaDati);
+      document.getElementById("retryBtn").addEventListener("click", caricaDati);
     }
   }
 
@@ -142,7 +139,7 @@
           }
         });
       },
-      { rootMargin: "50px" }
+      { rootMargin: "50px" },
     );
   }
 
@@ -154,15 +151,12 @@
     scrollObserver = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
-          if (
-            entry.isIntersecting &&
-            risultatiMostrati < risultatiFiltrati.length
-          ) {
+          if (entry.isIntersecting && risultatiMostrati < risultatiFiltrati.length) {
             caricaAltriRisultati();
           }
         });
       },
-      { rootMargin: "200px" }
+      { rootMargin: "200px" },
     );
   }
 
@@ -252,7 +246,7 @@
 
   function copiaDettagli(titolo, link, buttonElement, event) {
     event.stopPropagation();
-    var testoDaCopiare = "📺 " + titolo + " " + link;
+    var testoDaCopiare = "• " + titolo + " " + link;
     navigator.clipboard.writeText(testoDaCopiare).then(function () {
       mostraFeedback(buttonElement, "success");
     });
@@ -289,10 +283,7 @@
       messaggioNessunRisultato.classList.add("hidden");
     }
 
-    var fineSlice = Math.min(
-      risultatiMostrati + MAX_INITIAL_RENDER,
-      risultatiFiltrati.length
-    );
+    var fineSlice = Math.min(risultatiMostrati + MAX_INITIAL_RENDER, risultatiFiltrati.length);
     var videosDaMostrare = risultatiFiltrati.slice(risultatiMostrati, fineSlice);
 
     videosDaMostrare.forEach(function (video) {
@@ -306,15 +297,13 @@
 
       var editUrl, statsUrl;
       if (isPlaylist) {
-        editUrl =
-          "https://studio.youtube.com/playlist/" + video.video_id + "/edit";
+        editUrl = "https://studio.youtube.com/playlist/" + video.video_id + "/edit";
         statsUrl =
           "https://studio.youtube.com/playlist/" +
           video.video_id +
           "/analytics/tab-overview/period-default";
       } else {
-        editUrl =
-          "https://studio.youtube.com/video/" + video.video_id + "/edit";
+        editUrl = "https://studio.youtube.com/video/" + video.video_id + "/edit";
         statsUrl =
           "https://studio.youtube.com/video/" +
           video.video_id +
@@ -434,9 +423,7 @@
     });
 
     // Aggiungi event listener ai nuovi pulsanti admin
-    var nuoveCard = contenitoreRisultati.querySelectorAll(
-      ".video-card:not([data-initialized])"
-    );
+    var nuoveCard = contenitoreRisultati.querySelectorAll(".video-card:not([data-initialized])");
     nuoveCard.forEach(function (card) {
       card.setAttribute("data-initialized", "true");
 
@@ -465,11 +452,7 @@
     if (risultatiMostrati < risultatiFiltrati.length) {
       caricaAltriDiv.classList.remove("hidden");
       contatoreRisultati.textContent =
-        "Mostrati " +
-        risultatiMostrati +
-        " di " +
-        risultatiFiltrati.length +
-        " risultati";
+        "Mostrati " + risultatiMostrati + " di " + risultatiFiltrati.length + " risultati";
 
       if (scrollObserver) {
         scrollObserver.observe(caricaAltriDiv);
@@ -488,7 +471,7 @@
     // Lazy loading thumbnail
     if (thumbnailObserver) {
       var lazyImages = contenitoreRisultati.querySelectorAll(
-        ".lazy-thumbnail:not([data-observed])"
+        ".lazy-thumbnail:not([data-observed])",
       );
       lazyImages.forEach(function (img) {
         img.setAttribute("data-observed", "true");
@@ -514,8 +497,7 @@
     if (query.length >= 3) {
       risultati = datiVideo.filter(function (video) {
         var matchTitolo = verificaMatch(video.title, query);
-        var matchDescrizione =
-          video.description && verificaMatch(video.description, query);
+        var matchDescrizione = video.description && verificaMatch(video.description, query);
         return matchTitolo || matchDescrizione;
       });
 
