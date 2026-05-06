@@ -237,16 +237,21 @@
   }
 
   // === AZIONI ===
+  // Rimuove "www." dal link prima della copia per ottenere URL più puliti
+  function pulisciLink(link) {
+    return link.replace(/^(https?:\/\/)www\./i, "$1");
+  }
+
   function copiaLink(link, buttonElement, event) {
     event.stopPropagation();
-    navigator.clipboard.writeText(link).then(function () {
+    navigator.clipboard.writeText(pulisciLink(link)).then(function () {
       mostraFeedback(buttonElement, "success");
     });
   }
 
   function copiaDettagli(titolo, link, buttonElement, event) {
     event.stopPropagation();
-    var testoDaCopiare = "• " + titolo + " " + link;
+    var testoDaCopiare = "• " + titolo + " " + pulisciLink(link);
     navigator.clipboard.writeText(testoDaCopiare).then(function () {
       mostraFeedback(buttonElement, "success");
     });
