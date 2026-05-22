@@ -3,9 +3,9 @@ layout: base.njk
 title: Tutti i video di Andrea Ciraolo
 description: Cerca e filtra tra tutti i video e le playlist del canale YouTube.
 prose: false
-maxW: "4xl"
+maxW: '4xl'
 hero:
-  title: "Tutti i miei video"
+  title: 'Tutti i miei video'
 ---
 
 Ehi! 👋 Qui trovi tutti, ma proprio tutti, i video e le playlist del mio canale YouTube. Da quando ci do dentro ho pubblicato <span class="font-accent underline" id="totaleVideo">tanti</span> video gratuiti! Usa la barra di ricerca per trovare un argomento specifico.
@@ -50,4 +50,5 @@ Ehi! 👋 Qui trovi tutti, ma proprio tutti, i video e le playlist del mio canal
   </div>
 </div>
 
+<script type="application/json" id="videos-data">{{ videos | dump | safe }}</script>
 <script src="/assets/js/video-archive.js"></script>
