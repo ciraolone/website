@@ -1,9 +1,8 @@
 /**
  * Video Archive - Ricerca e filtro video YouTube.
- * I dati arrivano inline dal template tramite il tag
- * <script type="application/json" id="videos-data"> generato da Eleventy
- * a partire da src/_data/videos.json (aggiornato ogni 8 ore dal workflow n8n
- * "Website > Sync videos.json"). Nessuna chiamata esterna a runtime.
+ * I dati arrivano da /assets/data/videos.json, file statico nel repo
+ * aggiornato ogni 8 ore dal workflow n8n "Website > Sync videos.json".
+ * Stesso origin, niente CORS, niente chiamate esterne a runtime.
  */
 
 (function () {
@@ -45,7 +44,7 @@
     inizializzaThumbnailObserver();
     inizializzaScrollObserver();
     setupEventListeners();
-    leggiDati();
+    caricaDati();
   });
 
   function setupEventListeners() {
@@ -64,44 +63,46 @@
     }
   }
 
-  // === LETTURA DATI ===
-  function leggiDati() {
-    var dataEl = document.getElementById('videos-data');
-    var dati = [];
-    if (dataEl && dataEl.textContent) {
-      try {
-        dati = JSON.parse(dataEl.textContent);
-      } catch (errore) {
-        console.error('videos-data: JSON non valido', errore);
-        dati = [];
-      }
-    }
+  // === CARICAMENTO DATI ===
+  async function caricaDati() {
+    contenitoreRisultati.innerHTML =
+      '<div class="text-center py-12">' +
+      '<div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-black"></div>' +
+      '<p class="font-accent text-xl mt-4">Caricamento video in corso...</p>' +
+      '</div>';
 
-    if (!Array.isArray(dati) || dati.length === 0) {
+    try {
+      const risposta = await fetch('/assets/data/videos.json', { cache: 'no-cache' });
+      if (!risposta.ok) throw new Error('HTTP ' + risposta.status);
+      const dati = await risposta.json();
+
+      datiVideo = dati.map(function (item) {
+        return {
+          video_id: item.video_id || '',
+          title: item.title || '',
+          description: item.description_short || '',
+          date: item.date || null,
+          duration: item.duration || null,
+        };
+      });
+
+      datiVideo.sort(function (a, b) {
+        return new Date(b.date) - new Date(a.date);
+      });
+
+      aggiornaContatoreTotale();
+      mostraVideoProgressivo(datiVideo, true);
+    } catch (errore) {
+      console.error('Errore nel caricamento dei video:', errore);
       contenitoreRisultati.innerHTML =
         '<div class="text-center py-12">' +
-        '<p class="text-xl text-red-600">Nessun video disponibile</p>' +
-        '<p class="text-gray-500 mt-2">Il file dati è vuoto o non valido</p>' +
+        '<p class="text-xl text-red-600">Errore nel caricamento dei video</p>' +
+        '<p class="text-gray-500 mt-2">Riprova più tardi</p>' +
+        '<button id="retryBtn" class="mt-4 px-6 py-2 bg-primary border-2 border-black font-bold hover:bg-primary-light shadow transition-all">Riprova</button>' +
         '</div>';
-      return;
+      var retry = document.getElementById('retryBtn');
+      if (retry) retry.addEventListener('click', caricaDati);
     }
-
-    datiVideo = dati.map(function (item) {
-      return {
-        video_id: item.video_id || '',
-        title: item.title || '',
-        description: item.description_short || '',
-        date: item.date || null,
-        duration: item.duration || null,
-      };
-    });
-
-    datiVideo.sort(function (a, b) {
-      return new Date(b.date) - new Date(a.date);
-    });
-
-    aggiornaContatoreTotale();
-    mostraVideoProgressivo(datiVideo, true);
   }
 
   // === OBSERVERS ===

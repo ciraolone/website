@@ -50,5 +50,4 @@ Ehi! 👋 Qui trovi tutti, ma proprio tutti, i video e le playlist del mio canal
   </div>
 </div>
 
-<script type="application/json" id="videos-data">{{ videos | dump | safe }}</script>
 <script src="/assets/js/video-archive.js"></script>
