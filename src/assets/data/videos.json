@@ -30,16 +30,16 @@
     "duration": "2052"
   },
   {
-    "video_id": "VE07twVKToQ",
-    "title": "CANVA dalla A alla Z 🎨 CORSO COMPLETO sul PROGRAMMA CREATIVO più FACILE e COMPLETO che ci sia!",
-    "date": "\"2026-04-20T00:00:00.000Z\"",
-    "duration": "9172"
-  },
-  {
     "video_id": "PHnUeDXUfos",
     "title": "20 TRUCCHI su CANVA che NON CONOSCI 🎨",
     "date": "\"2026-04-20T00:00:00.000Z\"",
     "duration": "1919"
+  },
+  {
+    "video_id": "VE07twVKToQ",
+    "title": "CANVA dalla A alla Z 🎨 CORSO COMPLETO sul PROGRAMMA CREATIVO più FACILE e COMPLETO che ci sia!",
+    "date": "\"2026-04-20T00:00:00.000Z\"",
+    "duration": "9172"
   },
   {
     "video_id": "piCQm0GvDF0",
@@ -62,7 +62,7 @@
   {
     "video_id": "BLa9FkNL5a0",
     "title": "CLAUDE COWORK 🤖 CORSO COMPLETO sull'AI che PUÒ FARE TUTTO!",
-    "date": "\"2026-03-11T00:00:00.000Z\"",
+    "date": "\"2026-03-12T00:00:00.000Z\"",
     "duration": "7823"
   },
   {
@@ -2352,22 +2352,10 @@
     "duration": "2405"
   },
   {
-    "video_id": "btIsTFftDgo",
-    "title": "Filmmaker spiega come fare video di qualità | C²",
-    "date": "\"2022-02-22T00:00:00.000Z\"",
-    "duration": "3946"
-  },
-  {
     "video_id": "Y_SOXLI83wg",
     "title": "Come funziona un Multichannel Network | C²",
     "date": "\"2022-02-22T00:00:00.000Z\"",
     "duration": "4222"
-  },
-  {
-    "video_id": "_6vNCuKcmzw",
-    "title": "Come creare STICKER su TELEGRAM",
-    "date": "\"2022-02-22T00:00:00.000Z\"",
-    "duration": "973"
   },
   {
     "video_id": "9dMabq5sa5U",
@@ -2376,16 +2364,28 @@
     "duration": "2639"
   },
   {
-    "video_id": "JKYNW-0mG7g",
-    "title": "Come raggiungere gli obiettivi, con Timestripe",
-    "date": "\"2022-02-21T00:00:00.000Z\"",
-    "duration": "1189"
+    "video_id": "btIsTFftDgo",
+    "title": "Filmmaker spiega come fare video di qualità | C²",
+    "date": "\"2022-02-22T00:00:00.000Z\"",
+    "duration": "3946"
+  },
+  {
+    "video_id": "_6vNCuKcmzw",
+    "title": "Come creare STICKER su TELEGRAM",
+    "date": "\"2022-02-22T00:00:00.000Z\"",
+    "duration": "973"
   },
   {
     "video_id": "8slwjULq5q0",
     "title": "AUTOMATIZZARE gli APPUNTAMENTI con Calendly",
     "date": "\"2022-02-21T00:00:00.000Z\"",
     "duration": "2598"
+  },
+  {
+    "video_id": "JKYNW-0mG7g",
+    "title": "Come raggiungere gli obiettivi, con Timestripe",
+    "date": "\"2022-02-21T00:00:00.000Z\"",
+    "duration": "1189"
   },
   {
     "video_id": "PPL4-8j5zis",
@@ -2430,16 +2430,16 @@
     "duration": "4068"
   },
   {
-    "video_id": "maRYeH6dEX8",
-    "title": "Cose da NON FARE in un LIVE STREAMING. Occhio alle policy! | Sportello Creator",
-    "date": "\"2022-01-24T00:00:00.000Z\"",
-    "duration": "2523"
-  },
-  {
     "video_id": "qwXNWA5nm1c",
     "title": "Novità STREAMYARD: la musica di sottofondo",
     "date": "\"2022-01-24T00:00:00.000Z\"",
     "duration": "255"
+  },
+  {
+    "video_id": "maRYeH6dEX8",
+    "title": "Cose da NON FARE in un LIVE STREAMING. Occhio alle policy! | Sportello Creator",
+    "date": "\"2022-01-24T00:00:00.000Z\"",
+    "duration": "2523"
   },
   {
     "video_id": "UhRm7bsMhUo",
@@ -3828,10 +3828,10 @@
     "duration": "1942"
   },
   {
-    "video_id": "OkaS3iN4GXo",
-    "title": "Convertire video in tutti i formati, con VLC",
+    "video_id": "T_AWLcYTr2M",
+    "title": "Ridurre le dimensioni di un video senza perdere qualità, con VLC",
     "date": "\"2020-09-24T00:00:00.000Z\"",
-    "duration": "395"
+    "duration": "720"
   },
   {
     "video_id": "BFqToqbRA-8",
@@ -3840,22 +3840,22 @@
     "duration": "691"
   },
   {
-    "video_id": "EphCVDkiMJI",
-    "title": "Convertire VIDEO in MP3, con VLC",
-    "date": "\"2020-09-24T00:00:00.000Z\"",
-    "duration": "347"
-  },
-  {
-    "video_id": "T_AWLcYTr2M",
-    "title": "Ridurre le dimensioni di un video senza perdere qualità, con VLC",
-    "date": "\"2020-09-24T00:00:00.000Z\"",
-    "duration": "720"
-  },
-  {
     "video_id": "PlPfeF8Vdoc",
     "title": "[Video aggiornato in descrizione] Aggiungere i TITOLI DI CODA ad un video, con Shotcut",
     "date": "\"2020-09-24T00:00:00.000Z\"",
     "duration": "583"
+  },
+  {
+    "video_id": "OkaS3iN4GXo",
+    "title": "Convertire video in tutti i formati, con VLC",
+    "date": "\"2020-09-24T00:00:00.000Z\"",
+    "duration": "395"
+  },
+  {
+    "video_id": "EphCVDkiMJI",
+    "title": "Convertire VIDEO in MP3, con VLC",
+    "date": "\"2020-09-24T00:00:00.000Z\"",
+    "duration": "347"
   },
   {
     "video_id": "8hbVexDoftc",
@@ -3870,16 +3870,16 @@
     "duration": "6381"
   },
   {
-    "video_id": "_C9n-5w_TKk",
-    "title": "Creare una SCHERMATA FINALE per YOUTUBE, con Canva",
-    "date": "\"2020-09-21T00:00:00.000Z\"",
-    "duration": "1229"
-  },
-  {
     "video_id": "MdgTo0t89HY",
     "title": "Registrare un'intervista (BENE) con Zoom",
     "date": "\"2020-09-21T00:00:00.000Z\"",
     "duration": "1421"
+  },
+  {
+    "video_id": "_C9n-5w_TKk",
+    "title": "Creare una SCHERMATA FINALE per YOUTUBE, con Canva",
+    "date": "\"2020-09-21T00:00:00.000Z\"",
+    "duration": "1229"
   },
   {
     "video_id": "HvNYo9TAGxE",
@@ -3912,10 +3912,10 @@
     "duration": "6129"
   },
   {
-    "video_id": "8HVpmzGl91c",
-    "title": "ELGATO STREAM DECK: recensione alla Ciraolo",
+    "video_id": "YRNGvmq0ovg",
+    "title": "Controllare OBS Studio con telefono, tablet o altro computer",
     "date": "\"2020-09-08T00:00:00.000Z\"",
-    "duration": "1650"
+    "duration": "1831"
   },
   {
     "video_id": "NUGXt0biU3w",
@@ -3924,10 +3924,10 @@
     "duration": "648"
   },
   {
-    "video_id": "YRNGvmq0ovg",
-    "title": "Controllare OBS Studio con telefono, tablet o altro computer",
+    "video_id": "8HVpmzGl91c",
+    "title": "ELGATO STREAM DECK: recensione alla Ciraolo",
     "date": "\"2020-09-08T00:00:00.000Z\"",
-    "duration": "1831"
+    "duration": "1650"
   },
   {
     "video_id": "cwS9_1pJrd4",
@@ -3936,16 +3936,16 @@
     "duration": "1209"
   },
   {
-    "video_id": "pozrBnqWmZM",
-    "title": "AMA Ciraolo | Chiedimi quello che vuoi | #001",
-    "date": "\"2020-09-02T00:00:00.000Z\"",
-    "duration": "4160"
-  },
-  {
     "video_id": "w0gGKfAJA0Y",
     "title": "I miei 5 PLUGIN OBS Studio preferiti (creano dipendenza)",
     "date": "\"2020-09-02T00:00:00.000Z\"",
     "duration": "1265"
+  },
+  {
+    "video_id": "pozrBnqWmZM",
+    "title": "AMA Ciraolo | Chiedimi quello che vuoi | #001",
+    "date": "\"2020-09-02T00:00:00.000Z\"",
+    "duration": "4160"
   },
   {
     "video_id": "abAPV4PMAAo",
@@ -3972,6 +3972,12 @@
     "duration": "1075"
   },
   {
+    "video_id": "zxeBrsmJdOg",
+    "title": "Creare le miniature anteprime dei video di Youtube, con Canva",
+    "date": "\"2020-08-25T00:00:00.000Z\"",
+    "duration": "997"
+  },
+  {
     "video_id": "Kmfhrkavr7k",
     "title": "Come cambiare la miniatura di anteprima ad un video Youtube",
     "date": "\"2020-08-25T00:00:00.000Z\"",
@@ -3984,22 +3990,16 @@
     "duration": "767"
   },
   {
-    "video_id": "zxeBrsmJdOg",
-    "title": "Creare le miniature anteprime dei video di Youtube, con Canva",
-    "date": "\"2020-08-25T00:00:00.000Z\"",
-    "duration": "997"
+    "video_id": "fUnfF7GcPrM",
+    "title": "‌",
+    "date": "\"2020-08-18T00:00:00.000Z\"",
+    "duration": "457"
   },
   {
     "video_id": "6SJBiQ1sNgo",
     "title": "Finalmente le VIDEOCHIAMATE SU TELEGRAM :)",
     "date": "\"2020-08-18T00:00:00.000Z\"",
     "duration": "661"
-  },
-  {
-    "video_id": "fUnfF7GcPrM",
-    "title": "‌",
-    "date": "\"2020-08-18T00:00:00.000Z\"",
-    "duration": "457"
   },
   {
     "video_id": "BcsQYaq6NVw",
@@ -4032,6 +4032,12 @@
     "duration": "1110"
   },
   {
+    "video_id": "sZ6Y8ls27D4",
+    "title": "Cos'è la Value Proposition e perchè non puoi farne a meno",
+    "date": "\"2020-07-28T00:00:00.000Z\"",
+    "duration": "828"
+  },
+  {
     "video_id": "AGcP4MQUcpU",
     "title": "Come capire PRIMA se la tua idea funziona (spoiler: con la PROTOTIPAZIONE)",
     "date": "\"2020-07-28T00:00:00.000Z\"",
@@ -4042,12 +4048,6 @@
     "title": "3 errori da evitare quando lanci un progetto",
     "date": "\"2020-07-28T00:00:00.000Z\"",
     "duration": "1065"
-  },
-  {
-    "video_id": "sZ6Y8ls27D4",
-    "title": "Cos'è la Value Proposition e perchè non puoi farne a meno",
-    "date": "\"2020-07-28T00:00:00.000Z\"",
-    "duration": "828"
   },
   {
     "video_id": "6hONvEQ_0_w",
@@ -4074,16 +4074,16 @@
     "duration": "516"
   },
   {
-    "video_id": "fLSaVufu1sU",
-    "title": "Cosa studiare per diventare PROGRAMMATORE WEB",
-    "date": "\"2020-07-02T00:00:00.000Z\"",
-    "duration": "3276"
-  },
-  {
     "video_id": "6I2F1AIdmYI",
     "title": "Il miglior editor di testo? Per me Visual Studio Code",
     "date": "\"2020-07-02T00:00:00.000Z\"",
     "duration": "1293"
+  },
+  {
+    "video_id": "fLSaVufu1sU",
+    "title": "Cosa studiare per diventare PROGRAMMATORE WEB",
+    "date": "\"2020-07-02T00:00:00.000Z\"",
+    "duration": "3276"
   },
   {
     "video_id": "NGKI48eJedA",
@@ -4104,6 +4104,12 @@
     "duration": "1129"
   },
   {
+    "video_id": "-O2hthJSwsA",
+    "title": "10 siti INDISPENSABILI di cui non potrai MAI PIÙ fare a meno",
+    "date": "\"2020-06-20T00:00:00.000Z\"",
+    "duration": "1272"
+  },
+  {
     "video_id": "mSNx1vER9CI",
     "title": "Come scrivere VELOCE sulla tastiera del pc | 10 Consigli",
     "date": "\"2020-06-20T00:00:00.000Z\"",
@@ -4116,10 +4122,10 @@
     "duration": "734"
   },
   {
-    "video_id": "-O2hthJSwsA",
-    "title": "10 siti INDISPENSABILI di cui non potrai MAI PIÙ fare a meno",
-    "date": "\"2020-06-20T00:00:00.000Z\"",
-    "duration": "1272"
+    "video_id": "D1_LyrCPwcc",
+    "title": "Il mio nuovo sito web e come l'ho fatto",
+    "date": "\"2020-06-19T00:00:00.000Z\"",
+    "duration": "969"
   },
   {
     "video_id": "CEk735WElgc",
@@ -4128,10 +4134,10 @@
     "duration": "864"
   },
   {
-    "video_id": "D1_LyrCPwcc",
-    "title": "Il mio nuovo sito web e come l'ho fatto",
-    "date": "\"2020-06-19T00:00:00.000Z\"",
-    "duration": "969"
+    "video_id": "yHsQCqSrJeI",
+    "title": "Come creare un canale Telegram + 3 consigli per farlo bene",
+    "date": "\"2020-06-12T00:00:00.000Z\"",
+    "duration": "1393"
   },
   {
     "video_id": "EDVZv9lMyL4",
@@ -4140,28 +4146,10 @@
     "duration": "295"
   },
   {
-    "video_id": "yHsQCqSrJeI",
-    "title": "Come creare un canale Telegram + 3 consigli per farlo bene",
-    "date": "\"2020-06-12T00:00:00.000Z\"",
-    "duration": "1393"
-  },
-  {
     "video_id": "H_0D5G1udZc",
     "title": "MONTAGGIO VIDEO BASE, un programma GRATIS: SHOTCUT - Tutorial (ITA)",
     "date": "\"2020-06-11T00:00:00.000Z\"",
     "duration": "3321"
-  },
-  {
-    "video_id": "f1JhauvwG4I",
-    "title": "Youtube, secondo noi | Professione Youtuber #001",
-    "date": "\"2020-06-11T00:00:00.000Z\"",
-    "duration": "3820"
-  },
-  {
-    "video_id": "crY0rT_SyCE",
-    "title": "Youtube secondo @JessicaRedeghieri | Professione Youtuber #005",
-    "date": "\"2020-06-11T00:00:00.000Z\"",
-    "duration": "3715"
   },
   {
     "video_id": "DLKyMgIeS8I",
@@ -4170,22 +4158,34 @@
     "duration": "3826"
   },
   {
+    "video_id": "crY0rT_SyCE",
+    "title": "Youtube secondo @JessicaRedeghieri | Professione Youtuber #005",
+    "date": "\"2020-06-11T00:00:00.000Z\"",
+    "duration": "3715"
+  },
+  {
     "video_id": "CdIYm8uagMQ",
     "title": "CANVA: togliere lo sfondo si può! (Con un trucco)",
     "date": "\"2020-06-11T00:00:00.000Z\"",
     "duration": "461"
   },
   {
-    "video_id": "JlK_DylTXD0",
-    "title": "Migliorare DI BRUTTO l'audio con AUDACITY",
-    "date": "\"2020-06-10T00:00:00.000Z\"",
-    "duration": "908"
+    "video_id": "f1JhauvwG4I",
+    "title": "Youtube, secondo noi | Professione Youtuber #001",
+    "date": "\"2020-06-11T00:00:00.000Z\"",
+    "duration": "3820"
   },
   {
     "video_id": "LAsa0Pitipg",
     "title": "Un audio CHE SPACCA, con OBS Studio",
     "date": "\"2020-06-10T00:00:00.000Z\"",
     "duration": "1614"
+  },
+  {
+    "video_id": "JlK_DylTXD0",
+    "title": "Migliorare DI BRUTTO l'audio con AUDACITY",
+    "date": "\"2020-06-10T00:00:00.000Z\"",
+    "duration": "908"
   },
   {
     "video_id": "Ih8k1FGXllI",
@@ -4212,16 +4212,16 @@
     "duration": "11002"
   },
   {
-    "video_id": "IdmkSaRviQ8",
-    "title": "SEXTING: guida al sesso a distanza soddisfacente e sicuro | con Marvi Santamaria",
-    "date": "\"2020-05-13T00:00:00.000Z\"",
-    "duration": "2539"
-  },
-  {
     "video_id": "s83OSsX_jXI",
     "title": "Intervista su come fare un'intervista",
     "date": "\"2020-05-13T00:00:00.000Z\"",
     "duration": "4789"
+  },
+  {
+    "video_id": "IdmkSaRviQ8",
+    "title": "SEXTING: guida al sesso a distanza soddisfacente e sicuro | con Marvi Santamaria",
+    "date": "\"2020-05-13T00:00:00.000Z\"",
+    "duration": "2539"
   },
   {
     "video_id": "SxC8XdwSVG4",
@@ -4242,16 +4242,16 @@
     "duration": "1954"
   },
   {
-    "video_id": "ydIqgy3YGWo",
-    "title": "Creator Talks con Chiara Becchimanzi",
-    "date": "\"2020-05-08T00:00:00.000Z\"",
-    "duration": "4694"
-  },
-  {
     "video_id": "0sVmicDOgf8",
     "title": "Come creare un podcast | La guida completa",
     "date": "\"2020-05-08T00:00:00.000Z\"",
     "duration": "5126"
+  },
+  {
+    "video_id": "ydIqgy3YGWo",
+    "title": "Creator Talks con Chiara Becchimanzi",
+    "date": "\"2020-05-08T00:00:00.000Z\"",
+    "duration": "4694"
   },
   {
     "video_id": "-v8q73TxFMo",
@@ -4284,16 +4284,16 @@
     "duration": "1175"
   },
   {
-    "video_id": "dFKZ40cnU1E",
-    "title": "Registrare chiamate come se si fosse nella stessa stanza (Zencastr)",
-    "date": "\"2020-03-26T00:00:00.000Z\"",
-    "duration": "1566"
-  },
-  {
     "video_id": "tocgkAy4s_g",
     "title": "Zoom Meeting in Italiano: si può cambiare lingua?",
     "date": "\"2020-03-26T00:00:00.000Z\"",
     "duration": "208"
+  },
+  {
+    "video_id": "dFKZ40cnU1E",
+    "title": "Registrare chiamate come se si fosse nella stessa stanza (Zencastr)",
+    "date": "\"2020-03-26T00:00:00.000Z\"",
+    "duration": "1566"
   },
   {
     "video_id": "8DZJcM_9E0w",
@@ -4314,16 +4314,16 @@
     "duration": "681"
   },
   {
-    "video_id": "L3dQwyN0Cqw",
-    "title": "Tricky Towers | Videogiochi papà-figlia",
-    "date": "\"2020-03-20T00:00:00.000Z\"",
-    "duration": "589"
-  },
-  {
     "video_id": "l5Ai2CmetVg",
     "title": "Spelunky | Videogiochi papà-figlia",
     "date": "\"2020-03-20T00:00:00.000Z\"",
     "duration": "983"
+  },
+  {
+    "video_id": "L3dQwyN0Cqw",
+    "title": "Tricky Towers | Videogiochi papà-figlia",
+    "date": "\"2020-03-20T00:00:00.000Z\"",
+    "duration": "589"
   },
   {
     "video_id": "PAMVmndUNRk",
@@ -4344,10 +4344,10 @@
     "duration": "3709"
   },
   {
-    "video_id": "gbuzf7jDL1I",
-    "title": "Proteggere i giovani dalle insidie di internet",
+    "video_id": "hCifATWHgMM",
+    "title": "Google Meet per video conferenze didattiche e di lavoro (Gsuite)",
     "date": "\"2020-03-17T00:00:00.000Z\"",
-    "duration": "1089"
+    "duration": "1838"
   },
   {
     "video_id": "u8Jur0pmZpc",
@@ -4356,10 +4356,10 @@
     "duration": "1435"
   },
   {
-    "video_id": "hCifATWHgMM",
-    "title": "Google Meet per video conferenze didattiche e di lavoro (Gsuite)",
+    "video_id": "gbuzf7jDL1I",
+    "title": "Proteggere i giovani dalle insidie di internet",
     "date": "\"2020-03-17T00:00:00.000Z\"",
-    "duration": "1838"
+    "duration": "1089"
   },
   {
     "video_id": "bjD6_21cxpw",
@@ -4374,16 +4374,16 @@
     "duration": "3484"
   },
   {
-    "video_id": "x-vRIL_keEM",
-    "title": "OBS Studio: inviare video verso Skype, Zoom, etc (plugin Virtual Cam)",
-    "date": "\"2020-03-13T00:00:00.000Z\"",
-    "duration": "674"
-  },
-  {
     "video_id": "V6K0uX3zy0w",
     "title": "Come metto il faccione nel cerchio, in OBS Studio",
     "date": "\"2020-03-13T00:00:00.000Z\"",
     "duration": "597"
+  },
+  {
+    "video_id": "x-vRIL_keEM",
+    "title": "OBS Studio: inviare video verso Skype, Zoom, etc (plugin Virtual Cam)",
+    "date": "\"2020-03-13T00:00:00.000Z\"",
+    "duration": "674"
   },
   {
     "video_id": "-7vLUnPUdIM",
@@ -4398,16 +4398,16 @@
     "duration": "14409"
   },
   {
-    "video_id": "-ulu2MjOYoI",
-    "title": "Come riconoscere i font di un sito web, con Fontface Ninja",
-    "date": "\"2019-09-20T00:00:00.000Z\"",
-    "duration": "279"
-  },
-  {
     "video_id": "v4EMxxARxO4",
     "title": "Registrare lo schermo del computer con OBS Studio",
     "date": "\"2019-09-20T00:00:00.000Z\"",
     "duration": "1020"
+  },
+  {
+    "video_id": "-ulu2MjOYoI",
+    "title": "Come riconoscere i font di un sito web, con Fontface Ninja",
+    "date": "\"2019-09-20T00:00:00.000Z\"",
+    "duration": "279"
   },
   {
     "video_id": "-d-OivCTWe4",
@@ -4428,12 +4428,6 @@
     "duration": "1760"
   },
   {
-    "video_id": "hfe8T3FV22Q",
-    "title": "Canali Telegram in italiano (da cui prendere spunto)",
-    "date": "\"2019-06-18T00:00:00.000Z\"",
-    "duration": "955"
-  },
-  {
     "video_id": "sjexPf_fcwg",
     "title": "Monitorare lo storico dei prezzi Amazon (e trovare \"vere\" offerte)",
     "date": "\"2019-06-18T00:00:00.000Z\"",
@@ -4444,6 +4438,12 @@
     "title": "Come installare le estensioni Chrome (e perchè dovrei farlo)",
     "date": "\"2019-06-18T00:00:00.000Z\"",
     "duration": "575"
+  },
+  {
+    "video_id": "hfe8T3FV22Q",
+    "title": "Canali Telegram in italiano (da cui prendere spunto)",
+    "date": "\"2019-06-18T00:00:00.000Z\"",
+    "duration": "955"
   },
   {
     "video_id": "AunuVU459II",
@@ -4506,16 +4506,16 @@
     "duration": "609"
   },
   {
-    "video_id": "rWRy08LEgQY",
-    "title": "Creare una Web Radio | con Manuel Rosini di Juice Radio Italia",
-    "date": "\"2018-11-07T00:00:00.000Z\"",
-    "duration": "6001"
-  },
-  {
     "video_id": "7nqtnVMOtV0",
     "title": "Doppiatore e podcaster (seconda parte) | con Filippo Carrozzo di Fiabe in Carrozza",
     "date": "\"2018-11-07T00:00:00.000Z\"",
     "duration": "989"
+  },
+  {
+    "video_id": "rWRy08LEgQY",
+    "title": "Creare una Web Radio | con Manuel Rosini di Juice Radio Italia",
+    "date": "\"2018-11-07T00:00:00.000Z\"",
+    "duration": "6001"
   },
   {
     "video_id": "X7uULorOfhk",
