@@ -30,16 +30,16 @@
     "duration": "2052"
   },
   {
-    "video_id": "PHnUeDXUfos",
-    "title": "20 TRUCCHI su CANVA che NON CONOSCI 🎨",
-    "date": "\"2026-04-20T00:00:00.000Z\"",
-    "duration": "1919"
-  },
-  {
     "video_id": "VE07twVKToQ",
     "title": "CANVA dalla A alla Z 🎨 CORSO COMPLETO sul PROGRAMMA CREATIVO più FACILE e COMPLETO che ci sia!",
     "date": "\"2026-04-20T00:00:00.000Z\"",
     "duration": "9172"
+  },
+  {
+    "video_id": "PHnUeDXUfos",
+    "title": "20 TRUCCHI su CANVA che NON CONOSCI 🎨",
+    "date": "\"2026-04-20T00:00:00.000Z\"",
+    "duration": "1919"
   },
   {
     "video_id": "piCQm0GvDF0",
@@ -90,10 +90,10 @@
     "duration": "4165"
   },
   {
-    "video_id": "9WCluVZLR-I",
-    "title": "ADOBE INDESIGN - CORSO COMPLETO per IMPAGINARE BENE e VELOCEMENTE (facciamo un pieghevole)",
+    "video_id": "gkcW0RVr8k4",
+    "title": "PHOTOSHOP - CORSO COMPLETO per la GRAFICA e il FOTORITOCCO (dalle basi al progetto finale!)",
     "date": "\"2026-02-03T00:00:00.000Z\"",
-    "duration": "6420"
+    "duration": "7816"
   },
   {
     "video_id": "O6LufsxEbcU",
@@ -102,10 +102,10 @@
     "duration": "9824"
   },
   {
-    "video_id": "gkcW0RVr8k4",
-    "title": "PHOTOSHOP - CORSO COMPLETO per la GRAFICA e il FOTORITOCCO (dalle basi al progetto finale!)",
+    "video_id": "9WCluVZLR-I",
+    "title": "ADOBE INDESIGN - CORSO COMPLETO per IMPAGINARE BENE e VELOCEMENTE (facciamo un pieghevole)",
     "date": "\"2026-02-03T00:00:00.000Z\"",
-    "duration": "7816"
+    "duration": "6420"
   },
   {
     "video_id": "qKgXJ30c6OI",
@@ -114,16 +114,16 @@
     "duration": "24786"
   },
   {
-    "video_id": "lkmL74sEcUw",
-    "title": "LOGITECH MX MASTER 🎯 Il mio MOUSE per la PRODUTTIVITÀ",
-    "date": "\"2026-01-31T00:00:00.000Z\"",
-    "duration": "2629"
-  },
-  {
     "video_id": "yQsQ_NzWOMw",
     "title": "PRESENTAZIONI DI GOOGLE: il corso per fare SLIDE PERFETTE (Gemini + Nano Banana)",
     "date": "\"2026-01-31T00:00:00.000Z\"",
     "duration": "3615"
+  },
+  {
+    "video_id": "lkmL74sEcUw",
+    "title": "LOGITECH MX MASTER 🎯 Il mio MOUSE per la PRODUTTIVITÀ",
+    "date": "\"2026-01-31T00:00:00.000Z\"",
+    "duration": "2629"
   },
   {
     "video_id": "CYyh8HSqi24",
@@ -150,12 +150,6 @@
     "duration": "1581"
   },
   {
-    "video_id": "Q623fJEPvYo",
-    "title": "Usa OUTLOOK come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
-    "date": "\"2025-12-21T00:00:00.000Z\"",
-    "duration": "2808"
-  },
-  {
     "video_id": "m_By_Z4tX_M",
     "title": "Usa GMAIL come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
     "date": "\"2025-12-21T00:00:00.000Z\"",
@@ -166,6 +160,12 @@
     "title": "NOTEBOOK LM 🧠 Corso Completo all'IA di Google che ESTENDE il tuo Cervello",
     "date": "\"2025-12-21T00:00:00.000Z\"",
     "duration": "3941"
+  },
+  {
+    "video_id": "Q623fJEPvYo",
+    "title": "Usa OUTLOOK come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
+    "date": "\"2025-12-21T00:00:00.000Z\"",
+    "duration": "2808"
   },
   {
     "video_id": "uLPRSzsr62U",
@@ -2958,18 +2958,6 @@
     "duration": "431"
   },
   {
-    "video_id": "eDQ4o7P8K84",
-    "title": "PHOTOSHOP: lo strumento PENNELLO",
-    "date": "\"2021-05-26T00:00:00.000Z\"",
-    "duration": "697"
-  },
-  {
-    "video_id": "rrSppNI__7U",
-    "title": "PHOTOSHOP: come RITAGLIARE, RIDIMENSIONARE e RUOTARE un'immagine",
-    "date": "\"2021-05-26T00:00:00.000Z\"",
-    "duration": "971"
-  },
-  {
     "video_id": "po8IQcieKeM",
     "title": "Aprire PHOTOSHOP per la PRIMA VOLTA",
     "date": "\"2021-05-26T00:00:00.000Z\"",
@@ -2988,16 +2976,28 @@
     "duration": "436"
   },
   {
+    "video_id": "eDQ4o7P8K84",
+    "title": "PHOTOSHOP: lo strumento PENNELLO",
+    "date": "\"2021-05-26T00:00:00.000Z\"",
+    "duration": "697"
+  },
+  {
+    "video_id": "rrSppNI__7U",
+    "title": "PHOTOSHOP: come RITAGLIARE, RIDIMENSIONARE e RUOTARE un'immagine",
+    "date": "\"2021-05-26T00:00:00.000Z\"",
+    "duration": "971"
+  },
+  {
     "video_id": "P_VNDQSb0Xk",
     "title": "Capire i LIVELLI di PHOTOSHOP (importante)",
     "date": "\"2021-05-26T00:00:00.000Z\"",
     "duration": "843"
   },
   {
-    "video_id": "fH8nJCDSuPE",
-    "title": "PHOTOSHOP: lo strumento SELEZIONE",
+    "video_id": "uro5pB7SGJc",
+    "title": "RIMUOVERE oggetti e imperfezioni con PHOTOSHOP (strumento pennello correttivo)",
     "date": "\"2021-05-26T00:00:00.000Z\"",
-    "duration": "785"
+    "duration": "1035"
   },
   {
     "video_id": "p-m_VG8D_Zo",
@@ -3054,10 +3054,10 @@
     "duration": "729"
   },
   {
-    "video_id": "uro5pB7SGJc",
-    "title": "RIMUOVERE oggetti e imperfezioni con PHOTOSHOP (strumento pennello correttivo)",
+    "video_id": "fH8nJCDSuPE",
+    "title": "PHOTOSHOP: lo strumento SELEZIONE",
     "date": "\"2021-05-26T00:00:00.000Z\"",
-    "duration": "1035"
+    "duration": "785"
   },
   {
     "video_id": "26y1vxM-lPY",
@@ -3336,12 +3336,6 @@
     "duration": "731"
   },
   {
-    "video_id": "0_yUDfxn7b8",
-    "title": "Da 0 a 18.000 iscritti in 10 giorni| Professione Youtuber #015",
-    "date": "\"2021-02-15T00:00:00.000Z\"",
-    "duration": "5049"
-  },
-  {
     "video_id": "4d_qn-xwCU4",
     "title": "10 tools che cambiano la vita",
     "date": "\"2021-02-15T00:00:00.000Z\"",
@@ -3352,6 +3346,12 @@
     "title": "Fai contenuti come Edoardo fa cose: Photoshop, Adobe Animate e Final Cut",
     "date": "\"2021-02-15T00:00:00.000Z\"",
     "duration": "5909"
+  },
+  {
+    "video_id": "0_yUDfxn7b8",
+    "title": "Da 0 a 18.000 iscritti in 10 giorni| Professione Youtuber #015",
+    "date": "\"2021-02-15T00:00:00.000Z\"",
+    "duration": "5049"
   },
   {
     "video_id": "WnHCfoX4xk0",
@@ -3672,16 +3672,16 @@
     "duration": "1202"
   },
   {
-    "video_id": "FwGU_nQI2_o",
-    "title": "ZOOM MEETING per le VIDEOCONFERENZE | Tutorial Epico",
-    "date": "\"2020-11-04T00:00:00.000Z\"",
-    "duration": "3150"
-  },
-  {
     "video_id": "AyKmJxlLmPk",
     "title": "OBS Studio: sincronizzare AUDIO e VIDEO",
     "date": "\"2020-11-04T00:00:00.000Z\"",
     "duration": "1186"
+  },
+  {
+    "video_id": "FwGU_nQI2_o",
+    "title": "ZOOM MEETING per le VIDEOCONFERENZE | Tutorial Epico",
+    "date": "\"2020-11-04T00:00:00.000Z\"",
+    "duration": "3150"
   },
   {
     "video_id": "ZPTcfgHFttA",
@@ -3702,12 +3702,6 @@
     "duration": "5211"
   },
   {
-    "video_id": "I9L7uRommRI",
-    "title": "Ascoltare la voce MENTRE si registra con AUDACITY (MONITOR)",
-    "date": "\"2020-10-23T00:00:00.000Z\"",
-    "duration": "448"
-  },
-  {
     "video_id": "YRgu2ayZte4",
     "title": "Come mettere in pausa OBS Studio",
     "date": "\"2020-10-23T00:00:00.000Z\"",
@@ -3718,6 +3712,12 @@
     "title": "13 buone ragioni per usare TELEGRAM (al posto di WhatsApp 🤢)",
     "date": "\"2020-10-23T00:00:00.000Z\"",
     "duration": "1572"
+  },
+  {
+    "video_id": "I9L7uRommRI",
+    "title": "Ascoltare la voce MENTRE si registra con AUDACITY (MONITOR)",
+    "date": "\"2020-10-23T00:00:00.000Z\"",
+    "duration": "448"
   },
   {
     "video_id": "eHOxK6r2SJg",
@@ -3846,16 +3846,16 @@
     "duration": "347"
   },
   {
-    "video_id": "PlPfeF8Vdoc",
-    "title": "[Video aggiornato in descrizione] Aggiungere i TITOLI DI CODA ad un video, con Shotcut",
-    "date": "\"2020-09-24T00:00:00.000Z\"",
-    "duration": "583"
-  },
-  {
     "video_id": "BFqToqbRA-8",
     "title": "Come ho salvato un file corrotto, con VLC",
     "date": "\"2020-09-24T00:00:00.000Z\"",
     "duration": "691"
+  },
+  {
+    "video_id": "PlPfeF8Vdoc",
+    "title": "[Video aggiornato in descrizione] Aggiungere i TITOLI DI CODA ad un video, con Shotcut",
+    "date": "\"2020-09-24T00:00:00.000Z\"",
+    "duration": "583"
   },
   {
     "video_id": "8hbVexDoftc",
