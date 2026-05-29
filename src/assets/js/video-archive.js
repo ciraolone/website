@@ -79,7 +79,7 @@
       if (!risposta.ok) throw new Error('HTTP ' + risposta.status);
       const dati = await risposta.json();
 
-      datiVideo = dati.map(function (item) {
+      datiVideo = dati.videos.map(function (item) {
         return {
           video_id: item.video_id || '',
           title: item.title || '',
