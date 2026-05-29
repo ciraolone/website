@@ -1,7 +1,8 @@
 /**
  * Video Archive - Ricerca e filtro video YouTube.
- * I dati arrivano da /assets/data/videos.json, file statico nel repo
- * aggiornato ogni 8 ore dal workflow n8n "Website > Sync videos.json".
+ * I dati arrivano da /api/videos.json, file statico nel repo aggiornato
+ * ogni 8 ore dal workflow n8n "Website > Sync videos.json". È la stessa
+ * API esposta pubblicamente: la pagina la consuma come tutti gli altri.
  * Stesso origin, niente CORS, niente chiamate esterne a runtime.
  */
 
@@ -72,7 +73,9 @@
       '</div>';
 
     try {
-      const risposta = await fetch('/assets/data/videos.json', { cache: 'no-cache' });
+      const risposta = await fetch('/api/videos.json', {
+        cache: 'no-cache',
+      });
       if (!risposta.ok) throw new Error('HTTP ' + risposta.status);
       const dati = await risposta.json();
 

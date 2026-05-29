@@ -3,14 +3,14 @@
  * Best practices: configurazione modulare e organizzata
  */
 
-const markdownIt = require("markdown-it");
-const markdownItAttrs = require("markdown-it-attrs");
-const markdownItStrikethrough = require("markdown-it-strikethrough-alt");
-const Image = require("@11ty/eleventy-img");
-const path = require("path");
-const pluginIcons = require("eleventy-plugin-icons");
+const markdownIt = require('markdown-it');
+const markdownItAttrs = require('markdown-it-attrs');
+const markdownItStrikethrough = require('markdown-it-strikethrough-alt');
+const Image = require('@11ty/eleventy-img');
+const path = require('path');
+const pluginIcons = require('eleventy-plugin-icons');
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   // ============================================
   // MARKDOWN CONFIGURATION
   // ============================================
@@ -20,14 +20,24 @@ module.exports = function(eleventyConfig) {
   const markdownLibrary = markdownIt({
     html: true,
     breaks: true,
-    linkify: true
-  }).use(markdownItAttrs, {
-    leftDelimiter: '{:',
-    rightDelimiter: '}',
-    allowedAttributes: ['id', 'class', 'src', 'alt', 'title', 'width', 'height']
-  }).use(markdownItStrikethrough);
-  
-  eleventyConfig.setLibrary("md", markdownLibrary);
+    linkify: true,
+  })
+    .use(markdownItAttrs, {
+      leftDelimiter: '{:',
+      rightDelimiter: '}',
+      allowedAttributes: [
+        'id',
+        'class',
+        'src',
+        'alt',
+        'title',
+        'width',
+        'height',
+      ],
+    })
+    .use(markdownItStrikethrough);
+
+  eleventyConfig.setLibrary('md', markdownLibrary);
 
   // ============================================
   // ICONS (Tabler Icons via eleventy-plugin-icons)
@@ -42,13 +52,15 @@ module.exports = function(eleventyConfig) {
   // NOTA: Le icone Tabler sono outline di default (stroke).
   // Per cambiare spessore linea: stroke-width="1" (sottile) a "2.5" (spesso)
   eleventyConfig.addPlugin(pluginIcons, {
-    sources: [{
-      name: "tabler",
-      path: "node_modules/@tabler/icons/icons/outline"
-    }],
+    sources: [
+      {
+        name: 'tabler',
+        path: 'node_modules/@tabler/icons/icons/outline',
+      },
+    ],
     icon: {
-      shortcode: "icon",
-      delimiter: ":"
+      shortcode: 'icon',
+      delimiter: ':',
     },
     // Classe CSS di default per tutte le icone
     // Genera: class="df-icon df-icon-{name}"
@@ -56,13 +68,13 @@ module.exports = function(eleventyConfig) {
     // Attributi di default per tutte le icone Tabler
     attributesBySource: {
       tabler: {
-        "stroke-width": "2",
-        "stroke": "currentColor",
-        "fill": "none"
-      }
+        'stroke-width': '2',
+        stroke: 'currentColor',
+        fill: 'none',
+      },
     },
     // Errore se icona non trovata (utile in sviluppo)
-    errorNotFound: true
+    errorNotFound: true,
   });
 
   // ============================================
@@ -73,32 +85,38 @@ module.exports = function(eleventyConfig) {
   //
   // IMMAGINI: Le immagini vengono generate da eleventy-img direttamente in _site/assets/images/
   // Manteniamo passthrough solo per file che NON devono essere ottimizzati (SVG, placeholders)
-  eleventyConfig.addPassthroughCopy("src/assets/images/*.svg");
-  eleventyConfig.addPassthroughCopy("src/assets/images/placeholders");
-  eleventyConfig.addPassthroughCopy("src/assets/fonts");
+  eleventyConfig.addPassthroughCopy('src/assets/images/*.svg');
+  eleventyConfig.addPassthroughCopy('src/assets/images/placeholders');
+  eleventyConfig.addPassthroughCopy('src/assets/fonts');
   // NOTA: JS viene processato da terser in produzione (vedi npm run build:js)
   // In sviluppo, il passthrough copia i file originali con i commenti
-  if (process.env.ELEVENTY_ENV !== "production") {
-    eleventyConfig.addPassthroughCopy("src/assets/js");
+  if (process.env.ELEVENTY_ENV !== 'production') {
+    eleventyConfig.addPassthroughCopy('src/assets/js');
   }
-  eleventyConfig.addPassthroughCopy("src/assets/videos");
-  eleventyConfig.addPassthroughCopy("src/assets/data");
-  eleventyConfig.addPassthroughCopy({ "src/assets/favicon": "/" });
-  eleventyConfig.addPassthroughCopy({ 'src/site.webmanifest': 'site.webmanifest' });
+  eleventyConfig.addPassthroughCopy('src/assets/videos');
+  // src/api/videos.json è scritto da n8n già pulito (vedi workflow
+  // "Website > Sync videos.json") e viene pubblicato verbatim su
+  // /api/videos.json: è l'unica fonte dei video, letta sia dalla pagina
+  // /video sia da chi consuma l'API dall'esterno.
+  eleventyConfig.addPassthroughCopy('src/api');
+  eleventyConfig.addPassthroughCopy({ 'src/assets/favicon': '/' });
+  eleventyConfig.addPassthroughCopy({
+    'src/site.webmanifest': 'site.webmanifest',
+  });
 
   // Cloudflare Pages: file _redirects per gestire i redirect lato server
   // Documentazione: https://developers.cloudflare.com/pages/configuration/redirects/
-  eleventyConfig.addPassthroughCopy({ "src/_redirects": "_redirects" });
-  
+  eleventyConfig.addPassthroughCopy({ 'src/_redirects': '_redirects' });
+
   // ============================================
   // WATCH TARGETS
   // ============================================
   // File da monitorare durante lo sviluppo (per hot reload automatico)
   // Nota: il CSS viene compilato direttamente in _site/assets/css/ tramite npm run watch:css
-  eleventyConfig.addWatchTarget("src/assets/css/main.css");
-  eleventyConfig.addWatchTarget("src/assets/js/");
-  eleventyConfig.addWatchTarget("src/assets/images/");
-  
+  eleventyConfig.addWatchTarget('src/assets/css/main.css');
+  eleventyConfig.addWatchTarget('src/assets/js/');
+  eleventyConfig.addWatchTarget('src/assets/images/');
+
   // ============================================
   // SERVER CONFIGURATION (Browsersync)
   // ============================================
@@ -115,7 +133,7 @@ module.exports = function(eleventyConfig) {
     // Mostra notifiche nel browser quando i file cambiano
     notify: false,
     // Apri automaticamente il browser
-    open: false
+    open: false,
   });
 
   // ============================================
@@ -123,34 +141,36 @@ module.exports = function(eleventyConfig) {
   // ============================================
   // Filtro per renderizzare markdown inline (es. **grassetto**, *corsivo*)
   // Usa renderInline per evitare wrapper <p> indesiderati nei componenti
-  eleventyConfig.addFilter('md', function(content) {
-    if (!content) { return ''; }
+  eleventyConfig.addFilter('md', function (content) {
+    if (!content) {
+      return '';
+    }
     return markdownLibrary.renderInline(content);
   });
 
   // Filtro per formattare date
-  eleventyConfig.addFilter("dateFormat", function(date, format) {
+  eleventyConfig.addFilter('dateFormat', function (date, format) {
     const d = new Date(date);
-    if (format === "year") {
+    if (format === 'year') {
       return d.getFullYear();
     }
-    if (format === "iso") {
+    if (format === 'iso') {
       return d.toISOString();
     }
-    return d.toLocaleDateString("it-IT", {
-      year: "numeric",
-      month: "long",
-      day: "numeric"
+    return d.toLocaleDateString('it-IT', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
     });
   });
 
   // Filtro per limitare testo
-  eleventyConfig.addFilter("limit", function(array, limit) {
+  eleventyConfig.addFilter('limit', function (array, limit) {
     return array.slice(0, limit);
   });
 
   // Filtro per ordinare array
-  eleventyConfig.addFilter("sortByDate", function(array) {
+  eleventyConfig.addFilter('sortByDate', function (array) {
     return array.sort((a, b) => {
       return new Date(b.date) - new Date(a.date);
     });
@@ -179,25 +199,25 @@ module.exports = function(eleventyConfig) {
   const imageConfig = {
     // Formati output: AVIF (più piccolo), WebP (compatibile), JPEG (fallback)
     // Ordine importante: browser sceglie il primo supportato
-    formats: ["avif", "webp", "jpeg"],
+    formats: ['avif', 'webp', 'jpeg'],
 
     // Larghezze generate: 320, 640, 960 + originale
-    widths: [320, 640, 960, "auto"],
+    widths: [320, 640, 960, 'auto'],
 
     // Directory output (dentro _site)
-    outputDir: "./_site/assets/images/",
-    urlPath: "/assets/images/",
+    outputDir: './_site/assets/images/',
+    urlPath: '/assets/images/',
 
     // Qualità per formato
-    sharpAvifOptions: { quality: 50 },  // AVIF 50 ≈ JPEG 80 percepito
+    sharpAvifOptions: { quality: 50 }, // AVIF 50 ≈ JPEG 80 percepito
     sharpWebpOptions: { quality: 80 },
     sharpJpegOptions: { quality: 80 },
 
     // Nome file con hash per cache busting (permette max-age=31536000, immutable)
-    filenameFormat: function(id, src, width, format) {
+    filenameFormat: function (id, src, width, format) {
       const name = path.basename(src, path.extname(src));
       return `${name}-${width}w-${id}.${format}`;
-    }
+    },
     // NOTA: La cache per immagini locali funziona automaticamente:
     // se l'immagine sorgente non è cambiata e l'output esiste, salta l'elaborazione
   };
@@ -209,16 +229,22 @@ module.exports = function(eleventyConfig) {
   // - Genera versione tiny (20px) inline come base64
   // - CSS image-rendering: pixelated per effetto pixel art
   // - Immagine reale caricata sopra con fade-in via CSS
-  eleventyConfig.addFilter("responsiveImg", function(src, options = {}) {
-    const { alt = "", sizes = "100vw", className = "", loading = "lazy", fetchpriority = "" } = options;
+  eleventyConfig.addFilter('responsiveImg', function (src, options = {}) {
+    const {
+      alt = '',
+      sizes = '100vw',
+      className = '',
+      loading = 'lazy',
+      fetchpriority = '',
+    } = options;
 
     // Salta URL esterni: restituisce <img> semplice
-    if (src.startsWith("http://") || src.startsWith("https://")) {
+    if (src.startsWith('http://') || src.startsWith('https://')) {
       return `<img src="${src}" alt="${alt}" class="${className}" loading="${loading}">`;
     }
 
     // Risolvi percorso relativo (src può essere /assets/images/...)
-    const imagePath = src.startsWith("/") ? `./src${src}` : src;
+    const imagePath = src.startsWith('/') ? `./src${src}` : src;
 
     // Calcola se è un'immagine piccola (sizes ≤ 64px)
     const sizesNum = parseInt(sizes, 10);
@@ -228,21 +254,21 @@ module.exports = function(eleventyConfig) {
     const opts = {
       ...imageConfig,
       // Per immagini piccole: solo 1 versione (no srcset)
-      widths: isSmall ? ["auto"] : imageConfig.widths
+      widths: isSmall ? ['auto'] : imageConfig.widths,
     };
 
     // Configurazione per LQIP (tiny 20px, solo JPEG per base64 compatto)
     // Skip LQIP per immagini piccole (già leggere)
     const lqipOpts = {
       widths: [20],
-      formats: ["jpeg"],
-      outputDir: "./_site/assets/images/",
-      urlPath: "/assets/images/",
+      formats: ['jpeg'],
+      outputDir: './_site/assets/images/',
+      urlPath: '/assets/images/',
       sharpJpegOptions: { quality: 60 },
-      filenameFormat: function(id, src, width, format) {
+      filenameFormat: function (id, src, width, format) {
         const name = path.basename(src, path.extname(src));
         return `${name}-lqip-${id}.${format}`;
-      }
+      },
     };
 
     // Avvia generazione (asincrona in background, non blocca)
@@ -260,11 +286,11 @@ module.exports = function(eleventyConfig) {
       const imageAttributes = {
         alt,
         loading,
-        decoding: "async",
+        decoding: 'async',
         class: className || undefined,
         width: largestImage.width,
         height: largestImage.height,
-        ...(fetchpriority ? { fetchpriority } : {})
+        ...(fetchpriority ? { fetchpriority } : {}),
       };
       return Image.generateHTML(metadata, imageAttributes);
     }
@@ -273,14 +299,17 @@ module.exports = function(eleventyConfig) {
     const lqipMetadata = Image.statsSync(imagePath, lqipOpts);
     const lqipImage = lqipMetadata.jpeg[0];
     // Leggi il file generato e converti in base64
-    const fs = require("fs");
-    let lqipBase64 = "";
+    const fs = require('fs');
+    let lqipBase64 = '';
     try {
       // Il file potrebbe non esistere ancora al primo build, usiamo il path
-      const lqipPath = path.join(lqipOpts.outputDir, path.basename(lqipImage.url));
+      const lqipPath = path.join(
+        lqipOpts.outputDir,
+        path.basename(lqipImage.url),
+      );
       if (fs.existsSync(lqipPath)) {
         const lqipBuffer = fs.readFileSync(lqipPath);
-        lqipBase64 = `data:image/jpeg;base64,${lqipBuffer.toString("base64")}`;
+        lqipBase64 = `data:image/jpeg;base64,${lqipBuffer.toString('base64')}`;
       }
     } catch (e) {
       // Fallback: nessun LQIP se errore
@@ -291,17 +320,20 @@ module.exports = function(eleventyConfig) {
       alt,
       sizes,
       loading,
-      decoding: "async",
+      decoding: 'async',
       class: `${className} lqip-img`.trim(),
       width: largestImage.width,
       height: largestImage.height,
-      ...(fetchpriority ? { fetchpriority } : {})
+      ...(fetchpriority ? { fetchpriority } : {}),
     };
     const pictureHtml = Image.generateHTML(metadata, imageAttributes);
 
     // Se abbiamo LQIP, wrappa in container con placeholder
     if (lqipBase64) {
-      const aspectRatio = (largestImage.height / largestImage.width * 100).toFixed(2);
+      const aspectRatio = (
+        (largestImage.height / largestImage.width) *
+        100
+      ).toFixed(2);
       return `<div class="lqip-container" style="position:relative;padding-bottom:${aspectRatio}%;background-image:url('${lqipBase64}');background-size:cover;image-rendering:pixelated;">${pictureHtml}</div>`;
     }
 
@@ -312,12 +344,12 @@ module.exports = function(eleventyConfig) {
   // SHORTCODES
   // ============================================
   // Shortcode per immagini responsive
-  eleventyConfig.addShortcode("image", function(src, alt, className = "") {
+  eleventyConfig.addShortcode('image', function (src, alt, className = '') {
     return `<img src="${src}" alt="${alt}" class="${className}" loading="lazy">`;
   });
 
   // Shortcode per link esterni
-  eleventyConfig.addShortcode("externalLink", function(url, text) {
+  eleventyConfig.addShortcode('externalLink', function (url, text) {
     return `<a href="${url}" target="_blank" rel="noopener noreferrer">${text}</a>`;
   });
 
@@ -325,8 +357,8 @@ module.exports = function(eleventyConfig) {
   // COLLECTIONS
   // ============================================
   // Collection per pagine (escludendo quelle con draft: true)
-  eleventyConfig.addCollection("pages", function(collectionApi) {
-    return collectionApi.getFilteredByGlob("src/**/*.md").filter(item => {
+  eleventyConfig.addCollection('pages', function (collectionApi) {
+    return collectionApi.getFilteredByGlob('src/**/*.md').filter((item) => {
       return !item.data.draft;
     });
   });
@@ -339,23 +371,26 @@ module.exports = function(eleventyConfig) {
   //
   // NOTA: I commenti condizionali IE vengono preservati per retrocompatibilità
   // Se modifichi: testare sempre con "npm run build" prima di deployare
-  if (process.env.ELEVENTY_ENV === "production") {
-    const htmlmin = require("html-minifier-terser");
+  if (process.env.ELEVENTY_ENV === 'production') {
+    const htmlmin = require('html-minifier-terser');
 
-    eleventyConfig.addTransform("htmlmin", async function(content, outputPath) {
-      if (outputPath && outputPath.endsWith(".html")) {
-        return await htmlmin.minify(content, {
-          removeComments: true,              // Rimuove tutti i commenti HTML
-          collapseWhitespace: true,          // Rimuove spazi bianchi inutili
-          removeEmptyAttributes: true,       // Rimuove attributi vuoti (es. class="")
-          collapseBooleanAttributes: true,   // checked="checked" → checked
-          removeAttributeQuotes: true,       // Rimuove virgolette non necessarie
-          minifyJS: true,                    // Minifica <script> inline
-          minifyCSS: true                    // Minifica <style> inline
-        });
-      }
-      return content;
-    });
+    eleventyConfig.addTransform(
+      'htmlmin',
+      async function (content, outputPath) {
+        if (outputPath && outputPath.endsWith('.html')) {
+          return await htmlmin.minify(content, {
+            removeComments: true, // Rimuove tutti i commenti HTML
+            collapseWhitespace: true, // Rimuove spazi bianchi inutili
+            removeEmptyAttributes: true, // Rimuove attributi vuoti (es. class="")
+            collapseBooleanAttributes: true, // checked="checked" → checked
+            removeAttributeQuotes: true, // Rimuove virgolette non necessarie
+            minifyJS: true, // Minifica <script> inline
+            minifyCSS: true, // Minifica <style> inline
+          });
+        }
+        return content;
+      },
+    );
   }
 
   // ============================================
@@ -364,18 +399,17 @@ module.exports = function(eleventyConfig) {
   return {
     // Directory di input
     dir: {
-      input: "src",
-      includes: "_includes",
-      layouts: "_includes/layouts",
-      data: "_data",
-      output: "_site"
+      input: 'src',
+      includes: '_includes',
+      layouts: '_includes/layouts',
+      data: '_data',
+      output: '_site',
     },
     // Template engines supportati
-    markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk",
+    markdownTemplateEngine: 'njk',
+    htmlTemplateEngine: 'njk',
+    dataTemplateEngine: 'njk',
     // Permalink prettier
-    pathPrefix: "/"
+    pathPrefix: '/',
   };
 };
-
