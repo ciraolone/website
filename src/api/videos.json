@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-03T06:00:01Z",
+  "updated_at": "2026-06-04T06:00:01Z",
   "counts": {
     "videos": 767,
     "playlists": 145,
@@ -64,20 +64,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Rcui-fWuZkEWICrvzVynCq"
     },
     {
-      "video_id": "PHnUeDXUfos",
-      "type": "video",
-      "title": "20 TRUCCHI su CANVA che NON CONOSCI 🎨",
-      "date": "2026-04-20",
-      "duration": 1919,
-      "url": "https://youtu.be/PHnUeDXUfos"
-    },
-    {
       "video_id": "VE07twVKToQ",
       "type": "video",
       "title": "CANVA dalla A alla Z 🎨 CORSO COMPLETO sul PROGRAMMA CREATIVO più FACILE e COMPLETO che ci sia!",
       "date": "2026-04-20",
       "duration": 9172,
       "url": "https://youtu.be/VE07twVKToQ"
+    },
+    {
+      "video_id": "PHnUeDXUfos",
+      "type": "video",
+      "title": "20 TRUCCHI su CANVA che NON CONOSCI 🎨",
+      "date": "2026-04-20",
+      "duration": 1919,
+      "url": "https://youtu.be/PHnUeDXUfos"
     },
     {
       "video_id": "piCQm0GvDF0",
@@ -152,12 +152,12 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1R5TSlFb5Ga8BQ21XcYEBlG"
     },
     {
-      "video_id": "WkcyAfNlgtg",
+      "video_id": "O6LufsxEbcU",
       "type": "video",
-      "title": "ADOBE EXPRESS - Alternativa POTENTE a CANVA per fare GRAFICA e VIDEO ONLINE (animiamo un logo)",
+      "title": "ADOBE ILLUSTRATOR - CORSO COMPLETO per creare GRAFICHE VETTORIALI DA ZERO (disegnamo un logo)",
       "date": "2026-02-03",
-      "duration": 4165,
-      "url": "https://youtu.be/WkcyAfNlgtg"
+      "duration": 9824,
+      "url": "https://youtu.be/O6LufsxEbcU"
     },
     {
       "video_id": "9WCluVZLR-I",
@@ -168,20 +168,20 @@
       "url": "https://youtu.be/9WCluVZLR-I"
     },
     {
-      "video_id": "O6LufsxEbcU",
-      "type": "video",
-      "title": "ADOBE ILLUSTRATOR - CORSO COMPLETO per creare GRAFICHE VETTORIALI DA ZERO (disegnamo un logo)",
-      "date": "2026-02-03",
-      "duration": 9824,
-      "url": "https://youtu.be/O6LufsxEbcU"
-    },
-    {
       "video_id": "gkcW0RVr8k4",
       "type": "video",
       "title": "PHOTOSHOP - CORSO COMPLETO per la GRAFICA e il FOTORITOCCO (dalle basi al progetto finale!)",
       "date": "2026-02-03",
       "duration": 7816,
       "url": "https://youtu.be/gkcW0RVr8k4"
+    },
+    {
+      "video_id": "WkcyAfNlgtg",
+      "type": "video",
+      "title": "ADOBE EXPRESS - Alternativa POTENTE a CANVA per fare GRAFICA e VIDEO ONLINE (animiamo un logo)",
+      "date": "2026-02-03",
+      "duration": 4165,
+      "url": "https://youtu.be/WkcyAfNlgtg"
     },
     {
       "video_id": "qKgXJ30c6OI",
@@ -3816,20 +3816,28 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Tp1kUJCZ1e7T2xB6sY3IV4"
     },
     {
-      "video_id": "PLDhDfv9Kmg1TYzdUDp-Ihvnx3cHLzMFKg",
+      "video_id": "PLDhDfv9Kmg1RhiMU3DJFLyaAffv1j9C7f",
       "type": "playlist",
-      "title": "Skype: corso completo",
+      "title": "Discord: corso completo",
       "date": "2022-03-28",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TYzdUDp-Ihvnx3cHLzMFKg"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RhiMU3DJFLyaAffv1j9C7f"
     },
     {
-      "video_id": "PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN",
+      "video_id": "PLDhDfv9Kmg1Rr8_mAC5PuvuYW5_OHjDeA",
       "type": "playlist",
-      "title": "Todoist: corso completo",
+      "title": "NOTION 📚 CORSO COMPLETO per gestire STUDIO, LAVORO, VITA",
       "date": "2022-03-28",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Rr8_mAC5PuvuYW5_OHjDeA"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1SYmIa4l6T6jTy3hWb8gozF",
+      "type": "playlist",
+      "title": "Trello: corso completo",
+      "date": "2022-03-28",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SYmIa4l6T6jTy3hWb8gozF"
     },
     {
       "video_id": "PLDhDfv9Kmg1TTN-drLK3rCWqIPFSYZWX1",
@@ -3856,14 +3864,6 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QEh4thrJW4CAn5ihtsgCDF"
     },
     {
-      "video_id": "PLDhDfv9Kmg1Tdq5SSfxn-D12Q_VMnW4ht",
-      "type": "playlist",
-      "title": "Zoom: corso completo",
-      "date": "2022-03-28",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Tdq5SSfxn-D12Q_VMnW4ht"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1T_jo5E6R9G-HuXiezCnydt",
       "type": "playlist",
       "title": "Telegram: corso completo",
@@ -3872,52 +3872,36 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1T_jo5E6R9G-HuXiezCnydt"
     },
     {
-      "video_id": "PLDhDfv9Kmg1RhiMU3DJFLyaAffv1j9C7f",
+      "video_id": "PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN",
       "type": "playlist",
-      "title": "Discord: corso completo",
+      "title": "Todoist: corso completo",
       "date": "2022-03-28",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RhiMU3DJFLyaAffv1j9C7f"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN"
     },
     {
-      "video_id": "PLDhDfv9Kmg1Rr8_mAC5PuvuYW5_OHjDeA",
+      "video_id": "PLDhDfv9Kmg1TYzdUDp-Ihvnx3cHLzMFKg",
       "type": "playlist",
-      "title": "NOTION 📚 CORSO COMPLETO per gestire STUDIO, LAVORO, VITA",
+      "title": "Skype: corso completo",
       "date": "2022-03-28",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Rr8_mAC5PuvuYW5_OHjDeA"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TYzdUDp-Ihvnx3cHLzMFKg"
     },
     {
-      "video_id": "PLDhDfv9Kmg1SYmIa4l6T6jTy3hWb8gozF",
+      "video_id": "PLDhDfv9Kmg1Tdq5SSfxn-D12Q_VMnW4ht",
       "type": "playlist",
-      "title": "Trello: corso completo",
+      "title": "Zoom: corso completo",
       "date": "2022-03-28",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SYmIa4l6T6jTy3hWb8gozF"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Tdq5SSfxn-D12Q_VMnW4ht"
     },
     {
-      "video_id": "PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw",
+      "video_id": "PLDhDfv9Kmg1QSttTawspY1XM2bCpzamM2",
       "type": "playlist",
-      "title": "Adobe Premiere Pro: corso completo",
+      "title": "OBS Studio: corso completo",
       "date": "2022-03-24",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1TX5QJ_GlEDrNF1h_Ux-zrW",
-      "type": "playlist",
-      "title": "Streamlabs: corso completo",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TX5QJ_GlEDrNF1h_Ux-zrW"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1S8z5nq9QR76J6dTO_rZJnb",
-      "type": "playlist",
-      "title": "StreamYard: corso completo",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1S8z5nq9QR76J6dTO_rZJnb"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QSttTawspY1XM2bCpzamM2"
     },
     {
       "video_id": "PLDhDfv9Kmg1Q_pmuKspUB7fP0XQozAU6N",
@@ -3936,76 +3920,36 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570"
     },
     {
-      "video_id": "PLDhDfv9Kmg1QSttTawspY1XM2bCpzamM2",
+      "video_id": "PLDhDfv9Kmg1S8z5nq9QR76J6dTO_rZJnb",
       "type": "playlist",
-      "title": "OBS Studio: corso completo",
+      "title": "StreamYard: corso completo",
       "date": "2022-03-24",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QSttTawspY1XM2bCpzamM2"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1S8z5nq9QR76J6dTO_rZJnb"
     },
     {
-      "video_id": "PLDhDfv9Kmg1Sq25dYBvIq-9MEdbr1NKdk",
+      "video_id": "PLDhDfv9Kmg1TX5QJ_GlEDrNF1h_Ux-zrW",
       "type": "playlist",
-      "title": "HTML e CSS 🤖 il CORSO GRATIS DEFINITIVO",
+      "title": "Streamlabs: corso completo",
       "date": "2022-03-24",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Sq25dYBvIq-9MEdbr1NKdk"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TX5QJ_GlEDrNF1h_Ux-zrW"
     },
     {
-      "video_id": "PLDhDfv9Kmg1SasLqYkRWOHqtTpck09JTz",
+      "video_id": "PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw",
       "type": "playlist",
-      "title": "WORDPRESS per tutti! 🥇 CORSO COMPLETO e GRATIS",
+      "title": "Adobe Premiere Pro: corso completo",
       "date": "2022-03-24",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SasLqYkRWOHqtTpck09JTz"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw"
     },
     {
-      "video_id": "PLDhDfv9Kmg1Ti3vYtHshLCOsS5pUKcfYM",
+      "video_id": "PLDhDfv9Kmg1TVBgwf1wTMFETyQ9W07zfG",
       "type": "playlist",
-      "title": "Adobe InDesign: corso completo",
+      "title": "Camtasia: corso completo",
       "date": "2022-03-24",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Ti3vYtHshLCOsS5pUKcfYM"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1TGq5uZ6QNvKZMJ80zIl2OE",
-      "type": "playlist",
-      "title": "Adobe Illustrator: corso completo",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TGq5uZ6QNvKZMJ80zIl2OE"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1SAeKmQIuqRx4tDkp5HUDAo",
-      "type": "playlist",
-      "title": "CANVA 🎨 CORSO COMPLETO per la GRAFICA e il DESIGN",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SAeKmQIuqRx4tDkp5HUDAo"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1RjCC7Zvx70UGSA7N4mJOU-",
-      "type": "playlist",
-      "title": "GIMP: corso completo",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RjCC7Zvx70UGSA7N4mJOU-"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1S2dOn_0MzjKQautilFeIRH",
-      "type": "playlist",
-      "title": "AFFINITY by CANVA 🎨 CORSO COMPLETO per la GRAFICA, il DESIGN e il FOTORITOCCO",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1S2dOn_0MzjKQautilFeIRH"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1SrUGhzwd54QBCP_2LTHA23",
-      "type": "playlist",
-      "title": "PHOTOSHOP: IL CORSO SUBLIME, GRATIS | Da 0 a NINJA 🐱‍👤",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SrUGhzwd54QBCP_2LTHA23"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TVBgwf1wTMFETyQ9W07zfG"
     },
     {
       "video_id": "PLDhDfv9Kmg1SlHE83_Wqe30dcIJJZNL6m",
@@ -4016,12 +3960,68 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SlHE83_Wqe30dcIJJZNL6m"
     },
     {
-      "video_id": "PLDhDfv9Kmg1TVBgwf1wTMFETyQ9W07zfG",
+      "video_id": "PLDhDfv9Kmg1SrUGhzwd54QBCP_2LTHA23",
       "type": "playlist",
-      "title": "Camtasia: corso completo",
+      "title": "PHOTOSHOP: IL CORSO SUBLIME, GRATIS | Da 0 a NINJA 🐱‍👤",
       "date": "2022-03-24",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TVBgwf1wTMFETyQ9W07zfG"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SrUGhzwd54QBCP_2LTHA23"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1S2dOn_0MzjKQautilFeIRH",
+      "type": "playlist",
+      "title": "AFFINITY by CANVA 🎨 CORSO COMPLETO per la GRAFICA, il DESIGN e il FOTORITOCCO",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1S2dOn_0MzjKQautilFeIRH"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1RjCC7Zvx70UGSA7N4mJOU-",
+      "type": "playlist",
+      "title": "GIMP: corso completo",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RjCC7Zvx70UGSA7N4mJOU-"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1SAeKmQIuqRx4tDkp5HUDAo",
+      "type": "playlist",
+      "title": "CANVA 🎨 CORSO COMPLETO per la GRAFICA e il DESIGN",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SAeKmQIuqRx4tDkp5HUDAo"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1TGq5uZ6QNvKZMJ80zIl2OE",
+      "type": "playlist",
+      "title": "Adobe Illustrator: corso completo",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TGq5uZ6QNvKZMJ80zIl2OE"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1Ti3vYtHshLCOsS5pUKcfYM",
+      "type": "playlist",
+      "title": "Adobe InDesign: corso completo",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Ti3vYtHshLCOsS5pUKcfYM"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1SasLqYkRWOHqtTpck09JTz",
+      "type": "playlist",
+      "title": "WORDPRESS per tutti! 🥇 CORSO COMPLETO e GRATIS",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SasLqYkRWOHqtTpck09JTz"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1Sq25dYBvIq-9MEdbr1NKdk",
+      "type": "playlist",
+      "title": "HTML e CSS 🤖 il CORSO GRATIS DEFINITIVO",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Sq25dYBvIq-9MEdbr1NKdk"
     },
     {
       "video_id": "IuihZ6HtSQY",
@@ -4400,20 +4400,20 @@
       "url": "https://youtu.be/1H0bJPwD8Go"
     },
     {
-      "video_id": "PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1",
-      "type": "playlist",
-      "title": "Creator 4 Creator",
-      "date": "2021-12-09",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx",
       "type": "playlist",
       "title": "Sportello Creator",
       "date": "2021-12-09",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1",
+      "type": "playlist",
+      "title": "Creator 4 Creator",
+      "date": "2021-12-09",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1"
     },
     {
       "video_id": "RgCg2GCKgHQ",
