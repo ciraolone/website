@@ -1,12 +1,20 @@
 {
   "version": 1,
-  "updated_at": "2026-06-15T06:00:01Z",
+  "updated_at": "2026-06-16T06:00:01Z",
   "counts": {
-    "videos": 987,
+    "videos": 988,
     "playlists": 146,
-    "total": 1133
+    "total": 1134
   },
   "videos": [
+    {
+      "video_id": "9rQE15H5Mmk",
+      "type": "video",
+      "title": "I nuovi AGENTI di NOTION lavorano AL POSTO TUO (anche a PC spento)",
+      "date": "2026-06-14",
+      "duration": 1741,
+      "url": "https://youtu.be/9rQE15H5Mmk"
+    },
     {
       "video_id": "SQiCfL75okI",
       "type": "video",
@@ -288,14 +296,6 @@
       "url": "https://youtu.be/Rwy44gWV5fU"
     },
     {
-      "video_id": "Q623fJEPvYo",
-      "type": "video",
-      "title": "Usa OUTLOOK come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
-      "date": "2025-12-21",
-      "duration": 2808,
-      "url": "https://youtu.be/Q623fJEPvYo"
-    },
-    {
       "video_id": "m_By_Z4tX_M",
       "type": "video",
       "title": "Usa GMAIL come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
@@ -310,6 +310,14 @@
       "date": "2025-12-21",
       "duration": 3941,
       "url": "https://youtu.be/8K28c2cog48"
+    },
+    {
+      "video_id": "Q623fJEPvYo",
+      "type": "video",
+      "title": "Usa OUTLOOK come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
+      "date": "2025-12-21",
+      "duration": 2808,
+      "url": "https://youtu.be/Q623fJEPvYo"
     },
     {
       "video_id": "uLPRSzsr62U",
@@ -368,36 +376,12 @@
       "url": "https://youtu.be/eNjWkogHa3Y"
     },
     {
-      "video_id": "3pv4-Seineo",
-      "type": "video",
-      "title": "CANVA GRATIS: Come RIMUOVERE lo SFONDO senza pagare il PRO",
-      "date": "2025-11-11",
-      "duration": 670,
-      "url": "https://youtu.be/3pv4-Seineo"
-    },
-    {
       "video_id": "Zroe6lCMmvU",
       "type": "video",
       "title": "AFFINITY: RIMUOVERE lo SFONDO (GRATIS) vs CANVA AI (VELOCE)",
       "date": "2025-11-11",
       "duration": 1424,
       "url": "https://youtu.be/Zroe6lCMmvU"
-    },
-    {
-      "video_id": "tCqfQMlFXA8",
-      "type": "video",
-      "title": "AFFINITY AI: HO TESTATO TUTTE le funzioni CANVA di Intelligenza Artificiale (Vale i soldi?)",
-      "date": "2025-11-11",
-      "duration": 2902,
-      "url": "https://youtu.be/tCqfQMlFXA8"
-    },
-    {
-      "video_id": "_rx777uRhFU",
-      "type": "video",
-      "title": "Come INSTALLARE AFFINITY 3 by CANVA GRATIS 💻 GUIDA COMPLETA anti-errore",
-      "date": "2025-11-11",
-      "duration": 569,
-      "url": "https://youtu.be/_rx777uRhFU"
     },
     {
       "video_id": "3Srnjvqq2FI",
@@ -408,12 +392,36 @@
       "url": "https://youtu.be/3Srnjvqq2FI"
     },
     {
-      "video_id": "EGu_XtwfeTc",
+      "video_id": "3pv4-Seineo",
       "type": "video",
-      "title": "AI per YOUTUBER 🤖 Come usiamo ChatGPT e Gemini per creare VIDEO",
+      "title": "CANVA GRATIS: Come RIMUOVERE lo SFONDO senza pagare il PRO",
+      "date": "2025-11-11",
+      "duration": 670,
+      "url": "https://youtu.be/3pv4-Seineo"
+    },
+    {
+      "video_id": "_rx777uRhFU",
+      "type": "video",
+      "title": "Come INSTALLARE AFFINITY 3 by CANVA GRATIS 💻 GUIDA COMPLETA anti-errore",
+      "date": "2025-11-11",
+      "duration": 569,
+      "url": "https://youtu.be/_rx777uRhFU"
+    },
+    {
+      "video_id": "tCqfQMlFXA8",
+      "type": "video",
+      "title": "AFFINITY AI: HO TESTATO TUTTE le funzioni CANVA di Intelligenza Artificiale (Vale i soldi?)",
+      "date": "2025-11-11",
+      "duration": 2902,
+      "url": "https://youtu.be/tCqfQMlFXA8"
+    },
+    {
+      "video_id": "XERERGHM1IA",
+      "type": "video",
+      "title": "AFFINITY by CANVA 🤯 CORSO COMPLETO sulla più INCREDIBILE alternativa a PHOTOSHOP e ILLUSTRATOR",
       "date": "2025-11-09",
-      "duration": 2723,
-      "url": "https://youtu.be/EGu_XtwfeTc"
+      "duration": 10176,
+      "url": "https://youtu.be/XERERGHM1IA"
     },
     {
       "video_id": "pXFMxbutp24",
@@ -424,12 +432,12 @@
       "url": "https://youtu.be/pXFMxbutp24"
     },
     {
-      "video_id": "XERERGHM1IA",
+      "video_id": "EGu_XtwfeTc",
       "type": "video",
-      "title": "AFFINITY by CANVA 🤯 CORSO COMPLETO sulla più INCREDIBILE alternativa a PHOTOSHOP e ILLUSTRATOR",
+      "title": "AI per YOUTUBER 🤖 Come usiamo ChatGPT e Gemini per creare VIDEO",
       "date": "2025-11-09",
-      "duration": 10176,
-      "url": "https://youtu.be/XERERGHM1IA"
+      "duration": 2723,
+      "url": "https://youtu.be/EGu_XtwfeTc"
     },
     {
       "video_id": "eaMPP_F4p-E",
@@ -456,20 +464,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Ra6508tXTY1tYPK5XDJ6-6"
     },
     {
-      "video_id": "FZ0UzTnSd-k",
-      "type": "video",
-      "title": "Questo Tool AI ti fa PROGRAMMARE e CHATTARE (nello stesso posto) - DeepAgent Desktop + ChatLLM",
-      "date": "2025-10-19",
-      "duration": 1485,
-      "url": "https://youtu.be/FZ0UzTnSd-k"
-    },
-    {
       "video_id": "YemB4Abi7Pk",
       "type": "video",
       "title": "CLAUDE CODE 2.0: come creare un'app da ZERO (Guida COMPLETA) 🚀",
       "date": "2025-10-19",
       "duration": 2560,
       "url": "https://youtu.be/YemB4Abi7Pk"
+    },
+    {
+      "video_id": "FZ0UzTnSd-k",
+      "type": "video",
+      "title": "Questo Tool AI ti fa PROGRAMMARE e CHATTARE (nello stesso posto) - DeepAgent Desktop + ChatLLM",
+      "date": "2025-10-19",
+      "duration": 1485,
+      "url": "https://youtu.be/FZ0UzTnSd-k"
     },
     {
       "video_id": "lpNgYdlf_YA",
@@ -536,14 +544,6 @@
       "url": "https://youtu.be/t4tVGvDvFeI"
     },
     {
-      "video_id": "eyFCHNu0BhM",
-      "type": "video",
-      "title": "Le API di GEMINI 🐝 GUIDA PASSO-PASSO per DOMINARE la VERA FORZA dell'AI",
-      "date": "2025-09-14",
-      "duration": 3010,
-      "url": "https://youtu.be/eyFCHNu0BhM"
-    },
-    {
       "video_id": "Kx2ELhIwsbg",
       "type": "video",
       "title": "Le API di GROQ (AI) sono GRATIS 🐝 GUIDA ESSENZIALE per RISPARMIARE con l'AI",
@@ -558,6 +558,14 @@
       "date": "2025-09-14",
       "duration": 1835,
       "url": "https://youtu.be/fPdpAwD1KtU"
+    },
+    {
+      "video_id": "eyFCHNu0BhM",
+      "type": "video",
+      "title": "Le API di GEMINI 🐝 GUIDA PASSO-PASSO per DOMINARE la VERA FORZA dell'AI",
+      "date": "2025-09-14",
+      "duration": 3010,
+      "url": "https://youtu.be/eyFCHNu0BhM"
     },
     {
       "video_id": "TB2x-Xxs0_Q",
@@ -640,20 +648,20 @@
       "url": "https://youtu.be/27e2xIEWAGA"
     },
     {
-      "video_id": "C6O6YBh-Zcc",
-      "type": "video",
-      "title": "N8N ONLINE sul tuo CLOUD ☁️ AUTOMAZIONI con AI a BASSO COSTO!",
-      "date": "2025-08-16",
-      "duration": 2079,
-      "url": "https://youtu.be/C6O6YBh-Zcc"
-    },
-    {
       "video_id": "uUVyzS6YoXk",
       "type": "video",
       "title": "Come funziona IL TERMINALE del COMPUTER 🖥️ Se non sei esperto!",
       "date": "2025-08-16",
       "duration": 1365,
       "url": "https://youtu.be/uUVyzS6YoXk"
+    },
+    {
+      "video_id": "C6O6YBh-Zcc",
+      "type": "video",
+      "title": "N8N ONLINE sul tuo CLOUD ☁️ AUTOMAZIONI con AI a BASSO COSTO!",
+      "date": "2025-08-16",
+      "duration": 2079,
+      "url": "https://youtu.be/C6O6YBh-Zcc"
     },
     {
       "video_id": "PJzsN4OQFdo",
@@ -680,12 +688,28 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1T4K-1pkHpA1_vVm4ydboFY"
     },
     {
+      "video_id": "IC1V5u2YDzU",
+      "type": "video",
+      "title": "NODE.JS per PERSONE NORMALI 🥷 Metti il turbo ai tuoi script anche se NON SAI PROGRAMMARE!",
+      "date": "2025-08-06",
+      "duration": 1874,
+      "url": "https://youtu.be/IC1V5u2YDzU"
+    },
+    {
       "video_id": "JwQwg7pQLXA",
       "type": "video",
       "title": "DAVINCI RESOLVE 🔴 caricare i video SU YOUTUBE, automaticamente e maledettamente bene!",
       "date": "2025-08-06",
       "duration": 2321,
       "url": "https://youtu.be/JwQwg7pQLXA"
+    },
+    {
+      "video_id": "7GygCE7SkA0",
+      "type": "video",
+      "title": "NOTION per TUTTI 🤓 CORSO COMPLETO per il LAVORO e la VITA!",
+      "date": "2025-08-06",
+      "duration": 8141,
+      "url": "https://youtu.be/7GygCE7SkA0"
     },
     {
       "video_id": "2-qotvLU_LE",
@@ -696,20 +720,12 @@
       "url": "https://youtu.be/2-qotvLU_LE"
     },
     {
-      "video_id": "IC1V5u2YDzU",
+      "video_id": "fVAj-swXtA4",
       "type": "video",
-      "title": "NODE.JS per PERSONE NORMALI 🥷 Metti il turbo ai tuoi script anche se NON SAI PROGRAMMARE!",
-      "date": "2025-08-06",
-      "duration": 1874,
-      "url": "https://youtu.be/IC1V5u2YDzU"
-    },
-    {
-      "video_id": "7GygCE7SkA0",
-      "type": "video",
-      "title": "NOTION per TUTTI 🤓 CORSO COMPLETO per il LAVORO e la VITA!",
-      "date": "2025-08-06",
-      "duration": 8141,
-      "url": "https://youtu.be/7GygCE7SkA0"
+      "title": "NOTION AI 🤖 CORSO FINALE per AUTOMATIZZARE TUTTO con l'INTELLIGENZA ARTIFICIALE",
+      "date": "2025-08-05",
+      "duration": 2086,
+      "url": "https://youtu.be/fVAj-swXtA4"
     },
     {
       "video_id": "iA_tVzJhFYQ",
@@ -726,14 +742,6 @@
       "date": "2025-08-05",
       "duration": 6141,
       "url": "https://youtu.be/gcxMUggiLr8"
-    },
-    {
-      "video_id": "fVAj-swXtA4",
-      "type": "video",
-      "title": "NOTION AI 🤖 CORSO FINALE per AUTOMATIZZARE TUTTO con l'INTELLIGENZA ARTIFICIALE",
-      "date": "2025-08-05",
-      "duration": 2086,
-      "url": "https://youtu.be/fVAj-swXtA4"
     },
     {
       "video_id": "PAox-zowrPk",
@@ -784,44 +792,12 @@
       "url": "https://youtu.be/qGyFsxNqO5U"
     },
     {
-      "video_id": "vtuK92UBrP8",
-      "type": "video",
-      "title": "VLC Media Player (Come Scaricare + Guida Rapida) 🍿",
-      "date": "2025-07-12",
-      "duration": 1387,
-      "url": "https://youtu.be/vtuK92UBrP8"
-    },
-    {
       "video_id": "E_LAn-MRuks",
       "type": "video",
       "title": "COMPRIMI Video SENZA Perdere QUALITÀ, con VLC (Guida COMPLETA) ✨",
       "date": "2025-07-12",
       "duration": 1632,
       "url": "https://youtu.be/E_LAn-MRuks"
-    },
-    {
-      "video_id": "4hBLTvJOaaQ",
-      "type": "video",
-      "title": "Aggiungi i SOTTOTITOLI ai tuoi VIDEO, GRATIS con VLC 🍿",
-      "date": "2025-07-12",
-      "duration": 1206,
-      "url": "https://youtu.be/4hBLTvJOaaQ"
-    },
-    {
-      "video_id": "plpiC_qgBwA",
-      "type": "video",
-      "title": "Aggiungi la MUSICA a un VIDEO in 1 minuto 🎵 GRATIS con VLC!",
-      "date": "2025-07-12",
-      "duration": 485,
-      "url": "https://youtu.be/plpiC_qgBwA"
-    },
-    {
-      "video_id": "YBSvD6caHPc",
-      "type": "video",
-      "title": "Trasformare VIDEO in AUDIO (.MP3) 🎵 FACILISSIMO per avere la tua MUSICA e i tuoi PODCAST, con VLC",
-      "date": "2025-07-12",
-      "duration": 625,
-      "url": "https://youtu.be/YBSvD6caHPc"
     },
     {
       "video_id": "UKbYMaLS4ZE",
@@ -838,6 +814,38 @@
       "date": "2025-07-12",
       "duration": 756,
       "url": "https://youtu.be/tUtzYJJn2ok"
+    },
+    {
+      "video_id": "plpiC_qgBwA",
+      "type": "video",
+      "title": "Aggiungi la MUSICA a un VIDEO in 1 minuto 🎵 GRATIS con VLC!",
+      "date": "2025-07-12",
+      "duration": 485,
+      "url": "https://youtu.be/plpiC_qgBwA"
+    },
+    {
+      "video_id": "4hBLTvJOaaQ",
+      "type": "video",
+      "title": "Aggiungi i SOTTOTITOLI ai tuoi VIDEO, GRATIS con VLC 🍿",
+      "date": "2025-07-12",
+      "duration": 1206,
+      "url": "https://youtu.be/4hBLTvJOaaQ"
+    },
+    {
+      "video_id": "vtuK92UBrP8",
+      "type": "video",
+      "title": "VLC Media Player (Come Scaricare + Guida Rapida) 🍿",
+      "date": "2025-07-12",
+      "duration": 1387,
+      "url": "https://youtu.be/vtuK92UBrP8"
+    },
+    {
+      "video_id": "YBSvD6caHPc",
+      "type": "video",
+      "title": "Trasformare VIDEO in AUDIO (.MP3) 🎵 FACILISSIMO per avere la tua MUSICA e i tuoi PODCAST, con VLC",
+      "date": "2025-07-12",
+      "duration": 625,
+      "url": "https://youtu.be/YBSvD6caHPc"
     },
     {
       "video_id": "ztihC898RYE",
@@ -864,20 +872,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TJWHo--i57aHEuGGiKUNFp"
     },
     {
-      "video_id": "eE-PatSht3E",
-      "type": "video",
-      "title": "GOOGLE SHEETS 👉 CORSO COMPLETO PER TUTTI sui FOGLI DI GOOGLE",
-      "date": "2025-06-17",
-      "duration": 9972,
-      "url": "https://youtu.be/eE-PatSht3E"
-    },
-    {
       "video_id": "deW5RkwHAz8",
       "type": "video",
       "title": "I FOGLI DI GOOGLE SONO FIGHISSIMI 📊",
       "date": "2025-06-17",
       "duration": 1530,
       "url": "https://youtu.be/deW5RkwHAz8"
+    },
+    {
+      "video_id": "eE-PatSht3E",
+      "type": "video",
+      "title": "GOOGLE SHEETS 👉 CORSO COMPLETO PER TUTTI sui FOGLI DI GOOGLE",
+      "date": "2025-06-17",
+      "duration": 9972,
+      "url": "https://youtu.be/eE-PatSht3E"
     },
     {
       "video_id": "PLDhDfv9Kmg1QYxqVPv4MZQqXMgEfH7E27",
@@ -944,20 +952,20 @@
       "url": "https://youtu.be/JQZVqEo1cck"
     },
     {
-      "video_id": "mJ_BNVoB9yM",
-      "type": "video",
-      "title": "CONTENT CREATOR: devo aprire la PARTITA IVA? 💸 Quante TASSE pagherò?",
-      "date": "2025-04-29",
-      "duration": 2024,
-      "url": "https://youtu.be/mJ_BNVoB9yM"
-    },
-    {
       "video_id": "dr24IT4SrCg",
       "type": "video",
       "title": "EXCEL 💚 12 funzioni bonus",
       "date": "2025-04-29",
       "duration": 1302,
       "url": "https://youtu.be/dr24IT4SrCg"
+    },
+    {
+      "video_id": "mJ_BNVoB9yM",
+      "type": "video",
+      "title": "CONTENT CREATOR: devo aprire la PARTITA IVA? 💸 Quante TASSE pagherò?",
+      "date": "2025-04-29",
+      "duration": 2024,
+      "url": "https://youtu.be/mJ_BNVoB9yM"
     },
     {
       "video_id": "8HsCG8m5jfA",
@@ -976,20 +984,20 @@
       "url": "https://youtu.be/uYSVE0cBl2k"
     },
     {
-      "video_id": "PLDhDfv9Kmg1Sdegc9VREFgBfQw5RfJ2pS",
-      "type": "playlist",
-      "title": "Crea corsi online con Esmerise",
-      "date": "2025-04-08",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Sdegc9VREFgBfQw5RfJ2pS"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1S726fZBspKEHgpbgC4nZNB",
       "type": "playlist",
       "title": "COME CREARE E VENDERE CORSI ONLINE",
       "date": "2025-04-08",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1S726fZBspKEHgpbgC4nZNB"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1Sdegc9VREFgBfQw5RfJ2pS",
+      "type": "playlist",
+      "title": "Crea corsi online con Esmerise",
+      "date": "2025-04-08",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Sdegc9VREFgBfQw5RfJ2pS"
     },
     {
       "video_id": "PLDhDfv9Kmg1TpdQyvCntuBFSw9Od8Zuha",
@@ -1040,20 +1048,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QNTQx7KrqMp8QoRdIGAs6D"
     },
     {
-      "video_id": "TBmMfJi29Zk",
-      "type": "video",
-      "title": "Channel Check Completo 👉 Daniel Pascucci",
-      "date": "2025-03-11",
-      "duration": 4221,
-      "url": "https://youtu.be/TBmMfJi29Zk"
-    },
-    {
       "video_id": "56fjVnJgSpo",
       "type": "video",
       "title": "ANALIZZO i vostri CANALI YOUTUBE 👉 Ale & Max - Y2K Sailing Adventure",
       "date": "2025-03-11",
       "duration": 1206,
       "url": "https://youtu.be/56fjVnJgSpo"
+    },
+    {
+      "video_id": "TBmMfJi29Zk",
+      "type": "video",
+      "title": "Channel Check Completo 👉 Daniel Pascucci",
+      "date": "2025-03-11",
+      "duration": 4221,
+      "url": "https://youtu.be/TBmMfJi29Zk"
     },
     {
       "video_id": "gpTDpzcZ_y0",
@@ -1168,6 +1176,14 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Q65Dh6YPn2PgP9fDXDOFV_"
     },
     {
+      "video_id": "ad8vFS_1hyo",
+      "type": "video",
+      "title": "6 ERRORI da EVITARE su YOUTUBE",
+      "date": "2025-01-20",
+      "duration": 2457,
+      "url": "https://youtu.be/ad8vFS_1hyo"
+    },
+    {
       "video_id": "LHGO9F3EP98",
       "type": "video",
       "title": "6 CONSIGLI per CHI COMINCIA su YOUTUBE",
@@ -1190,14 +1206,6 @@
       "date": "2025-01-20",
       "duration": 2495,
       "url": "https://youtu.be/gg71YhNvO-0"
-    },
-    {
-      "video_id": "ad8vFS_1hyo",
-      "type": "video",
-      "title": "6 ERRORI da EVITARE su YOUTUBE",
-      "date": "2025-01-20",
-      "duration": 2457,
-      "url": "https://youtu.be/ad8vFS_1hyo"
     },
     {
       "video_id": "MfVNFCyodvo",
@@ -1240,14 +1248,6 @@
       "url": "https://youtu.be/bP8BxturYTI"
     },
     {
-      "video_id": "0533KVdOMgQ",
-      "type": "video",
-      "title": "CREARE e VENDERE CORSI (anche) con INTELLIGENZA ARTIFICIALE",
-      "date": "2025-01-09",
-      "duration": 1899,
-      "url": "https://youtu.be/0533KVdOMgQ"
-    },
-    {
       "video_id": "JIin-MRuiik",
       "type": "video",
       "title": "CONTENT CREATOR: come MONETIZZARE vendendo un CORSO",
@@ -1256,12 +1256,12 @@
       "url": "https://youtu.be/JIin-MRuiik"
     },
     {
-      "video_id": "oOMFdOW4268",
+      "video_id": "0533KVdOMgQ",
       "type": "video",
-      "title": "Ho ADHD e ho REGISTRATO tutta la DIAGNOSI 🤯 Test + colloqui completi con lo PSICHIATRA",
-      "date": "2025-01-07",
-      "duration": 13727,
-      "url": "https://youtu.be/oOMFdOW4268"
+      "title": "CREARE e VENDERE CORSI (anche) con INTELLIGENZA ARTIFICIALE",
+      "date": "2025-01-09",
+      "duration": 1899,
+      "url": "https://youtu.be/0533KVdOMgQ"
     },
     {
       "video_id": "-9BeqXsW22I",
@@ -1270,6 +1270,14 @@
       "date": "2025-01-07",
       "duration": 19203,
       "url": "https://youtu.be/-9BeqXsW22I"
+    },
+    {
+      "video_id": "oOMFdOW4268",
+      "type": "video",
+      "title": "Ho ADHD e ho REGISTRATO tutta la DIAGNOSI 🤯 Test + colloqui completi con lo PSICHIATRA",
+      "date": "2025-01-07",
+      "duration": 13727,
+      "url": "https://youtu.be/oOMFdOW4268"
     },
     {
       "video_id": "tK5oGQnSGTY",
@@ -1360,20 +1368,20 @@
       "url": "https://youtu.be/FYX7zJD9C6Y"
     },
     {
-      "video_id": "qBT_IsDmBx0",
-      "type": "video",
-      "title": "IL TUO SITO WORDPRESS IN 7 MINUTI NETTI ⏱️ con AI 💃",
-      "date": "2024-11-09",
-      "duration": 1896,
-      "url": "https://youtu.be/qBT_IsDmBx0"
-    },
-    {
       "video_id": "gqW3I3RIPyY",
       "type": "video",
       "title": "QUESTA VOLTA HO ESAGERATO... 😮",
       "date": "2024-11-09",
       "duration": 1911,
       "url": "https://youtu.be/gqW3I3RIPyY"
+    },
+    {
+      "video_id": "qBT_IsDmBx0",
+      "type": "video",
+      "title": "IL TUO SITO WORDPRESS IN 7 MINUTI NETTI ⏱️ con AI 💃",
+      "date": "2024-11-09",
+      "duration": 1896,
+      "url": "https://youtu.be/qBT_IsDmBx0"
     },
     {
       "video_id": "PLDhDfv9Kmg1TtKj-I_483bHaiBERc57WV",
@@ -1536,20 +1544,20 @@
       "url": "https://youtu.be/fREx98V3HZM"
     },
     {
-      "video_id": "S4Yjai3f0tU",
-      "type": "video",
-      "title": "HO CREATO UN'APP CON L'AI 😎 E FUNZIONA!!",
-      "date": "2024-10-11",
-      "duration": 1425,
-      "url": "https://youtu.be/S4Yjai3f0tU"
-    },
-    {
       "video_id": "T1SXV0janxM",
       "type": "video",
       "title": "COME CREARE UN'APP CON L'AI 🦦 SENZA PROGRAMMARE 🤓 CORSO GRATIS",
       "date": "2024-10-11",
       "duration": 5247,
       "url": "https://youtu.be/T1SXV0janxM"
+    },
+    {
+      "video_id": "S4Yjai3f0tU",
+      "type": "video",
+      "title": "HO CREATO UN'APP CON L'AI 😎 E FUNZIONA!!",
+      "date": "2024-10-11",
+      "duration": 1425,
+      "url": "https://youtu.be/S4Yjai3f0tU"
     },
     {
       "video_id": "PLDhDfv9Kmg1SlKxebE6ailXQlxnUH67mW",
@@ -1616,20 +1624,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Q69H62EWqth8qcIh9hs5Qe"
     },
     {
-      "video_id": "Y8f0AxBco0s",
-      "type": "video",
-      "title": "CRM AUTOMATICO 📈 Gestire i clienti senza muovere un dito! 😌",
-      "date": "2024-08-20",
-      "duration": 6000,
-      "url": "https://youtu.be/Y8f0AxBco0s"
-    },
-    {
       "video_id": "bWYg5j7WXJU",
       "type": "video",
       "title": "Claude AI 🤖 il CORSO COMPLETO per dominare l'Intelligenza Artificiale",
       "date": "2024-08-20",
       "duration": 5591,
       "url": "https://youtu.be/bWYg5j7WXJU"
+    },
+    {
+      "video_id": "Y8f0AxBco0s",
+      "type": "video",
+      "title": "CRM AUTOMATICO 📈 Gestire i clienti senza muovere un dito! 😌",
+      "date": "2024-08-20",
+      "duration": 6000,
+      "url": "https://youtu.be/Y8f0AxBco0s"
     },
     {
       "video_id": "6lI8cFKBC64",
@@ -1648,20 +1656,20 @@
       "url": "https://youtu.be/ZoV9WSE7af0"
     },
     {
-      "video_id": "eNvdG2HxXIM",
-      "type": "video",
-      "title": "Come CONTATTARE L'ASSISTENZA di YOUTUBE per RICEVERE AIUTO! 🆘 Una volta per tutte!",
-      "date": "2024-08-01",
-      "duration": 1377,
-      "url": "https://youtu.be/eNvdG2HxXIM"
-    },
-    {
       "video_id": "Kn_PAQ9QB1s",
       "type": "video",
       "title": "FINALMENTE DAVINCI RESOLVE IN ITALIANO 🎉🎉",
       "date": "2024-08-01",
       "duration": 293,
       "url": "https://youtu.be/Kn_PAQ9QB1s"
+    },
+    {
+      "video_id": "eNvdG2HxXIM",
+      "type": "video",
+      "title": "Come CONTATTARE L'ASSISTENZA di YOUTUBE per RICEVERE AIUTO! 🆘 Una volta per tutte!",
+      "date": "2024-08-01",
+      "duration": 1377,
+      "url": "https://youtu.be/eNvdG2HxXIM"
     },
     {
       "video_id": "wSrL9mr0WzE",
@@ -1688,14 +1696,6 @@
       "url": "https://youtu.be/4OW8UscHj4A"
     },
     {
-      "video_id": "ElkOsarRQH4",
-      "type": "video",
-      "title": "Da VIDEO a TESTO con AI: blog, newsletter, social... 🤖",
-      "date": "2024-07-17",
-      "duration": 1064,
-      "url": "https://youtu.be/ElkOsarRQH4"
-    },
-    {
       "video_id": "kpRtB0Bei2U",
       "type": "video",
       "title": "Registrare video (e podcast) A DISTANZA alla massima qualità 🤓",
@@ -1704,20 +1704,28 @@
       "url": "https://youtu.be/kpRtB0Bei2U"
     },
     {
-      "video_id": "VrLAxHwnqSI",
-      "type": "video",
-      "title": "Registrare video ORIZZONTALI e VERTICALI contemporaneamente! 🫢",
-      "date": "2024-07-17",
-      "duration": 1106,
-      "url": "https://youtu.be/VrLAxHwnqSI"
-    },
-    {
       "video_id": "mtC-5euV7RQ",
       "type": "video",
       "title": "5 TOOL IN OFFERTA ADESSO 💰 LUGLIO 2024",
       "date": "2024-07-17",
       "duration": 1586,
       "url": "https://youtu.be/mtC-5euV7RQ"
+    },
+    {
+      "video_id": "ElkOsarRQH4",
+      "type": "video",
+      "title": "Da VIDEO a TESTO con AI: blog, newsletter, social... 🤖",
+      "date": "2024-07-17",
+      "duration": 1064,
+      "url": "https://youtu.be/ElkOsarRQH4"
+    },
+    {
+      "video_id": "VrLAxHwnqSI",
+      "type": "video",
+      "title": "Registrare video ORIZZONTALI e VERTICALI contemporaneamente! 🫢",
+      "date": "2024-07-17",
+      "duration": 1106,
+      "url": "https://youtu.be/VrLAxHwnqSI"
     },
     {
       "video_id": "PMZmHFGcOzM",
@@ -1736,20 +1744,20 @@
       "url": "https://youtu.be/eBML4IUBJ8E"
     },
     {
-      "video_id": "cikEux-iMxI",
-      "type": "video",
-      "title": "Come fare una DIRETTA SU YOUTUBE senza programmi esterni 🎉",
-      "date": "2024-06-20",
-      "duration": 1692,
-      "url": "https://youtu.be/cikEux-iMxI"
-    },
-    {
       "video_id": "TIsg6R_-Yss",
       "type": "video",
       "title": "Come trovare idee per i video, in poche parole 😎",
       "date": "2024-06-20",
       "duration": 578,
       "url": "https://youtu.be/TIsg6R_-Yss"
+    },
+    {
+      "video_id": "cikEux-iMxI",
+      "type": "video",
+      "title": "Come fare una DIRETTA SU YOUTUBE senza programmi esterni 🎉",
+      "date": "2024-06-20",
+      "duration": 1692,
+      "url": "https://youtu.be/cikEux-iMxI"
     },
     {
       "video_id": "2fBVoyzwvvg",
@@ -1784,12 +1792,12 @@
       "url": "https://youtu.be/Qk3MhJQAF2w"
     },
     {
-      "video_id": "6PaUBS9JSts",
+      "video_id": "VZ2T8rD-ou0",
       "type": "video",
-      "title": "Crea il tuo NEGOZIO ONLINE da ZERO con WOOCOMMERCE 😱 E-COMMERCE per PRINCIPIANTI",
+      "title": "TUTORIAL 💡 VOCI ARTIFICIALI ULTRA-REALISTICHE per i tuoi progetti!",
       "date": "2024-06-08",
-      "duration": 2543,
-      "url": "https://youtu.be/6PaUBS9JSts"
+      "duration": 1648,
+      "url": "https://youtu.be/VZ2T8rD-ou0"
     },
     {
       "video_id": "IlOnaGBFWFc",
@@ -1800,12 +1808,12 @@
       "url": "https://youtu.be/IlOnaGBFWFc"
     },
     {
-      "video_id": "VZ2T8rD-ou0",
+      "video_id": "6PaUBS9JSts",
       "type": "video",
-      "title": "TUTORIAL 💡 VOCI ARTIFICIALI ULTRA-REALISTICHE per i tuoi progetti!",
+      "title": "Crea il tuo NEGOZIO ONLINE da ZERO con WOOCOMMERCE 😱 E-COMMERCE per PRINCIPIANTI",
       "date": "2024-06-08",
-      "duration": 1648,
-      "url": "https://youtu.be/VZ2T8rD-ou0"
+      "duration": 2543,
+      "url": "https://youtu.be/6PaUBS9JSts"
     },
     {
       "video_id": "PLDhDfv9Kmg1TyGSR9ot4I9KZdHZpRLaYs",
@@ -1816,14 +1824,6 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TyGSR9ot4I9KZdHZpRLaYs"
     },
     {
-      "video_id": "Nj14mozNYy8",
-      "type": "video",
-      "title": "Elgato Facecam Pro ⏺️ WEBCAM TOP DI GAMMA",
-      "date": "2024-06-02",
-      "duration": 843,
-      "url": "https://youtu.be/Nj14mozNYy8"
-    },
-    {
       "video_id": "rvAYFnQ5Y3c",
       "type": "video",
       "title": "Insta360 Link ⏺️ WEBCAM TOP DI GAMMA",
@@ -1832,12 +1832,12 @@
       "url": "https://youtu.be/rvAYFnQ5Y3c"
     },
     {
-      "video_id": "w7uLwrnbwZ4",
+      "video_id": "pOz7DY7_67k",
       "type": "video",
-      "title": "MEGA CONFRONTO WEBCAM TOP DI GAMMA 😱",
+      "title": "Razer Kyio Pro Ultra ⏺️ WEBCAM TOP DI GAMMA",
       "date": "2024-06-02",
-      "duration": 1116,
-      "url": "https://youtu.be/w7uLwrnbwZ4"
+      "duration": 830,
+      "url": "https://youtu.be/pOz7DY7_67k"
     },
     {
       "video_id": "h2xzhH-eE3A",
@@ -1848,12 +1848,20 @@
       "url": "https://youtu.be/h2xzhH-eE3A"
     },
     {
-      "video_id": "pOz7DY7_67k",
+      "video_id": "Nj14mozNYy8",
       "type": "video",
-      "title": "Razer Kyio Pro Ultra ⏺️ WEBCAM TOP DI GAMMA",
+      "title": "Elgato Facecam Pro ⏺️ WEBCAM TOP DI GAMMA",
       "date": "2024-06-02",
-      "duration": 830,
-      "url": "https://youtu.be/pOz7DY7_67k"
+      "duration": 843,
+      "url": "https://youtu.be/Nj14mozNYy8"
+    },
+    {
+      "video_id": "w7uLwrnbwZ4",
+      "type": "video",
+      "title": "MEGA CONFRONTO WEBCAM TOP DI GAMMA 😱",
+      "date": "2024-06-02",
+      "duration": 1116,
+      "url": "https://youtu.be/w7uLwrnbwZ4"
     },
     {
       "video_id": "stgrMY5FAas",
@@ -1872,20 +1880,20 @@
       "url": "https://youtu.be/QLZRibYjEK4"
     },
     {
-      "video_id": "NLfHI70abZI",
-      "type": "video",
-      "title": "ANALIZZO i vostri CANALI YOUTUBE 👉 Produzione Agile",
-      "date": "2024-05-20",
-      "duration": 1296,
-      "url": "https://youtu.be/NLfHI70abZI"
-    },
-    {
       "video_id": "daq88SwMAmU",
       "type": "video",
       "title": "Channel Check Completo 👉 Relaxing Journeys",
       "date": "2024-05-20",
       "duration": 4075,
       "url": "https://youtu.be/daq88SwMAmU"
+    },
+    {
+      "video_id": "NLfHI70abZI",
+      "type": "video",
+      "title": "ANALIZZO i vostri CANALI YOUTUBE 👉 Produzione Agile",
+      "date": "2024-05-20",
+      "duration": 1296,
+      "url": "https://youtu.be/NLfHI70abZI"
     },
     {
       "video_id": "Roi7fzQAXxo",
@@ -1936,6 +1944,14 @@
       "url": "https://youtu.be/a3vCRfzoZMc"
     },
     {
+      "video_id": "0kvWNsnHCyo",
+      "type": "video",
+      "title": "I migliori LIBRI per FREELANCE 📚",
+      "date": "2024-03-28",
+      "duration": 1448,
+      "url": "https://youtu.be/0kvWNsnHCyo"
+    },
+    {
       "video_id": "BHdMJ3Qx0SA",
       "type": "video",
       "title": "I migliori TOOL per FREELANCE 🧰",
@@ -1952,28 +1968,20 @@
       "url": "https://youtu.be/bhqBGl-GLfg"
     },
     {
-      "video_id": "frfU-kuo3NA",
-      "type": "video",
-      "title": "Come DIVENTARE FREELANCE (anche se sei dipendente)  💡",
-      "date": "2024-03-28",
-      "duration": 2792,
-      "url": "https://youtu.be/frfU-kuo3NA"
-    },
-    {
-      "video_id": "0kvWNsnHCyo",
-      "type": "video",
-      "title": "I migliori LIBRI per FREELANCE 📚",
-      "date": "2024-03-28",
-      "duration": 1448,
-      "url": "https://youtu.be/0kvWNsnHCyo"
-    },
-    {
       "video_id": "l0rvV8aFNGM",
       "type": "video",
       "title": "IKIGAI e il senso del lavoro (e della vita) 🌱",
       "date": "2024-03-28",
       "duration": 1338,
       "url": "https://youtu.be/l0rvV8aFNGM"
+    },
+    {
+      "video_id": "frfU-kuo3NA",
+      "type": "video",
+      "title": "Come DIVENTARE FREELANCE (anche se sei dipendente)  💡",
+      "date": "2024-03-28",
+      "duration": 2792,
+      "url": "https://youtu.be/frfU-kuo3NA"
     },
     {
       "video_id": "PLDhDfv9Kmg1RBjaGxU5jAuT1IRaqxaK9H",
@@ -2440,12 +2448,12 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SOtyIFAJFevtJ5o9vnAQuR"
     },
     {
-      "video_id": "MVkKEiQxxnQ",
+      "video_id": "RF39iYllD90",
       "type": "video",
-      "title": "Come fare la COPERTINA del PODCAST 🖼️",
+      "title": "3 ERRORI COL MICROFONO che devi assolutamente evitare 🙅",
       "date": "2023-09-14",
-      "duration": 712,
-      "url": "https://youtu.be/MVkKEiQxxnQ"
+      "duration": 893,
+      "url": "https://youtu.be/RF39iYllD90"
     },
     {
       "video_id": "9sgW_Xg_QZc",
@@ -2472,12 +2480,12 @@
       "url": "https://youtu.be/81d7w9iOsGA"
     },
     {
-      "video_id": "RF39iYllD90",
+      "video_id": "MVkKEiQxxnQ",
       "type": "video",
-      "title": "3 ERRORI COL MICROFONO che devi assolutamente evitare 🙅",
+      "title": "Come fare la COPERTINA del PODCAST 🖼️",
       "date": "2023-09-14",
-      "duration": 893,
-      "url": "https://youtu.be/RF39iYllD90"
+      "duration": 712,
+      "url": "https://youtu.be/MVkKEiQxxnQ"
     },
     {
       "video_id": "b5zHjPvONak",
@@ -2536,6 +2544,14 @@
       "url": "https://youtu.be/PK78-AvwVm8"
     },
     {
+      "video_id": "ctid9zHckEY",
+      "type": "video",
+      "title": "Elimina le ZAVORRE se vuoi CREARE CONTENUTI",
+      "date": "2023-09-04",
+      "duration": 1012,
+      "url": "https://youtu.be/ctid9zHckEY"
+    },
+    {
       "video_id": "QD-QQb_pntI",
       "type": "video",
       "title": "Come gestire RESPIRO e DEGLUTIZIONE durante i VIDEO",
@@ -2550,14 +2566,6 @@
       "date": "2023-09-04",
       "duration": 513,
       "url": "https://youtu.be/zFirAUpi3B4"
-    },
-    {
-      "video_id": "ctid9zHckEY",
-      "type": "video",
-      "title": "Elimina le ZAVORRE se vuoi CREARE CONTENUTI",
-      "date": "2023-09-04",
-      "duration": 1012,
-      "url": "https://youtu.be/ctid9zHckEY"
     },
     {
       "video_id": "i_397-9kEkc",
@@ -2616,14 +2624,6 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QwksnvQIn1NpQTUN2Ipu-N"
     },
     {
-      "video_id": "Lqhs0zYzLgk",
-      "type": "video",
-      "title": "La migliore ALTERNATIVA a CHATGPT? Claude.ai!",
-      "date": "2023-07-25",
-      "duration": 993,
-      "url": "https://youtu.be/Lqhs0zYzLgk"
-    },
-    {
       "video_id": "OJfOhlqwGb4",
       "type": "video",
       "title": "GOOGLE BARD: CORSO COMPLETO e GRATIS alla AI di Google!",
@@ -2632,12 +2632,12 @@
       "url": "https://youtu.be/OJfOhlqwGb4"
     },
     {
-      "video_id": "HTCEuR1_qhQ",
+      "video_id": "Lqhs0zYzLgk",
       "type": "video",
-      "title": "Come CREARE un PODCAST su SPOTIFY GRATIS",
-      "date": "2023-07-21",
-      "duration": 947,
-      "url": "https://youtu.be/HTCEuR1_qhQ"
+      "title": "La migliore ALTERNATIVA a CHATGPT? Claude.ai!",
+      "date": "2023-07-25",
+      "duration": 993,
+      "url": "https://youtu.be/Lqhs0zYzLgk"
     },
     {
       "video_id": "uoPSaCafkAU",
@@ -2648,12 +2648,12 @@
       "url": "https://youtu.be/uoPSaCafkAU"
     },
     {
-      "video_id": "6GmXYNErL-U",
+      "video_id": "HTCEuR1_qhQ",
       "type": "video",
-      "title": "Channel Check Completo 👉 HardTrekking & Survival",
-      "date": "2023-07-20",
-      "duration": 4701,
-      "url": "https://youtu.be/6GmXYNErL-U"
+      "title": "Come CREARE un PODCAST su SPOTIFY GRATIS",
+      "date": "2023-07-21",
+      "duration": 947,
+      "url": "https://youtu.be/HTCEuR1_qhQ"
     },
     {
       "video_id": "SrxvR3qbZg0",
@@ -2664,12 +2664,12 @@
       "url": "https://youtu.be/SrxvR3qbZg0"
     },
     {
-      "video_id": "lCsLyNEJnv4",
+      "video_id": "6GmXYNErL-U",
       "type": "video",
-      "title": "4 motivi per CREARE un PODCAST 🎙️",
+      "title": "Channel Check Completo 👉 HardTrekking & Survival",
       "date": "2023-07-20",
-      "duration": 684,
-      "url": "https://youtu.be/lCsLyNEJnv4"
+      "duration": 4701,
+      "url": "https://youtu.be/6GmXYNErL-U"
     },
     {
       "video_id": "gDsQF4KISAU",
@@ -2680,12 +2680,12 @@
       "url": "https://youtu.be/gDsQF4KISAU"
     },
     {
-      "video_id": "esE5fO_8cdQ",
+      "video_id": "lCsLyNEJnv4",
       "type": "video",
-      "title": "Cosa penso di TubeBuddy 🤷‍♂️ (Spoiler: MALE!)",
-      "date": "2023-07-14",
-      "duration": 676,
-      "url": "https://youtu.be/esE5fO_8cdQ"
+      "title": "4 motivi per CREARE un PODCAST 🎙️",
+      "date": "2023-07-20",
+      "duration": 684,
+      "url": "https://youtu.be/lCsLyNEJnv4"
     },
     {
       "video_id": "enui4ELlbnA",
@@ -2694,6 +2694,14 @@
       "date": "2023-07-14",
       "duration": 3346,
       "url": "https://youtu.be/enui4ELlbnA"
+    },
+    {
+      "video_id": "esE5fO_8cdQ",
+      "type": "video",
+      "title": "Cosa penso di TubeBuddy 🤷‍♂️ (Spoiler: MALE!)",
+      "date": "2023-07-14",
+      "duration": 676,
+      "url": "https://youtu.be/esE5fO_8cdQ"
     },
     {
       "video_id": "NpH3SAuVVUU",
@@ -2736,20 +2744,20 @@
       "url": "https://youtu.be/jfM90VQXuzs"
     },
     {
-      "video_id": "X-boknkRI8E",
-      "type": "video",
-      "title": "Come fare tanti contenuti di qualità in poco tempo",
-      "date": "2023-06-13",
-      "duration": 3802,
-      "url": "https://youtu.be/X-boknkRI8E"
-    },
-    {
       "video_id": "7WkmM5vYj80",
       "type": "video",
       "title": "MIDJOURNEY per creare IMMAGINI 🖼️ con INTELLIGENZA ARTIFICIALE 🤖",
       "date": "2023-06-13",
       "duration": 4865,
       "url": "https://youtu.be/7WkmM5vYj80"
+    },
+    {
+      "video_id": "X-boknkRI8E",
+      "type": "video",
+      "title": "Come fare tanti contenuti di qualità in poco tempo",
+      "date": "2023-06-13",
+      "duration": 3802,
+      "url": "https://youtu.be/X-boknkRI8E"
     },
     {
       "video_id": "nKBnZROQY-w",
@@ -2760,20 +2768,20 @@
       "url": "https://youtu.be/nKBnZROQY-w"
     },
     {
-      "video_id": "PdgsDuQ0vIo",
-      "type": "video",
-      "title": "COME GESTIRE LE PASSWORD 🔒 con un programma dedicato",
-      "date": "2023-06-08",
-      "duration": 1509,
-      "url": "https://youtu.be/PdgsDuQ0vIo"
-    },
-    {
       "video_id": "inzB-1FzWwg",
       "type": "video",
       "title": "7 TOOL per IMPARARE L'INGLESE 🇬🇧 anche GRATIS",
       "date": "2023-06-08",
       "duration": 1358,
       "url": "https://youtu.be/inzB-1FzWwg"
+    },
+    {
+      "video_id": "PdgsDuQ0vIo",
+      "type": "video",
+      "title": "COME GESTIRE LE PASSWORD 🔒 con un programma dedicato",
+      "date": "2023-06-08",
+      "duration": 1509,
+      "url": "https://youtu.be/PdgsDuQ0vIo"
     },
     {
       "video_id": "6f4e99Me5H0",
@@ -2824,20 +2832,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SIG_lcEgdVt__Qoih970yT"
     },
     {
-      "video_id": "HqHNXQaLWHM",
-      "type": "video",
-      "title": "ADOBE FIREFLY per GENERARE IMMAGINI con IA, in pochi minuti",
-      "date": "2023-05-15",
-      "duration": 766,
-      "url": "https://youtu.be/HqHNXQaLWHM"
-    },
-    {
       "video_id": "Gqbg-Qc61BQ",
       "type": "video",
       "title": "ADOBE FIREFLY per GENERARE IMMAGINI con IA, corso completo",
       "date": "2023-05-15",
       "duration": 3413,
       "url": "https://youtu.be/Gqbg-Qc61BQ"
+    },
+    {
+      "video_id": "HqHNXQaLWHM",
+      "type": "video",
+      "title": "ADOBE FIREFLY per GENERARE IMMAGINI con IA, in pochi minuti",
+      "date": "2023-05-15",
+      "duration": 766,
+      "url": "https://youtu.be/HqHNXQaLWHM"
     },
     {
       "video_id": "eNr0ZRjyFY8",
@@ -2904,14 +2912,6 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RZmfNG92zo7JvSjzB085II"
     },
     {
-      "video_id": "YCcdii7kgrs",
-      "type": "video",
-      "title": "COME SCRIVERE UN LIBRO! 📕 10 CONSIGLI",
-      "date": "2023-04-17",
-      "duration": 3370,
-      "url": "https://youtu.be/YCcdii7kgrs"
-    },
-    {
       "video_id": "cG1zIWfELng",
       "type": "video",
       "title": "Channel Check Completo 👉 CreAttiva Web TV",
@@ -2926,6 +2926,14 @@
       "date": "2023-04-17",
       "duration": 4052,
       "url": "https://youtu.be/sBtdDE5NcwQ"
+    },
+    {
+      "video_id": "YCcdii7kgrs",
+      "type": "video",
+      "title": "COME SCRIVERE UN LIBRO! 📕 10 CONSIGLI",
+      "date": "2023-04-17",
+      "duration": 3370,
+      "url": "https://youtu.be/YCcdii7kgrs"
     },
     {
       "video_id": "e4GHmIuyTn8",
@@ -2976,20 +2984,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RkN5T4Jckq3x-wemEYdchD"
     },
     {
-      "video_id": "zjWv3KJflcw",
-      "type": "video",
-      "title": "Elgato Facecam PRO è la migliore webcam per video e live streaming?",
-      "date": "2023-03-30",
-      "duration": 1826,
-      "url": "https://youtu.be/zjWv3KJflcw"
-    },
-    {
       "video_id": "lX7h8-vZtCQ",
       "type": "video",
       "title": "SLACK per COMUNICARE MEGLIO al lavoro | Tutorial Completo",
       "date": "2023-03-30",
       "duration": 1419,
       "url": "https://youtu.be/lX7h8-vZtCQ"
+    },
+    {
+      "video_id": "zjWv3KJflcw",
+      "type": "video",
+      "title": "Elgato Facecam PRO è la migliore webcam per video e live streaming?",
+      "date": "2023-03-30",
+      "duration": 1826,
+      "url": "https://youtu.be/zjWv3KJflcw"
     },
     {
       "video_id": "PLDhDfv9Kmg1RPF-LGNoXLg6Is7FIqPfoP",
@@ -3008,20 +3016,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TuINqWqRr9ortuEW2VKOA3"
     },
     {
-      "video_id": "T1KxUjPx-zE",
-      "type": "video",
-      "title": "Channel Check Completo 👉 Sognandoilpiano",
-      "date": "2023-03-25",
-      "duration": 4150,
-      "url": "https://youtu.be/T1KxUjPx-zE"
-    },
-    {
       "video_id": "aYPpn_WxcoI",
       "type": "video",
       "title": "Channel Check Completo 👉 Manuel Zavatta",
       "date": "2023-03-25",
       "duration": 3586,
       "url": "https://youtu.be/aYPpn_WxcoI"
+    },
+    {
+      "video_id": "T1KxUjPx-zE",
+      "type": "video",
+      "title": "Channel Check Completo 👉 Sognandoilpiano",
+      "date": "2023-03-25",
+      "duration": 4150,
+      "url": "https://youtu.be/T1KxUjPx-zE"
     },
     {
       "video_id": "JuWPSB_35HU",
@@ -3160,52 +3168,12 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QgjT69OeVEqTYupbca8CrW"
     },
     {
-      "video_id": "M2G6dJ80xqg",
+      "video_id": "5kZDXcH0xTc",
       "type": "video",
-      "title": "I migliori TOOLS \"READ IT LATER\"",
+      "title": "I migliori TOOLS per TRACCIARE il TEMPO, le ABITUDINI e gli OBIETTIVI",
       "date": "2023-02-16",
-      "duration": 370,
-      "url": "https://youtu.be/M2G6dJ80xqg"
-    },
-    {
-      "video_id": "uLMKpWFZbl0",
-      "type": "video",
-      "title": "I migliori TOOLS per la LISTA DELLE COSE DA FARE",
-      "date": "2023-02-16",
-      "duration": 391,
-      "url": "https://youtu.be/uLMKpWFZbl0"
-    },
-    {
-      "video_id": "nfFD77ZMEWM",
-      "type": "video",
-      "title": "I migliori TOOLS per prendere NOTE AL VOLO",
-      "date": "2023-02-16",
-      "duration": 563,
-      "url": "https://youtu.be/nfFD77ZMEWM"
-    },
-    {
-      "video_id": "e7ZENDSGkvI",
-      "type": "video",
-      "title": "I migliori TOOLS per le AUTOMAZIONI",
-      "date": "2023-02-16",
-      "duration": 699,
-      "url": "https://youtu.be/e7ZENDSGkvI"
-    },
-    {
-      "video_id": "ozbgDY0rhxs",
-      "type": "video",
-      "title": "I migliori TOOLS per le VIDEOCONFERENZE",
-      "date": "2023-02-16",
-      "duration": 680,
-      "url": "https://youtu.be/ozbgDY0rhxs"
-    },
-    {
-      "video_id": "J5SvbxIBpK8",
-      "type": "video",
-      "title": "I migliori TOOLS per le PASSWORD (password manager)",
-      "date": "2023-02-16",
-      "duration": 434,
-      "url": "https://youtu.be/J5SvbxIBpK8"
+      "duration": 542,
+      "url": "https://youtu.be/5kZDXcH0xTc"
     },
     {
       "video_id": "kgmE8Sn4QwU",
@@ -3216,6 +3184,14 @@
       "url": "https://youtu.be/kgmE8Sn4QwU"
     },
     {
+      "video_id": "U4VGVPGlWrc",
+      "type": "video",
+      "title": "I migliori TOOLS per REGISTRARE LO SCHERMO",
+      "date": "2023-02-16",
+      "duration": 548,
+      "url": "https://youtu.be/U4VGVPGlWrc"
+    },
+    {
       "video_id": "NC-hgtrbu4c",
       "type": "video",
       "title": "I migliori TOOLS per il CALENDARIO e gli APPUNTAMENTI",
@@ -3224,12 +3200,28 @@
       "url": "https://youtu.be/NC-hgtrbu4c"
     },
     {
-      "video_id": "U4VGVPGlWrc",
+      "video_id": "nfFD77ZMEWM",
       "type": "video",
-      "title": "I migliori TOOLS per REGISTRARE LO SCHERMO",
+      "title": "I migliori TOOLS per prendere NOTE AL VOLO",
       "date": "2023-02-16",
-      "duration": 548,
-      "url": "https://youtu.be/U4VGVPGlWrc"
+      "duration": 563,
+      "url": "https://youtu.be/nfFD77ZMEWM"
+    },
+    {
+      "video_id": "Y3FmuE3j_qU",
+      "type": "video",
+      "title": "I migliori TOOLS per ELIMINARE LE DISTRAZIONI",
+      "date": "2023-02-16",
+      "duration": 460,
+      "url": "https://youtu.be/Y3FmuE3j_qU"
+    },
+    {
+      "video_id": "e7ZENDSGkvI",
+      "type": "video",
+      "title": "I migliori TOOLS per le AUTOMAZIONI",
+      "date": "2023-02-16",
+      "duration": 699,
+      "url": "https://youtu.be/e7ZENDSGkvI"
     },
     {
       "video_id": "nhwiC4j3Bhg",
@@ -3240,20 +3232,44 @@
       "url": "https://youtu.be/nhwiC4j3Bhg"
     },
     {
-      "video_id": "5kZDXcH0xTc",
+      "video_id": "IB-hi1CwbfY",
       "type": "video",
-      "title": "I migliori TOOLS per TRACCIARE il TEMPO, le ABITUDINI e gli OBIETTIVI",
+      "title": "I migliori TOOLS per i MESSAGGI di lavoro",
       "date": "2023-02-16",
-      "duration": 542,
-      "url": "https://youtu.be/5kZDXcH0xTc"
+      "duration": 747,
+      "url": "https://youtu.be/IB-hi1CwbfY"
     },
     {
-      "video_id": "Y3FmuE3j_qU",
+      "video_id": "M2G6dJ80xqg",
       "type": "video",
-      "title": "I migliori TOOLS per ELIMINARE LE DISTRAZIONI",
+      "title": "I migliori TOOLS \"READ IT LATER\"",
       "date": "2023-02-16",
-      "duration": 460,
-      "url": "https://youtu.be/Y3FmuE3j_qU"
+      "duration": 370,
+      "url": "https://youtu.be/M2G6dJ80xqg"
+    },
+    {
+      "video_id": "ozbgDY0rhxs",
+      "type": "video",
+      "title": "I migliori TOOLS per le VIDEOCONFERENZE",
+      "date": "2023-02-16",
+      "duration": 680,
+      "url": "https://youtu.be/ozbgDY0rhxs"
+    },
+    {
+      "video_id": "uLMKpWFZbl0",
+      "type": "video",
+      "title": "I migliori TOOLS per la LISTA DELLE COSE DA FARE",
+      "date": "2023-02-16",
+      "duration": 391,
+      "url": "https://youtu.be/uLMKpWFZbl0"
+    },
+    {
+      "video_id": "J5SvbxIBpK8",
+      "type": "video",
+      "title": "I migliori TOOLS per le PASSWORD (password manager)",
+      "date": "2023-02-16",
+      "duration": 434,
+      "url": "https://youtu.be/J5SvbxIBpK8"
     },
     {
       "video_id": "reLQwkECi8s",
@@ -3272,12 +3288,12 @@
       "url": "https://youtu.be/-TPQ9adVrj0"
     },
     {
-      "video_id": "IB-hi1CwbfY",
+      "video_id": "MhPKbc3SKbQ",
       "type": "video",
-      "title": "I migliori TOOLS per i MESSAGGI di lavoro",
-      "date": "2023-02-16",
-      "duration": 747,
-      "url": "https://youtu.be/IB-hi1CwbfY"
+      "title": "Crea SUBITO il tuo PODCAST | Corso COMPLETO sul PODCASTING",
+      "date": "2023-02-15",
+      "duration": 9735,
+      "url": "https://youtu.be/MhPKbc3SKbQ"
     },
     {
       "video_id": "9o6SX92zb08",
@@ -3288,12 +3304,12 @@
       "url": "https://youtu.be/9o6SX92zb08"
     },
     {
-      "video_id": "MhPKbc3SKbQ",
+      "video_id": "pj8kHuzXIBg",
       "type": "video",
-      "title": "Crea SUBITO il tuo PODCAST | Corso COMPLETO sul PODCASTING",
+      "title": "CAPTURE ONE per il FOTORITOCCO | Corso COMPLETO e GRATIS",
       "date": "2023-02-15",
-      "duration": 9735,
-      "url": "https://youtu.be/MhPKbc3SKbQ"
+      "duration": 11783,
+      "url": "https://youtu.be/pj8kHuzXIBg"
     },
     {
       "video_id": "F-dqHwn2R9o",
@@ -3310,14 +3326,6 @@
       "date": "2023-02-15",
       "duration": 1356,
       "url": "https://youtu.be/cVxAPBLXAeU"
-    },
-    {
-      "video_id": "pj8kHuzXIBg",
-      "type": "video",
-      "title": "CAPTURE ONE per il FOTORITOCCO | Corso COMPLETO e GRATIS",
-      "date": "2023-02-15",
-      "duration": 11783,
-      "url": "https://youtu.be/pj8kHuzXIBg"
     },
     {
       "video_id": "PLDhDfv9Kmg1R_eHI2OgQnGw4udt_rP24a",
@@ -3344,20 +3352,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TCo0w2FTUD6O6ZD97a6pJu"
     },
     {
-      "video_id": "PLDhDfv9Kmg1RlfNiaJ8McfnsFOTbJWnx5",
-      "type": "playlist",
-      "title": "FAQ: tutte le domande con tutte le risposte",
-      "date": "2023-02-03",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RlfNiaJ8McfnsFOTbJWnx5"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1RT4J2atD-KIMvJmNCKA_gM",
       "type": "playlist",
       "title": "Computer per la Content Creation",
       "date": "2023-02-03",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RT4J2atD-KIMvJmNCKA_gM"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1RlfNiaJ8McfnsFOTbJWnx5",
+      "type": "playlist",
+      "title": "FAQ: tutte le domande con tutte le risposte",
+      "date": "2023-02-03",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RlfNiaJ8McfnsFOTbJWnx5"
     },
     {
       "video_id": "ggPqn3Y2Gmk",
@@ -3376,22 +3384,6 @@
       "url": "https://youtu.be/bZVutVENpHo"
     },
     {
-      "video_id": "uE_RAfeyWII",
-      "type": "video",
-      "title": "Che video editor uso per montare i video? #FAQ",
-      "date": "2023-02-01",
-      "duration": 589,
-      "url": "https://youtu.be/uE_RAfeyWII"
-    },
-    {
-      "video_id": "cvEamuLktvI",
-      "type": "video",
-      "title": "Che programma uso per registrare i video? #FAQ",
-      "date": "2023-02-01",
-      "duration": 324,
-      "url": "https://youtu.be/cvEamuLktvI"
-    },
-    {
       "video_id": "hkTCrrvE4mM",
       "type": "video",
       "title": "Che computer uso per creare contenuti? #FAQ",
@@ -3400,12 +3392,28 @@
       "url": "https://youtu.be/hkTCrrvE4mM"
     },
     {
+      "video_id": "uE_RAfeyWII",
+      "type": "video",
+      "title": "Che video editor uso per montare i video? #FAQ",
+      "date": "2023-02-01",
+      "duration": 589,
+      "url": "https://youtu.be/uE_RAfeyWII"
+    },
+    {
       "video_id": "_QJjel9zss4",
       "type": "video",
       "title": "Che cuffie con microfono uso? #FAQ",
       "date": "2023-02-01",
       "duration": 844,
       "url": "https://youtu.be/_QJjel9zss4"
+    },
+    {
+      "video_id": "cvEamuLktvI",
+      "type": "video",
+      "title": "Che programma uso per registrare i video? #FAQ",
+      "date": "2023-02-01",
+      "duration": 324,
+      "url": "https://youtu.be/cvEamuLktvI"
     },
     {
       "video_id": "n3J3sRfw7aA",
@@ -3536,12 +3544,12 @@
       "url": "https://youtu.be/wBhOt0D9Xzk"
     },
     {
-      "video_id": "PLDhDfv9Kmg1RYEc-qgWlgT15HrmxkggVC",
+      "video_id": "PLDhDfv9Kmg1RrQ0ikaPra7n1nfAA9FtLu",
       "type": "playlist",
-      "title": "IL TUO CANALE YOUTUBE 📺",
+      "title": "Sviluppo Fotografico con Alessio",
       "date": "2022-11-30",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RYEc-qgWlgT15HrmxkggVC"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RrQ0ikaPra7n1nfAA9FtLu"
     },
     {
       "video_id": "PLDhDfv9Kmg1S_eQdhBBnVOHPU7BBiA5zb",
@@ -3552,12 +3560,12 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1S_eQdhBBnVOHPU7BBiA5zb"
     },
     {
-      "video_id": "PLDhDfv9Kmg1RrQ0ikaPra7n1nfAA9FtLu",
+      "video_id": "PLDhDfv9Kmg1RYEc-qgWlgT15HrmxkggVC",
       "type": "playlist",
-      "title": "Sviluppo Fotografico con Alessio",
+      "title": "IL TUO CANALE YOUTUBE 📺",
       "date": "2022-11-30",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RrQ0ikaPra7n1nfAA9FtLu"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RYEc-qgWlgT15HrmxkggVC"
     },
     {
       "video_id": "Xuvt1df95i0",
@@ -3616,14 +3624,6 @@
       "url": "https://youtu.be/sDvqewthfDQ"
     },
     {
-      "video_id": "PLDhDfv9Kmg1R0PaQ3Clp0OZ73VCq2rTnL",
-      "type": "playlist",
-      "title": "Software e tutorial",
-      "date": "2022-10-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1R0PaQ3Clp0OZ73VCq2rTnL"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1TEJwp-plBlDu2n5aGCsJ-T",
       "type": "playlist",
       "title": "GRAFICA e DESIGN 🎨 Da ZERO a PRO con tutti i programmi!",
@@ -3638,6 +3638,14 @@
       "date": "2022-10-24",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TpaTYXAAfrNIJyn7NmbitZ"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1R0PaQ3Clp0OZ73VCq2rTnL",
+      "type": "playlist",
+      "title": "Software e tutorial",
+      "date": "2022-10-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1R0PaQ3Clp0OZ73VCq2rTnL"
     },
     {
       "video_id": "0t4PzXX1QA8",
@@ -3664,12 +3672,12 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SC1tmRMWvxPdKEuUgZ67Eo"
     },
     {
-      "video_id": "Uyq1a-9bnx0",
+      "video_id": "PC1AOQJ3Py0",
       "type": "video",
-      "title": "Come REALIZZARE UN WEBINAR di successo",
+      "title": "Creare una LANDING PAGE FACILMENTE (senza HTML e CSS)",
       "date": "2022-10-14",
-      "duration": 2362,
-      "url": "https://youtu.be/Uyq1a-9bnx0"
+      "duration": 1576,
+      "url": "https://youtu.be/PC1AOQJ3Py0"
     },
     {
       "video_id": "xQUaboKfMu0",
@@ -3688,12 +3696,12 @@
       "url": "https://youtu.be/mBd6hFwPrHY"
     },
     {
-      "video_id": "PC1AOQJ3Py0",
+      "video_id": "Uyq1a-9bnx0",
       "type": "video",
-      "title": "Creare una LANDING PAGE FACILMENTE (senza HTML e CSS)",
+      "title": "Come REALIZZARE UN WEBINAR di successo",
       "date": "2022-10-14",
-      "duration": 1576,
-      "url": "https://youtu.be/PC1AOQJ3Py0"
+      "duration": 2362,
+      "url": "https://youtu.be/Uyq1a-9bnx0"
     },
     {
       "video_id": "PLDhDfv9Kmg1Ty4HGSOTePJPsikDOReLcy",
@@ -3720,20 +3728,20 @@
       "url": "https://youtu.be/ADItzZDEuWs"
     },
     {
-      "video_id": "M8aJjw-SHCg",
-      "type": "video",
-      "title": "AIRTABLE: creare un CRM GRATIS e senza programmare!",
-      "date": "2022-09-27",
-      "duration": 2007,
-      "url": "https://youtu.be/M8aJjw-SHCg"
-    },
-    {
       "video_id": "2EJPC3rTb-I",
       "type": "video",
       "title": "3 investimenti che dovrebbe fare ogni professionista",
       "date": "2022-09-27",
       "duration": 1389,
       "url": "https://youtu.be/2EJPC3rTb-I"
+    },
+    {
+      "video_id": "M8aJjw-SHCg",
+      "type": "video",
+      "title": "AIRTABLE: creare un CRM GRATIS e senza programmare!",
+      "date": "2022-09-27",
+      "duration": 2007,
+      "url": "https://youtu.be/M8aJjw-SHCg"
     },
     {
       "video_id": "Cgme9fThbQo",
@@ -3744,20 +3752,20 @@
       "url": "https://youtu.be/Cgme9fThbQo"
     },
     {
-      "video_id": "E1SJRjuUDRg",
-      "type": "video",
-      "title": "Come scrivere il TITOLO PERFETTO per YOUTUBE!",
-      "date": "2022-09-15",
-      "duration": 1613,
-      "url": "https://youtu.be/E1SJRjuUDRg"
-    },
-    {
       "video_id": "0BFLoRk5cFA",
       "type": "video",
       "title": "Diario di 2 Creator #006",
       "date": "2022-09-15",
       "duration": 3380,
       "url": "https://youtu.be/0BFLoRk5cFA"
+    },
+    {
+      "video_id": "E1SJRjuUDRg",
+      "type": "video",
+      "title": "Come scrivere il TITOLO PERFETTO per YOUTUBE!",
+      "date": "2022-09-15",
+      "duration": 1613,
+      "url": "https://youtu.be/E1SJRjuUDRg"
     },
     {
       "video_id": "GS0mq5HQIcY",
@@ -3912,20 +3920,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1S60P5duzHiNpWbCEwwMwrU"
     },
     {
-      "video_id": "OxAf1U6VIwY",
-      "type": "video",
-      "title": "Come gestire i dati della tua community per finalità di marketing | Sportello Creator",
-      "date": "2022-04-13",
-      "duration": 1682,
-      "url": "https://youtu.be/OxAf1U6VIwY"
-    },
-    {
       "video_id": "wKEtFVj6WWI",
       "type": "video",
       "title": "Diario di 2 Creator #005",
       "date": "2022-04-13",
       "duration": 3455,
       "url": "https://youtu.be/wKEtFVj6WWI"
+    },
+    {
+      "video_id": "OxAf1U6VIwY",
+      "type": "video",
+      "title": "Come gestire i dati della tua community per finalità di marketing | Sportello Creator",
+      "date": "2022-04-13",
+      "duration": 1682,
+      "url": "https://youtu.be/OxAf1U6VIwY"
     },
     {
       "video_id": "iy-PgypTN_c",
@@ -3944,28 +3952,12 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Tp1kUJCZ1e7T2xB6sY3IV4"
     },
     {
-      "video_id": "PLDhDfv9Kmg1TYzdUDp-Ihvnx3cHLzMFKg",
+      "video_id": "PLDhDfv9Kmg1QEh4thrJW4CAn5ihtsgCDF",
       "type": "playlist",
-      "title": "Skype: corso completo",
+      "title": "OBSIDIAN 🧠 CORSO COMPLETO per NOTE e SECOND BRAIN",
       "date": "2022-03-28",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TYzdUDp-Ihvnx3cHLzMFKg"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN",
-      "type": "playlist",
-      "title": "Todoist: corso completo",
-      "date": "2022-03-28",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1TTN-drLK3rCWqIPFSYZWX1",
-      "type": "playlist",
-      "title": "Integromat: corso completo",
-      "date": "2022-03-28",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TTN-drLK3rCWqIPFSYZWX1"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QEh4thrJW4CAn5ihtsgCDF"
     },
     {
       "video_id": "PLDhDfv9Kmg1R1BjDcgmtjg0uzbQPFBD00",
@@ -3976,20 +3968,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1R1BjDcgmtjg0uzbQPFBD00"
     },
     {
-      "video_id": "PLDhDfv9Kmg1QEh4thrJW4CAn5ihtsgCDF",
+      "video_id": "PLDhDfv9Kmg1TTN-drLK3rCWqIPFSYZWX1",
       "type": "playlist",
-      "title": "OBSIDIAN 🧠 CORSO COMPLETO per NOTE e SECOND BRAIN",
+      "title": "Integromat: corso completo",
       "date": "2022-03-28",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QEh4thrJW4CAn5ihtsgCDF"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TTN-drLK3rCWqIPFSYZWX1"
     },
     {
-      "video_id": "PLDhDfv9Kmg1Tdq5SSfxn-D12Q_VMnW4ht",
+      "video_id": "PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN",
       "type": "playlist",
-      "title": "Zoom: corso completo",
+      "title": "Todoist: corso completo",
       "date": "2022-03-28",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Tdq5SSfxn-D12Q_VMnW4ht"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN"
     },
     {
       "video_id": "PLDhDfv9Kmg1T_jo5E6R9G-HuXiezCnydt",
@@ -4000,6 +3992,14 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1T_jo5E6R9G-HuXiezCnydt"
     },
     {
+      "video_id": "PLDhDfv9Kmg1Rr8_mAC5PuvuYW5_OHjDeA",
+      "type": "playlist",
+      "title": "NOTION 📚 CORSO COMPLETO per gestire STUDIO, LAVORO, VITA",
+      "date": "2022-03-28",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Rr8_mAC5PuvuYW5_OHjDeA"
+    },
+    {
       "video_id": "PLDhDfv9Kmg1RhiMU3DJFLyaAffv1j9C7f",
       "type": "playlist",
       "title": "Discord: corso completo",
@@ -4008,12 +4008,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RhiMU3DJFLyaAffv1j9C7f"
     },
     {
-      "video_id": "PLDhDfv9Kmg1Rr8_mAC5PuvuYW5_OHjDeA",
+      "video_id": "PLDhDfv9Kmg1Tdq5SSfxn-D12Q_VMnW4ht",
       "type": "playlist",
-      "title": "NOTION 📚 CORSO COMPLETO per gestire STUDIO, LAVORO, VITA",
+      "title": "Zoom: corso completo",
       "date": "2022-03-28",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Rr8_mAC5PuvuYW5_OHjDeA"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Tdq5SSfxn-D12Q_VMnW4ht"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1TYzdUDp-Ihvnx3cHLzMFKg",
+      "type": "playlist",
+      "title": "Skype: corso completo",
+      "date": "2022-03-28",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TYzdUDp-Ihvnx3cHLzMFKg"
     },
     {
       "video_id": "PLDhDfv9Kmg1SYmIa4l6T6jTy3hWb8gozF",
@@ -4024,44 +4032,12 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SYmIa4l6T6jTy3hWb8gozF"
     },
     {
-      "video_id": "PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw",
-      "type": "playlist",
-      "title": "Adobe Premiere Pro: corso completo",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1TX5QJ_GlEDrNF1h_Ux-zrW",
       "type": "playlist",
       "title": "Streamlabs: corso completo",
       "date": "2022-03-24",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TX5QJ_GlEDrNF1h_Ux-zrW"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1S8z5nq9QR76J6dTO_rZJnb",
-      "type": "playlist",
-      "title": "StreamYard: corso completo",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1S8z5nq9QR76J6dTO_rZJnb"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1Q_pmuKspUB7fP0XQozAU6N",
-      "type": "playlist",
-      "title": "Reaper: corso completo",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Q_pmuKspUB7fP0XQozAU6N"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570",
-      "type": "playlist",
-      "title": "Audacity: corso completo",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570"
     },
     {
       "video_id": "PLDhDfv9Kmg1QSttTawspY1XM2bCpzamM2",
@@ -4112,6 +4088,22 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SAeKmQIuqRx4tDkp5HUDAo"
     },
     {
+      "video_id": "PLDhDfv9Kmg1Q_pmuKspUB7fP0XQozAU6N",
+      "type": "playlist",
+      "title": "Reaper: corso completo",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Q_pmuKspUB7fP0XQozAU6N"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570",
+      "type": "playlist",
+      "title": "Audacity: corso completo",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570"
+    },
+    {
       "video_id": "PLDhDfv9Kmg1RjCC7Zvx70UGSA7N4mJOU-",
       "type": "playlist",
       "title": "GIMP: corso completo",
@@ -4150,6 +4142,22 @@
       "date": "2022-03-24",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TVBgwf1wTMFETyQ9W07zfG"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw",
+      "type": "playlist",
+      "title": "Adobe Premiere Pro: corso completo",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1S8z5nq9QR76J6dTO_rZJnb",
+      "type": "playlist",
+      "title": "StreamYard: corso completo",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1S8z5nq9QR76J6dTO_rZJnb"
     },
     {
       "video_id": "IuihZ6HtSQY",
@@ -4232,12 +4240,12 @@
       "url": "https://youtu.be/_6vNCuKcmzw"
     },
     {
-      "video_id": "9dMabq5sa5U",
+      "video_id": "Y_SOXLI83wg",
       "type": "video",
-      "title": "EVERNOTE: TUTORIAL COMPLETO per gestire NOTE e APPUNTI",
+      "title": "Come funziona un Multichannel Network | C²",
       "date": "2022-02-22",
-      "duration": 2639,
-      "url": "https://youtu.be/9dMabq5sa5U"
+      "duration": 4222,
+      "url": "https://youtu.be/Y_SOXLI83wg"
     },
     {
       "video_id": "btIsTFftDgo",
@@ -4248,20 +4256,12 @@
       "url": "https://youtu.be/btIsTFftDgo"
     },
     {
-      "video_id": "Y_SOXLI83wg",
+      "video_id": "9dMabq5sa5U",
       "type": "video",
-      "title": "Come funziona un Multichannel Network | C²",
+      "title": "EVERNOTE: TUTORIAL COMPLETO per gestire NOTE e APPUNTI",
       "date": "2022-02-22",
-      "duration": 4222,
-      "url": "https://youtu.be/Y_SOXLI83wg"
-    },
-    {
-      "video_id": "JKYNW-0mG7g",
-      "type": "video",
-      "title": "Come raggiungere gli obiettivi, con Timestripe",
-      "date": "2022-02-21",
-      "duration": 1189,
-      "url": "https://youtu.be/JKYNW-0mG7g"
+      "duration": 2639,
+      "url": "https://youtu.be/9dMabq5sa5U"
     },
     {
       "video_id": "PPL4-8j5zis",
@@ -4278,6 +4278,14 @@
       "date": "2022-02-21",
       "duration": 2598,
       "url": "https://youtu.be/8slwjULq5q0"
+    },
+    {
+      "video_id": "JKYNW-0mG7g",
+      "type": "video",
+      "title": "Come raggiungere gli obiettivi, con Timestripe",
+      "date": "2022-02-21",
+      "duration": 1189,
+      "url": "https://youtu.be/JKYNW-0mG7g"
     },
     {
       "video_id": "fV_LonE-GLM",
@@ -4304,20 +4312,20 @@
       "url": "https://youtu.be/G-3qKBiofC0"
     },
     {
-      "video_id": "oS7HCBD6Zrs",
-      "type": "video",
-      "title": "Diario di 2 Creator #002",
-      "date": "2022-01-27",
-      "duration": 5728,
-      "url": "https://youtu.be/oS7HCBD6Zrs"
-    },
-    {
       "video_id": "bAsqdiBmsbg",
       "type": "video",
       "title": "Network, etica e progetti di nicchia | C²",
       "date": "2022-01-27",
       "duration": 3801,
       "url": "https://youtu.be/bAsqdiBmsbg"
+    },
+    {
+      "video_id": "oS7HCBD6Zrs",
+      "type": "video",
+      "title": "Diario di 2 Creator #002",
+      "date": "2022-01-27",
+      "duration": 5728,
+      "url": "https://youtu.be/oS7HCBD6Zrs"
     },
     {
       "video_id": "PLDhDfv9Kmg1RyU5fOlkQIuTgrXvIw7Q56",
@@ -4384,12 +4392,12 @@
       "url": "https://youtu.be/XVp_wWsaeLM"
     },
     {
-      "video_id": "ViCRNxBBHMk",
+      "video_id": "VSygqCnUnr8",
       "type": "video",
-      "title": "I migliori siti per la produttività personale",
+      "title": "Creare contenuti, con un solido modello di business | C²",
       "date": "2022-01-17",
-      "duration": 1783,
-      "url": "https://youtu.be/ViCRNxBBHMk"
+      "duration": 4244,
+      "url": "https://youtu.be/VSygqCnUnr8"
     },
     {
       "video_id": "F1bZqjcYgv4",
@@ -4400,12 +4408,12 @@
       "url": "https://youtu.be/F1bZqjcYgv4"
     },
     {
-      "video_id": "VSygqCnUnr8",
+      "video_id": "ViCRNxBBHMk",
       "type": "video",
-      "title": "Creare contenuti, con un solido modello di business | C²",
+      "title": "I migliori siti per la produttività personale",
       "date": "2022-01-17",
-      "duration": 4244,
-      "url": "https://youtu.be/VSygqCnUnr8"
+      "duration": 1783,
+      "url": "https://youtu.be/ViCRNxBBHMk"
     },
     {
       "video_id": "PLDhDfv9Kmg1Q0qL3FTsNTOmSmDwITIyvs",
@@ -4456,20 +4464,20 @@
       "url": "https://youtu.be/_5vD-G2m7Js"
     },
     {
-      "video_id": "gL2Rl3Bgr5s",
-      "type": "video",
-      "title": "TELEGRAM: Reazioni, Spoiler e Traduzioni nell'aggiornamento del 31 Dicembre 2021",
-      "date": "2022-01-04",
-      "duration": 577,
-      "url": "https://youtu.be/gL2Rl3Bgr5s"
-    },
-    {
       "video_id": "doUn-NcKwU8",
       "type": "video",
       "title": "Come REALIZZARE (e VENDERE) un CORSO online, con Esmerise",
       "date": "2022-01-04",
       "duration": 3579,
       "url": "https://youtu.be/doUn-NcKwU8"
+    },
+    {
+      "video_id": "gL2Rl3Bgr5s",
+      "type": "video",
+      "title": "TELEGRAM: Reazioni, Spoiler e Traduzioni nell'aggiornamento del 31 Dicembre 2021",
+      "date": "2022-01-04",
+      "duration": 577,
+      "url": "https://youtu.be/gL2Rl3Bgr5s"
     },
     {
       "video_id": "2jrSlaCC0_0",
@@ -4480,14 +4488,6 @@
       "url": "https://youtu.be/2jrSlaCC0_0"
     },
     {
-      "video_id": "MXHs5tOoDCo",
-      "type": "video",
-      "title": "Usare TELEGRAM per fare BUSINESS",
-      "date": "2021-12-21",
-      "duration": 4085,
-      "url": "https://youtu.be/MXHs5tOoDCo"
-    },
-    {
       "video_id": "a1XdBcmgp0o",
       "type": "video",
       "title": "DaVinci Resolve: EFFETTI SPECIALI con FUSION | Corso MIRACOLOSO",
@@ -4496,12 +4496,12 @@
       "url": "https://youtu.be/a1XdBcmgp0o"
     },
     {
-      "video_id": "Em2r1DGZMZo",
+      "video_id": "MXHs5tOoDCo",
       "type": "video",
-      "title": "Come ragiona uno sponsor? | C²",
-      "date": "2021-12-20",
-      "duration": 4210,
-      "url": "https://youtu.be/Em2r1DGZMZo"
+      "title": "Usare TELEGRAM per fare BUSINESS",
+      "date": "2021-12-21",
+      "duration": 4085,
+      "url": "https://youtu.be/MXHs5tOoDCo"
     },
     {
       "video_id": "wWrpyEKu_fQ",
@@ -4510,6 +4510,14 @@
       "date": "2021-12-20",
       "duration": 2377,
       "url": "https://youtu.be/wWrpyEKu_fQ"
+    },
+    {
+      "video_id": "Em2r1DGZMZo",
+      "type": "video",
+      "title": "Come ragiona uno sponsor? | C²",
+      "date": "2021-12-20",
+      "duration": 4210,
+      "url": "https://youtu.be/Em2r1DGZMZo"
     },
     {
       "video_id": "9PeoQF_1kW4",
@@ -4552,20 +4560,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx"
     },
     {
-      "video_id": "RgCg2GCKgHQ",
-      "type": "video",
-      "title": "Content Creators: Domande & Risposte FISCALI | Sportello Creator",
-      "date": "2021-12-06",
-      "duration": 2461,
-      "url": "https://youtu.be/RgCg2GCKgHQ"
-    },
-    {
       "video_id": "h6mKRQca0G8",
       "type": "video",
       "title": "Come VENDERE ONLINE facilmente, con GUMROAD",
       "date": "2021-12-06",
       "duration": 3053,
       "url": "https://youtu.be/h6mKRQca0G8"
+    },
+    {
+      "video_id": "RgCg2GCKgHQ",
+      "type": "video",
+      "title": "Content Creators: Domande & Risposte FISCALI | Sportello Creator",
+      "date": "2021-12-06",
+      "duration": 2461,
+      "url": "https://youtu.be/RgCg2GCKgHQ"
     },
     {
       "video_id": "B36YfLu3xm0",
@@ -4928,20 +4936,20 @@
       "url": "https://youtu.be/wF9Az37RvSY"
     },
     {
-      "video_id": "ZD03LBLe1kU",
-      "type": "video",
-      "title": "Le MIGLIORI FOTOCAMERE per CONTENT CREATORS | Luglio 2021",
-      "date": "2021-07-06",
-      "duration": 1264,
-      "url": "https://youtu.be/ZD03LBLe1kU"
-    },
-    {
       "video_id": "rtNS4-RzCO8",
       "type": "video",
       "title": "10 programmi da imparare in vacanza",
       "date": "2021-07-06",
       "duration": 1168,
       "url": "https://youtu.be/rtNS4-RzCO8"
+    },
+    {
+      "video_id": "ZD03LBLe1kU",
+      "type": "video",
+      "title": "Le MIGLIORI FOTOCAMERE per CONTENT CREATORS | Luglio 2021",
+      "date": "2021-07-06",
+      "duration": 1264,
+      "url": "https://youtu.be/ZD03LBLe1kU"
     },
     {
       "video_id": "1tBrPbpXHGg",
@@ -6496,20 +6504,20 @@
       "url": "https://youtu.be/HvNYo9TAGxE"
     },
     {
-      "video_id": "7TuprmSXEfI",
-      "type": "video",
-      "title": "Atem Mini PRO ISO e perché la vuoi comprare subito",
-      "date": "2020-09-15",
-      "duration": 2336,
-      "url": "https://youtu.be/7TuprmSXEfI"
-    },
-    {
       "video_id": "Owq-7zCnCd8",
       "type": "video",
       "title": "10 Siti per organizzarsi meglio",
       "date": "2020-09-15",
       "duration": 1265,
       "url": "https://youtu.be/Owq-7zCnCd8"
+    },
+    {
+      "video_id": "7TuprmSXEfI",
+      "type": "video",
+      "title": "Atem Mini PRO ISO e perché la vuoi comprare subito",
+      "date": "2020-09-15",
+      "duration": 2336,
+      "url": "https://youtu.be/7TuprmSXEfI"
     },
     {
       "video_id": "NHAirA1n3yM",
@@ -6528,14 +6536,6 @@
       "url": "https://youtu.be/6yAUYgDuYi0"
     },
     {
-      "video_id": "NUGXt0biU3w",
-      "type": "video",
-      "title": "Ha senso spendere tanto per una webcam? | Confronto Logitech BRIO vs Logitech C920",
-      "date": "2020-09-08",
-      "duration": 648,
-      "url": "https://youtu.be/NUGXt0biU3w"
-    },
-    {
       "video_id": "YRNGvmq0ovg",
       "type": "video",
       "title": "Controllare OBS Studio con telefono, tablet o altro computer",
@@ -6544,20 +6544,20 @@
       "url": "https://youtu.be/YRNGvmq0ovg"
     },
     {
+      "video_id": "NUGXt0biU3w",
+      "type": "video",
+      "title": "Ha senso spendere tanto per una webcam? | Confronto Logitech BRIO vs Logitech C920",
+      "date": "2020-09-08",
+      "duration": 648,
+      "url": "https://youtu.be/NUGXt0biU3w"
+    },
+    {
       "video_id": "8HVpmzGl91c",
       "type": "video",
       "title": "ELGATO STREAM DECK: recensione alla Ciraolo",
       "date": "2020-09-08",
       "duration": 1650,
       "url": "https://youtu.be/8HVpmzGl91c"
-    },
-    {
-      "video_id": "cwS9_1pJrd4",
-      "type": "video",
-      "title": "11 Estensioni per Google CHROME che non dimenticherai facilmente",
-      "date": "2020-09-02",
-      "duration": 1209,
-      "url": "https://youtu.be/cwS9_1pJrd4"
     },
     {
       "video_id": "pozrBnqWmZM",
@@ -6576,20 +6576,20 @@
       "url": "https://youtu.be/w0gGKfAJA0Y"
     },
     {
+      "video_id": "cwS9_1pJrd4",
+      "type": "video",
+      "title": "11 Estensioni per Google CHROME che non dimenticherai facilmente",
+      "date": "2020-09-02",
+      "duration": 1209,
+      "url": "https://youtu.be/cwS9_1pJrd4"
+    },
+    {
       "video_id": "abAPV4PMAAo",
       "type": "video",
       "title": "OBS Studio: come trovare (e installare) i PLUGIN",
       "date": "2020-09-01",
       "duration": 1061,
       "url": "https://youtu.be/abAPV4PMAAo"
-    },
-    {
-      "video_id": "s2lsgpQbXLw",
-      "type": "video",
-      "title": "Incredibili transizioni animate in OBS Studio",
-      "date": "2020-08-31",
-      "duration": 2592,
-      "url": "https://youtu.be/s2lsgpQbXLw"
     },
     {
       "video_id": "DvlOxXsh0jU",
@@ -6600,20 +6600,20 @@
       "url": "https://youtu.be/DvlOxXsh0jU"
     },
     {
+      "video_id": "s2lsgpQbXLw",
+      "type": "video",
+      "title": "Incredibili transizioni animate in OBS Studio",
+      "date": "2020-08-31",
+      "duration": 2592,
+      "url": "https://youtu.be/s2lsgpQbXLw"
+    },
+    {
       "video_id": "T8ZpjJ6rzk8",
       "type": "video",
       "title": "Aggiungere testi ai video, con Shotcut",
       "date": "2020-08-27",
       "duration": 1075,
       "url": "https://youtu.be/T8ZpjJ6rzk8"
-    },
-    {
-      "video_id": "Kmfhrkavr7k",
-      "type": "video",
-      "title": "Come cambiare la miniatura di anteprima ad un video Youtube",
-      "date": "2020-08-25",
-      "duration": 254,
-      "url": "https://youtu.be/Kmfhrkavr7k"
     },
     {
       "video_id": "vf_aOI_qNPI",
@@ -6632,12 +6632,12 @@
       "url": "https://youtu.be/zxeBrsmJdOg"
     },
     {
-      "video_id": "fUnfF7GcPrM",
+      "video_id": "Kmfhrkavr7k",
       "type": "video",
-      "title": "‌",
-      "date": "2020-08-18",
-      "duration": 457,
-      "url": "https://youtu.be/fUnfF7GcPrM"
+      "title": "Come cambiare la miniatura di anteprima ad un video Youtube",
+      "date": "2020-08-25",
+      "duration": 254,
+      "url": "https://youtu.be/Kmfhrkavr7k"
     },
     {
       "video_id": "6SJBiQ1sNgo",
@@ -6648,12 +6648,12 @@
       "url": "https://youtu.be/6SJBiQ1sNgo"
     },
     {
-      "video_id": "BcsQYaq6NVw",
+      "video_id": "fUnfF7GcPrM",
       "type": "video",
-      "title": "Restream.io: la guida completa per il live streaming multipiattaforma (alternativa a Streamyard)",
-      "date": "2020-08-07",
-      "duration": 1908,
-      "url": "https://youtu.be/BcsQYaq6NVw"
+      "title": "‌",
+      "date": "2020-08-18",
+      "duration": 457,
+      "url": "https://youtu.be/fUnfF7GcPrM"
     },
     {
       "video_id": "dUrn5FTGGhE",
@@ -6664,20 +6664,20 @@
       "url": "https://youtu.be/dUrn5FTGGhE"
     },
     {
+      "video_id": "BcsQYaq6NVw",
+      "type": "video",
+      "title": "Restream.io: la guida completa per il live streaming multipiattaforma (alternativa a Streamyard)",
+      "date": "2020-08-07",
+      "duration": 1908,
+      "url": "https://youtu.be/BcsQYaq6NVw"
+    },
+    {
       "video_id": "3scwbgRzRbY",
       "type": "video",
       "title": "Atem Mini PRO: la nostra esperienza con una scheda di acquisizione multicamera",
       "date": "2020-07-30",
       "duration": 3027,
       "url": "https://youtu.be/3scwbgRzRbY"
-    },
-    {
-      "video_id": "h5TNn14V3Rg",
-      "type": "video",
-      "title": "OBS STUDIO vs STREAMYARD | Qual è la migliore applicazione per il live streaming?",
-      "date": "2020-07-29",
-      "duration": 1443,
-      "url": "https://youtu.be/h5TNn14V3Rg"
     },
     {
       "video_id": "HB7sC101Pbg",
@@ -6688,12 +6688,20 @@
       "url": "https://youtu.be/HB7sC101Pbg"
     },
     {
-      "video_id": "AGcP4MQUcpU",
+      "video_id": "h5TNn14V3Rg",
       "type": "video",
-      "title": "Come capire PRIMA se la tua idea funziona (spoiler: con la PROTOTIPAZIONE)",
+      "title": "OBS STUDIO vs STREAMYARD | Qual è la migliore applicazione per il live streaming?",
+      "date": "2020-07-29",
+      "duration": 1443,
+      "url": "https://youtu.be/h5TNn14V3Rg"
+    },
+    {
+      "video_id": "ieCvutqp7jY",
+      "type": "video",
+      "title": "3 errori da evitare quando lanci un progetto",
       "date": "2020-07-28",
-      "duration": 966,
-      "url": "https://youtu.be/AGcP4MQUcpU"
+      "duration": 1065,
+      "url": "https://youtu.be/ieCvutqp7jY"
     },
     {
       "video_id": "sZ6Y8ls27D4",
@@ -6704,12 +6712,12 @@
       "url": "https://youtu.be/sZ6Y8ls27D4"
     },
     {
-      "video_id": "ieCvutqp7jY",
+      "video_id": "AGcP4MQUcpU",
       "type": "video",
-      "title": "3 errori da evitare quando lanci un progetto",
+      "title": "Come capire PRIMA se la tua idea funziona (spoiler: con la PROTOTIPAZIONE)",
       "date": "2020-07-28",
-      "duration": 1065,
-      "url": "https://youtu.be/ieCvutqp7jY"
+      "duration": 966,
+      "url": "https://youtu.be/AGcP4MQUcpU"
     },
     {
       "video_id": "dDe7rmYgObI",
@@ -6760,14 +6768,6 @@
       "url": "https://youtu.be/fLSaVufu1sU"
     },
     {
-      "video_id": "kEJcGmU19H0",
-      "type": "video",
-      "title": "Importare l'audio di un video in Audacity",
-      "date": "2020-06-25",
-      "duration": 568,
-      "url": "https://youtu.be/kEJcGmU19H0"
-    },
-    {
       "video_id": "NGKI48eJedA",
       "type": "video",
       "title": "CANCELLARE LO SFONDO DA UN VIDEO | Green Screen / Chroma Key in SHOTCUT",
@@ -6776,28 +6776,12 @@
       "url": "https://youtu.be/NGKI48eJedA"
     },
     {
-      "video_id": "b_27tgeCHOg",
+      "video_id": "kEJcGmU19H0",
       "type": "video",
-      "title": "TI SFIDO a scrivere PIÙ VELOCE di me con la TASTIERA!",
-      "date": "2020-06-20",
-      "duration": 734,
-      "url": "https://youtu.be/b_27tgeCHOg"
-    },
-    {
-      "video_id": "mSNx1vER9CI",
-      "type": "video",
-      "title": "Come scrivere VELOCE sulla tastiera del pc | 10 Consigli",
-      "date": "2020-06-20",
-      "duration": 753,
-      "url": "https://youtu.be/mSNx1vER9CI"
-    },
-    {
-      "video_id": "-O2hthJSwsA",
-      "type": "video",
-      "title": "10 siti INDISPENSABILI di cui non potrai MAI PIÙ fare a meno",
-      "date": "2020-06-20",
-      "duration": 1272,
-      "url": "https://youtu.be/-O2hthJSwsA"
+      "title": "Importare l'audio di un video in Audacity",
+      "date": "2020-06-25",
+      "duration": 568,
+      "url": "https://youtu.be/kEJcGmU19H0"
     },
     {
       "video_id": "ELAKGCE_SOc",
@@ -6808,12 +6792,28 @@
       "url": "https://youtu.be/ELAKGCE_SOc"
     },
     {
-      "video_id": "D1_LyrCPwcc",
+      "video_id": "b_27tgeCHOg",
       "type": "video",
-      "title": "Il mio nuovo sito web e come l'ho fatto",
-      "date": "2020-06-19",
-      "duration": 969,
-      "url": "https://youtu.be/D1_LyrCPwcc"
+      "title": "TI SFIDO a scrivere PIÙ VELOCE di me con la TASTIERA!",
+      "date": "2020-06-20",
+      "duration": 734,
+      "url": "https://youtu.be/b_27tgeCHOg"
+    },
+    {
+      "video_id": "-O2hthJSwsA",
+      "type": "video",
+      "title": "10 siti INDISPENSABILI di cui non potrai MAI PIÙ fare a meno",
+      "date": "2020-06-20",
+      "duration": 1272,
+      "url": "https://youtu.be/-O2hthJSwsA"
+    },
+    {
+      "video_id": "mSNx1vER9CI",
+      "type": "video",
+      "title": "Come scrivere VELOCE sulla tastiera del pc | 10 Consigli",
+      "date": "2020-06-20",
+      "duration": 753,
+      "url": "https://youtu.be/mSNx1vER9CI"
     },
     {
       "video_id": "CEk735WElgc",
@@ -6822,6 +6822,14 @@
       "date": "2020-06-19",
       "duration": 864,
       "url": "https://youtu.be/CEk735WElgc"
+    },
+    {
+      "video_id": "D1_LyrCPwcc",
+      "type": "video",
+      "title": "Il mio nuovo sito web e come l'ho fatto",
+      "date": "2020-06-19",
+      "duration": 969,
+      "url": "https://youtu.be/D1_LyrCPwcc"
     },
     {
       "video_id": "yHsQCqSrJeI",
@@ -6840,12 +6848,12 @@
       "url": "https://youtu.be/EDVZv9lMyL4"
     },
     {
-      "video_id": "crY0rT_SyCE",
+      "video_id": "CdIYm8uagMQ",
       "type": "video",
-      "title": "Youtube secondo @JessicaRedeghieri | Professione Youtuber #005",
+      "title": "CANVA: togliere lo sfondo si può! (Con un trucco)",
       "date": "2020-06-11",
-      "duration": 3715,
-      "url": "https://youtu.be/crY0rT_SyCE"
+      "duration": 461,
+      "url": "https://youtu.be/CdIYm8uagMQ"
     },
     {
       "video_id": "H_0D5G1udZc",
@@ -6872,12 +6880,12 @@
       "url": "https://youtu.be/DLKyMgIeS8I"
     },
     {
-      "video_id": "CdIYm8uagMQ",
+      "video_id": "crY0rT_SyCE",
       "type": "video",
-      "title": "CANVA: togliere lo sfondo si può! (Con un trucco)",
+      "title": "Youtube secondo @JessicaRedeghieri | Professione Youtuber #005",
       "date": "2020-06-11",
-      "duration": 461,
-      "url": "https://youtu.be/CdIYm8uagMQ"
+      "duration": 3715,
+      "url": "https://youtu.be/crY0rT_SyCE"
     },
     {
       "video_id": "PLDhDfv9Kmg1Rkx10On9NeHGJwJgPRwjJ6",
@@ -6888,14 +6896,6 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Rkx10On9NeHGJwJgPRwjJ6"
     },
     {
-      "video_id": "LAsa0Pitipg",
-      "type": "video",
-      "title": "Un audio CHE SPACCA, con OBS Studio",
-      "date": "2020-06-10",
-      "duration": 1614,
-      "url": "https://youtu.be/LAsa0Pitipg"
-    },
-    {
       "video_id": "JlK_DylTXD0",
       "type": "video",
       "title": "Migliorare DI BRUTTO l'audio con AUDACITY",
@@ -6904,12 +6904,12 @@
       "url": "https://youtu.be/JlK_DylTXD0"
     },
     {
-      "video_id": "Ih8k1FGXllI",
+      "video_id": "LAsa0Pitipg",
       "type": "video",
-      "title": "MIGLIORI programmi GRATIS per REGISTRARE lo SCHERMO del pc",
-      "date": "2020-06-09",
-      "duration": 1763,
-      "url": "https://youtu.be/Ih8k1FGXllI"
+      "title": "Un audio CHE SPACCA, con OBS Studio",
+      "date": "2020-06-10",
+      "duration": 1614,
+      "url": "https://youtu.be/LAsa0Pitipg"
     },
     {
       "video_id": "AZjnzZVdovw",
@@ -6920,6 +6920,14 @@
       "url": "https://youtu.be/AZjnzZVdovw"
     },
     {
+      "video_id": "Ih8k1FGXllI",
+      "type": "video",
+      "title": "MIGLIORI programmi GRATIS per REGISTRARE lo SCHERMO del pc",
+      "date": "2020-06-09",
+      "duration": 1763,
+      "url": "https://youtu.be/Ih8k1FGXllI"
+    },
+    {
       "video_id": "93SnDiM3X1w",
       "type": "video",
       "title": "CANALI BELLI con POCHI ISCRITTI, su Youtube",
@@ -6928,20 +6936,20 @@
       "url": "https://youtu.be/93SnDiM3X1w"
     },
     {
-      "video_id": "Ly5GQhq9qno",
-      "type": "video",
-      "title": "CONTO ALLA ROVESCIA prima della diretta, con OBS Studio",
-      "date": "2020-06-08",
-      "duration": 1185,
-      "url": "https://youtu.be/Ly5GQhq9qno"
-    },
-    {
       "video_id": "5XX2m_g3jMI",
       "type": "video",
       "title": "YOUTUBE: guardare video \"UTILI\" e restare DAVVERO AGGIORNATI sui canali che seguiamo",
       "date": "2020-06-08",
       "duration": 857,
       "url": "https://youtu.be/5XX2m_g3jMI"
+    },
+    {
+      "video_id": "Ly5GQhq9qno",
+      "type": "video",
+      "title": "CONTO ALLA ROVESCIA prima della diretta, con OBS Studio",
+      "date": "2020-06-08",
+      "duration": 1185,
+      "url": "https://youtu.be/Ly5GQhq9qno"
     },
     {
       "video_id": "PLDhDfv9Kmg1TVrpONk3vesVKTAssIMeKa",
@@ -6976,20 +6984,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RuxSNZiZb9HI8liyTpk13P"
     },
     {
-      "video_id": "Zd7EZZz7mMk",
-      "type": "video",
-      "title": "Non so fare, quindi insegno",
-      "date": "2020-06-04",
-      "duration": 1178,
-      "url": "https://youtu.be/Zd7EZZz7mMk"
-    },
-    {
       "video_id": "nubsnnO4fAE",
       "type": "video",
       "title": "Youtube: cosa sono i VIDEO PREMIERE e come si fanno?",
       "date": "2020-06-04",
       "duration": 665,
       "url": "https://youtu.be/nubsnnO4fAE"
+    },
+    {
+      "video_id": "Zd7EZZz7mMk",
+      "type": "video",
+      "title": "Non so fare, quindi insegno",
+      "date": "2020-06-04",
+      "duration": 1178,
+      "url": "https://youtu.be/Zd7EZZz7mMk"
     },
     {
       "video_id": "JhNs8pW_KrU",
@@ -7016,20 +7024,20 @@
       "url": "https://youtu.be/htuIBgEjDMc"
     },
     {
-      "video_id": "ALHENniM6T0",
-      "type": "video",
-      "title": "SLIDES + FACCIONE | Il modo migliore di fare una presentazione con OBS Studio",
-      "date": "2020-05-28",
-      "duration": 852,
-      "url": "https://youtu.be/ALHENniM6T0"
-    },
-    {
       "video_id": "_rnbXQtrKm4",
       "type": "video",
       "title": "STATS FOR NERDS: una cosina interessante, su Youtube",
       "date": "2020-05-28",
       "duration": 914,
       "url": "https://youtu.be/_rnbXQtrKm4"
+    },
+    {
+      "video_id": "ALHENniM6T0",
+      "type": "video",
+      "title": "SLIDES + FACCIONE | Il modo migliore di fare una presentazione con OBS Studio",
+      "date": "2020-05-28",
+      "duration": 852,
+      "url": "https://youtu.be/ALHENniM6T0"
     },
     {
       "video_id": "dX8ybtbZ4B4",
@@ -7056,6 +7064,14 @@
       "url": "https://youtu.be/GFMgfn8iq0U"
     },
     {
+      "video_id": "a8POrlU_aPQ",
+      "type": "video",
+      "title": "Audacity Noise Gate: MAI PIÙ RUMORI MOLESTI nei tuoi audio",
+      "date": "2020-05-25",
+      "duration": 1369,
+      "url": "https://youtu.be/a8POrlU_aPQ"
+    },
+    {
       "video_id": "RMfvoMNl150",
       "type": "video",
       "title": "Come ho creato QUESTA ☝ SCENA in OBS Studio?",
@@ -7070,14 +7086,6 @@
       "date": "2020-05-25",
       "duration": 2975,
       "url": "https://youtu.be/9sd-D1YbWHg"
-    },
-    {
-      "video_id": "a8POrlU_aPQ",
-      "type": "video",
-      "title": "Audacity Noise Gate: MAI PIÙ RUMORI MOLESTI nei tuoi audio",
-      "date": "2020-05-25",
-      "duration": 1369,
-      "url": "https://youtu.be/a8POrlU_aPQ"
     },
     {
       "video_id": "TA92SBCNd3I",
@@ -7128,20 +7136,20 @@
       "url": "https://youtu.be/S9xeI5cLKdA"
     },
     {
-      "video_id": "TZAWQFd85Po",
-      "type": "video",
-      "title": "OBS Studio: NON registrare in MP4! Ecco il formato migliore.",
-      "date": "2020-05-16",
-      "duration": 515,
-      "url": "https://youtu.be/TZAWQFd85Po"
-    },
-    {
       "video_id": "F9_K-XzPXJc",
       "type": "video",
       "title": "Faccio cose, creo contenuti | Ecco come lavoro",
       "date": "2020-05-16",
       "duration": 8783,
       "url": "https://youtu.be/F9_K-XzPXJc"
+    },
+    {
+      "video_id": "TZAWQFd85Po",
+      "type": "video",
+      "title": "OBS Studio: NON registrare in MP4! Ecco il formato migliore.",
+      "date": "2020-05-16",
+      "duration": 515,
+      "url": "https://youtu.be/TZAWQFd85Po"
     },
     {
       "video_id": "ZKQihMd4nns",
@@ -7152,20 +7160,20 @@
       "url": "https://youtu.be/ZKQihMd4nns"
     },
     {
-      "video_id": "IdmkSaRviQ8",
-      "type": "video",
-      "title": "SEXTING: guida al sesso a distanza soddisfacente e sicuro | con Marvi Santamaria",
-      "date": "2020-05-13",
-      "duration": 2539,
-      "url": "https://youtu.be/IdmkSaRviQ8"
-    },
-    {
       "video_id": "s83OSsX_jXI",
       "type": "video",
       "title": "Intervista su come fare un'intervista",
       "date": "2020-05-13",
       "duration": 4789,
       "url": "https://youtu.be/s83OSsX_jXI"
+    },
+    {
+      "video_id": "IdmkSaRviQ8",
+      "type": "video",
+      "title": "SEXTING: guida al sesso a distanza soddisfacente e sicuro | con Marvi Santamaria",
+      "date": "2020-05-13",
+      "duration": 2539,
+      "url": "https://youtu.be/IdmkSaRviQ8"
     },
     {
       "video_id": "SxC8XdwSVG4",
@@ -7224,20 +7232,20 @@
       "url": "https://youtu.be/nlE9yowVffU"
     },
     {
-      "video_id": "rxh8kp2GnpQ",
-      "type": "video",
-      "title": "Un computer da Youtuber: scegliere i componenti | con @MoreThanTech",
-      "date": "2020-05-06",
-      "duration": 5626,
-      "url": "https://youtu.be/rxh8kp2GnpQ"
-    },
-    {
       "video_id": "KsB9EV13s0E",
       "type": "video",
       "title": "COME FUNZIONA TIK TOK: tutto quello che volevi sapere (e non hai mai osato chiedere)",
       "date": "2020-05-06",
       "duration": 1703,
       "url": "https://youtu.be/KsB9EV13s0E"
+    },
+    {
+      "video_id": "rxh8kp2GnpQ",
+      "type": "video",
+      "title": "Un computer da Youtuber: scegliere i componenti | con @MoreThanTech",
+      "date": "2020-05-06",
+      "duration": 5626,
+      "url": "https://youtu.be/rxh8kp2GnpQ"
     },
     {
       "video_id": "NxLR9NrklDE",
@@ -7272,20 +7280,20 @@
       "url": "https://youtu.be/Q8ZBU1NWxqE"
     },
     {
-      "video_id": "C--bJ1P4bLg",
-      "type": "video",
-      "title": "Ciraolo parla troppo lentamente? Ecco la soluzione",
-      "date": "2020-04-28",
-      "duration": 359,
-      "url": "https://youtu.be/C--bJ1P4bLg"
-    },
-    {
       "video_id": "rHDdloMPtfk",
       "type": "video",
       "title": "NASCONDERE OBS STUDIO: registrare lo schermo senza mostrarlo (effetto matrioska)",
       "date": "2020-04-28",
       "duration": 532,
       "url": "https://youtu.be/rHDdloMPtfk"
+    },
+    {
+      "video_id": "C--bJ1P4bLg",
+      "type": "video",
+      "title": "Ciraolo parla troppo lentamente? Ecco la soluzione",
+      "date": "2020-04-28",
+      "duration": 359,
+      "url": "https://youtu.be/C--bJ1P4bLg"
     },
     {
       "video_id": "OydJPcJcK0M",
@@ -7304,20 +7312,20 @@
       "url": "https://youtu.be/MQzy8i1HuoY"
     },
     {
-      "video_id": "svLoZdWscmw",
-      "type": "video",
-      "title": "400 milioni di utenti su Telegram | Piccoli aggiornamenti",
-      "date": "2020-04-25",
-      "duration": 946,
-      "url": "https://youtu.be/svLoZdWscmw"
-    },
-    {
       "video_id": "1Qs2vBHygT0",
       "type": "video",
       "title": "Caro Telegram, hai un problema",
       "date": "2020-04-25",
       "duration": 779,
       "url": "https://youtu.be/1Qs2vBHygT0"
+    },
+    {
+      "video_id": "svLoZdWscmw",
+      "type": "video",
+      "title": "400 milioni di utenti su Telegram | Piccoli aggiornamenti",
+      "date": "2020-04-25",
+      "duration": 946,
+      "url": "https://youtu.be/svLoZdWscmw"
     },
     {
       "video_id": "fDEQ09aFI_4",
@@ -7352,20 +7360,20 @@
       "url": "https://youtu.be/fjWCuzSvh_I"
     },
     {
-      "video_id": "lF3WJxKGrdg",
-      "type": "video",
-      "title": "Separare le tracce audio, in OBS Studio (video + podcast)",
-      "date": "2020-04-09",
-      "duration": 1039,
-      "url": "https://youtu.be/lF3WJxKGrdg"
-    },
-    {
       "video_id": "ZTSdxmtUX9o",
       "type": "video",
       "title": "Mettere dei marcatori per indicare momenti precisi, con Audacity",
       "date": "2020-04-09",
       "duration": 297,
       "url": "https://youtu.be/ZTSdxmtUX9o"
+    },
+    {
+      "video_id": "lF3WJxKGrdg",
+      "type": "video",
+      "title": "Separare le tracce audio, in OBS Studio (video + podcast)",
+      "date": "2020-04-09",
+      "duration": 1039,
+      "url": "https://youtu.be/lF3WJxKGrdg"
     },
     {
       "video_id": "Dpv1yUu99LQ",
@@ -7424,20 +7432,20 @@
       "url": "https://youtu.be/Gzz7rbQzPY4"
     },
     {
-      "video_id": "XnC1ZY-EaNQ",
-      "type": "video",
-      "title": "Fare dirette su Youtube dal computer (senza software esterni)",
-      "date": "2020-04-02",
-      "duration": 1039,
-      "url": "https://youtu.be/XnC1ZY-EaNQ"
-    },
-    {
       "video_id": "G_ovOlss4Xs",
       "type": "video",
       "title": "Fare dirette su Youtube dal telefono (senza applicazioni esterne)",
       "date": "2020-04-02",
       "duration": 1038,
       "url": "https://youtu.be/G_ovOlss4Xs"
+    },
+    {
+      "video_id": "XnC1ZY-EaNQ",
+      "type": "video",
+      "title": "Fare dirette su Youtube dal computer (senza software esterni)",
+      "date": "2020-04-02",
+      "duration": 1039,
+      "url": "https://youtu.be/XnC1ZY-EaNQ"
     },
     {
       "video_id": "q9F34izQ6E8",
@@ -7552,14 +7560,6 @@
       "url": "https://youtu.be/l5Ai2CmetVg"
     },
     {
-      "video_id": "JwIkDBVTOVI",
-      "type": "video",
-      "title": "Bisogno di andare Offtopic | con Andrea Cervone di Offtopico",
-      "date": "2020-03-18",
-      "duration": 3709,
-      "url": "https://youtu.be/JwIkDBVTOVI"
-    },
-    {
       "video_id": "EYzlStwL7zo",
       "type": "video",
       "title": "Registrare lo schermo FACILMENTE con Loom",
@@ -7568,12 +7568,12 @@
       "url": "https://youtu.be/EYzlStwL7zo"
     },
     {
-      "video_id": "gbuzf7jDL1I",
+      "video_id": "JwIkDBVTOVI",
       "type": "video",
-      "title": "Proteggere i giovani dalle insidie di internet",
-      "date": "2020-03-17",
-      "duration": 1089,
-      "url": "https://youtu.be/gbuzf7jDL1I"
+      "title": "Bisogno di andare Offtopic | con Andrea Cervone di Offtopico",
+      "date": "2020-03-18",
+      "duration": 3709,
+      "url": "https://youtu.be/JwIkDBVTOVI"
     },
     {
       "video_id": "u8Jur0pmZpc",
@@ -7590,6 +7590,14 @@
       "date": "2020-03-17",
       "duration": 1838,
       "url": "https://youtu.be/hCifATWHgMM"
+    },
+    {
+      "video_id": "gbuzf7jDL1I",
+      "type": "video",
+      "title": "Proteggere i giovani dalle insidie di internet",
+      "date": "2020-03-17",
+      "duration": 1089,
+      "url": "https://youtu.be/gbuzf7jDL1I"
     },
     {
       "video_id": "bjD6_21cxpw",
@@ -7616,14 +7624,6 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TiifxqqdyAb0rpsRlh6mF3"
     },
     {
-      "video_id": "V6K0uX3zy0w",
-      "type": "video",
-      "title": "Come metto il faccione nel cerchio, in OBS Studio",
-      "date": "2020-03-13",
-      "duration": 597,
-      "url": "https://youtu.be/V6K0uX3zy0w"
-    },
-    {
       "video_id": "x-vRIL_keEM",
       "type": "video",
       "title": "OBS Studio: inviare video verso Skype, Zoom, etc (plugin Virtual Cam)",
@@ -7632,12 +7632,12 @@
       "url": "https://youtu.be/x-vRIL_keEM"
     },
     {
-      "video_id": "-7vLUnPUdIM",
+      "video_id": "V6K0uX3zy0w",
       "type": "video",
-      "title": "Cambiare, per durare di più | con Fabio Bruno di Start Me Up",
-      "date": "2020-03-12",
-      "duration": 4681,
-      "url": "https://youtu.be/-7vLUnPUdIM"
+      "title": "Come metto il faccione nel cerchio, in OBS Studio",
+      "date": "2020-03-13",
+      "duration": 597,
+      "url": "https://youtu.be/V6K0uX3zy0w"
     },
     {
       "video_id": "bYpniNDhYdw",
@@ -7646,6 +7646,14 @@
       "date": "2020-03-12",
       "duration": 2486,
       "url": "https://youtu.be/bYpniNDhYdw"
+    },
+    {
+      "video_id": "-7vLUnPUdIM",
+      "type": "video",
+      "title": "Cambiare, per durare di più | con Fabio Bruno di Start Me Up",
+      "date": "2020-03-12",
+      "duration": 4681,
+      "url": "https://youtu.be/-7vLUnPUdIM"
     },
     {
       "video_id": "Caao7acaRZc",
@@ -7672,6 +7680,14 @@
       "url": "https://youtu.be/p_WsOq1NMeM"
     },
     {
+      "video_id": "9g9WWgC3DuY",
+      "type": "video",
+      "title": "Tenere lezioni a distanza con Skype",
+      "date": "2020-03-07",
+      "duration": 1286,
+      "url": "https://youtu.be/9g9WWgC3DuY"
+    },
+    {
       "video_id": "384Pw8Vz9dw",
       "type": "video",
       "title": "ZOOM MEETING: tenere lezioni a distanza",
@@ -7686,14 +7702,6 @@
       "date": "2020-03-07",
       "duration": 2490,
       "url": "https://youtu.be/LCh3RrGGXK0"
-    },
-    {
-      "video_id": "9g9WWgC3DuY",
-      "type": "video",
-      "title": "Tenere lezioni a distanza con Skype",
-      "date": "2020-03-07",
-      "duration": 1286,
-      "url": "https://youtu.be/9g9WWgC3DuY"
     },
     {
       "video_id": "PLDhDfv9Kmg1R0BuYHVM_3AZN4lla-zAps",
@@ -8280,20 +8288,20 @@
       "url": "https://youtu.be/Tk6Wxnoz7Nc"
     },
     {
-      "video_id": "s_c18vKu-VY",
-      "type": "video",
-      "title": "TUTORIAL: condividere spezzoni di podcast su Instagram, Facebook e Youtube, con Wavve",
-      "date": "2019-07-11",
-      "duration": 1065,
-      "url": "https://youtu.be/s_c18vKu-VY"
-    },
-    {
       "video_id": "lmb4DC-dCdA",
       "type": "video",
       "title": "Scambiare un colore con un altro, con GIMP",
       "date": "2019-07-11",
       "duration": 850,
       "url": "https://youtu.be/lmb4DC-dCdA"
+    },
+    {
+      "video_id": "s_c18vKu-VY",
+      "type": "video",
+      "title": "TUTORIAL: condividere spezzoni di podcast su Instagram, Facebook e Youtube, con Wavve",
+      "date": "2019-07-11",
+      "duration": 1065,
+      "url": "https://youtu.be/s_c18vKu-VY"
     },
     {
       "video_id": "Cmb09Cx3c9U",
@@ -8328,20 +8336,20 @@
       "url": "https://youtu.be/DCrb8cZSceE"
     },
     {
-      "video_id": "Hu3OeXRbuKc",
-      "type": "video",
-      "title": "Fare lo scherzone ai vostri amici, simulando un aggiornamento di sistema",
-      "date": "2019-07-07",
-      "duration": 277,
-      "url": "https://youtu.be/Hu3OeXRbuKc"
-    },
-    {
       "video_id": "iLVQDTPJKxI",
       "type": "video",
       "title": "Leggere tutti gli articoli con un'unica App: Feedly",
       "date": "2019-07-07",
       "duration": 510,
       "url": "https://youtu.be/iLVQDTPJKxI"
+    },
+    {
+      "video_id": "Hu3OeXRbuKc",
+      "type": "video",
+      "title": "Fare lo scherzone ai vostri amici, simulando un aggiornamento di sistema",
+      "date": "2019-07-07",
+      "duration": 277,
+      "url": "https://youtu.be/Hu3OeXRbuKc"
     },
     {
       "video_id": "gHA6k_QLbKs",
@@ -8384,12 +8392,12 @@
       "url": "https://youtu.be/xrlgyRUdNxg"
     },
     {
-      "video_id": "1HfM5zn3Y0M",
+      "video_id": "rHTDO9FbYP0",
       "type": "video",
-      "title": "Tenere traccia del tempo speso, con Toggl",
+      "title": "Creare mappe mentali online con Mindmeister",
       "date": "2019-06-29",
-      "duration": 483,
-      "url": "https://youtu.be/1HfM5zn3Y0M"
+      "duration": 533,
+      "url": "https://youtu.be/rHTDO9FbYP0"
     },
     {
       "video_id": "5xhP7qIe_rE",
@@ -8400,12 +8408,12 @@
       "url": "https://youtu.be/5xhP7qIe_rE"
     },
     {
-      "video_id": "rHTDO9FbYP0",
+      "video_id": "1HfM5zn3Y0M",
       "type": "video",
-      "title": "Creare mappe mentali online con Mindmeister",
+      "title": "Tenere traccia del tempo speso, con Toggl",
       "date": "2019-06-29",
-      "duration": 533,
-      "url": "https://youtu.be/rHTDO9FbYP0"
+      "duration": 483,
+      "url": "https://youtu.be/1HfM5zn3Y0M"
     },
     {
       "video_id": "lLnpilHCg74",
