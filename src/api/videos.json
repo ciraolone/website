@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-21T06:00:01Z",
+  "updated_at": "2026-06-22T06:00:01Z",
   "counts": {
     "videos": 989,
     "playlists": 146,
@@ -128,20 +128,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Rcui-fWuZkEWICrvzVynCq"
     },
     {
-      "video_id": "PHnUeDXUfos",
-      "type": "video",
-      "title": "20 TRUCCHI su CANVA che NON CONOSCI 🎨",
-      "date": "2026-04-20",
-      "duration": 1919,
-      "url": "https://youtu.be/PHnUeDXUfos"
-    },
-    {
       "video_id": "VE07twVKToQ",
       "type": "video",
       "title": "CANVA dalla A alla Z 🎨 CORSO COMPLETO sul PROGRAMMA CREATIVO più FACILE e COMPLETO che ci sia!",
       "date": "2026-04-20",
       "duration": 9172,
       "url": "https://youtu.be/VE07twVKToQ"
+    },
+    {
+      "video_id": "PHnUeDXUfos",
+      "type": "video",
+      "title": "20 TRUCCHI su CANVA che NON CONOSCI 🎨",
+      "date": "2026-04-20",
+      "duration": 1919,
+      "url": "https://youtu.be/PHnUeDXUfos"
     },
     {
       "video_id": "piCQm0GvDF0",
@@ -224,12 +224,12 @@
       "url": "https://youtu.be/9WCluVZLR-I"
     },
     {
-      "video_id": "gkcW0RVr8k4",
+      "video_id": "O6LufsxEbcU",
       "type": "video",
-      "title": "PHOTOSHOP - CORSO COMPLETO per la GRAFICA e il FOTORITOCCO (dalle basi al progetto finale!)",
+      "title": "ADOBE ILLUSTRATOR - CORSO COMPLETO per creare GRAFICHE VETTORIALI DA ZERO (disegnamo un logo)",
       "date": "2026-02-03",
-      "duration": 7816,
-      "url": "https://youtu.be/gkcW0RVr8k4"
+      "duration": 9824,
+      "url": "https://youtu.be/O6LufsxEbcU"
     },
     {
       "video_id": "WkcyAfNlgtg",
@@ -240,12 +240,12 @@
       "url": "https://youtu.be/WkcyAfNlgtg"
     },
     {
-      "video_id": "O6LufsxEbcU",
+      "video_id": "gkcW0RVr8k4",
       "type": "video",
-      "title": "ADOBE ILLUSTRATOR - CORSO COMPLETO per creare GRAFICHE VETTORIALI DA ZERO (disegnamo un logo)",
+      "title": "PHOTOSHOP - CORSO COMPLETO per la GRAFICA e il FOTORITOCCO (dalle basi al progetto finale!)",
       "date": "2026-02-03",
-      "duration": 9824,
-      "url": "https://youtu.be/O6LufsxEbcU"
+      "duration": 7816,
+      "url": "https://youtu.be/gkcW0RVr8k4"
     },
     {
       "video_id": "qKgXJ30c6OI",
@@ -256,20 +256,20 @@
       "url": "https://youtu.be/qKgXJ30c6OI"
     },
     {
-      "video_id": "yQsQ_NzWOMw",
-      "type": "video",
-      "title": "PRESENTAZIONI DI GOOGLE: il corso per fare SLIDE PERFETTE (Gemini + Nano Banana)",
-      "date": "2026-01-31",
-      "duration": 3615,
-      "url": "https://youtu.be/yQsQ_NzWOMw"
-    },
-    {
       "video_id": "lkmL74sEcUw",
       "type": "video",
       "title": "LOGITECH MX MASTER 🎯 Il mio MOUSE per la PRODUTTIVITÀ",
       "date": "2026-01-31",
       "duration": 2629,
       "url": "https://youtu.be/lkmL74sEcUw"
+    },
+    {
+      "video_id": "yQsQ_NzWOMw",
+      "type": "video",
+      "title": "PRESENTAZIONI DI GOOGLE: il corso per fare SLIDE PERFETTE (Gemini + Nano Banana)",
+      "date": "2026-01-31",
+      "duration": 3615,
+      "url": "https://youtu.be/yQsQ_NzWOMw"
     },
     {
       "video_id": "CYyh8HSqi24",
@@ -296,12 +296,12 @@
       "url": "https://youtu.be/juAFak3JQ40"
     },
     {
-      "video_id": "Rwy44gWV5fU",
+      "video_id": "8K28c2cog48",
       "type": "video",
-      "title": "CREARE un SITO da ZERO con INTELLIGENZA ARTIFICIALE, senza abbonamenti! [Tutorial Website X5 + AI]",
+      "title": "NOTEBOOK LM 🧠 Corso Completo all'IA di Google che ESTENDE il tuo Cervello",
       "date": "2025-12-21",
-      "duration": 1581,
-      "url": "https://youtu.be/Rwy44gWV5fU"
+      "duration": 3941,
+      "url": "https://youtu.be/8K28c2cog48"
     },
     {
       "video_id": "Q623fJEPvYo",
@@ -312,20 +312,20 @@
       "url": "https://youtu.be/Q623fJEPvYo"
     },
     {
-      "video_id": "8K28c2cog48",
-      "type": "video",
-      "title": "NOTEBOOK LM 🧠 Corso Completo all'IA di Google che ESTENDE il tuo Cervello",
-      "date": "2025-12-21",
-      "duration": 3941,
-      "url": "https://youtu.be/8K28c2cog48"
-    },
-    {
       "video_id": "m_By_Z4tX_M",
       "type": "video",
       "title": "Usa GMAIL come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
       "date": "2025-12-21",
       "duration": 5651,
       "url": "https://youtu.be/m_By_Z4tX_M"
+    },
+    {
+      "video_id": "Rwy44gWV5fU",
+      "type": "video",
+      "title": "CREARE un SITO da ZERO con INTELLIGENZA ARTIFICIALE, senza abbonamenti! [Tutorial Website X5 + AI]",
+      "date": "2025-12-21",
+      "duration": 1581,
+      "url": "https://youtu.be/Rwy44gWV5fU"
     },
     {
       "video_id": "uLPRSzsr62U",
@@ -336,20 +336,20 @@
       "url": "https://youtu.be/uLPRSzsr62U"
     },
     {
-      "video_id": "7UxZgkVslWk",
-      "type": "video",
-      "title": "Imposto la fotocamera di Paolo Coletti [GUIDA SETUP Sony + Scheda di Acquisizione]",
-      "date": "2025-12-12",
-      "duration": 4491,
-      "url": "https://youtu.be/7UxZgkVslWk"
-    },
-    {
       "video_id": "rQzRbf4u6Kg",
       "type": "video",
       "title": "Imposto OBS di Paolo Coletti [TUTORIAL SETUP OBS STUDIO]",
       "date": "2025-12-12",
       "duration": 2897,
       "url": "https://youtu.be/rQzRbf4u6Kg"
+    },
+    {
+      "video_id": "7UxZgkVslWk",
+      "type": "video",
+      "title": "Imposto la fotocamera di Paolo Coletti [GUIDA SETUP Sony + Scheda di Acquisizione]",
+      "date": "2025-12-12",
+      "duration": 4491,
+      "url": "https://youtu.be/7UxZgkVslWk"
     },
     {
       "video_id": "te-TTC3L_dU",
@@ -704,20 +704,20 @@
       "url": "https://youtu.be/2-qotvLU_LE"
     },
     {
-      "video_id": "JwQwg7pQLXA",
-      "type": "video",
-      "title": "DAVINCI RESOLVE 🔴 caricare i video SU YOUTUBE, automaticamente e maledettamente bene!",
-      "date": "2025-08-06",
-      "duration": 2321,
-      "url": "https://youtu.be/JwQwg7pQLXA"
-    },
-    {
       "video_id": "7GygCE7SkA0",
       "type": "video",
       "title": "NOTION per TUTTI 🤓 CORSO COMPLETO per il LAVORO e la VITA!",
       "date": "2025-08-06",
       "duration": 8141,
       "url": "https://youtu.be/7GygCE7SkA0"
+    },
+    {
+      "video_id": "JwQwg7pQLXA",
+      "type": "video",
+      "title": "DAVINCI RESOLVE 🔴 caricare i video SU YOUTUBE, automaticamente e maledettamente bene!",
+      "date": "2025-08-06",
+      "duration": 2321,
+      "url": "https://youtu.be/JwQwg7pQLXA"
     },
     {
       "video_id": "IC1V5u2YDzU",
@@ -960,20 +960,20 @@
       "url": "https://youtu.be/JQZVqEo1cck"
     },
     {
-      "video_id": "mJ_BNVoB9yM",
-      "type": "video",
-      "title": "CONTENT CREATOR: devo aprire la PARTITA IVA? 💸 Quante TASSE pagherò?",
-      "date": "2025-04-29",
-      "duration": 2024,
-      "url": "https://youtu.be/mJ_BNVoB9yM"
-    },
-    {
       "video_id": "dr24IT4SrCg",
       "type": "video",
       "title": "EXCEL 💚 12 funzioni bonus",
       "date": "2025-04-29",
       "duration": 1302,
       "url": "https://youtu.be/dr24IT4SrCg"
+    },
+    {
+      "video_id": "mJ_BNVoB9yM",
+      "type": "video",
+      "title": "CONTENT CREATOR: devo aprire la PARTITA IVA? 💸 Quante TASSE pagherò?",
+      "date": "2025-04-29",
+      "duration": 2024,
+      "url": "https://youtu.be/mJ_BNVoB9yM"
     },
     {
       "video_id": "8HsCG8m5jfA",
@@ -992,20 +992,20 @@
       "url": "https://youtu.be/uYSVE0cBl2k"
     },
     {
-      "video_id": "PLDhDfv9Kmg1Sdegc9VREFgBfQw5RfJ2pS",
-      "type": "playlist",
-      "title": "Crea corsi online con Esmerise",
-      "date": "2025-04-08",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Sdegc9VREFgBfQw5RfJ2pS"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1S726fZBspKEHgpbgC4nZNB",
       "type": "playlist",
       "title": "COME CREARE E VENDERE CORSI ONLINE",
       "date": "2025-04-08",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1S726fZBspKEHgpbgC4nZNB"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1Sdegc9VREFgBfQw5RfJ2pS",
+      "type": "playlist",
+      "title": "Crea corsi online con Esmerise",
+      "date": "2025-04-08",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Sdegc9VREFgBfQw5RfJ2pS"
     },
     {
       "video_id": "PLDhDfv9Kmg1TpdQyvCntuBFSw9Od8Zuha",
@@ -1024,20 +1024,20 @@
       "url": "https://youtu.be/W6zA1N--8Ok"
     },
     {
-      "video_id": "Fje10-gCLzE",
-      "type": "video",
-      "title": "Microsoft WORD per TUTTI - CORSO COMPLETO GRATIS + Integrazione COPILOT",
-      "date": "2025-03-27",
-      "duration": 3267,
-      "url": "https://youtu.be/Fje10-gCLzE"
-    },
-    {
       "video_id": "IIR04lN7cXs",
       "type": "video",
       "title": "Tutto CHATGPT in 30 MINUTI NETTI! ⏱️ INTELLIGENZA ARTIFICIALE da CAMPIONI!",
       "date": "2025-03-27",
       "duration": 2133,
       "url": "https://youtu.be/IIR04lN7cXs"
+    },
+    {
+      "video_id": "Fje10-gCLzE",
+      "type": "video",
+      "title": "Microsoft WORD per TUTTI - CORSO COMPLETO GRATIS + Integrazione COPILOT",
+      "date": "2025-03-27",
+      "duration": 3267,
+      "url": "https://youtu.be/Fje10-gCLzE"
     },
     {
       "video_id": "p0URB55UYaw",
@@ -3360,20 +3360,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TCo0w2FTUD6O6ZD97a6pJu"
     },
     {
-      "video_id": "PLDhDfv9Kmg1RlfNiaJ8McfnsFOTbJWnx5",
-      "type": "playlist",
-      "title": "FAQ: tutte le domande con tutte le risposte",
-      "date": "2023-02-03",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RlfNiaJ8McfnsFOTbJWnx5"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1RT4J2atD-KIMvJmNCKA_gM",
       "type": "playlist",
       "title": "Computer per la Content Creation",
       "date": "2023-02-03",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RT4J2atD-KIMvJmNCKA_gM"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1RlfNiaJ8McfnsFOTbJWnx5",
+      "type": "playlist",
+      "title": "FAQ: tutte le domande con tutte le risposte",
+      "date": "2023-02-03",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RlfNiaJ8McfnsFOTbJWnx5"
     },
     {
       "video_id": "bZVutVENpHo",
@@ -3552,12 +3552,12 @@
       "url": "https://youtu.be/wBhOt0D9Xzk"
     },
     {
-      "video_id": "PLDhDfv9Kmg1RYEc-qgWlgT15HrmxkggVC",
+      "video_id": "PLDhDfv9Kmg1RrQ0ikaPra7n1nfAA9FtLu",
       "type": "playlist",
-      "title": "IL TUO CANALE YOUTUBE 📺",
+      "title": "Sviluppo Fotografico con Alessio",
       "date": "2022-11-30",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RYEc-qgWlgT15HrmxkggVC"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RrQ0ikaPra7n1nfAA9FtLu"
     },
     {
       "video_id": "PLDhDfv9Kmg1S_eQdhBBnVOHPU7BBiA5zb",
@@ -3568,12 +3568,12 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1S_eQdhBBnVOHPU7BBiA5zb"
     },
     {
-      "video_id": "PLDhDfv9Kmg1RrQ0ikaPra7n1nfAA9FtLu",
+      "video_id": "PLDhDfv9Kmg1RYEc-qgWlgT15HrmxkggVC",
       "type": "playlist",
-      "title": "Sviluppo Fotografico con Alessio",
+      "title": "IL TUO CANALE YOUTUBE 📺",
       "date": "2022-11-30",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RrQ0ikaPra7n1nfAA9FtLu"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RYEc-qgWlgT15HrmxkggVC"
     },
     {
       "video_id": "Xuvt1df95i0",
@@ -3632,14 +3632,6 @@
       "url": "https://youtu.be/sDvqewthfDQ"
     },
     {
-      "video_id": "PLDhDfv9Kmg1R0PaQ3Clp0OZ73VCq2rTnL",
-      "type": "playlist",
-      "title": "Software e tutorial",
-      "date": "2022-10-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1R0PaQ3Clp0OZ73VCq2rTnL"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1TEJwp-plBlDu2n5aGCsJ-T",
       "type": "playlist",
       "title": "GRAFICA e DESIGN 🎨 Da ZERO a PRO con tutti i programmi!",
@@ -3654,6 +3646,14 @@
       "date": "2022-10-24",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TpaTYXAAfrNIJyn7NmbitZ"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1R0PaQ3Clp0OZ73VCq2rTnL",
+      "type": "playlist",
+      "title": "Software e tutorial",
+      "date": "2022-10-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1R0PaQ3Clp0OZ73VCq2rTnL"
     },
     {
       "video_id": "0t4PzXX1QA8",
@@ -3960,28 +3960,12 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Tp1kUJCZ1e7T2xB6sY3IV4"
     },
     {
-      "video_id": "PLDhDfv9Kmg1TYzdUDp-Ihvnx3cHLzMFKg",
+      "video_id": "PLDhDfv9Kmg1QEh4thrJW4CAn5ihtsgCDF",
       "type": "playlist",
-      "title": "Skype: corso completo",
+      "title": "OBSIDIAN 🧠 CORSO COMPLETO per NOTE e SECOND BRAIN",
       "date": "2022-03-28",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TYzdUDp-Ihvnx3cHLzMFKg"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN",
-      "type": "playlist",
-      "title": "Todoist: corso completo",
-      "date": "2022-03-28",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1TTN-drLK3rCWqIPFSYZWX1",
-      "type": "playlist",
-      "title": "Integromat: corso completo",
-      "date": "2022-03-28",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TTN-drLK3rCWqIPFSYZWX1"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QEh4thrJW4CAn5ihtsgCDF"
     },
     {
       "video_id": "PLDhDfv9Kmg1R1BjDcgmtjg0uzbQPFBD00",
@@ -3992,20 +3976,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1R1BjDcgmtjg0uzbQPFBD00"
     },
     {
-      "video_id": "PLDhDfv9Kmg1QEh4thrJW4CAn5ihtsgCDF",
+      "video_id": "PLDhDfv9Kmg1TTN-drLK3rCWqIPFSYZWX1",
       "type": "playlist",
-      "title": "OBSIDIAN 🧠 CORSO COMPLETO per NOTE e SECOND BRAIN",
+      "title": "Integromat: corso completo",
       "date": "2022-03-28",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QEh4thrJW4CAn5ihtsgCDF"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TTN-drLK3rCWqIPFSYZWX1"
     },
     {
-      "video_id": "PLDhDfv9Kmg1Tdq5SSfxn-D12Q_VMnW4ht",
+      "video_id": "PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN",
       "type": "playlist",
-      "title": "Zoom: corso completo",
+      "title": "Todoist: corso completo",
       "date": "2022-03-28",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Tdq5SSfxn-D12Q_VMnW4ht"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN"
     },
     {
       "video_id": "PLDhDfv9Kmg1T_jo5E6R9G-HuXiezCnydt",
@@ -4016,6 +4000,14 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1T_jo5E6R9G-HuXiezCnydt"
     },
     {
+      "video_id": "PLDhDfv9Kmg1Rr8_mAC5PuvuYW5_OHjDeA",
+      "type": "playlist",
+      "title": "NOTION 📚 CORSO COMPLETO per gestire STUDIO, LAVORO, VITA",
+      "date": "2022-03-28",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Rr8_mAC5PuvuYW5_OHjDeA"
+    },
+    {
       "video_id": "PLDhDfv9Kmg1RhiMU3DJFLyaAffv1j9C7f",
       "type": "playlist",
       "title": "Discord: corso completo",
@@ -4024,12 +4016,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RhiMU3DJFLyaAffv1j9C7f"
     },
     {
-      "video_id": "PLDhDfv9Kmg1Rr8_mAC5PuvuYW5_OHjDeA",
+      "video_id": "PLDhDfv9Kmg1Tdq5SSfxn-D12Q_VMnW4ht",
       "type": "playlist",
-      "title": "NOTION 📚 CORSO COMPLETO per gestire STUDIO, LAVORO, VITA",
+      "title": "Zoom: corso completo",
       "date": "2022-03-28",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Rr8_mAC5PuvuYW5_OHjDeA"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Tdq5SSfxn-D12Q_VMnW4ht"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1TYzdUDp-Ihvnx3cHLzMFKg",
+      "type": "playlist",
+      "title": "Skype: corso completo",
+      "date": "2022-03-28",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TYzdUDp-Ihvnx3cHLzMFKg"
     },
     {
       "video_id": "PLDhDfv9Kmg1SYmIa4l6T6jTy3hWb8gozF",
@@ -4040,44 +4040,12 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SYmIa4l6T6jTy3hWb8gozF"
     },
     {
-      "video_id": "PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw",
-      "type": "playlist",
-      "title": "Adobe Premiere Pro: corso completo",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1TX5QJ_GlEDrNF1h_Ux-zrW",
       "type": "playlist",
       "title": "Streamlabs: corso completo",
       "date": "2022-03-24",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TX5QJ_GlEDrNF1h_Ux-zrW"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1S8z5nq9QR76J6dTO_rZJnb",
-      "type": "playlist",
-      "title": "StreamYard: corso completo",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1S8z5nq9QR76J6dTO_rZJnb"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1Q_pmuKspUB7fP0XQozAU6N",
-      "type": "playlist",
-      "title": "Reaper: corso completo",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Q_pmuKspUB7fP0XQozAU6N"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570",
-      "type": "playlist",
-      "title": "Audacity: corso completo",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570"
     },
     {
       "video_id": "PLDhDfv9Kmg1QSttTawspY1XM2bCpzamM2",
@@ -4128,6 +4096,22 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SAeKmQIuqRx4tDkp5HUDAo"
     },
     {
+      "video_id": "PLDhDfv9Kmg1Q_pmuKspUB7fP0XQozAU6N",
+      "type": "playlist",
+      "title": "Reaper: corso completo",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Q_pmuKspUB7fP0XQozAU6N"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570",
+      "type": "playlist",
+      "title": "Audacity: corso completo",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570"
+    },
+    {
       "video_id": "PLDhDfv9Kmg1RjCC7Zvx70UGSA7N4mJOU-",
       "type": "playlist",
       "title": "GIMP: corso completo",
@@ -4166,6 +4150,22 @@
       "date": "2022-03-24",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TVBgwf1wTMFETyQ9W07zfG"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw",
+      "type": "playlist",
+      "title": "Adobe Premiere Pro: corso completo",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1S8z5nq9QR76J6dTO_rZJnb",
+      "type": "playlist",
+      "title": "StreamYard: corso completo",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1S8z5nq9QR76J6dTO_rZJnb"
     },
     {
       "video_id": "IuihZ6HtSQY",
