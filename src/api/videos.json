@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-05T06:00:01Z",
+  "updated_at": "2026-07-06T06:00:01Z",
   "counts": {
     "videos": 993,
     "playlists": 147,
@@ -168,20 +168,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Rcui-fWuZkEWICrvzVynCq"
     },
     {
-      "video_id": "PHnUeDXUfos",
-      "type": "video",
-      "title": "20 TRUCCHI su CANVA che NON CONOSCI 🎨",
-      "date": "2026-04-20",
-      "duration": 1919,
-      "url": "https://youtu.be/PHnUeDXUfos"
-    },
-    {
       "video_id": "VE07twVKToQ",
       "type": "video",
       "title": "CANVA dalla A alla Z 🎨 CORSO COMPLETO sul PROGRAMMA CREATIVO più FACILE e COMPLETO che ci sia!",
       "date": "2026-04-20",
       "duration": 9172,
       "url": "https://youtu.be/VE07twVKToQ"
+    },
+    {
+      "video_id": "PHnUeDXUfos",
+      "type": "video",
+      "title": "20 TRUCCHI su CANVA che NON CONOSCI 🎨",
+      "date": "2026-04-20",
+      "duration": 1919,
+      "url": "https://youtu.be/PHnUeDXUfos"
     },
     {
       "video_id": "piCQm0GvDF0",
@@ -4592,20 +4592,20 @@
       "url": "https://youtu.be/1H0bJPwD8Go"
     },
     {
-      "video_id": "PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx",
-      "type": "playlist",
-      "title": "Sportello Creator",
-      "date": "2021-12-09",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1",
       "type": "playlist",
       "title": "Creator 4 Creator",
       "date": "2021-12-09",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx",
+      "type": "playlist",
+      "title": "Sportello Creator",
+      "date": "2021-12-09",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx"
     },
     {
       "video_id": "h6mKRQca0G8",
