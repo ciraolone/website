@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-08T06:00:01Z",
+  "updated_at": "2026-07-09T06:00:01Z",
   "counts": {
     "videos": 993,
     "playlists": 147,
@@ -256,20 +256,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1R5TSlFb5Ga8BQ21XcYEBlG"
     },
     {
-      "video_id": "9WCluVZLR-I",
-      "type": "video",
-      "title": "ADOBE INDESIGN - CORSO COMPLETO per IMPAGINARE BENE e VELOCEMENTE (facciamo un pieghevole)",
-      "date": "2026-02-03",
-      "duration": 6420,
-      "url": "https://youtu.be/9WCluVZLR-I"
-    },
-    {
       "video_id": "O6LufsxEbcU",
       "type": "video",
       "title": "ADOBE ILLUSTRATOR - CORSO COMPLETO per creare GRAFICHE VETTORIALI DA ZERO (disegnamo un logo)",
       "date": "2026-02-03",
       "duration": 9824,
       "url": "https://youtu.be/O6LufsxEbcU"
+    },
+    {
+      "video_id": "9WCluVZLR-I",
+      "type": "video",
+      "title": "ADOBE INDESIGN - CORSO COMPLETO per IMPAGINARE BENE e VELOCEMENTE (facciamo un pieghevole)",
+      "date": "2026-02-03",
+      "duration": 6420,
+      "url": "https://youtu.be/9WCluVZLR-I"
     },
     {
       "video_id": "WkcyAfNlgtg",
@@ -4592,20 +4592,20 @@
       "url": "https://youtu.be/1H0bJPwD8Go"
     },
     {
-      "video_id": "PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1",
-      "type": "playlist",
-      "title": "Creator 4 Creator",
-      "date": "2021-12-09",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx",
       "type": "playlist",
       "title": "Sportello Creator",
       "date": "2021-12-09",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1",
+      "type": "playlist",
+      "title": "Creator 4 Creator",
+      "date": "2021-12-09",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1"
     },
     {
       "video_id": "h6mKRQca0G8",
