@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-24T06:00:01Z",
+  "updated_at": "2026-07-25T06:00:01Z",
   "counts": {
     "videos": 996,
     "playlists": 147,
@@ -48,20 +48,20 @@
       "url": "https://youtube.com/playlist?list=PLUyVDdqTKOG8"
     },
     {
-      "video_id": "7jytbUcpYQE",
-      "type": "video",
-      "title": "PERPLEXITY - CORSO COMPLETO sull'AI che SA TUTTO",
-      "date": "2026-06-29",
-      "duration": 4970,
-      "url": "https://youtu.be/7jytbUcpYQE"
-    },
-    {
       "video_id": "ycpuYGXRekU",
       "type": "video",
       "title": "HERMES: corso completo 🤖 L'AGENTE AI SEMPRE ACCESO che IMPARA DA SOLO!",
       "date": "2026-06-29",
       "duration": 4080,
       "url": "https://youtu.be/ycpuYGXRekU"
+    },
+    {
+      "video_id": "7jytbUcpYQE",
+      "type": "video",
+      "title": "PERPLEXITY - CORSO COMPLETO sull'AI che SA TUTTO",
+      "date": "2026-06-29",
+      "duration": 4970,
+      "url": "https://youtu.be/7jytbUcpYQE"
     },
     {
       "video_id": "i39PFvoCmYc",
@@ -280,14 +280,6 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1R5TSlFb5Ga8BQ21XcYEBlG"
     },
     {
-      "video_id": "9WCluVZLR-I",
-      "type": "video",
-      "title": "ADOBE INDESIGN - CORSO COMPLETO per IMPAGINARE BENE e VELOCEMENTE (facciamo un pieghevole)",
-      "date": "2026-02-03",
-      "duration": 6420,
-      "url": "https://youtu.be/9WCluVZLR-I"
-    },
-    {
       "video_id": "WkcyAfNlgtg",
       "type": "video",
       "title": "ADOBE EXPRESS - Alternativa POTENTE a CANVA per fare GRAFICA e VIDEO ONLINE (animiamo un logo)",
@@ -296,12 +288,12 @@
       "url": "https://youtu.be/WkcyAfNlgtg"
     },
     {
-      "video_id": "gkcW0RVr8k4",
+      "video_id": "9WCluVZLR-I",
       "type": "video",
-      "title": "PHOTOSHOP - CORSO COMPLETO per la GRAFICA e il FOTORITOCCO (dalle basi al progetto finale!)",
+      "title": "ADOBE INDESIGN - CORSO COMPLETO per IMPAGINARE BENE e VELOCEMENTE (facciamo un pieghevole)",
       "date": "2026-02-03",
-      "duration": 7816,
-      "url": "https://youtu.be/gkcW0RVr8k4"
+      "duration": 6420,
+      "url": "https://youtu.be/9WCluVZLR-I"
     },
     {
       "video_id": "O6LufsxEbcU",
@@ -310,6 +302,14 @@
       "date": "2026-02-03",
       "duration": 9824,
       "url": "https://youtu.be/O6LufsxEbcU"
+    },
+    {
+      "video_id": "gkcW0RVr8k4",
+      "type": "video",
+      "title": "PHOTOSHOP - CORSO COMPLETO per la GRAFICA e il FOTORITOCCO (dalle basi al progetto finale!)",
+      "date": "2026-02-03",
+      "duration": 7816,
+      "url": "https://youtu.be/gkcW0RVr8k4"
     },
     {
       "video_id": "qKgXJ30c6OI",
@@ -360,6 +360,22 @@
       "url": "https://youtu.be/juAFak3JQ40"
     },
     {
+      "video_id": "Rwy44gWV5fU",
+      "type": "video",
+      "title": "CREARE un SITO da ZERO con INTELLIGENZA ARTIFICIALE, senza abbonamenti! [Tutorial Website X5 + AI]",
+      "date": "2025-12-21",
+      "duration": 1581,
+      "url": "https://youtu.be/Rwy44gWV5fU"
+    },
+    {
+      "video_id": "m_By_Z4tX_M",
+      "type": "video",
+      "title": "Usa GMAIL come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
+      "date": "2025-12-21",
+      "duration": 5651,
+      "url": "https://youtu.be/m_By_Z4tX_M"
+    },
+    {
       "video_id": "8K28c2cog48",
       "type": "video",
       "title": "NOTEBOOK LM 🧠 Corso Completo all'IA di Google che ESTENDE il tuo Cervello",
@@ -374,22 +390,6 @@
       "date": "2025-12-21",
       "duration": 2808,
       "url": "https://youtu.be/Q623fJEPvYo"
-    },
-    {
-      "video_id": "m_By_Z4tX_M",
-      "type": "video",
-      "title": "Usa GMAIL come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
-      "date": "2025-12-21",
-      "duration": 5651,
-      "url": "https://youtu.be/m_By_Z4tX_M"
-    },
-    {
-      "video_id": "Rwy44gWV5fU",
-      "type": "video",
-      "title": "CREARE un SITO da ZERO con INTELLIGENZA ARTIFICIALE, senza abbonamenti! [Tutorial Website X5 + AI]",
-      "date": "2025-12-21",
-      "duration": 1581,
-      "url": "https://youtu.be/Rwy44gWV5fU"
     },
     {
       "video_id": "uLPRSzsr62U",
@@ -4616,20 +4616,20 @@
       "url": "https://youtu.be/1H0bJPwD8Go"
     },
     {
-      "video_id": "PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1",
-      "type": "playlist",
-      "title": "Creator 4 Creator",
-      "date": "2021-12-09",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx",
       "type": "playlist",
       "title": "Sportello Creator",
       "date": "2021-12-09",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1",
+      "type": "playlist",
+      "title": "Creator 4 Creator",
+      "date": "2021-12-09",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1"
     },
     {
       "video_id": "RgCg2GCKgHQ",
@@ -8168,20 +8168,20 @@
       "url": "https://youtu.be/AAZ3zB8fFwo"
     },
     {
-      "video_id": "v4EMxxARxO4",
-      "type": "video",
-      "title": "Registrare lo schermo del computer con OBS Studio",
-      "date": "2019-09-20",
-      "duration": 1020,
-      "url": "https://youtu.be/v4EMxxARxO4"
-    },
-    {
       "video_id": "-ulu2MjOYoI",
       "type": "video",
       "title": "Come riconoscere i font di un sito web, con Fontface Ninja",
       "date": "2019-09-20",
       "duration": 279,
       "url": "https://youtu.be/-ulu2MjOYoI"
+    },
+    {
+      "video_id": "v4EMxxARxO4",
+      "type": "video",
+      "title": "Registrare lo schermo del computer con OBS Studio",
+      "date": "2019-09-20",
+      "duration": 1020,
+      "url": "https://youtu.be/v4EMxxARxO4"
     },
     {
       "video_id": "Oo8Oqfo0NiE",
@@ -8200,20 +8200,20 @@
       "url": "https://youtu.be/hWJLl9IhhYI"
     },
     {
-      "video_id": "Sp9AnkubQxY",
-      "type": "video",
-      "title": "Come far conoscere il tuo podcast se hai appena cominciato | con Giulio Gaudiano",
-      "date": "2019-09-12",
-      "duration": 4253,
-      "url": "https://youtu.be/Sp9AnkubQxY"
-    },
-    {
       "video_id": "d8QVrffuTwk",
       "type": "video",
       "title": "Mattley (Matteo Moras) racconta il suo progetto di Artigianato Digitale",
       "date": "2019-09-12",
       "duration": 4983,
       "url": "https://youtu.be/d8QVrffuTwk"
+    },
+    {
+      "video_id": "Sp9AnkubQxY",
+      "type": "video",
+      "title": "Come far conoscere il tuo podcast se hai appena cominciato | con Giulio Gaudiano",
+      "date": "2019-09-12",
+      "duration": 4253,
+      "url": "https://youtu.be/Sp9AnkubQxY"
     },
     {
       "video_id": "-d-OivCTWe4",
@@ -8296,20 +8296,20 @@
       "url": "https://youtu.be/MQDngX3w93o"
     },
     {
-      "video_id": "5cgwfEwiWFY",
-      "type": "video",
-      "title": "AGGIORNAMENTO TELEGRAM: messaggi silenziosi, gruppi lenti, emoji animate",
-      "date": "2019-08-09",
-      "duration": 799,
-      "url": "https://youtu.be/5cgwfEwiWFY"
-    },
-    {
       "video_id": "Xc79WLnG00w",
       "type": "video",
       "title": "Come cancellarsi da Facebook",
       "date": "2019-08-09",
       "duration": 174,
       "url": "https://youtu.be/Xc79WLnG00w"
+    },
+    {
+      "video_id": "5cgwfEwiWFY",
+      "type": "video",
+      "title": "AGGIORNAMENTO TELEGRAM: messaggi silenziosi, gruppi lenti, emoji animate",
+      "date": "2019-08-09",
+      "duration": 799,
+      "url": "https://youtu.be/5cgwfEwiWFY"
     },
     {
       "video_id": "AMqdnFmX7-E",
@@ -8336,20 +8336,20 @@
       "url": "https://youtu.be/HgB1U6l6lYw"
     },
     {
-      "video_id": "vXuTZitkIXA",
-      "type": "video",
-      "title": "La Rasatura Tradizionale, spiegata ai principianti",
-      "date": "2019-07-18",
-      "duration": 4644,
-      "url": "https://youtu.be/vXuTZitkIXA"
-    },
-    {
       "video_id": "2dx6uFJopBo",
       "type": "video",
       "title": "TELEGRAM: tutto quello che volevi sapere | con Flavius Harabor di InsideTelegram",
       "date": "2019-07-18",
       "duration": 7901,
       "url": "https://youtu.be/2dx6uFJopBo"
+    },
+    {
+      "video_id": "vXuTZitkIXA",
+      "type": "video",
+      "title": "La Rasatura Tradizionale, spiegata ai principianti",
+      "date": "2019-07-18",
+      "duration": 4644,
+      "url": "https://youtu.be/vXuTZitkIXA"
     },
     {
       "video_id": "Tk6Wxnoz7Nc",
@@ -8384,6 +8384,22 @@
       "url": "https://youtu.be/Cmb09Cx3c9U"
     },
     {
+      "video_id": "qT1GpkMflOA",
+      "type": "video",
+      "title": "RSS.app: trasformare qualsiasi profilo social in un Feed RSS",
+      "date": "2019-07-07",
+      "duration": 309,
+      "url": "https://youtu.be/qT1GpkMflOA"
+    },
+    {
+      "video_id": "Hu3OeXRbuKc",
+      "type": "video",
+      "title": "Fare lo scherzone ai vostri amici, simulando un aggiornamento di sistema",
+      "date": "2019-07-07",
+      "duration": 277,
+      "url": "https://youtu.be/Hu3OeXRbuKc"
+    },
+    {
       "video_id": "iLVQDTPJKxI",
       "type": "video",
       "title": "Leggere tutti gli articoli con un'unica App: Feedly",
@@ -8406,22 +8422,6 @@
       "date": "2019-07-07",
       "duration": 322,
       "url": "https://youtu.be/DCrb8cZSceE"
-    },
-    {
-      "video_id": "Hu3OeXRbuKc",
-      "type": "video",
-      "title": "Fare lo scherzone ai vostri amici, simulando un aggiornamento di sistema",
-      "date": "2019-07-07",
-      "duration": 277,
-      "url": "https://youtu.be/Hu3OeXRbuKc"
-    },
-    {
-      "video_id": "qT1GpkMflOA",
-      "type": "video",
-      "title": "RSS.app: trasformare qualsiasi profilo social in un Feed RSS",
-      "date": "2019-07-07",
-      "duration": 309,
-      "url": "https://youtu.be/qT1GpkMflOA"
     },
     {
       "video_id": "gHA6k_QLbKs",
