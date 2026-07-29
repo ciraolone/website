@@ -1,20 +1,12 @@
 {
   "version": 1,
-  "updated_at": "2026-07-28T06:00:01Z",
+  "updated_at": "2026-07-29T06:00:01Z",
   "counts": {
     "videos": 998,
     "playlists": 147,
     "total": 1145
   },
   "videos": [
-    {
-      "video_id": "SjUfAyFhZag",
-      "type": "video",
-      "title": "CREARE un AGENTE VOCALE AI che RISPONDE AL TELEFONO 📞 24 ORE SU 24",
-      "date": "2026-07-22",
-      "duration": 1290,
-      "url": "https://youtu.be/SjUfAyFhZag"
-    },
     {
       "video_id": "hhf-HWl0FWY",
       "type": "video",
@@ -30,6 +22,14 @@
       "date": "2026-07-22",
       "duration": 8835,
       "url": "https://youtu.be/iNeZXW29nYo"
+    },
+    {
+      "video_id": "SjUfAyFhZag",
+      "type": "video",
+      "title": "CREARE un AGENTE VOCALE AI che RISPONDE AL TELEFONO 📞 24 ORE SU 24",
+      "date": "2026-07-22",
+      "duration": 1290,
+      "url": "https://youtu.be/SjUfAyFhZag"
     },
     {
       "video_id": "-RzPQSS3Bhw",
@@ -64,20 +64,20 @@
       "url": "https://youtube.com/playlist?list=PLUyVDdqTKOG8"
     },
     {
-      "video_id": "ycpuYGXRekU",
-      "type": "video",
-      "title": "HERMES: corso completo 🤖 L'AGENTE AI SEMPRE ACCESO che IMPARA DA SOLO!",
-      "date": "2026-06-29",
-      "duration": 4080,
-      "url": "https://youtu.be/ycpuYGXRekU"
-    },
-    {
       "video_id": "7jytbUcpYQE",
       "type": "video",
       "title": "PERPLEXITY - CORSO COMPLETO sull'AI che SA TUTTO",
       "date": "2026-06-29",
       "duration": 4970,
       "url": "https://youtu.be/7jytbUcpYQE"
+    },
+    {
+      "video_id": "ycpuYGXRekU",
+      "type": "video",
+      "title": "HERMES: corso completo 🤖 L'AGENTE AI SEMPRE ACCESO che IMPARA DA SOLO!",
+      "date": "2026-06-29",
+      "duration": 4080,
+      "url": "https://youtu.be/ycpuYGXRekU"
     },
     {
       "video_id": "i39PFvoCmYc",
@@ -304,14 +304,6 @@
       "url": "https://youtu.be/gkcW0RVr8k4"
     },
     {
-      "video_id": "O6LufsxEbcU",
-      "type": "video",
-      "title": "ADOBE ILLUSTRATOR - CORSO COMPLETO per creare GRAFICHE VETTORIALI DA ZERO (disegnamo un logo)",
-      "date": "2026-02-03",
-      "duration": 9824,
-      "url": "https://youtu.be/O6LufsxEbcU"
-    },
-    {
       "video_id": "9WCluVZLR-I",
       "type": "video",
       "title": "ADOBE INDESIGN - CORSO COMPLETO per IMPAGINARE BENE e VELOCEMENTE (facciamo un pieghevole)",
@@ -328,6 +320,14 @@
       "url": "https://youtu.be/WkcyAfNlgtg"
     },
     {
+      "video_id": "O6LufsxEbcU",
+      "type": "video",
+      "title": "ADOBE ILLUSTRATOR - CORSO COMPLETO per creare GRAFICHE VETTORIALI DA ZERO (disegnamo un logo)",
+      "date": "2026-02-03",
+      "duration": 9824,
+      "url": "https://youtu.be/O6LufsxEbcU"
+    },
+    {
       "video_id": "qKgXJ30c6OI",
       "type": "video",
       "title": "DAVINCI RESOLVE 🎬 Il CORSO DIVINO per MONTARE VIDEO come un NINJA 🥷",
@@ -336,20 +336,20 @@
       "url": "https://youtu.be/qKgXJ30c6OI"
     },
     {
-      "video_id": "yQsQ_NzWOMw",
-      "type": "video",
-      "title": "PRESENTAZIONI DI GOOGLE: il corso per fare SLIDE PERFETTE (Gemini + Nano Banana)",
-      "date": "2026-01-31",
-      "duration": 3615,
-      "url": "https://youtu.be/yQsQ_NzWOMw"
-    },
-    {
       "video_id": "lkmL74sEcUw",
       "type": "video",
       "title": "LOGITECH MX MASTER 🎯 Il mio MOUSE per la PRODUTTIVITÀ",
       "date": "2026-01-31",
       "duration": 2629,
       "url": "https://youtu.be/lkmL74sEcUw"
+    },
+    {
+      "video_id": "yQsQ_NzWOMw",
+      "type": "video",
+      "title": "PRESENTAZIONI DI GOOGLE: il corso per fare SLIDE PERFETTE (Gemini + Nano Banana)",
+      "date": "2026-01-31",
+      "duration": 3615,
+      "url": "https://youtu.be/yQsQ_NzWOMw"
     },
     {
       "video_id": "CYyh8HSqi24",
@@ -384,20 +384,20 @@
       "url": "https://youtu.be/8K28c2cog48"
     },
     {
-      "video_id": "m_By_Z4tX_M",
-      "type": "video",
-      "title": "Usa GMAIL come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
-      "date": "2025-12-21",
-      "duration": 5651,
-      "url": "https://youtu.be/m_By_Z4tX_M"
-    },
-    {
       "video_id": "Rwy44gWV5fU",
       "type": "video",
       "title": "CREARE un SITO da ZERO con INTELLIGENZA ARTIFICIALE, senza abbonamenti! [Tutorial Website X5 + AI]",
       "date": "2025-12-21",
       "duration": 1581,
       "url": "https://youtu.be/Rwy44gWV5fU"
+    },
+    {
+      "video_id": "m_By_Z4tX_M",
+      "type": "video",
+      "title": "Usa GMAIL come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
+      "date": "2025-12-21",
+      "duration": 5651,
+      "url": "https://youtu.be/m_By_Z4tX_M"
     },
     {
       "video_id": "Q623fJEPvYo",
@@ -416,20 +416,20 @@
       "url": "https://youtu.be/uLPRSzsr62U"
     },
     {
-      "video_id": "7UxZgkVslWk",
-      "type": "video",
-      "title": "Imposto la fotocamera di Paolo Coletti [GUIDA SETUP Sony + Scheda di Acquisizione]",
-      "date": "2025-12-12",
-      "duration": 4491,
-      "url": "https://youtu.be/7UxZgkVslWk"
-    },
-    {
       "video_id": "rQzRbf4u6Kg",
       "type": "video",
       "title": "Imposto OBS di Paolo Coletti [TUTORIAL SETUP OBS STUDIO]",
       "date": "2025-12-12",
       "duration": 2897,
       "url": "https://youtu.be/rQzRbf4u6Kg"
+    },
+    {
+      "video_id": "7UxZgkVslWk",
+      "type": "video",
+      "title": "Imposto la fotocamera di Paolo Coletti [GUIDA SETUP Sony + Scheda di Acquisizione]",
+      "date": "2025-12-12",
+      "duration": 4491,
+      "url": "https://youtu.be/7UxZgkVslWk"
     },
     {
       "video_id": "te-TTC3L_dU",
@@ -464,12 +464,20 @@
       "url": "https://youtu.be/eNjWkogHa3Y"
     },
     {
-      "video_id": "tCqfQMlFXA8",
+      "video_id": "3pv4-Seineo",
       "type": "video",
-      "title": "AFFINITY AI: HO TESTATO TUTTE le funzioni CANVA di Intelligenza Artificiale (Vale i soldi?)",
+      "title": "CANVA GRATIS: Come RIMUOVERE lo SFONDO senza pagare il PRO",
       "date": "2025-11-11",
-      "duration": 2902,
-      "url": "https://youtu.be/tCqfQMlFXA8"
+      "duration": 670,
+      "url": "https://youtu.be/3pv4-Seineo"
+    },
+    {
+      "video_id": "3Srnjvqq2FI",
+      "type": "video",
+      "title": "Come INSTALLARE CANVA sul COMPUTER 💻 e perché dovresti farlo!",
+      "date": "2025-11-11",
+      "duration": 735,
+      "url": "https://youtu.be/3Srnjvqq2FI"
     },
     {
       "video_id": "_rx777uRhFU",
@@ -488,28 +496,20 @@
       "url": "https://youtu.be/Zroe6lCMmvU"
     },
     {
-      "video_id": "3pv4-Seineo",
+      "video_id": "tCqfQMlFXA8",
       "type": "video",
-      "title": "CANVA GRATIS: Come RIMUOVERE lo SFONDO senza pagare il PRO",
+      "title": "AFFINITY AI: HO TESTATO TUTTE le funzioni CANVA di Intelligenza Artificiale (Vale i soldi?)",
       "date": "2025-11-11",
-      "duration": 670,
-      "url": "https://youtu.be/3pv4-Seineo"
+      "duration": 2902,
+      "url": "https://youtu.be/tCqfQMlFXA8"
     },
     {
-      "video_id": "3Srnjvqq2FI",
+      "video_id": "EGu_XtwfeTc",
       "type": "video",
-      "title": "Come INSTALLARE CANVA sul COMPUTER 💻 e perché dovresti farlo!",
-      "date": "2025-11-11",
-      "duration": 735,
-      "url": "https://youtu.be/3Srnjvqq2FI"
-    },
-    {
-      "video_id": "pXFMxbutp24",
-      "type": "video",
-      "title": "Scopriamo l'ATTREZZATURA di SARA TRECATE per FARE VIDEO 📽️ STUDIO TOUR",
+      "title": "AI per YOUTUBER 🤖 Come usiamo ChatGPT e Gemini per creare VIDEO",
       "date": "2025-11-09",
-      "duration": 1467,
-      "url": "https://youtu.be/pXFMxbutp24"
+      "duration": 2723,
+      "url": "https://youtu.be/EGu_XtwfeTc"
     },
     {
       "video_id": "XERERGHM1IA",
@@ -520,12 +520,12 @@
       "url": "https://youtu.be/XERERGHM1IA"
     },
     {
-      "video_id": "EGu_XtwfeTc",
+      "video_id": "pXFMxbutp24",
       "type": "video",
-      "title": "AI per YOUTUBER 🤖 Come usiamo ChatGPT e Gemini per creare VIDEO",
+      "title": "Scopriamo l'ATTREZZATURA di SARA TRECATE per FARE VIDEO 📽️ STUDIO TOUR",
       "date": "2025-11-09",
-      "duration": 2723,
-      "url": "https://youtu.be/EGu_XtwfeTc"
+      "duration": 1467,
+      "url": "https://youtu.be/pXFMxbutp24"
     },
     {
       "video_id": "eaMPP_F4p-E",
@@ -552,20 +552,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Ra6508tXTY1tYPK5XDJ6-6"
     },
     {
-      "video_id": "YemB4Abi7Pk",
-      "type": "video",
-      "title": "CLAUDE CODE 2.0: come creare un'app da ZERO (Guida COMPLETA) 🚀",
-      "date": "2025-10-19",
-      "duration": 2560,
-      "url": "https://youtu.be/YemB4Abi7Pk"
-    },
-    {
       "video_id": "FZ0UzTnSd-k",
       "type": "video",
       "title": "Questo Tool AI ti fa PROGRAMMARE e CHATTARE (nello stesso posto) - DeepAgent Desktop + ChatLLM",
       "date": "2025-10-19",
       "duration": 1485,
       "url": "https://youtu.be/FZ0UzTnSd-k"
+    },
+    {
+      "video_id": "YemB4Abi7Pk",
+      "type": "video",
+      "title": "CLAUDE CODE 2.0: come creare un'app da ZERO (Guida COMPLETA) 🚀",
+      "date": "2025-10-19",
+      "duration": 2560,
+      "url": "https://youtu.be/YemB4Abi7Pk"
     },
     {
       "video_id": "lpNgYdlf_YA",
@@ -632,12 +632,12 @@
       "url": "https://youtu.be/t4tVGvDvFeI"
     },
     {
-      "video_id": "TB2x-Xxs0_Q",
+      "video_id": "Kx2ELhIwsbg",
       "type": "video",
-      "title": "Le API di CHAT-GPT 🐝 GUIDA FACILE per SBLOCCARE la VERA POTENZA dell'AI",
+      "title": "Le API di GROQ (AI) sono GRATIS 🐝 GUIDA ESSENZIALE per RISPARMIARE con l'AI",
       "date": "2025-09-14",
-      "duration": 2365,
-      "url": "https://youtu.be/TB2x-Xxs0_Q"
+      "duration": 2102,
+      "url": "https://youtu.be/Kx2ELhIwsbg"
     },
     {
       "video_id": "eyFCHNu0BhM",
@@ -648,20 +648,20 @@
       "url": "https://youtu.be/eyFCHNu0BhM"
     },
     {
+      "video_id": "TB2x-Xxs0_Q",
+      "type": "video",
+      "title": "Le API di CHAT-GPT 🐝 GUIDA FACILE per SBLOCCARE la VERA POTENZA dell'AI",
+      "date": "2025-09-14",
+      "duration": 2365,
+      "url": "https://youtu.be/TB2x-Xxs0_Q"
+    },
+    {
       "video_id": "fPdpAwD1KtU",
       "type": "video",
       "title": "Le API di CLAUDE 🐝 GUIDA FACILE per SBLOCCARE la VERA POTENZA dell'AI",
       "date": "2025-09-14",
       "duration": 1835,
       "url": "https://youtu.be/fPdpAwD1KtU"
-    },
-    {
-      "video_id": "Kx2ELhIwsbg",
-      "type": "video",
-      "title": "Le API di GROQ (AI) sono GRATIS 🐝 GUIDA ESSENZIALE per RISPARMIARE con l'AI",
-      "date": "2025-09-14",
-      "duration": 2102,
-      "url": "https://youtu.be/Kx2ELhIwsbg"
     },
     {
       "video_id": "hiClKwWGzcU",
@@ -4632,20 +4632,20 @@
       "url": "https://youtu.be/1H0bJPwD8Go"
     },
     {
-      "video_id": "PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1",
-      "type": "playlist",
-      "title": "Creator 4 Creator",
-      "date": "2021-12-09",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx",
       "type": "playlist",
       "title": "Sportello Creator",
       "date": "2021-12-09",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1",
+      "type": "playlist",
+      "title": "Creator 4 Creator",
+      "date": "2021-12-09",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1"
     },
     {
       "video_id": "RgCg2GCKgHQ",
@@ -8416,20 +8416,20 @@
       "url": "https://youtu.be/DCrb8cZSceE"
     },
     {
-      "video_id": "Hu3OeXRbuKc",
-      "type": "video",
-      "title": "Fare lo scherzone ai vostri amici, simulando un aggiornamento di sistema",
-      "date": "2019-07-07",
-      "duration": 277,
-      "url": "https://youtu.be/Hu3OeXRbuKc"
-    },
-    {
       "video_id": "iLVQDTPJKxI",
       "type": "video",
       "title": "Leggere tutti gli articoli con un'unica App: Feedly",
       "date": "2019-07-07",
       "duration": 510,
       "url": "https://youtu.be/iLVQDTPJKxI"
+    },
+    {
+      "video_id": "Hu3OeXRbuKc",
+      "type": "video",
+      "title": "Fare lo scherzone ai vostri amici, simulando un aggiornamento di sistema",
+      "date": "2019-07-07",
+      "duration": 277,
+      "url": "https://youtu.be/Hu3OeXRbuKc"
     },
     {
       "video_id": "AFvFEI4Die0",
@@ -8512,6 +8512,14 @@
       "url": "https://youtu.be/lLnpilHCg74"
     },
     {
+      "video_id": "F8nu4BITs3o",
+      "type": "video",
+      "title": "Aggiornamento Telegram del 23 Giugno 2019: tutte le novità",
+      "date": "2019-06-25",
+      "duration": 555,
+      "url": "https://youtu.be/F8nu4BITs3o"
+    },
+    {
       "video_id": "DbehXg4uWow",
       "type": "video",
       "title": "Creare foto di persone FAKE",
@@ -8526,14 +8534,6 @@
       "date": "2019-06-25",
       "duration": 369,
       "url": "https://youtu.be/zsLsrImlnwQ"
-    },
-    {
-      "video_id": "F8nu4BITs3o",
-      "type": "video",
-      "title": "Aggiornamento Telegram del 23 Giugno 2019: tutte le novità",
-      "date": "2019-06-25",
-      "duration": 555,
-      "url": "https://youtu.be/F8nu4BITs3o"
     },
     {
       "video_id": "AkPTsxO5tPQ",
@@ -8600,14 +8600,6 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SLsIN0YgKa5kOK6wIZucl_"
     },
     {
-      "video_id": "hfe8T3FV22Q",
-      "type": "video",
-      "title": "Canali Telegram in italiano (da cui prendere spunto)",
-      "date": "2019-06-18",
-      "duration": 955,
-      "url": "https://youtu.be/hfe8T3FV22Q"
-    },
-    {
       "video_id": "sjexPf_fcwg",
       "type": "video",
       "title": "Monitorare lo storico dei prezzi Amazon (e trovare \"vere\" offerte)",
@@ -8622,6 +8614,14 @@
       "date": "2019-06-18",
       "duration": 575,
       "url": "https://youtu.be/tlLGDmbdv2o"
+    },
+    {
+      "video_id": "hfe8T3FV22Q",
+      "type": "video",
+      "title": "Canali Telegram in italiano (da cui prendere spunto)",
+      "date": "2019-06-18",
+      "duration": 955,
+      "url": "https://youtu.be/hfe8T3FV22Q"
     },
     {
       "video_id": "AunuVU459II",
