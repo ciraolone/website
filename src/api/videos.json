@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updated_at": "2026-08-05T06:00:02Z",
+  "updated_at": "2026-08-05T18:00:01Z",
   "counts": {
     "videos": 999,
-    "playlists": 147,
-    "total": 1146
+    "playlists": 146,
+    "total": 1145
   },
   "videos": [
     {
@@ -4640,20 +4640,20 @@
       "url": "https://youtu.be/rmY8XAE_iU0"
     },
     {
-      "video_id": "PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1",
-      "type": "playlist",
-      "title": "Creator 4 Creator",
-      "date": "2021-12-09",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx",
       "type": "playlist",
       "title": "Sportello Creator",
       "date": "2021-12-09",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1",
+      "type": "playlist",
+      "title": "Creator 4 Creator",
+      "date": "2021-12-09",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1"
     },
     {
       "video_id": "h6mKRQca0G8",
@@ -5846,14 +5846,6 @@
       "date": "2021-02-11",
       "duration": 6637,
       "url": "https://youtu.be/Cey8ZovPomE"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1QKNpAXM5HTU2HOzmcP7GIj",
-      "type": "playlist",
-      "title": "Tutti i programmi per montare video | CORSI COMPLETI",
-      "date": "2021-02-11",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QKNpAXM5HTU2HOzmcP7GIj"
     },
     {
       "video_id": "VdeodE3J0rc",
