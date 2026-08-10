@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-08-09T06:00:01Z",
+  "updated_at": "2026-08-10T06:00:01Z",
   "counts": {
     "videos": 999,
     "playlists": 146,
@@ -216,20 +216,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Rcui-fWuZkEWICrvzVynCq"
     },
     {
-      "video_id": "VE07twVKToQ",
-      "type": "video",
-      "title": "CANVA dalla A alla Z 🎨 CORSO COMPLETO sul PROGRAMMA CREATIVO più FACILE e COMPLETO che ci sia!",
-      "date": "2026-04-20",
-      "duration": 9172,
-      "url": "https://youtu.be/VE07twVKToQ"
-    },
-    {
       "video_id": "PHnUeDXUfos",
       "type": "video",
       "title": "20 TRUCCHI su CANVA che NON CONOSCI 🎨",
       "date": "2026-04-20",
       "duration": 1919,
       "url": "https://youtu.be/PHnUeDXUfos"
+    },
+    {
+      "video_id": "VE07twVKToQ",
+      "type": "video",
+      "title": "CANVA dalla A alla Z 🎨 CORSO COMPLETO sul PROGRAMMA CREATIVO più FACILE e COMPLETO che ci sia!",
+      "date": "2026-04-20",
+      "duration": 9172,
+      "url": "https://youtu.be/VE07twVKToQ"
     },
     {
       "video_id": "piCQm0GvDF0",
@@ -312,14 +312,6 @@
       "url": "https://youtu.be/gkcW0RVr8k4"
     },
     {
-      "video_id": "9WCluVZLR-I",
-      "type": "video",
-      "title": "ADOBE INDESIGN - CORSO COMPLETO per IMPAGINARE BENE e VELOCEMENTE (facciamo un pieghevole)",
-      "date": "2026-02-03",
-      "duration": 6420,
-      "url": "https://youtu.be/9WCluVZLR-I"
-    },
-    {
       "video_id": "WkcyAfNlgtg",
       "type": "video",
       "title": "ADOBE EXPRESS - Alternativa POTENTE a CANVA per fare GRAFICA e VIDEO ONLINE (animiamo un logo)",
@@ -334,6 +326,14 @@
       "date": "2026-02-03",
       "duration": 9824,
       "url": "https://youtu.be/O6LufsxEbcU"
+    },
+    {
+      "video_id": "9WCluVZLR-I",
+      "type": "video",
+      "title": "ADOBE INDESIGN - CORSO COMPLETO per IMPAGINARE BENE e VELOCEMENTE (facciamo un pieghevole)",
+      "date": "2026-02-03",
+      "duration": 6420,
+      "url": "https://youtu.be/9WCluVZLR-I"
     },
     {
       "video_id": "qKgXJ30c6OI",
@@ -384,20 +384,20 @@
       "url": "https://youtu.be/juAFak3JQ40"
     },
     {
-      "video_id": "m_By_Z4tX_M",
-      "type": "video",
-      "title": "Usa GMAIL come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
-      "date": "2025-12-21",
-      "duration": 5651,
-      "url": "https://youtu.be/m_By_Z4tX_M"
-    },
-    {
       "video_id": "Rwy44gWV5fU",
       "type": "video",
       "title": "CREARE un SITO da ZERO con INTELLIGENZA ARTIFICIALE, senza abbonamenti! [Tutorial Website X5 + AI]",
       "date": "2025-12-21",
       "duration": 1581,
       "url": "https://youtu.be/Rwy44gWV5fU"
+    },
+    {
+      "video_id": "m_By_Z4tX_M",
+      "type": "video",
+      "title": "Usa GMAIL come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
+      "date": "2025-12-21",
+      "duration": 5651,
+      "url": "https://youtu.be/m_By_Z4tX_M"
     },
     {
       "video_id": "8K28c2cog48",
@@ -472,20 +472,20 @@
       "url": "https://youtu.be/eNjWkogHa3Y"
     },
     {
+      "video_id": "3pv4-Seineo",
+      "type": "video",
+      "title": "CANVA GRATIS: Come RIMUOVERE lo SFONDO senza pagare il PRO",
+      "date": "2025-11-11",
+      "duration": 670,
+      "url": "https://youtu.be/3pv4-Seineo"
+    },
+    {
       "video_id": "_rx777uRhFU",
       "type": "video",
       "title": "Come INSTALLARE AFFINITY 3 by CANVA GRATIS 💻 GUIDA COMPLETA anti-errore",
       "date": "2025-11-11",
       "duration": 569,
       "url": "https://youtu.be/_rx777uRhFU"
-    },
-    {
-      "video_id": "3Srnjvqq2FI",
-      "type": "video",
-      "title": "Come INSTALLARE CANVA sul COMPUTER 💻 e perché dovresti farlo!",
-      "date": "2025-11-11",
-      "duration": 735,
-      "url": "https://youtu.be/3Srnjvqq2FI"
     },
     {
       "video_id": "Zroe6lCMmvU",
@@ -496,20 +496,20 @@
       "url": "https://youtu.be/Zroe6lCMmvU"
     },
     {
-      "video_id": "3pv4-Seineo",
-      "type": "video",
-      "title": "CANVA GRATIS: Come RIMUOVERE lo SFONDO senza pagare il PRO",
-      "date": "2025-11-11",
-      "duration": 670,
-      "url": "https://youtu.be/3pv4-Seineo"
-    },
-    {
       "video_id": "tCqfQMlFXA8",
       "type": "video",
       "title": "AFFINITY AI: HO TESTATO TUTTE le funzioni CANVA di Intelligenza Artificiale (Vale i soldi?)",
       "date": "2025-11-11",
       "duration": 2902,
       "url": "https://youtu.be/tCqfQMlFXA8"
+    },
+    {
+      "video_id": "3Srnjvqq2FI",
+      "type": "video",
+      "title": "Come INSTALLARE CANVA sul COMPUTER 💻 e perché dovresti farlo!",
+      "date": "2025-11-11",
+      "duration": 735,
+      "url": "https://youtu.be/3Srnjvqq2FI"
     },
     {
       "video_id": "EGu_XtwfeTc",
@@ -520,20 +520,20 @@
       "url": "https://youtu.be/EGu_XtwfeTc"
     },
     {
-      "video_id": "pXFMxbutp24",
-      "type": "video",
-      "title": "Scopriamo l'ATTREZZATURA di SARA TRECATE per FARE VIDEO 📽️ STUDIO TOUR",
-      "date": "2025-11-09",
-      "duration": 1467,
-      "url": "https://youtu.be/pXFMxbutp24"
-    },
-    {
       "video_id": "XERERGHM1IA",
       "type": "video",
       "title": "AFFINITY by CANVA 🤯 CORSO COMPLETO sulla più INCREDIBILE alternativa a PHOTOSHOP e ILLUSTRATOR",
       "date": "2025-11-09",
       "duration": 10176,
       "url": "https://youtu.be/XERERGHM1IA"
+    },
+    {
+      "video_id": "pXFMxbutp24",
+      "type": "video",
+      "title": "Scopriamo l'ATTREZZATURA di SARA TRECATE per FARE VIDEO 📽️ STUDIO TOUR",
+      "date": "2025-11-09",
+      "duration": 1467,
+      "url": "https://youtu.be/pXFMxbutp24"
     },
     {
       "video_id": "eaMPP_F4p-E",
@@ -608,20 +608,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TPUopcI_6imAWTKUczjmxg"
     },
     {
-      "video_id": "n5qh8D7feo0",
-      "type": "video",
-      "title": "[DOWNLOAD WORKFLOW] Vi presento WINSTON, il mio assistente AI!",
-      "date": "2025-10-03",
-      "duration": 3430,
-      "url": "https://youtu.be/n5qh8D7feo0"
-    },
-    {
       "video_id": "8BnMrwnY2-k",
       "type": "video",
       "title": "Come CREARE UN AGENTE AI su TELEGRAM 🤯",
       "date": "2025-10-03",
       "duration": 2655,
       "url": "https://youtu.be/8BnMrwnY2-k"
+    },
+    {
+      "video_id": "n5qh8D7feo0",
+      "type": "video",
+      "title": "[DOWNLOAD WORKFLOW] Vi presento WINSTON, il mio assistente AI!",
+      "date": "2025-10-03",
+      "duration": 3430,
+      "url": "https://youtu.be/n5qh8D7feo0"
     },
     {
       "video_id": "smZ1sJShhoo",
@@ -648,12 +648,12 @@
       "url": "https://youtu.be/eyFCHNu0BhM"
     },
     {
-      "video_id": "TB2x-Xxs0_Q",
+      "video_id": "Kx2ELhIwsbg",
       "type": "video",
-      "title": "Le API di CHAT-GPT 🐝 GUIDA FACILE per SBLOCCARE la VERA POTENZA dell'AI",
+      "title": "Le API di GROQ (AI) sono GRATIS 🐝 GUIDA ESSENZIALE per RISPARMIARE con l'AI",
       "date": "2025-09-14",
-      "duration": 2365,
-      "url": "https://youtu.be/TB2x-Xxs0_Q"
+      "duration": 2102,
+      "url": "https://youtu.be/Kx2ELhIwsbg"
     },
     {
       "video_id": "fPdpAwD1KtU",
@@ -664,12 +664,12 @@
       "url": "https://youtu.be/fPdpAwD1KtU"
     },
     {
-      "video_id": "Kx2ELhIwsbg",
+      "video_id": "TB2x-Xxs0_Q",
       "type": "video",
-      "title": "Le API di GROQ (AI) sono GRATIS 🐝 GUIDA ESSENZIALE per RISPARMIARE con l'AI",
+      "title": "Le API di CHAT-GPT 🐝 GUIDA FACILE per SBLOCCARE la VERA POTENZA dell'AI",
       "date": "2025-09-14",
-      "duration": 2102,
-      "url": "https://youtu.be/Kx2ELhIwsbg"
+      "duration": 2365,
+      "url": "https://youtu.be/TB2x-Xxs0_Q"
     },
     {
       "video_id": "hiClKwWGzcU",
@@ -784,20 +784,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1T4K-1pkHpA1_vVm4ydboFY"
     },
     {
-      "video_id": "2-qotvLU_LE",
-      "type": "video",
-      "title": "FFMPEG 🎬 INSTALLARE e USARE il più POTENTE tool per i VIDEO al mondo!",
-      "date": "2025-08-06",
-      "duration": 2093,
-      "url": "https://youtu.be/2-qotvLU_LE"
-    },
-    {
       "video_id": "7GygCE7SkA0",
       "type": "video",
       "title": "NOTION per TUTTI 🤓 CORSO COMPLETO per il LAVORO e la VITA!",
       "date": "2025-08-06",
       "duration": 8141,
       "url": "https://youtu.be/7GygCE7SkA0"
+    },
+    {
+      "video_id": "IC1V5u2YDzU",
+      "type": "video",
+      "title": "NODE.JS per PERSONE NORMALI 🥷 Metti il turbo ai tuoi script anche se NON SAI PROGRAMMARE!",
+      "date": "2025-08-06",
+      "duration": 1874,
+      "url": "https://youtu.be/IC1V5u2YDzU"
     },
     {
       "video_id": "JwQwg7pQLXA",
@@ -808,12 +808,12 @@
       "url": "https://youtu.be/JwQwg7pQLXA"
     },
     {
-      "video_id": "IC1V5u2YDzU",
+      "video_id": "2-qotvLU_LE",
       "type": "video",
-      "title": "NODE.JS per PERSONE NORMALI 🥷 Metti il turbo ai tuoi script anche se NON SAI PROGRAMMARE!",
+      "title": "FFMPEG 🎬 INSTALLARE e USARE il più POTENTE tool per i VIDEO al mondo!",
       "date": "2025-08-06",
-      "duration": 1874,
-      "url": "https://youtu.be/IC1V5u2YDzU"
+      "duration": 2093,
+      "url": "https://youtu.be/2-qotvLU_LE"
     },
     {
       "video_id": "iA_tVzJhFYQ",
@@ -8256,14 +8256,6 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Q_LY9AZBVnO_s2Z58QlTXG"
     },
     {
-      "video_id": "jcv86IIO3Us",
-      "type": "video",
-      "title": "TRELLO: il tutorial in italiano che stavi aspettando",
-      "date": "2019-08-22",
-      "duration": 5332,
-      "url": "https://youtu.be/jcv86IIO3Us"
-    },
-    {
       "video_id": "U61ei5OVLI8",
       "type": "video",
       "title": "Consigli per cercare lavoro: mentalità e strategia",
@@ -8272,12 +8264,12 @@
       "url": "https://youtu.be/U61ei5OVLI8"
     },
     {
-      "video_id": "7EYIgqNJE2I",
+      "video_id": "jcv86IIO3Us",
       "type": "video",
-      "title": "Come scegliere la facoltà universitaria? Facciamo un po' di orientamento scolastico",
+      "title": "TRELLO: il tutorial in italiano che stavi aspettando",
       "date": "2019-08-22",
-      "duration": 1691,
-      "url": "https://youtu.be/7EYIgqNJE2I"
+      "duration": 5332,
+      "url": "https://youtu.be/jcv86IIO3Us"
     },
     {
       "video_id": "-KutIsiyuNs",
@@ -8286,6 +8278,14 @@
       "date": "2019-08-22",
       "duration": 5596,
       "url": "https://youtu.be/-KutIsiyuNs"
+    },
+    {
+      "video_id": "7EYIgqNJE2I",
+      "type": "video",
+      "title": "Come scegliere la facoltà universitaria? Facciamo un po' di orientamento scolastico",
+      "date": "2019-08-22",
+      "duration": 1691,
+      "url": "https://youtu.be/7EYIgqNJE2I"
     },
     {
       "video_id": "2S958rH1LEI",
@@ -8400,20 +8400,20 @@
       "url": "https://youtu.be/Cmb09Cx3c9U"
     },
     {
-      "video_id": "qT1GpkMflOA",
-      "type": "video",
-      "title": "RSS.app: trasformare qualsiasi profilo social in un Feed RSS",
-      "date": "2019-07-07",
-      "duration": 309,
-      "url": "https://youtu.be/qT1GpkMflOA"
-    },
-    {
       "video_id": "AFvFEI4Die0",
       "type": "video",
       "title": "Non mettere la propria dieta digitale in mano a un algoritmo",
       "date": "2019-07-07",
       "duration": 1326,
       "url": "https://youtu.be/AFvFEI4Die0"
+    },
+    {
+      "video_id": "qT1GpkMflOA",
+      "type": "video",
+      "title": "RSS.app: trasformare qualsiasi profilo social in un Feed RSS",
+      "date": "2019-07-07",
+      "duration": 309,
+      "url": "https://youtu.be/qT1GpkMflOA"
     },
     {
       "video_id": "DCrb8cZSceE",
