@@ -15,6 +15,15 @@
   - buttonText: testo pulsante (opzionale)
   - buttonUrl: URL pulsante (opzionale)
   - buttonVariant: "primary" o "secondary" (default: "primary")
+  - price: prezzo accanto al pulsante, in font pixel (opzionale). Quando c'è, pulsante e prezzo
+    stanno sulla stessa riga come nella barra di acquisto su mobile: il prezzo a sinistra, il
+    pulsante che si prende lo spazio che resta. Restano affiancati anche su telefono, quindi il
+    testo del pulsante va tenuto corto: su uno schermo da 360px la colonna del pulsante è larga
+    circa 200px e un testo lungo ci va a capo tre volte.
+  - oldPrice: prezzo pieno barrato, sopra al prezzo (opzionale, per le promo)
+  - paymentNote: seconda riga dentro al pulsante, es. "Puoi pagare in 3 rate." (opzionale)
+  - discountNote: riga sotto al prezzo che spiega la promo, es. "50 € di sconto, ma solo per
+    oggi!" (opzionale)
   - cardUrl: URL card cliccabile (opzionale)
   - className: classi CSS aggiuntive card (opzionale)
   - imageClassName: classi CSS aggiuntive immagine (opzionale)
@@ -82,6 +91,10 @@
   buttonText="",
   buttonUrl="",
   buttonVariant="primary",
+  price="",
+  oldPrice="",
+  paymentNote="",
+  discountNote="",
   cardUrl="",
   className="",
   imageClassName="",
@@ -243,10 +256,31 @@
     {%- endif -%}
     </div>
     {%- endif -%}
-    {%- if buttonText and buttonUrl -%}
+    {%- set hasPrezzoAffiancato = price and buttonText and buttonUrl -%}
+    {%- if buttonText and buttonUrl and not price -%}
     <div class="mt-5 not-prose {{ 'text-right' if mediaPosition == 'left' else '' }}">
       {{ button(buttonText, buttonUrl, className="relative z-20") }}
     </div>
+    {%- endif -%}
+    {#- Prezzo e pulsante sulla stessa riga, stessa composizione della barra di acquisto su mobile:
+        colonna del prezzo che non si restringe (shrink-0) e pulsante che occupa il resto. Il font
+        pixel ha caratteri tutti larghi uguali, quindi le misure vanno tenute più basse di quelle
+        di un font normale: a 2rem un prezzo di quattro caratteri riempie già la sua colonna. -#}
+    {%- if hasPrezzoAffiancato -%}
+    <div class="mt-5 not-prose flex items-center gap-3">
+      <div class="shrink-0 leading-none text-center">
+        {%- if oldPrice -%}
+        <span class="font-accent block text-[0.75rem] sm:text-[0.9rem] text-gray-500 line-through mb-1">{{ oldPrice }}</span>
+        {%- endif -%}
+        <span class="font-accent text-[1.6rem] sm:text-[2rem] text-black">{{ price }}</span>
+      </div>
+      <div class="flex-1">
+        {{ button(buttonText, buttonUrl, className="w-full text-center relative z-20", subtitle=paymentNote, compact=true) }}
+      </div>
+    </div>
+    {%- if discountNote -%}
+    <p class="mt-2 not-prose text-center text-sm sm:text-base font-bold text-black">{{ discountNote }}</p>
+    {%- endif -%}
     {%- endif -%}
   </div>
   {%- endif -%}

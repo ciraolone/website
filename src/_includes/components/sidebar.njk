@@ -5,11 +5,26 @@
   Su mobile: features in alto, CTA fixed in basso
 
   Parametri:
-  - price: prezzo del prodotto (es. "499 €")
+  - price: prezzo del prodotto (es. "499€"). Se è vuoto non compare nessun prezzo — serve quando
+    il prodotto non è acquistabile e dire quanto costava non aggiunge niente.
+  - oldPrice: prezzo pieno mostrato barrato sopra al prezzo (opzionale, per le promo)
   - ctaText: testo del pulsante CTA (default: "Acquista subito!")
-  - ctaUrl: URL del pulsante CTA (richiesto)
+  - ctaUrl: URL del pulsante CTA. Se è vuoto il pulsante non viene disegnato affatto (e su mobile
+    sparisce tutta la barra fissa in basso): serve nelle fasi in cui il corso non si può ancora,
+    o non si può più, comprare.
   - paymentNote: nota sul pagamento (es. "Puoi pagare in 3 rate.")
-  - urgencyNote: nota di urgenza (opzionale, es. "Attenzione: le iscrizioni...")
+  - urgencyNote: avviso (opzionale). È pensato per ripetere parola per parola l'avviso che sta nel
+    contenuto della pagina, non per dire una cosa diversa: chi guarda deve leggere lo stesso
+    messaggio da tutte e due le parti.
+  - urgencyVariant: colore dell'avviso — info, success, warning, error (default: warning)
+  - countdownDeadline: scadenza in formato ISO con fuso orario (opzionale). Se c'è, sopra al
+    pulsante compare un conto alla rovescia in piccolo, sia su desktop sia nella barra mobile.
+
+  Su desktop avviso e conto alla rovescia del pannello nascono nascosti (classe "hidden") e li
+  accende il JS (setupAvvisiSidebar in assets/js/main.js) solo quando il blocco avvisi del
+  contenuto è uscito dallo schermo: finché quello grande si vede, ripeterlo qui sarebbe rumore.
+  Nella barra mobile invece sono sempre accesi, perché lì sono gli unici: nel contenuto, sotto
+  la soglia lg, il blocco avvisi non viene proprio mostrato.
   - tagline: testo in corsivo prima delle features (opzionale, es. "Questa Masterclass fa per te se...")
   - features: array di stringhe con le feature incluse
   - secondaryTitle: titolo sezione secondaria (opzionale)
@@ -26,6 +41,7 @@
 
 {% from "components/button.njk" import button %}
 {% from "components/alert.njk" import alert %}
+{% from "components/countdown.njk" import countdown, countdownInline %}
 
 {# === SIDEBAR DESKTOP (nascosta su mobile) === #}
 {% macro sidebar(
@@ -34,32 +50,57 @@
   ctaUrl,
   paymentNote="",
   urgencyNote="",
+  urgencyVariant="warning",
   tagline="",
   features=[],
   secondaryTitle="",
   secondarySubtitle="",
-  secondaryFeatures=[]
+  secondaryFeatures=[],
+  oldPrice="",
+  countdownDeadline=""
 ) %}
 <aside class="sticky top-8 border-2 border-black bg-white p-6 rounded-default hidden lg:block shadow">
-  {# Prezzo #}
+  {# Prezzo: font pixel come i titoli. Le misure restano più contenute di quelle di un font
+     normale perché ogni carattere occupa circa un quadratone: a 2.4rem un prezzo lungo come
+     "19,95€" (sei caratteri) arriva a filo del pannello, oltre sborda. Senza prezzo (iscrizioni
+     chiuse) il blocco non si disegna: sparisce anche lo spazio che occupava #}
+  {% if price %}
   <div class="text-center mb-4">
-    <span class="text-6xl font-bold text-black">{{ price }}</span>
+    {% if oldPrice %}
+    <span class="font-accent block text-[1.6rem] text-gray-500 line-through">{{ oldPrice }}</span>
+    {% endif %}
+    <span class="font-accent text-[2.4rem] text-black">{{ price }}</span>
   </div>
+  {% endif %}
 
-  {# Pulsante CTA #}
-  <div class="mb-2">
+  {# I blocchi qui sotto — prezzo, conto alla rovescia, pulsante, avviso — sono tutti staccati di
+     mb-4: sono cose diverse messe in fila e devono avere la stessa aria, sennò sembrano raggruppate
+     a caso. L'unica coppia più stretta è pulsante + nota sul pagamento, che sono una cosa sola. #}
+
+  {# Conto alla rovescia in piccolo, appena sopra al pulsante #}
+  {% if countdownDeadline %}
+  <div class="hidden mb-4" data-avvisi-sidebar>
+    {{ countdown(countdownDeadline, compact=true) }}
+  </div>
+  {% endif %}
+
+  {# Pulsante CTA: senza ctaUrl non si disegna, un pulsante che porta a un checkout chiuso è
+     peggio di nessun pulsante #}
+  {% if ctaUrl %}
+  <div class="{{ "mb-2" if paymentNote else "mb-4" }}">
     {{ button(ctaText, ctaUrl, className="w-full text-center justify-center") }}
   </div>
+  {% endif %}
 
   {# Nota pagamento #}
   {% if paymentNote %}
   <p class="text-center text-sm text-gray-600 mb-4">{{ paymentNote }}</p>
   {% endif %}
 
-  {# Nota urgenza #}
+  {# Avviso: lo stesso, parola per parola, che sta nel contenuto della pagina #}
   {% if urgencyNote %}
-  <div class="mb-6">
-    {{ alert("Attenzione: " + urgencyNote, variant="warning") }}
+  <div class="hidden mb-4" data-avvisi-sidebar>
+    {{ alert(urgencyNote, variant=urgencyVariant) }}
   </div>
   {% endif %}
 
@@ -170,33 +211,52 @@
   ctaText="Acquista subito!",
   ctaUrl,
   paymentNote="",
-  urgencyNote=""
+  urgencyNote="",
+  oldPrice="",
+  countdownDeadline=""
 ) %}
-<div class="lg:hidden fixed bottom-0 left-0 right-0 z-50 border-y-2 border-black bg-white p-4">
+{# Su mobile questa barra è l'unico posto dove compaiono avviso e conto alla rovescia (nel
+   contenuto sono nascosti), quindi esiste anche quando non c'è niente da comprare: nelle fasi
+   senza pulsante resta solo l'avviso, che è comunque la cosa da dire. Tutto qui dentro è tarato
+   sull'altezza: la barra copre il fondo dello schermo, ogni riga in più è schermo in meno. #}
+{% if ctaUrl or urgencyNote or countdownDeadline %}
+<div class="lg:hidden fixed bottom-0 left-0 right-0 z-50 border-y-2 border-black bg-white px-4 py-3" data-mobile-cta>
   <div class="max-w-lg mx-auto">
-    {# Nota urgenza compatta #}
+    {# Avviso: stesso testo di quello nel contenuto, ma senza cornice colorata né icona #}
     {% if urgencyNote %}
-    <p class="text-sm text-black mb-2 text-center">
-      <strong>Attenzione:</strong> {{ urgencyNote }}
-    </p>
+    <p class="text-[0.86rem] font-bold leading-tight text-black mb-2 text-center">{{ urgencyNote }}</p>
     {% endif %}
 
-    <div class="flex items-center gap-4">
-      {# Prezzo #}
-      <div class="shrink-0">
-        <span class="text-4xl font-bold text-black">{{ price }}</span>
-        {% if paymentNote %}
-        <p class="text-xs text-gray-600">{{ paymentNote }}</p>
+    {% if ctaUrl %}
+    <div class="flex items-center gap-3">
+      {# Prezzo: font pixel come i titoli, col barrato sopra in corpo minuscolo. La nota sul
+         pagamento non sta qui ma dentro al pulsante: questa colonna deve restare più stretta del
+         pulsante, sennò al testo "Acquista subito!" resta poco spazio e va a capo. Senza prezzo
+         la colonna non c'è e il pulsante si prende tutta la riga #}
+      {% if price %}
+      <div class="shrink-0 leading-none">
+        {% if oldPrice %}
+        <span class="font-accent block text-[0.65rem] text-gray-500 line-through mb-1">{{ oldPrice }}</span>
         {% endif %}
+        <span class="font-accent text-[1.95rem] text-black">{{ price }}</span>
       </div>
+      {% endif %}
 
-      {# Pulsante CTA #}
+      {# Pulsante CTA, con la nota sul pagamento come seconda riga dentro al pulsante stesso #}
       <div class="flex-1">
-        {{ button(ctaText, ctaUrl, className="w-full text-center justify-center") }}
+        {{ button(ctaText, ctaUrl, className="w-full text-center justify-center", subtitle=paymentNote, compact=true) }}
       </div>
     </div>
+    {% endif %}
+
+    {# Conto alla rovescia su una riga sola, senza riquadri, in fondo alla barra #}
+    {% if countdownDeadline %}
+    {{ countdownInline(countdownDeadline, className="mt-2") }}
+    {% endif %}
   </div>
 </div>
-{# Spacer per evitare che il contenuto sia coperto dal CTA fixed #}
-<div class="lg:hidden h-28"></div>
+{# Spacer per evitare che il contenuto sia coperto dal CTA fixed. L'altezza qui sotto è solo una
+   stima di partenza: appena il JS parte, setupMobileCtaSpacer misura la barra davvero e corregge #}
+<div class="lg:hidden {{ "h-36" if countdownDeadline else "h-24" }}" data-mobile-cta-spacer></div>
+{% endif %}
 {% endmacro %}

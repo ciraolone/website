@@ -9,15 +9,23 @@
     - "secondary": variante alternativa
   - className: classi CSS aggiuntive (opzionale)
   - target: target del link (default: "_self", usa "_blank" per nuova tab)
+  - subtitle: seconda riga più piccola dentro al bottone (opzionale). Serve per le informazioni
+    che accompagnano l'azione ("Puoi pagare in 3 rate.") dove lo spazio intorno non c'è.
+  - compact: margini interni ridotti (default: false). Da usare quando il bottone divide una riga
+    stretta con qualcos'altro — la barra di acquisto fissa su mobile — e con i margini pieni il
+    testo andrebbe a capo. Non si può ottenere lo stesso effetto passando px-3 da className: fra
+    due classi di padding vince quella con il valore più alto, non l'ultima scritta.
 
   Uso come macro:
   {% from "components/button.njk" import button %}
   {{ button("Click Here", "/link") }}
   {{ button("Scopri di più", "https://example.com", variant="secondary") }}
+  {{ button("Acquista subito!", "/checkout", subtitle="Puoi pagare in 3 rate.") }}
 #}
 
-{% macro button(text, url, variant="primary", className="", target="_self") %}
+{% macro button(text, url, variant="primary", className="", target="_self", subtitle="", compact=false) %}
 {#- Bottone stile neobrutalista con bordo nero, ombra e hover effect -#}
 {#- IMPORTANTE: tutto su una riga per evitare che Markdown interpreti le newlines come paragrafi -#}
-<a href="{{ url }}"{% if target %} target="{{ target }}"{% endif %}{% if target == "_blank" %} rel="noopener noreferrer"{% endif %} class="inline-block border-2 border-black px-5 py-3 font-semibold text-black shadow focus:outline-0 bg-primary hover:bg-primary-light hover:shadow-none hover:translate-x-1 hover:translate-y-1 focus-ring-primary rounded-default {{ className }}">{{ text }}</a>
+{%- set paddingClasses = "px-3 py-2.5" if compact else "px-5 py-3" -%}
+<a href="{{ url }}"{% if target %} target="{{ target }}"{% endif %}{% if target == "_blank" %} rel="noopener noreferrer"{% endif %} class="inline-block border-2 border-black {{ paddingClasses }} font-semibold text-black shadow focus:outline-0 bg-primary hover:bg-primary-light hover:shadow-none hover:translate-x-1 hover:translate-y-1 focus-ring-primary rounded-default {{ className }}">{{ text }}{% if subtitle %}<span class="block text-[0.7rem] font-normal leading-tight opacity-75">{{ subtitle }}</span>{% endif %}</a>
 {%- endmacro %}

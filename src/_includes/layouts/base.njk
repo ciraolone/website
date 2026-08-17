@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="{{ site.language }}">
+{# scroll-smooth: i link interni alla pagina (per esempio il pulsante che porta al pannello della
+   consulenza in fondo a /brilla) scorrono invece di saltare, così si capisce dove si è finiti #}
+<html lang="{{ site.language }}" class="scroll-smooth">
 {% include "components/head.njk" %}
 {% from "components/hero.njk" import hero as renderHero %}
 {% from "components/sidebar.njk" import sidebar as renderSidebar, sidebarMobileFeatures, sidebarMobileCta %}
@@ -23,8 +25,12 @@
     ) }}
     {%- endif -%}
 
-    {# Content container #}
-    <div class="max-w-6xl mx-auto px-8 flex flex-col lg:flex-row justify-center gap-8 py-8">
+    {# Content container. Con l'hero in cima, su mobile il contenuto parte subito sotto: lo stacco
+       lo fa già il margine del primo paragrafo, e un padding pieno aggiungeva un vuoto di mezzo
+       schermo fra il titolo e la prima riga. Senza hero il padding resta pieno, sennò il testo
+       finirebbe appiccicato alla barra di navigazione. #}
+    {%- set paddingContenuto = "pt-2 pb-8 lg:py-8" if hero.title else "py-8" -%}
+    <div class="max-w-6xl mx-auto px-8 flex flex-col lg:flex-row justify-center gap-8 {{ paddingContenuto }}">
       {# prose: applica classi tipografiche (default: true) #}
       {# maxW: larghezza massima del content (default: "xl") #}
       {% set proseClasses = "prose prose-lg" if prose !== false else "" %}
@@ -32,14 +38,20 @@
       <div class="flex-1 min-w-0 mx-auto {{ proseClasses }} {{ maxWClass }}">
         {{ content | safe }}
       </div>
-      {% if sidebarData %}
+      {# hideSidebar: nasconde il pannello di acquisto (usato quando le iscrizioni sono chiuse).
+         urgencyVariant ha un "or warning" perché passare un valore vuoto a una macro spegne il
+         suo default, e l'avviso resterebbe senza colore #}
+      {% if sidebarData and not hideSidebar %}
       <div class="w-full lg:w-72 shrink-0 mx-auto hidden lg:block">
         {{ renderSidebar(
           price=sidebarData.price,
+          oldPrice=sidebarData.oldPrice,
           ctaText=sidebarData.ctaText,
           ctaUrl=sidebarData.ctaUrl,
           paymentNote=sidebarData.paymentNote,
           urgencyNote=sidebarData.urgencyNote,
+          urgencyVariant=sidebarData.urgencyVariant or "warning",
+          countdownDeadline=sidebarData.countdownDeadline,
           tagline=sidebarData.tagline,
           features=sidebarData.features,
           secondaryTitle=sidebarData.secondaryTitle,
@@ -59,10 +71,12 @@
       </div>
       {{ sidebarMobileCta(
         price=sidebarData.price,
+        oldPrice=sidebarData.oldPrice,
         ctaText=sidebarData.ctaText,
         ctaUrl=sidebarData.ctaUrl,
         paymentNote=sidebarData.paymentNote,
-        urgencyNote=sidebarData.urgencyNote
+        urgencyNote=sidebarData.urgencyNote,
+        countdownDeadline=sidebarData.countdownDeadline
       ) }}
       {% endif %}
     </div>

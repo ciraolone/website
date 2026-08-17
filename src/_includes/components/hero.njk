@@ -31,7 +31,13 @@
 
 {% set hasMedia = video or image %}
 
-<section class="w-full py-8 {{ className }}">
+{#- Quando c'è la tagline la sezione finisce con la barra gialla, che ha già i suoi bordi e il suo
+    spazio interno: su mobile il padding sotto diventerebbe solo un vuoto fra la barra e la prima
+    riga di testo, quindi lo azzeriamo e lo rimettiamo da lg in su, dove la pagina è più larga e
+    l'aria non pesa. -#}
+{%- set paddingSezione = "pt-8 pb-0 lg:pb-8" if tagline else "py-8" -%}
+
+<section class="w-full {{ paddingSezione }} {{ className }}">
 
   <div class="max-w-6xl mx-auto px-8 flex flex-col lg:flex-row justify-center gap-8">
     <div class="grid grid-cols-1 items-center {{ 'md:grid-cols-2 gap-6' if hasMedia else '' }}">

@@ -1,0 +1,83 @@
+{#
+  Componente Countdown (Stile Neobrutalista)
+
+  Mostra un conto alla rovescia in giorni/ore/minuti/secondi verso una scadenza. I numeri sono in
+  font pixel (lo stesso dei titoli) e vengono riempiti da JavaScript (setupCountdowns in
+  assets/js/main.js): finché il JS non parte si vedono dei trattini. Le unità grandi che sono a
+  zero spariscono (sotto le 24 ore niente riquadro dei giorni) e quando la scadenza è passata si
+  nasconde tutto il blocco, così una promo che ci si dimentica di togliere dalla pagina non resta
+  a schermo con tutti zeri. Serve per le scadenze commerciali delle pagine corso (fine sconto,
+  chiusura iscrizioni), sia in grande dentro la pagina sia in piccolo (compact=true) nel pannello
+  di acquisto.
+
+  ATTENZIONE ALLE RIGHE VUOTE. Questo componente viene usato dentro pagine .md: se il testo che
+  esce da queste macro contiene anche una sola riga vuota (o con soli spazi), markdown la legge
+  come "qui finisce l'HTML" e da lì in poi trasforma il resto in paragrafi, infilando <p> e <br>
+  fra i pezzi — che è esattamente come nasce uno spazio inspiegabile fra il numero e la sua unità
+  di misura. Per questo tutti i tag interni usano {%- -%} e i commenti stanno qui fuori: dentro le
+  macro un commento su più righe lascerebbe dietro di sé proprio una riga vuota.
+
+  Misure: nel font pixel ogni carattere occupa circa un quadratone in larghezza, quindi due cifre
+  riempiono già tutto il riquadro e il numero va tenuto più piccolo di quanto sembri. In verticale
+  le cifre finiscono 0.13em sopra la linea di base: se non si fa niente, quel vuoto si somma allo
+  spazio fra numero e unità di misura e i due sembrano scollegati. Il -mb-[0.06em] sul numero ne
+  recupera metà e lascia il resto come distanza voluta. Se si cambia font, va rimisurato.
+
+  Parametri:
+  - deadline: data e ora di scadenza in formato ISO CON fuso orario (richiesto)
+    Il fuso è obbligatorio: senza, il conto alla rovescia scadrebbe in momenti diversi a
+    seconda di dove si trova chi guarda la pagina. Ora italiana: "+02:00" da fine marzo a
+    fine ottobre (ora legale), "+01:00" nel resto dell'anno.
+    Le 24:00 del 21 settembre 2026 si scrivono "2026-09-22T00:00:00+02:00".
+  - title: testo sopra ai numeri (opzionale)
+  - compact: versione ridotta, pensata per stare dentro al pannello di acquisto (default: false)
+  - className: classi CSS aggiuntive (opzionale)
+
+  Esiste anche countdownInline: una riga sola, numero e unità di misura affiancati, senza cornice
+  né riquadri. Serve dove l'altezza è tutto — la barra di acquisto fissa in basso su mobile — e
+  un blocco con quattro riquadri si mangerebbe mezzo schermo.
+
+  Uso come macro:
+  {% from "components/countdown.njk" import countdown, countdownInline %}
+  {{ countdown("2026-09-22T00:00:00+02:00", title="Lo sconto scade fra:") }}
+  {{ countdown("2026-09-22T00:00:00+02:00", compact=true) }}
+  {{ countdownInline("2026-09-22T00:00:00+02:00") }}
+#}
+
+{# Singolo riquadro numerato: data-countdown-unit sul riquadro (il JS lo nasconde quando serve),
+   data-countdown-value sul numero (il JS ci scrive dentro). whitespace-nowrap perché il sito ha
+   la sillabazione automatica attiva e senza, in un riquadro stretto, il browser spezza il numero
+   su due righe ("3" sopra e "9" sotto). #}
+{%- macro unitBox(unit, label, compact=false) -%}
+{%- set boxClasses = "px-1 py-1 flex-1" if compact else "px-1 sm:px-3 py-2 flex-1 sm:flex-none sm:min-w-[7rem]" -%}
+{%- set numberClasses = "text-base" if compact else "text-2xl sm:text-4xl" -%}
+{%- set labelClasses = "text-[0.5rem]" if compact else "text-[0.72rem] sm:text-[0.9rem] sm:tracking-wide" -%}
+<div class="border-2 border-black bg-white rounded-default {{ boxClasses }}" data-countdown-unit="{{ unit }}"><span class="font-accent block {{ numberClasses }} leading-none -mb-[0.06em] text-black whitespace-nowrap" data-countdown-value>--</span><span class="block {{ labelClasses }} font-bold uppercase leading-none text-gray-600 whitespace-nowrap">{{ label }}</span></div>
+{%- endmacro -%}
+
+{# Una sola unità della versione in linea: numero e testo affiancati, allineati sulla stessa
+   riga di base. Niente riquadro: qui la cornice è la barra che la contiene. #}
+{%- macro unitInline(unit, label) -%}
+<span class="inline-flex items-baseline gap-1 whitespace-nowrap" data-countdown-unit="{{ unit }}"><span class="font-accent text-base leading-none text-black" data-countdown-value>--</span><span class="text-[0.65rem] font-bold uppercase leading-none text-gray-700">{{ label }}</span></span>
+{%- endmacro -%}
+
+{%- macro countdown(deadline, title="", compact=false, className="") -%}
+{#- La versione compatta non porta margini: sta dentro al pannello di acquisto, dove la distanza fra
+    i blocchi la decide il pannello stesso per tenerli tutti alla stessa aria. -#}
+{%- set wrapperClasses = "p-2" if compact else "p-3 sm:p-4 my-6" -%}
+{%- set titleClasses = "text-xs mb-2" if compact else "mb-3" -%}
+{%- set gapClasses = "gap-1" if compact else "gap-1 sm:gap-3" -%}
+<div class="border-2 border-black bg-primary rounded-default shadow not-prose text-center {{ wrapperClasses }} {{ className }}" data-countdown data-countdown-deadline="{{ deadline }}">
+{%- if title -%}
+<p class="font-bold text-black {{ titleClasses }}">{{ title }}</p>
+{%- endif -%}
+<div class="flex justify-center {{ gapClasses }}">{{ unitBox("days", "giorni", compact) }}{{ unitBox("hours", "ore", compact) }}{{ unitBox("minutes", "minuti", compact) }}{{ unitBox("seconds", "secondi", compact) }}</div>
+</div>
+{%- endmacro -%}
+
+{# Minuti e secondi sono abbreviati apposta: per stare su una riga sola anche su un telefono
+   stretto servono una trentina di pixel in meno, e sono le due unità che si leggono comunque
+   dal contesto. Giorni e ore, che sono quelle che contano, restano per esteso. #}
+{%- macro countdownInline(deadline, className="") -%}
+<div class="not-prose flex flex-wrap items-baseline justify-center gap-x-2 gap-y-1 {{ className }}" data-countdown data-countdown-deadline="{{ deadline }}">{{ unitInline("days", "giorni") }}{{ unitInline("hours", "ore") }}{{ unitInline("minutes", "min") }}{{ unitInline("seconds", "sec") }}</div>
+{%- endmacro -%}
