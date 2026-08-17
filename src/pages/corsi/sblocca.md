@@ -8,7 +8,7 @@ hero:
   image: "/assets/images/sblocca.png"
   tagline: "L'unico corso di cui hai davvero bisogno per cominciare!"
 sidebarData:
-  price: "19,95 €"
+  price: "19,95€"
   ctaText: "Acquista subito!"
   ctaUrl: "https://sblocca.ciraolone.com/register?p=11121"
   features:
