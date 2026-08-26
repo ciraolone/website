@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-08-25T06:00:01Z",
+  "updated_at": "2026-08-26T06:00:02Z",
   "counts": {
     "videos": 1000,
     "playlists": 146,
@@ -224,20 +224,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Rcui-fWuZkEWICrvzVynCq"
     },
     {
-      "video_id": "PHnUeDXUfos",
-      "type": "video",
-      "title": "20 TRUCCHI su CANVA che NON CONOSCI 🎨",
-      "date": "2026-04-20",
-      "duration": 1919,
-      "url": "https://youtu.be/PHnUeDXUfos"
-    },
-    {
       "video_id": "VE07twVKToQ",
       "type": "video",
       "title": "CANVA dalla A alla Z 🎨 CORSO COMPLETO sul PROGRAMMA CREATIVO più FACILE e COMPLETO che ci sia!",
       "date": "2026-04-20",
       "duration": 9172,
       "url": "https://youtu.be/VE07twVKToQ"
+    },
+    {
+      "video_id": "PHnUeDXUfos",
+      "type": "video",
+      "title": "20 TRUCCHI su CANVA che NON CONOSCI 🎨",
+      "date": "2026-04-20",
+      "duration": 1919,
+      "url": "https://youtu.be/PHnUeDXUfos"
     },
     {
       "video_id": "piCQm0GvDF0",
@@ -7080,20 +7080,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RuxSNZiZb9HI8liyTpk13P"
     },
     {
-      "video_id": "nubsnnO4fAE",
-      "type": "video",
-      "title": "Youtube: cosa sono i VIDEO PREMIERE e come si fanno?",
-      "date": "2020-06-04",
-      "duration": 665,
-      "url": "https://youtu.be/nubsnnO4fAE"
-    },
-    {
       "video_id": "Zd7EZZz7mMk",
       "type": "video",
       "title": "Non so fare, quindi insegno",
       "date": "2020-06-04",
       "duration": 1178,
       "url": "https://youtu.be/Zd7EZZz7mMk"
+    },
+    {
+      "video_id": "nubsnnO4fAE",
+      "type": "video",
+      "title": "Youtube: cosa sono i VIDEO PREMIERE e come si fanno?",
+      "date": "2020-06-04",
+      "duration": 665,
+      "url": "https://youtu.be/nubsnnO4fAE"
     },
     {
       "video_id": "JhNs8pW_KrU",
@@ -7104,20 +7104,20 @@
       "url": "https://youtu.be/JhNs8pW_KrU"
     },
     {
-      "video_id": "0mBwlOdDw6I",
-      "type": "video",
-      "title": "YOUTUBE: mettere i CAPITOLI sulla barra + TRUCCO MICIDIALE con OBS",
-      "date": "2020-06-01",
-      "duration": 1133,
-      "url": "https://youtu.be/0mBwlOdDw6I"
-    },
-    {
       "video_id": "htuIBgEjDMc",
       "type": "video",
       "title": "CONNESSIONE LENTA con OBS Studio? Ecco la prima cosa da fare (parliamo di bitrate)",
       "date": "2020-06-01",
       "duration": 1034,
       "url": "https://youtu.be/htuIBgEjDMc"
+    },
+    {
+      "video_id": "0mBwlOdDw6I",
+      "type": "video",
+      "title": "YOUTUBE: mettere i CAPITOLI sulla barra + TRUCCO MICIDIALE con OBS",
+      "date": "2020-06-01",
+      "duration": 1133,
+      "url": "https://youtu.be/0mBwlOdDw6I"
     },
     {
       "video_id": "ALHENniM6T0",
@@ -7208,20 +7208,20 @@
       "url": "https://youtu.be/mcehTNl7NY8"
     },
     {
-      "video_id": "HrzEnnd5LNQ",
-      "type": "video",
-      "title": "SMARTPHONE IN OBS STUDIO, COME DIO COMANDA!",
-      "date": "2020-05-19",
-      "duration": 944,
-      "url": "https://youtu.be/HrzEnnd5LNQ"
-    },
-    {
       "video_id": "5H_4WsCqg1g",
       "type": "video",
       "title": "Mostrare una diretta dentro alla diretta, con OBS Studio",
       "date": "2020-05-19",
       "duration": 608,
       "url": "https://youtu.be/5H_4WsCqg1g"
+    },
+    {
+      "video_id": "HrzEnnd5LNQ",
+      "type": "video",
+      "title": "SMARTPHONE IN OBS STUDIO, COME DIO COMANDA!",
+      "date": "2020-05-19",
+      "duration": 944,
+      "url": "https://youtu.be/HrzEnnd5LNQ"
     },
     {
       "video_id": "S9xeI5cLKdA",
@@ -7256,20 +7256,20 @@
       "url": "https://youtu.be/ZKQihMd4nns"
     },
     {
-      "video_id": "s83OSsX_jXI",
-      "type": "video",
-      "title": "Intervista su come fare un'intervista",
-      "date": "2020-05-13",
-      "duration": 4789,
-      "url": "https://youtu.be/s83OSsX_jXI"
-    },
-    {
       "video_id": "IdmkSaRviQ8",
       "type": "video",
       "title": "SEXTING: guida al sesso a distanza soddisfacente e sicuro | con Marvi Santamaria",
       "date": "2020-05-13",
       "duration": 2539,
       "url": "https://youtu.be/IdmkSaRviQ8"
+    },
+    {
+      "video_id": "s83OSsX_jXI",
+      "type": "video",
+      "title": "Intervista su come fare un'intervista",
+      "date": "2020-05-13",
+      "duration": 4789,
+      "url": "https://youtu.be/s83OSsX_jXI"
     },
     {
       "video_id": "SxC8XdwSVG4",
@@ -7280,20 +7280,20 @@
       "url": "https://youtu.be/SxC8XdwSVG4"
     },
     {
-      "video_id": "CyM11_PXbaI",
-      "type": "video",
-      "title": "Dirette facili con StreamYard | TUTORIAL COMPLETO",
-      "date": "2020-05-09",
-      "duration": 2357,
-      "url": "https://youtu.be/CyM11_PXbaI"
-    },
-    {
       "video_id": "Q6BytD2aGX4",
       "type": "video",
       "title": "Colori migliori in OBS Studio: la color correction coi LUT",
       "date": "2020-05-09",
       "duration": 1954,
       "url": "https://youtu.be/Q6BytD2aGX4"
+    },
+    {
+      "video_id": "CyM11_PXbaI",
+      "type": "video",
+      "title": "Dirette facili con StreamYard | TUTORIAL COMPLETO",
+      "date": "2020-05-09",
+      "duration": 2357,
+      "url": "https://youtu.be/CyM11_PXbaI"
     },
     {
       "video_id": "ydIqgy3YGWo",
@@ -7320,12 +7320,12 @@
       "url": "https://youtu.be/-v8q73TxFMo"
     },
     {
-      "video_id": "nlE9yowVffU",
+      "video_id": "rxh8kp2GnpQ",
       "type": "video",
-      "title": "Creator Talks con Discorsi Fotografici",
+      "title": "Un computer da Youtuber: scegliere i componenti | con @MoreThanTech",
       "date": "2020-05-06",
-      "duration": 4666,
-      "url": "https://youtu.be/nlE9yowVffU"
+      "duration": 5626,
+      "url": "https://youtu.be/rxh8kp2GnpQ"
     },
     {
       "video_id": "KsB9EV13s0E",
@@ -7336,12 +7336,12 @@
       "url": "https://youtu.be/KsB9EV13s0E"
     },
     {
-      "video_id": "rxh8kp2GnpQ",
+      "video_id": "nlE9yowVffU",
       "type": "video",
-      "title": "Un computer da Youtuber: scegliere i componenti | con @MoreThanTech",
+      "title": "Creator Talks con Discorsi Fotografici",
       "date": "2020-05-06",
-      "duration": 5626,
-      "url": "https://youtu.be/rxh8kp2GnpQ"
+      "duration": 4666,
+      "url": "https://youtu.be/nlE9yowVffU"
     },
     {
       "video_id": "NxLR9NrklDE",
