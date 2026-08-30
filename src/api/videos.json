@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-08-29T06:00:02Z",
+  "updated_at": "2026-08-30T06:00:02Z",
   "counts": {
     "videos": 1000,
     "playlists": 146,
@@ -224,20 +224,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Rcui-fWuZkEWICrvzVynCq"
     },
     {
-      "video_id": "VE07twVKToQ",
-      "type": "video",
-      "title": "CANVA dalla A alla Z 🎨 CORSO COMPLETO sul PROGRAMMA CREATIVO più FACILE e COMPLETO che ci sia!",
-      "date": "2026-04-20",
-      "duration": 9172,
-      "url": "https://youtu.be/VE07twVKToQ"
-    },
-    {
       "video_id": "PHnUeDXUfos",
       "type": "video",
       "title": "20 TRUCCHI su CANVA che NON CONOSCI 🎨",
       "date": "2026-04-20",
       "duration": 1919,
       "url": "https://youtu.be/PHnUeDXUfos"
+    },
+    {
+      "video_id": "VE07twVKToQ",
+      "type": "video",
+      "title": "CANVA dalla A alla Z 🎨 CORSO COMPLETO sul PROGRAMMA CREATIVO più FACILE e COMPLETO che ci sia!",
+      "date": "2026-04-20",
+      "duration": 9172,
+      "url": "https://youtu.be/VE07twVKToQ"
     },
     {
       "video_id": "piCQm0GvDF0",
@@ -312,14 +312,6 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1R5TSlFb5Ga8BQ21XcYEBlG"
     },
     {
-      "video_id": "O6LufsxEbcU",
-      "type": "video",
-      "title": "ADOBE ILLUSTRATOR - CORSO COMPLETO per creare GRAFICHE VETTORIALI DA ZERO (disegnamo un logo)",
-      "date": "2026-02-03",
-      "duration": 9824,
-      "url": "https://youtu.be/O6LufsxEbcU"
-    },
-    {
       "video_id": "9WCluVZLR-I",
       "type": "video",
       "title": "ADOBE INDESIGN - CORSO COMPLETO per IMPAGINARE BENE e VELOCEMENTE (facciamo un pieghevole)",
@@ -328,12 +320,12 @@
       "url": "https://youtu.be/9WCluVZLR-I"
     },
     {
-      "video_id": "gkcW0RVr8k4",
+      "video_id": "O6LufsxEbcU",
       "type": "video",
-      "title": "PHOTOSHOP - CORSO COMPLETO per la GRAFICA e il FOTORITOCCO (dalle basi al progetto finale!)",
+      "title": "ADOBE ILLUSTRATOR - CORSO COMPLETO per creare GRAFICHE VETTORIALI DA ZERO (disegnamo un logo)",
       "date": "2026-02-03",
-      "duration": 7816,
-      "url": "https://youtu.be/gkcW0RVr8k4"
+      "duration": 9824,
+      "url": "https://youtu.be/O6LufsxEbcU"
     },
     {
       "video_id": "WkcyAfNlgtg",
@@ -344,6 +336,14 @@
       "url": "https://youtu.be/WkcyAfNlgtg"
     },
     {
+      "video_id": "gkcW0RVr8k4",
+      "type": "video",
+      "title": "PHOTOSHOP - CORSO COMPLETO per la GRAFICA e il FOTORITOCCO (dalle basi al progetto finale!)",
+      "date": "2026-02-03",
+      "duration": 7816,
+      "url": "https://youtu.be/gkcW0RVr8k4"
+    },
+    {
       "video_id": "qKgXJ30c6OI",
       "type": "video",
       "title": "DAVINCI RESOLVE 🎬 Il CORSO DIVINO per MONTARE VIDEO come un NINJA 🥷",
@@ -352,20 +352,20 @@
       "url": "https://youtu.be/qKgXJ30c6OI"
     },
     {
-      "video_id": "yQsQ_NzWOMw",
-      "type": "video",
-      "title": "PRESENTAZIONI DI GOOGLE: il corso per fare SLIDE PERFETTE (Gemini + Nano Banana)",
-      "date": "2026-01-31",
-      "duration": 3615,
-      "url": "https://youtu.be/yQsQ_NzWOMw"
-    },
-    {
       "video_id": "lkmL74sEcUw",
       "type": "video",
       "title": "LOGITECH MX MASTER 🎯 Il mio MOUSE per la PRODUTTIVITÀ",
       "date": "2026-01-31",
       "duration": 2629,
       "url": "https://youtu.be/lkmL74sEcUw"
+    },
+    {
+      "video_id": "yQsQ_NzWOMw",
+      "type": "video",
+      "title": "PRESENTAZIONI DI GOOGLE: il corso per fare SLIDE PERFETTE (Gemini + Nano Banana)",
+      "date": "2026-01-31",
+      "duration": 3615,
+      "url": "https://youtu.be/yQsQ_NzWOMw"
     },
     {
       "video_id": "CYyh8HSqi24",
