@@ -20,9 +20,9 @@ MESSAGGIO="${1:-site: update ricostruzione del sito}"
 cd "$REPO"
 
 {
-  echo "=== $(date '+%Y-%m-%d %H:%M:%S') — $MESSAGGIO"
-  git pull --rebase
-  git commit --allow-empty -m "$MESSAGGIO"
-  git push
-  echo "--- fatto: Cloudflare ricostruisce da sé, ci vogliono un paio di minuti"
+	echo "=== $(date '+%Y-%m-%d %H:%M:%S') — $MESSAGGIO"
+	git pull --rebase
+	git commit --allow-empty -m "$MESSAGGIO"
+	git push
+	echo "--- fatto: Cloudflare ricostruisce da sé, ci vogliono un paio di minuti"
 } >>"$LOG" 2>&1
