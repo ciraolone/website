@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-18T06:00:01Z",
+  "updated_at": "2026-09-19T06:00:01Z",
   "counts": {
     "videos": 1004,
     "playlists": 146,
@@ -56,12 +56,12 @@
       "url": "https://youtu.be/mhi2srCIMrY"
     },
     {
-      "video_id": "hhf-HWl0FWY",
+      "video_id": "SjUfAyFhZag",
       "type": "video",
-      "title": "CAPCUT in 15 MINUTI ⏱️ MONTARE VIDEO GRATIS con l'AI",
+      "title": "CREARE un AGENTE VOCALE AI che RISPONDE AL TELEFONO 📞 24 ORE SU 24",
       "date": "2026-07-22",
-      "duration": 1049,
-      "url": "https://youtu.be/hhf-HWl0FWY"
+      "duration": 1290,
+      "url": "https://youtu.be/SjUfAyFhZag"
     },
     {
       "video_id": "iNeZXW29nYo",
@@ -72,12 +72,12 @@
       "url": "https://youtu.be/iNeZXW29nYo"
     },
     {
-      "video_id": "SjUfAyFhZag",
+      "video_id": "hhf-HWl0FWY",
       "type": "video",
-      "title": "CREARE un AGENTE VOCALE AI che RISPONDE AL TELEFONO 📞 24 ORE SU 24",
+      "title": "CAPCUT in 15 MINUTI ⏱️ MONTARE VIDEO GRATIS con l'AI",
       "date": "2026-07-22",
-      "duration": 1290,
-      "url": "https://youtu.be/SjUfAyFhZag"
+      "duration": 1049,
+      "url": "https://youtu.be/hhf-HWl0FWY"
     },
     {
       "video_id": "-RzPQSS3Bhw",
@@ -256,20 +256,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Rcui-fWuZkEWICrvzVynCq"
     },
     {
-      "video_id": "PHnUeDXUfos",
-      "type": "video",
-      "title": "20 TRUCCHI su CANVA che NON CONOSCI 🎨",
-      "date": "2026-04-20",
-      "duration": 1919,
-      "url": "https://youtu.be/PHnUeDXUfos"
-    },
-    {
       "video_id": "VE07twVKToQ",
       "type": "video",
       "title": "CANVA dalla A alla Z 🎨 CORSO COMPLETO sul PROGRAMMA CREATIVO più FACILE e COMPLETO che ci sia!",
       "date": "2026-04-20",
       "duration": 9172,
       "url": "https://youtu.be/VE07twVKToQ"
+    },
+    {
+      "video_id": "PHnUeDXUfos",
+      "type": "video",
+      "title": "20 TRUCCHI su CANVA che NON CONOSCI 🎨",
+      "date": "2026-04-20",
+      "duration": 1919,
+      "url": "https://youtu.be/PHnUeDXUfos"
     },
     {
       "video_id": "piCQm0GvDF0",
@@ -344,22 +344,6 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1R5TSlFb5Ga8BQ21XcYEBlG"
     },
     {
-      "video_id": "O6LufsxEbcU",
-      "type": "video",
-      "title": "ADOBE ILLUSTRATOR - CORSO COMPLETO per creare GRAFICHE VETTORIALI DA ZERO (disegnamo un logo)",
-      "date": "2026-02-03",
-      "duration": 9824,
-      "url": "https://youtu.be/O6LufsxEbcU"
-    },
-    {
-      "video_id": "WkcyAfNlgtg",
-      "type": "video",
-      "title": "ADOBE EXPRESS - Alternativa POTENTE a CANVA per fare GRAFICA e VIDEO ONLINE (animiamo un logo)",
-      "date": "2026-02-03",
-      "duration": 4165,
-      "url": "https://youtu.be/WkcyAfNlgtg"
-    },
-    {
       "video_id": "gkcW0RVr8k4",
       "type": "video",
       "title": "PHOTOSHOP - CORSO COMPLETO per la GRAFICA e il FOTORITOCCO (dalle basi al progetto finale!)",
@@ -368,12 +352,28 @@
       "url": "https://youtu.be/gkcW0RVr8k4"
     },
     {
+      "video_id": "O6LufsxEbcU",
+      "type": "video",
+      "title": "ADOBE ILLUSTRATOR - CORSO COMPLETO per creare GRAFICHE VETTORIALI DA ZERO (disegnamo un logo)",
+      "date": "2026-02-03",
+      "duration": 9824,
+      "url": "https://youtu.be/O6LufsxEbcU"
+    },
+    {
       "video_id": "9WCluVZLR-I",
       "type": "video",
       "title": "ADOBE INDESIGN - CORSO COMPLETO per IMPAGINARE BENE e VELOCEMENTE (facciamo un pieghevole)",
       "date": "2026-02-03",
       "duration": 6420,
       "url": "https://youtu.be/9WCluVZLR-I"
+    },
+    {
+      "video_id": "WkcyAfNlgtg",
+      "type": "video",
+      "title": "ADOBE EXPRESS - Alternativa POTENTE a CANVA per fare GRAFICA e VIDEO ONLINE (animiamo un logo)",
+      "date": "2026-02-03",
+      "duration": 4165,
+      "url": "https://youtu.be/WkcyAfNlgtg"
     },
     {
       "video_id": "qKgXJ30c6OI",
@@ -424,6 +424,22 @@
       "url": "https://youtu.be/juAFak3JQ40"
     },
     {
+      "video_id": "m_By_Z4tX_M",
+      "type": "video",
+      "title": "Usa GMAIL come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
+      "date": "2025-12-21",
+      "duration": 5651,
+      "url": "https://youtu.be/m_By_Z4tX_M"
+    },
+    {
+      "video_id": "Rwy44gWV5fU",
+      "type": "video",
+      "title": "CREARE un SITO da ZERO con INTELLIGENZA ARTIFICIALE, senza abbonamenti! [Tutorial Website X5 + AI]",
+      "date": "2025-12-21",
+      "duration": 1581,
+      "url": "https://youtu.be/Rwy44gWV5fU"
+    },
+    {
       "video_id": "8K28c2cog48",
       "type": "video",
       "title": "NOTEBOOK LM 🧠 Corso Completo all'IA di Google che ESTENDE il tuo Cervello",
@@ -440,22 +456,6 @@
       "url": "https://youtu.be/Q623fJEPvYo"
     },
     {
-      "video_id": "Rwy44gWV5fU",
-      "type": "video",
-      "title": "CREARE un SITO da ZERO con INTELLIGENZA ARTIFICIALE, senza abbonamenti! [Tutorial Website X5 + AI]",
-      "date": "2025-12-21",
-      "duration": 1581,
-      "url": "https://youtu.be/Rwy44gWV5fU"
-    },
-    {
-      "video_id": "m_By_Z4tX_M",
-      "type": "video",
-      "title": "Usa GMAIL come un NINJA 🥷 CORSO COMPLETO per usarlo da VERI PROFESSIONISTI",
-      "date": "2025-12-21",
-      "duration": 5651,
-      "url": "https://youtu.be/m_By_Z4tX_M"
-    },
-    {
       "video_id": "uLPRSzsr62U",
       "type": "video",
       "title": "CHAT-GPT 🤖 CORSO COMPLETO - TUTTE le FUNZIONI in un UNICO VIDEO!!",
@@ -464,20 +464,20 @@
       "url": "https://youtu.be/uLPRSzsr62U"
     },
     {
-      "video_id": "7UxZgkVslWk",
-      "type": "video",
-      "title": "Imposto la fotocamera di Paolo Coletti [GUIDA SETUP Sony + Scheda di Acquisizione]",
-      "date": "2025-12-12",
-      "duration": 4491,
-      "url": "https://youtu.be/7UxZgkVslWk"
-    },
-    {
       "video_id": "rQzRbf4u6Kg",
       "type": "video",
       "title": "Imposto OBS di Paolo Coletti [TUTORIAL SETUP OBS STUDIO]",
       "date": "2025-12-12",
       "duration": 2897,
       "url": "https://youtu.be/rQzRbf4u6Kg"
+    },
+    {
+      "video_id": "7UxZgkVslWk",
+      "type": "video",
+      "title": "Imposto la fotocamera di Paolo Coletti [GUIDA SETUP Sony + Scheda di Acquisizione]",
+      "date": "2025-12-12",
+      "duration": 4491,
+      "url": "https://youtu.be/7UxZgkVslWk"
     },
     {
       "video_id": "te-TTC3L_dU",
