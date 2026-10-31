@@ -50,4 +50,4 @@ Ehi! 👋 Qui trovi tutti, ma proprio tutti, i video e le playlist del mio canal
   </div>
 </div>
 
-<script src="/assets/js/video-archive.js"></script>
+<script src="/assets/js/video-archive.js?v={{ build.versione }}"></script>

@@ -1,11 +1,11 @@
 ---
 layout: base.njk
-title: "Masterclass: Lavora come un drago"
+title: 'Masterclass: Lavora come un drago'
 description: La masterclass completa per ottimizzare il lavoro e la crescita professionale dei freelance.
 hero:
-  title: "Lavora come un drago!"
-  subtitle: "La masterclass completa per ottimizzare il lavoro e la crescita professionale dei freelance."
-  image: "https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/66053a88c39da81a0953c08b_Lavora%20come%20un%20Drago.avif"
+  title: 'Lavora come un drago!'
+  subtitle: 'La masterclass completa per ottimizzare il lavoro e la crescita professionale dei freelance.'
+  image: '/assets/images/corsi/drago.avif'
 # sidebarData:
 #   features:
 #     - "8 ore di lezione"

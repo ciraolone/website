@@ -11,13 +11,47 @@
 
   <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
 
+  {# SEO e anteprime social. L'indirizzo canonico dice a Google qual è l'URL "vero" della pagina
+     (con lo slash finale, come le genera Eleventy). L'immagine dell'anteprima è quella dell'hero
+     della pagina, se c'è, altrimenti la foto di Andrea #}
+  {%- set urlPagina = site.url + page.url -%}
+  {%- set titoloPagina = title or site.title -%}
+  {%- set descrizionePagina = description or site.description %}
+  <link rel="canonical" href="{{ urlPagina }}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="{{ site.locale }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ titoloPagina }}">
+  <meta property="og:description" content="{{ descrizionePagina }}">
+  <meta property="og:url" content="{{ urlPagina }}">
+  <meta property="og:image" content="{{ (hero.image or "/assets/images/andrea.png") | ogImage }}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  {# Dati strutturati: solo in homepage, dove il sito presenta Andrea come persona #}
+  {% if page.url == "/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.author }}",
+    "url": "{{ site.url }}/",
+    "image": "{{ "/assets/images/andrea.png" | ogImage }}",
+    "description": "{{ site.description }}",
+    "sameAs": [
+      "https://www.youtube.com/@ciraolone",
+      "https://www.instagram.com/ciraolone"
+    ]
+  }
+  </script>
+  {% endif %}
+
   <!-- Preload Accent Font: carica il font titoli prima del CSS per ridurre il flash -->
   {% if fonts.accent.preload %}
   <link rel="preload" href="{{ fonts.accent.file }}" as="font" type="font/{{ fonts.accent.format }}" crossorigin>
   {% endif %}
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/main.css?v={{ build.versione }}">
 
   <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" sizes="32x32">

@@ -3,9 +3,9 @@ layout: base.njk
 title: Sblocca il potere di Notion!
 description: Webinar interattivi per trasformare Notion nel tuo centro di comando personale e professionale.
 hero:
-  title: "Sblocca il potere di Notion!"
-  subtitle: "I nostri laboratori per organizzare il lavoro e la vita senza rompersi la testa."
-  image: "https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/683712cf10489d173ff59999_Webinar%20Notion-p-500.avif"
+  title: 'Sblocca il potere di Notion!'
+  subtitle: 'I nostri laboratori per organizzare il lavoro e la vita senza rompersi la testa.'
+  image: '/assets/images/corsi/notion-webinar.avif'
 ---
 
 {% from "components/card.njk" import card %}

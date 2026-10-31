@@ -1,0 +1,18 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+{#- Mappa del sito per i motori di ricerca, rigenerata a ogni build con tutte le pagine pubblicate.
+    Restano fuori la 404 e le pagine in bozza (draft: true), che non vanno indicizzate. Niente
+    <lastmod>: Cloudflare costruisce da un clone git, dove ogni file ha la data della build, e una
+    data sbagliata è peggio di nessuna data. -#}
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for item in collections.all %}
+{%- if item.url and item.url != "/404.html" and not item.data.draft %}
+  <url>
+    <loc>{{ site.url }}{{ item.url }}</loc>
+  </url>
+{%- endif %}
+{%- endfor %}
+</urlset>

@@ -1,27 +1,27 @@
 ---
 layout: base.njk
-title: "Masterclass: Crea contenuti come un trattore!"
+title: 'Masterclass: Crea contenuti come un trattore!'
 description: Per creare tanti contenuti, di qualità e in poco tempo, non devi per forza essere un content creator professionista. Questa masterclass fa per te se vuoi mettere il turbo alla tua produzione di contenuti!
 hero:
-  title: "Crea contenuti come un trattore!"
-  subtitle: "Il nostro vero metodo per creare tanti contenuti di qualità, in poco tempo."
-  image: "https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64fdd0be65ba18cc5d7f88de_CREA%20CONTENUTI%20COME%20UN%20TRATTORE%20(1).avif"
+  title: 'Crea contenuti come un trattore!'
+  subtitle: 'Il nostro vero metodo per creare tanti contenuti di qualità, in poco tempo.'
+  image: '/assets/images/corsi/trattore.avif'
 sidebarData:
-  price: "249€"
-  ctaText: "Acquista subito!"
-  ctaUrl: "https://go.hotmart.com/A82950497Q?ap=d302"
-  paymentNote: "Puoi pagare in 3 rate."
-  tagline: "Questa Masterclass fa per te se... vuoi mettere il turbo alla tua produzione di contenuti!"
+  price: '249€'
+  ctaText: 'Acquista subito!'
+  ctaUrl: 'https://go.hotmart.com/A82950497Q?ap=d302'
+  paymentNote: 'Puoi pagare in 3 rate.'
+  tagline: 'Questa Masterclass fa per te se... vuoi mettere il turbo alla tua produzione di contenuti!'
   features:
-    - "8 ore di lezione"
-    - "Strumenti e bonus inclusi"
-    - "Corsi ed ebook in regalo"
-    - "Aggiornamenti periodici in diretta"
-    - "Accesso illimitato e per sempre"
-  secondaryTitle: "Lo prendi una volta, è tuo per sempre"
+    - '8 ore di lezione'
+    - 'Strumenti e bonus inclusi'
+    - 'Corsi ed ebook in regalo'
+    - 'Aggiornamenti periodici in diretta'
+    - 'Accesso illimitato e per sempre'
+  secondaryTitle: 'Lo prendi una volta, è tuo per sempre'
   secondarySubtitle: "Hai capito bene: l'acquisto è lifetime."
   secondaryFeatures:
-    - "Tutto il materiale è tuo per sempre"
+    - 'Tutto il materiale è tuo per sempre'
 ---
 
 {% from "components/card.njk" import card %}

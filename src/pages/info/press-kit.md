@@ -3,7 +3,7 @@ layout: base.njk
 title: Press Kit
 description: Press Kit di Andrea Ciraolo - Bio, link e foto per la stampa
 hero:
-  title: "Press Kit"
+  title: 'Press Kit'
 ---
 
 {% from "components/card.njk" import card %}
@@ -23,7 +23,7 @@ Quasi per caso ho cominciato a fare tutorial su YouTube e il canale ha cominciat
 
 Oggi ho una community fedele e appassionata, e offro con passione contenuti gratuiti quasi ogni giorno. Aiuto professionisti e aziende a crescere online tramite corsi, formazione e consulenze.
 
-Per saperne di più puoi visitare la pagina [Chi sono](/pages/chi-sono/).
+Per saperne di più puoi visitare la pagina [Chi sono](/about/).
 
 ## Link
 
@@ -41,19 +41,19 @@ Se hai bisogno di una foto, puoi scegliere tra queste.
 
 {% call cardGrid() %}
 {{ card(
-  image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/64347dfcb19cb9ef12c4b3a7_Andrea2.avif",
+  image="/assets/images/press-kit/andrea-1.avif",
   imageAlt="Andrea Ciraolo - Foto 1"
 ) }}
 {{ card(
-  image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/646f6b803bae31011c604c60_11.avif",
+  image="/assets/images/press-kit/andrea-2.avif",
   imageAlt="Andrea Ciraolo - Foto 2"
 ) }}
 {{ card(
-  image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/646f6bc36668c5c2924a9f4e_09.avif",
+  image="/assets/images/press-kit/andrea-3.avif",
   imageAlt="Andrea Ciraolo - Foto 3"
 ) }}
 {{ card(
-  image="https://cdn.prod.website-files.com/6419b3813e7298d5896dcbc0/646f6c0d31d2e21620d38e6f_02.avif",
+  image="/assets/images/press-kit/andrea-4.avif",
   imageAlt="Andrea Ciraolo - Foto 4"
 ) }}
 {% endcall %}

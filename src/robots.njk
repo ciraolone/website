@@ -1,0 +1,10 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+---
+{#- Cloudflare mette davanti a questo file le sue regole sui bot AI (robots.txt gestito): qui sta
+    solo il permesso generale e l'indirizzo della mappa del sito. -#}
+User-agent: *
+Allow: /
+
+Sitemap: {{ site.url }}/sitemap.xml

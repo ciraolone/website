@@ -3,12 +3,16 @@
  * Best practices: configurazione modulare e organizzata
  */
 
+const path = require('path');
+
+const Image = require('@11ty/eleventy-img');
+const pluginIcons = require('eleventy-plugin-icons');
 const markdownIt = require('markdown-it');
 const markdownItAttrs = require('markdown-it-attrs');
 const markdownItStrikethrough = require('markdown-it-strikethrough-alt');
-const Image = require('@11ty/eleventy-img');
-const path = require('path');
-const pluginIcons = require('eleventy-plugin-icons');
+
+
+const siteData = require('./src/_data/site.json');
 
 module.exports = function (eleventyConfig) {
   // ============================================
@@ -83,10 +87,9 @@ module.exports = function (eleventyConfig) {
   // Copia file statici (font, js, video, etc.) senza processarli
   // Nota: il CSS viene compilato direttamente in _site/assets/css/ tramite npm run build:css
   //
-  // IMMAGINI: Le immagini vengono generate da eleventy-img direttamente in _site/assets/images/
-  // Manteniamo passthrough solo per file che NON devono essere ottimizzati (SVG, placeholders)
-  eleventyConfig.addPassthroughCopy('src/assets/images/*.svg');
-  eleventyConfig.addPassthroughCopy('src/assets/images/placeholders');
+  // IMMAGINI: Le immagini vengono generate da eleventy-img direttamente in _site/assets/images/,
+  // con un hash nel nome. Non copiarne nessuna tale e quale: src/_headers tiene in cache per un anno
+  // tutto /assets/images/, e un file senza hash non si aggiornerebbe più nei browser.
   eleventyConfig.addPassthroughCopy('src/assets/fonts');
   // NOTA: JS viene processato da terser in produzione (vedi npm run build:js)
   // In sviluppo, il passthrough copia i file originali con i commenti
@@ -107,6 +110,8 @@ module.exports = function (eleventyConfig) {
   // Cloudflare Pages: file _redirects per gestire i redirect lato server
   // Documentazione: https://developers.cloudflare.com/pages/configuration/redirects/
   eleventyConfig.addPassthroughCopy({ 'src/_redirects': '_redirects' });
+  // Cloudflare Pages: file _headers per cache e sicurezza (vedi il commento dentro al file)
+  eleventyConfig.addPassthroughCopy({ 'src/_headers': '_headers' });
 
   // ============================================
   // WATCH TARGETS
@@ -338,6 +343,20 @@ module.exports = function (eleventyConfig) {
     }
 
     return pictureHtml;
+  });
+
+  // Immagine per le anteprime social (og:image): una JPEG larga 1200px, il formato che leggono
+  // tutti (WhatsApp, Telegram, Facebook, LinkedIn), con indirizzo assoluto perché chi la legge
+  // non sta sul nostro sito. Uso: {{ "/assets/images/x.png" | ogImage }}
+  eleventyConfig.addFilter('ogImage', function (src) {
+    if (src.startsWith('http://') || src.startsWith('https://')) {
+      return src;
+    }
+    const opts = { ...imageConfig, widths: [1200], formats: ['jpeg'] };
+    const imagePath = `./src${src}`;
+    Image(imagePath, opts);
+    const metadata = Image.statsSync(imagePath, opts);
+    return new URL(metadata.jpeg[0].url, siteData.url).href;
   });
 
   // ============================================

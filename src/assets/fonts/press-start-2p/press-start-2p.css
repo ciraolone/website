@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Press Start 2P";
+  font-family: 'Press Start 2P';
   font-style: normal;
   font-weight: 400;
   font-display: fallback;
-  src: url("./PressStart2P-Regular.ttf") format("truetype");
+  src: url('./PressStart2P-Regular.woff2') format('woff2');
 }

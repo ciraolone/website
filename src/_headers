@@ -1,0 +1,31 @@
+# Header HTTP di Cloudflare Pages: quanto a lungo i browser tengono in cache ogni tipo di file, più
+# qualche header di sicurezza. Documentazione: https://developers.cloudflare.com/pages/configuration/headers/
+#
+# Le pagine HTML non sono elencate: restano al comportamento di Cloudflare (sempre ricontrollate), così
+# una pubblicazione si vede subito.
+#
+# Immagini: eleventy-img mette nel nome del file un hash del contenuto, quindi un file con quel nome
+# non cambia mai e può restare in cache per sempre. Lo stesso per CSS e JS, che hanno nome fisso ma
+# vengono richiamati con ?v= diverso a ogni build (vedi src/_data/build.js). Font e video hanno nome
+# fisso e nessun versionamento: cache di un mese, se ne cambi uno dagli un nome nuovo.
+# Non si tocca /api/videos.json: lo aggiorna n8n e deve arrivare fresco a chi lo legge.
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/assets/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/fonts/*
+  Cache-Control: public, max-age=2592000
+
+/assets/videos/*
+  Cache-Control: public, max-age=2592000
