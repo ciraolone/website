@@ -1,6 +1,11 @@
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {# viewport-fit=cover: su Chrome Android con la navigazione a gesti la pagina scorre anche sotto
+     la barra di sistema in fondo allo schermo. Senza "cover" la barra di acquisto fissa in basso
+     resta appoggiata sopra quella zona e, scorrendo, sotto di lei passa il contenuto come in uno
+     spazio vuoto. Con "cover" la barra arriva fino al bordo e si allarga da sola dell'ingombro
+     di sistema (env(safe-area-inset-bottom) in sidebar.njk); i lati li protegge il body in base.njk #}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="{{ description or site.description }}">
   <meta name="author" content="{{ site.author }}">
 

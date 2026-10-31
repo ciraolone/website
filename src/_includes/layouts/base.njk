@@ -5,7 +5,9 @@
 {% include "components/head.njk" %}
 {% from "components/hero.njk" import hero as renderHero %}
 {% from "components/sidebar.njk" import sidebar as renderSidebar, sidebarMobileFeatures, sidebarMobileCta %}
-<body class="flex flex-col min-h-screen">
+{# Margini laterali pari alle zone di sistema (notch dell'iPhone in orizzontale): con
+   viewport-fit=cover in head.njk la pagina potrebbe finirci sotto, così invece resta dove stava #}
+<body class="flex flex-col min-h-screen pl-[env(safe-area-inset-left)] pr-[env(safe-area-inset-right)]">
   {# hideNavbar: nasconde la navbar (usato in homepage) #}
   {% if not hideNavbar %}
   {% include "components/navbar.njk" %}

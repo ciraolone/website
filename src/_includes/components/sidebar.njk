@@ -220,7 +220,9 @@
    senza pulsante resta solo l'avviso, che è comunque la cosa da dire. Tutto qui dentro è tarato
    sull'altezza: la barra copre il fondo dello schermo, ogni riga in più è schermo in meno. #}
 {% if ctaUrl or urgencyNote or countdownDeadline %}
-<div class="lg:hidden fixed bottom-0 left-0 right-0 z-50 border-y-2 border-black bg-white px-4 py-3" data-mobile-cta>
+{# Il padding in basso aggiunge l'ingombro della barra di sistema del telefono (zero dove non c'è):
+   la barra copre fino al bordo dello schermo e il pulsante resta sopra ai gesti. Vedi head.njk #}
+<div class="lg:hidden fixed bottom-0 left-0 right-0 z-50 border-y-2 border-black bg-white px-4 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))]" data-mobile-cta>
   <div class="max-w-lg mx-auto">
     {# Avviso: stesso testo di quello nel contenuto, ma senza cornice colorata né icona #}
     {% if urgencyNote %}
@@ -256,7 +258,7 @@
   </div>
 </div>
 {# Spacer per evitare che il contenuto sia coperto dal CTA fixed. L'altezza qui sotto è solo una
-   stima di partenza: appena il JS parte, setupMobileCtaSpacer misura la barra davvero e corregge #}
+   stima di partenza: setupMobileCtaSpacer misura la barra davvero e la segue a ogni cambio #}
 <div class="lg:hidden {{ "h-36" if countdownDeadline else "h-24" }}" data-mobile-cta-spacer></div>
 {% endif %}
 {% endmacro %}

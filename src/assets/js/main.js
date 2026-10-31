@@ -25,10 +25,12 @@
   }
 
   // La barra di acquisto fissa in basso (solo mobile) copre il fondo della pagina. Lo spazio
-  // vuoto che le sta sotto deve essere alto esattamente quanto lei, e la sua altezza dipende dai
-  // testi che ci finiscono dentro (nota di urgenza su una o due righe, conto alla rovescia sì o
-  // no): se la misuriamo qui, cambiare quei testi non lascia più contenuto nascosto dietro.
-  function adattaSpacerMobile() {
+  // vuoto che le sta sotto deve essere alto esattamente quanto lei, e la sua altezza cambia anche
+  // a pagina già aperta: quando arriva il font pixel (i testi si allargano e vanno a capo), quando
+  // si accendono gli avvisi, quando il conto alla rovescia perde un riquadro, quando il telefono
+  // ruota o cambia l'ingombro della barra di sistema. Per questo non la si misura una volta sola
+  // ma la si osserva: ogni volta che cambia altezza, lo spazio si adegua.
+  function setupMobileCtaSpacer() {
     const bar = document.querySelector('[data-mobile-cta]');
     const spacer = document.querySelector('[data-mobile-cta-spacer]');
 
@@ -36,20 +38,18 @@
       return;
     }
 
-    spacer.style.height = bar.offsetHeight + 'px';
-  }
+    const osservatore = new ResizeObserver(function () {
+      spacer.style.height = bar.offsetHeight + 'px';
+    });
 
-  function setupMobileCtaSpacer() {
-    adattaSpacerMobile();
-    window.addEventListener('resize', adattaSpacerMobile);
+    osservatore.observe(bar, { box: 'border-box' });
   }
 
   // L'avviso e il conto alla rovescia compaiono due volte nella pagina: in grande dentro al
   // contenuto e in piccolo nel pannello di acquisto (la colonna a destra su desktop, la barra
   // fissa in basso su mobile). Finché si vede quello grande, la copia piccola è solo rumore:
-  // resta nascosta e si accende quando il blocco grande esce dallo schermo. Accendendola e
-  // spegnendola la barra mobile cambia altezza, quindi ogni volta va rimisurato anche lo spazio
-  // sotto al contenuto.
+  // resta nascosta e si accende quando il blocco grande esce dallo schermo. Lo spazio sotto al
+  // contenuto si adegua da solo all'altezza della barra (setupMobileCtaSpacer).
   function setupAvvisiSidebar() {
     const principali = document.querySelector('[data-avvisi-principali]');
     const copie = document.querySelectorAll('[data-avvisi-sidebar]');
@@ -64,7 +64,6 @@
       copie.forEach(function (copia) {
         copia.classList.remove('hidden');
       });
-      adattaSpacerMobile();
       return;
     }
 
@@ -82,8 +81,6 @@
         copie.forEach(function (copia) {
           copia.classList.toggle('hidden', siVedeIlPrincipale);
         });
-
-        adattaSpacerMobile();
       },
       { rootMargin: '0px 0px -' + margineBasso + 'px 0px' },
     );

@@ -1,7 +1,7 @@
 {
-  "watch": ["src/assets/css/main.css"],
-  "ext": "css",
-  "ignore": ["node_modules"],
+  "watch": ["src"],
+  "ext": "css,njk,md,html,js",
+  "ignore": ["node_modules", "src/api"],
   "exec": "npm run build:css",
   "delay": 100
 }
