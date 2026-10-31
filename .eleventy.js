@@ -11,7 +11,6 @@ const markdownIt = require('markdown-it');
 const markdownItAttrs = require('markdown-it-attrs');
 const markdownItStrikethrough = require('markdown-it-strikethrough-alt');
 
-
 const siteData = require('./src/_data/site.json');
 
 module.exports = function (eleventyConfig) {
