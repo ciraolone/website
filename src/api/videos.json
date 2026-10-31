@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-30T07:00:03Z",
+  "updated_at": "2026-10-31T07:00:03Z",
   "counts": {
     "videos": 1010,
     "playlists": 148,
@@ -3344,20 +3344,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QHLeJCFEHdm_78b5GC5CSU"
     },
     {
-      "video_id": "PLDhDfv9Kmg1TBfPe_EgVbxXulSJkKKY7y",
-      "type": "playlist",
-      "title": "Podcasting con Matteo",
-      "date": "2023-02-22",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TBfPe_EgVbxXulSJkKKY7y"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1QjVGX1wT7x9lwiaEVubfIg",
       "type": "playlist",
       "title": "Come FARE LIVE STREAMING 🔴 maledettamente bene!",
       "date": "2023-02-22",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QjVGX1wT7x9lwiaEVubfIg"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1TBfPe_EgVbxXulSJkKKY7y",
+      "type": "playlist",
+      "title": "Podcasting con Matteo",
+      "date": "2023-02-22",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TBfPe_EgVbxXulSJkKKY7y"
     },
     {
       "video_id": "PLDhDfv9Kmg1QgjT69OeVEqTYupbca8CrW",
@@ -3552,20 +3552,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RT4J2atD-KIMvJmNCKA_gM"
     },
     {
-      "video_id": "PLDhDfv9Kmg1RlfNiaJ8McfnsFOTbJWnx5",
-      "type": "playlist",
-      "title": "FAQ: tutte le domande con tutte le risposte",
-      "date": "2023-02-03",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RlfNiaJ8McfnsFOTbJWnx5"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1TCo0w2FTUD6O6ZD97a6pJu",
       "type": "playlist",
       "title": "Hardware per la Content Creation",
       "date": "2023-02-03",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TCo0w2FTUD6O6ZD97a6pJu"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1RlfNiaJ8McfnsFOTbJWnx5",
+      "type": "playlist",
+      "title": "FAQ: tutte le domande con tutte le risposte",
+      "date": "2023-02-03",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RlfNiaJ8McfnsFOTbJWnx5"
     },
     {
       "video_id": "ggPqn3Y2Gmk",
@@ -3744,6 +3744,14 @@
       "url": "https://youtu.be/wBhOt0D9Xzk"
     },
     {
+      "video_id": "PLDhDfv9Kmg1RrQ0ikaPra7n1nfAA9FtLu",
+      "type": "playlist",
+      "title": "Sviluppo Fotografico con Alessio",
+      "date": "2022-11-30",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RrQ0ikaPra7n1nfAA9FtLu"
+    },
+    {
       "video_id": "PLDhDfv9Kmg1S_eQdhBBnVOHPU7BBiA5zb",
       "type": "playlist",
       "title": "I migliori strumenti per la produttività",
@@ -3758,14 +3766,6 @@
       "date": "2022-11-30",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RYEc-qgWlgT15HrmxkggVC"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1RrQ0ikaPra7n1nfAA9FtLu",
-      "type": "playlist",
-      "title": "Sviluppo Fotografico con Alessio",
-      "date": "2022-11-30",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RrQ0ikaPra7n1nfAA9FtLu"
     },
     {
       "video_id": "Xuvt1df95i0",
@@ -3832,20 +3832,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TEJwp-plBlDu2n5aGCsJ-T"
     },
     {
-      "video_id": "PLDhDfv9Kmg1R0PaQ3Clp0OZ73VCq2rTnL",
-      "type": "playlist",
-      "title": "Software e tutorial",
-      "date": "2022-10-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1R0PaQ3Clp0OZ73VCq2rTnL"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1TpaTYXAAfrNIJyn7NmbitZ",
       "type": "playlist",
       "title": "Crea contenuti come un trattore",
       "date": "2022-10-24",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TpaTYXAAfrNIJyn7NmbitZ"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1R0PaQ3Clp0OZ73VCq2rTnL",
+      "type": "playlist",
+      "title": "Software e tutorial",
+      "date": "2022-10-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1R0PaQ3Clp0OZ73VCq2rTnL"
     },
     {
       "video_id": "0t4PzXX1QA8",
@@ -4232,14 +4232,6 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN"
     },
     {
-      "video_id": "PLDhDfv9Kmg1TVBgwf1wTMFETyQ9W07zfG",
-      "type": "playlist",
-      "title": "Camtasia: corso completo",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TVBgwf1wTMFETyQ9W07zfG"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1SrUGhzwd54QBCP_2LTHA23",
       "type": "playlist",
       "title": "PHOTOSHOP: IL CORSO SUBLIME, GRATIS | Da 0 a NINJA 🐱‍👤",
@@ -4248,28 +4240,20 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SrUGhzwd54QBCP_2LTHA23"
     },
     {
-      "video_id": "PLDhDfv9Kmg1SlHE83_Wqe30dcIJJZNL6m",
+      "video_id": "PLDhDfv9Kmg1Q_pmuKspUB7fP0XQozAU6N",
       "type": "playlist",
-      "title": "Adobe After Effects: corso completo",
+      "title": "Reaper: corso completo",
       "date": "2022-03-24",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SlHE83_Wqe30dcIJJZNL6m"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Q_pmuKspUB7fP0XQozAU6N"
     },
     {
-      "video_id": "PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw",
+      "video_id": "PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570",
       "type": "playlist",
-      "title": "Adobe Premiere Pro: corso completo",
+      "title": "Audacity: corso completo",
       "date": "2022-03-24",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1QSttTawspY1XM2bCpzamM2",
-      "type": "playlist",
-      "title": "OBS Studio: corso completo",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QSttTawspY1XM2bCpzamM2"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570"
     },
     {
       "video_id": "PLDhDfv9Kmg1S8z5nq9QR76J6dTO_rZJnb",
@@ -4288,20 +4272,36 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TX5QJ_GlEDrNF1h_Ux-zrW"
     },
     {
-      "video_id": "PLDhDfv9Kmg1Q_pmuKspUB7fP0XQozAU6N",
+      "video_id": "PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw",
       "type": "playlist",
-      "title": "Reaper: corso completo",
+      "title": "Adobe Premiere Pro: corso completo",
       "date": "2022-03-24",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Q_pmuKspUB7fP0XQozAU6N"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw"
     },
     {
-      "video_id": "PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570",
+      "video_id": "PLDhDfv9Kmg1TVBgwf1wTMFETyQ9W07zfG",
       "type": "playlist",
-      "title": "Audacity: corso completo",
+      "title": "Camtasia: corso completo",
       "date": "2022-03-24",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TVBgwf1wTMFETyQ9W07zfG"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1QSttTawspY1XM2bCpzamM2",
+      "type": "playlist",
+      "title": "OBS Studio: corso completo",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QSttTawspY1XM2bCpzamM2"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1SlHE83_Wqe30dcIJJZNL6m",
+      "type": "playlist",
+      "title": "Adobe After Effects: corso completo",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SlHE83_Wqe30dcIJJZNL6m"
     },
     {
       "video_id": "PLDhDfv9Kmg1Sq25dYBvIq-9MEdbr1NKdk",
@@ -4744,20 +4744,20 @@
       "url": "https://youtu.be/1H0bJPwD8Go"
     },
     {
-      "video_id": "PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1",
-      "type": "playlist",
-      "title": "Creator 4 Creator",
-      "date": "2021-12-09",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx",
       "type": "playlist",
       "title": "Sportello Creator",
       "date": "2021-12-09",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QlLc_o74LXYtC9cmAAK8fx"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1",
+      "type": "playlist",
+      "title": "Creator 4 Creator",
+      "date": "2021-12-09",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SwgKEn06GPxmRBSUDRFcS1"
     },
     {
       "video_id": "RgCg2GCKgHQ",
