@@ -38,6 +38,18 @@
     @apply decoration-red-500 decoration-2;
   }
 
+  /* === LINK NEL TESTO - Evidenziati in giallo al passaggio del mouse ===
+     Il colore resta quello del testo (lo dà Typography). Solo i link senza classe, cioè quelli
+     scritti nel Markdown: pulsanti e card dentro al contenuto sono anche loro <a>, ma hanno
+     classi e un hover tutto loro che qui non va toccato. */
+  .prose a:not([class]) {
+    transition: background-color var(--transition-fast);
+  }
+
+  .prose a:not([class]):hover {
+    background-color: var(--color-primary);
+  }
+
   /* === LISTE - Spaziatura uniforme alla normale interlinea ===
      Rimuove il margine extra tra gli elementi delle liste per allinearli
      alla spaziatura naturale del testo (leading-relaxed).
