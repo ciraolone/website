@@ -27,8 +27,20 @@ invisibile a schermo e la grafica resta quella delle card #}
 ## Cosa possiamo fare assieme
 
 {{ card(
-  image="/assets/images/dailytool-text.png",
+  image="/assets/images/tutti-i-video.png",
   mediaPosition="right",
+  imageAlt="Le copertine di alcuni video del canale",
+  headerText="Tutti i miei video",
+  title="Imparare gratis, quando ti serve.",
+  description="Più di mille video e playlist del canale YouTube, in un solo posto: cerca l'argomento e trovi il tutorial giusto.",
+  buttonText="Cerca fra i video",
+  buttonUrl="/video/",
+  className="my-6"
+) }}
+
+{{ card(
+  image="/assets/images/dailytool-text.png",
+  mediaPosition="left",
   imageAlt="Un tool al giorno",
   headerText="DailyTool - Newsletter",
   title="Scoprire nuovi tool, ogni giorno.",
@@ -40,7 +52,7 @@ invisibile a schermo e la grafica resta quella delle card #}
 
 {{ card(
   image="/assets/images/sblocca_sq.png",
-  mediaPosition="left",
+  mediaPosition="right",
   imageAlt="Sblocca il Content Creator che è in te",
   headerText="Sblocca il Content Creator che è in te",
   title="Un corso per cominciare a creare contenuti.",
