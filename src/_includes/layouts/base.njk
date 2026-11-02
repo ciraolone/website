@@ -6,8 +6,11 @@
 {% from "components/hero.njk" import hero as renderHero %}
 {% from "components/sidebar.njk" import sidebar as renderSidebar, sidebarMobileFeatures, sidebarMobileCta %}
 {# Margini laterali pari alle zone di sistema (notch dell'iPhone in orizzontale): con
-   viewport-fit=cover in head.njk la pagina potrebbe finirci sotto, così invece resta dove stava #}
-<body class="flex flex-col min-h-screen pl-[env(safe-area-inset-left)] pr-[env(safe-area-inset-right)]">
+   viewport-fit=cover in head.njk la pagina potrebbe finirci sotto, così invece resta dove stava.
+   overflow-x-clip taglia quello che sborda di lato, come le strisce a tutta larghezza larghe 100vw
+   (components/videoTicker.njk); "clip" e non "hidden" perché non trasforma il body in un contenitore
+   che scorre, cosa che su mobile romperebbe la barra di acquisto fissa in basso #}
+<body class="flex flex-col min-h-screen overflow-x-clip pl-[env(safe-area-inset-left)] pr-[env(safe-area-inset-right)]">
   {# hideNavbar: nasconde la navbar (usato in homepage) #}
   {% if not hideNavbar %}
   {% include "components/navbar.njk" %}

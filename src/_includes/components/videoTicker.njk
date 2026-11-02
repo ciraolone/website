@@ -1,6 +1,6 @@
 {#
   Striscia dei titoli dei video che scorre in orizzontale (homepage, prima di "Cosa possiamo fare
-  assieme"). Fondo giallo con bordo e ombra come le card, titoli in font pixel separati da "•",
+  assieme"). Fondo giallo a tutta larghezza, come navbar e footer, titoli in font pixel separati da "•",
   ognuno è un link al video su YouTube. I titoli e il loro ordine casuale arrivano da
   _data/titoliVideo.js.
 
@@ -12,9 +12,12 @@
   pixel è largo quanto il corpo del testo (14px) e il nastro avanza di circa 40px al secondo.
   Passandoci sopra col mouse, o col tasto Tab, la striscia si ferma, così i link si possono cliccare.
 
-  "w-0 min-w-full" sulla cornice non è un errore: la colonna del contenuto è larga quanto il suo
-  contenuto più largo, e il nastro è lungo migliaia di pixel. Con larghezza zero il nastro non
-  allarga la colonna, e min-w-full gli fa poi occupare tutta la larghezza che la colonna ha.
+  La striscia è a tutta larghezza anche se sta dentro la colonna del contenuto: è larga quanto lo
+  schermo (w-screen) e spostata a sinistra di metà della differenza fra schermo e colonna. Funziona
+  solo perché la colonna è centrata nella pagina, cioè su pagine senza pannello di acquisto di
+  fianco. Lo schermo misurato in vw comprende la barra di scorrimento del computer, e i pochi pixel
+  in più li taglia overflow-x-clip sul body (layouts/base.njk). Come navbar e footer ha solo i bordi
+  sopra e sotto: quelli laterali e l'ombra cadrebbero fuori dallo schermo.
 
   Riceve i dati come parametro perché una macro importata con "from" non vede i dati globali.
   Uso: {% raw %}{% from "components/videoTicker.njk" import videoTicker %}{{ videoTicker(titoliVideo) }}{% endraw %}
@@ -22,7 +25,7 @@
 
 {% macro videoTicker(titoli) %}
 {%- set durataSecondi = (titoli.caratteri * 14 / 40) | round -%}
-<div class="not-prose my-6 w-0 min-w-full overflow-hidden border-2 border-black bg-primary py-3 shadow">
+<div class="not-prose my-8 ml-[calc(50%-50vw)] w-screen overflow-hidden border-y-2 border-black bg-primary py-3">
   <div class="animate-ticker flex w-max" style="--durata-ticker: {{ durataSecondi }}s">
     {%- for copia in [1, 2] %}
     <ul class="flex shrink-0 items-center"{% if copia == 2 %} aria-hidden="true"{% endif %}>
