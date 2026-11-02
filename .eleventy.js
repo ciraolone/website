@@ -83,7 +83,7 @@ module.exports = function (eleventyConfig) {
   // ============================================
   // PASSTHROUGH COPIES
   // ============================================
-  // Copia file statici (font, js, video, etc.) senza processarli
+  // Copia file statici (font, js, favicon, etc.) senza processarli
   // Nota: il CSS viene compilato direttamente in _site/assets/css/ tramite npm run build:css
   //
   // IMMAGINI: Le immagini vengono generate da eleventy-img direttamente in _site/assets/images/,
@@ -95,7 +95,6 @@ module.exports = function (eleventyConfig) {
   if (process.env.ELEVENTY_ENV !== 'production') {
     eleventyConfig.addPassthroughCopy('src/assets/js');
   }
-  eleventyConfig.addPassthroughCopy('src/assets/videos');
   // src/api/videos.json è scritto da n8n già pulito (vedi workflow
   // "Website > Sync videos.json") e viene pubblicato verbatim su
   // /api/videos.json: è l'unica fonte dei video, letta sia dalla pagina
