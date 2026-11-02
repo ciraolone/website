@@ -23,6 +23,35 @@
     }
   }
 
+  /* === ANIMATION: Ticker (nastro continuo, components/videoTicker.njk) ===
+     Il nastro contiene la stessa lista due volte: spostarlo di -50% riporta la seconda copia dove
+     stava la prima, quindi il giro ricomincia senza salti. La durata arriva dal componente in
+     --durata-ticker. Con "riduci movimento" attivo nel sistema il nastro sta fermo: si vedono i primi titoli. */
+  .animate-ticker {
+    animation: ticker var(--durata-ticker, 600s) linear infinite;
+  }
+
+  .animate-ticker:hover,
+  .animate-ticker:focus-within {
+    animation-play-state: paused;
+  }
+
+  @keyframes ticker {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-ticker {
+      animation: none;
+    }
+  }
+
   /* === EMOJI: Pulse per attirare attenzione === */
   .df-emoji-pulse {
     animation: df-emoji-pulse 2s ease-in-out infinite;

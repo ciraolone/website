@@ -10,6 +10,7 @@ hideNavbar: true
 
 {% from "components/card.njk" import card %}
 {% from "components/cardGrid.njk" import cardGrid %}
+{% from "components/videoTicker.njk" import videoTicker %}
 
 {# La homepage non ha hero, e per Google ogni pagina deve avere un titolo principale: questo è
 invisibile a schermo e la grafica resta quella delle card #}
@@ -23,6 +24,8 @@ invisibile a schermo e la grafica resta quella delle card #}
   title="Ciao!👋 Mi chiamo Andrea e faccio video per farti imparare le cose.",
   className="my-6"
 ) }}
+
+{{ videoTicker(titoliVideo) }}
 
 ## Cosa possiamo fare assieme
 
