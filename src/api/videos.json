@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updated_at": "2026-11-16T07:00:03Z",
+  "updated_at": "2026-11-16T19:00:03Z",
   "counts": {
     "videos": 1013,
-    "playlists": 153,
-    "total": 1166
+    "playlists": 151,
+    "total": 1164
   },
   "videos": [
     {
@@ -1248,20 +1248,20 @@
       "url": "https://youtu.be/uYSVE0cBl2k"
     },
     {
-      "video_id": "PLDhDfv9Kmg1S726fZBspKEHgpbgC4nZNB",
-      "type": "playlist",
-      "title": "COME CREARE E VENDERE CORSI ONLINE",
-      "date": "2025-04-08",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1S726fZBspKEHgpbgC4nZNB"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1Sdegc9VREFgBfQw5RfJ2pS",
       "type": "playlist",
       "title": "Crea corsi online con Esmerise",
       "date": "2025-04-08",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Sdegc9VREFgBfQw5RfJ2pS"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1S726fZBspKEHgpbgC4nZNB",
+      "type": "playlist",
+      "title": "COME CREARE E VENDERE CORSI ONLINE",
+      "date": "2025-04-08",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1S726fZBspKEHgpbgC4nZNB"
     },
     {
       "video_id": "PLDhDfv9Kmg1TpdQyvCntuBFSw9Od8Zuha",
@@ -1688,28 +1688,12 @@
       "url": "https://youtu.be/9pgyvJ3ExtM"
     },
     {
-      "video_id": "PLDhDfv9Kmg1QUHVp_vGah0zOxIXa1vEJv",
+      "video_id": "PLDhDfv9Kmg1RVLFlE2bdQibNHyg1p8qAI",
       "type": "playlist",
-      "title": "REGISTRARE LO SCHERMO del computer COME SI DEVE",
+      "title": "Tutti i video con Hostinger",
       "date": "2024-10-30",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QUHVp_vGah0zOxIXa1vEJv"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1Qb14uXPjCfWb7zvnwlfQGH",
-      "type": "playlist",
-      "title": "IMPARO a PROGRAMMARE in PYTHON",
-      "date": "2024-10-30",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Qb14uXPjCfWb7zvnwlfQGH"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1RxfXTa8JDmdOLKUBJkhUHr",
-      "type": "playlist",
-      "title": "PROGRAMMARE con l'INTELLIGENZA ARTIFICIALE",
-      "date": "2024-10-30",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RxfXTa8JDmdOLKUBJkhUHr"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RVLFlE2bdQibNHyg1p8qAI"
     },
     {
       "video_id": "PLDhDfv9Kmg1TM2bRfSW_55u2jnZ4FsOh9",
@@ -1720,12 +1704,28 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TM2bRfSW_55u2jnZ4FsOh9"
     },
     {
-      "video_id": "PLDhDfv9Kmg1RVLFlE2bdQibNHyg1p8qAI",
+      "video_id": "PLDhDfv9Kmg1RxfXTa8JDmdOLKUBJkhUHr",
       "type": "playlist",
-      "title": "Tutti i video con Hostinger",
+      "title": "PROGRAMMARE con l'INTELLIGENZA ARTIFICIALE",
       "date": "2024-10-30",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RVLFlE2bdQibNHyg1p8qAI"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RxfXTa8JDmdOLKUBJkhUHr"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1Qb14uXPjCfWb7zvnwlfQGH",
+      "type": "playlist",
+      "title": "IMPARO a PROGRAMMARE in PYTHON",
+      "date": "2024-10-30",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Qb14uXPjCfWb7zvnwlfQGH"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1QUHVp_vGah0zOxIXa1vEJv",
+      "type": "playlist",
+      "title": "REGISTRARE LO SCHERMO del computer COME SI DEVE",
+      "date": "2024-10-30",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QUHVp_vGah0zOxIXa1vEJv"
     },
     {
       "video_id": "t6vmcEEV6Ds",
@@ -1824,20 +1824,20 @@
       "url": "https://youtu.be/T1SXV0janxM"
     },
     {
-      "video_id": "PLDhDfv9Kmg1RFHRhSckkMt1VYXpenyFJk",
-      "type": "playlist",
-      "title": "Tutti i video con Cloudways",
-      "date": "2024-10-11",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RFHRhSckkMt1VYXpenyFJk"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1SlKxebE6ailXQlxnUH67mW",
       "type": "playlist",
       "title": "ECCO COME HO CREATO UN'APP CON L'AI 😱",
       "date": "2024-10-11",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SlKxebE6ailXQlxnUH67mW"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1RFHRhSckkMt1VYXpenyFJk",
+      "type": "playlist",
+      "title": "Tutti i video con Cloudways",
+      "date": "2024-10-11",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RFHRhSckkMt1VYXpenyFJk"
     },
     {
       "video_id": "QA25uGZDZ7U",
@@ -2286,14 +2286,6 @@
       "date": "2024-03-11",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Q3J1DGBmTrICavCg-jik_o"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1Rpkvz2I5JkUM2bLyM95MgR",
-      "type": "playlist",
-      "title": "Interviste ad Andrea Ciraolo",
-      "date": "2024-03-11",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Rpkvz2I5JkUM2bLyM95MgR"
     },
     {
       "video_id": "WTI6cftHVEs",
@@ -3888,14 +3880,6 @@
       "url": "https://youtu.be/sDvqewthfDQ"
     },
     {
-      "video_id": "PLDhDfv9Kmg1TEJwp-plBlDu2n5aGCsJ-T",
-      "type": "playlist",
-      "title": "GRAFICA e DESIGN 🎨 Da ZERO a PRO con tutti i programmi!",
-      "date": "2022-10-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TEJwp-plBlDu2n5aGCsJ-T"
-    },
-    {
       "video_id": "PLDhDfv9Kmg1TpaTYXAAfrNIJyn7NmbitZ",
       "type": "playlist",
       "title": "Crea contenuti come un trattore",
@@ -3910,6 +3894,14 @@
       "date": "2022-10-24",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1R0PaQ3Clp0OZ73VCq2rTnL"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1TEJwp-plBlDu2n5aGCsJ-T",
+      "type": "playlist",
+      "title": "GRAFICA e DESIGN 🎨 Da ZERO a PRO con tutti i programmi!",
+      "date": "2022-10-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TEJwp-plBlDu2n5aGCsJ-T"
     },
     {
       "video_id": "0t4PzXX1QA8",
@@ -4216,12 +4208,44 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Tp1kUJCZ1e7T2xB6sY3IV4"
     },
     {
-      "video_id": "PLDhDfv9Kmg1Tdq5SSfxn-D12Q_VMnW4ht",
+      "video_id": "PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN",
       "type": "playlist",
-      "title": "Zoom: corso completo",
+      "title": "Todoist: corso completo",
       "date": "2022-03-28",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Tdq5SSfxn-D12Q_VMnW4ht"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1T_jo5E6R9G-HuXiezCnydt",
+      "type": "playlist",
+      "title": "Telegram: corso completo",
+      "date": "2022-03-28",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1T_jo5E6R9G-HuXiezCnydt"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1R1BjDcgmtjg0uzbQPFBD00",
+      "type": "playlist",
+      "title": "Airtable: corso completo",
+      "date": "2022-03-28",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1R1BjDcgmtjg0uzbQPFBD00"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1TTN-drLK3rCWqIPFSYZWX1",
+      "type": "playlist",
+      "title": "Integromat: corso completo",
+      "date": "2022-03-28",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TTN-drLK3rCWqIPFSYZWX1"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1QEh4thrJW4CAn5ihtsgCDF",
+      "type": "playlist",
+      "title": "OBSIDIAN 🧠 CORSO COMPLETO per NOTE e SECOND BRAIN",
+      "date": "2022-03-28",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QEh4thrJW4CAn5ihtsgCDF"
     },
     {
       "video_id": "PLDhDfv9Kmg1TYzdUDp-Ihvnx3cHLzMFKg",
@@ -4230,6 +4254,22 @@
       "date": "2022-03-28",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TYzdUDp-Ihvnx3cHLzMFKg"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1Tdq5SSfxn-D12Q_VMnW4ht",
+      "type": "playlist",
+      "title": "Zoom: corso completo",
+      "date": "2022-03-28",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Tdq5SSfxn-D12Q_VMnW4ht"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1RhiMU3DJFLyaAffv1j9C7f",
+      "type": "playlist",
+      "title": "Discord: corso completo",
+      "date": "2022-03-28",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RhiMU3DJFLyaAffv1j9C7f"
     },
     {
       "video_id": "PLDhDfv9Kmg1Rr8_mAC5PuvuYW5_OHjDeA",
@@ -4248,68 +4288,12 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1SYmIa4l6T6jTy3hWb8gozF"
     },
     {
-      "video_id": "PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN",
+      "video_id": "PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570",
       "type": "playlist",
-      "title": "Todoist: corso completo",
-      "date": "2022-03-28",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1T3rOQx20dPPn8siAAKH8RN"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1TTN-drLK3rCWqIPFSYZWX1",
-      "type": "playlist",
-      "title": "Integromat: corso completo",
-      "date": "2022-03-28",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TTN-drLK3rCWqIPFSYZWX1"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1R1BjDcgmtjg0uzbQPFBD00",
-      "type": "playlist",
-      "title": "Airtable: corso completo",
-      "date": "2022-03-28",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1R1BjDcgmtjg0uzbQPFBD00"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1QEh4thrJW4CAn5ihtsgCDF",
-      "type": "playlist",
-      "title": "OBSIDIAN 🧠 CORSO COMPLETO per NOTE e SECOND BRAIN",
-      "date": "2022-03-28",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QEh4thrJW4CAn5ihtsgCDF"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1RhiMU3DJFLyaAffv1j9C7f",
-      "type": "playlist",
-      "title": "Discord: corso completo",
-      "date": "2022-03-28",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1RhiMU3DJFLyaAffv1j9C7f"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1T_jo5E6R9G-HuXiezCnydt",
-      "type": "playlist",
-      "title": "Telegram: corso completo",
-      "date": "2022-03-28",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1T_jo5E6R9G-HuXiezCnydt"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1TX5QJ_GlEDrNF1h_Ux-zrW",
-      "type": "playlist",
-      "title": "Streamlabs: corso completo",
+      "title": "Audacity: corso completo",
       "date": "2022-03-24",
       "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TX5QJ_GlEDrNF1h_Ux-zrW"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1QSttTawspY1XM2bCpzamM2",
-      "type": "playlist",
-      "title": "OBS Studio: corso completo",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QSttTawspY1XM2bCpzamM2"
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570"
     },
     {
       "video_id": "PLDhDfv9Kmg1Q_pmuKspUB7fP0XQozAU6N",
@@ -4318,14 +4302,6 @@
       "date": "2022-03-24",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Q_pmuKspUB7fP0XQozAU6N"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570",
-      "type": "playlist",
-      "title": "Audacity: corso completo",
-      "date": "2022-03-24",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1Sijsk2GyJkDSxT0_L5P570"
     },
     {
       "video_id": "PLDhDfv9Kmg1Sq25dYBvIq-9MEdbr1NKdk",
@@ -4416,12 +4392,28 @@
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QsL4qCjnE6RaPkRA44N8jw"
     },
     {
+      "video_id": "PLDhDfv9Kmg1TX5QJ_GlEDrNF1h_Ux-zrW",
+      "type": "playlist",
+      "title": "Streamlabs: corso completo",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TX5QJ_GlEDrNF1h_Ux-zrW"
+    },
+    {
       "video_id": "PLDhDfv9Kmg1S8z5nq9QR76J6dTO_rZJnb",
       "type": "playlist",
       "title": "StreamYard: corso completo",
       "date": "2022-03-24",
       "duration": null,
       "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1S8z5nq9QR76J6dTO_rZJnb"
+    },
+    {
+      "video_id": "PLDhDfv9Kmg1QSttTawspY1XM2bCpzamM2",
+      "type": "playlist",
+      "title": "OBS Studio: corso completo",
+      "date": "2022-03-24",
+      "duration": null,
+      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1QSttTawspY1XM2bCpzamM2"
     },
     {
       "video_id": "IuihZ6HtSQY",
@@ -7206,14 +7198,6 @@
       "date": "2020-06-08",
       "duration": 901,
       "url": "https://youtu.be/93SnDiM3X1w"
-    },
-    {
-      "video_id": "PLDhDfv9Kmg1TVrpONk3vesVKTAssIMeKa",
-      "type": "playlist",
-      "title": "In 10 Minuti",
-      "date": "2020-06-08",
-      "duration": null,
-      "url": "https://youtube.com/playlist?list=PLDhDfv9Kmg1TVrpONk3vesVKTAssIMeKa"
     },
     {
       "video_id": "GHIrGJNTKns",
