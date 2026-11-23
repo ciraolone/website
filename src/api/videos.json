@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-11-23T07:00:03Z",
+  "updated_at": "2026-11-23T19:00:04Z",
   "counts": {
     "videos": 1014,
     "playlists": 151,
@@ -16,20 +16,20 @@
       "url": "https://youtu.be/XBOFp3kiuMs"
     },
     {
-      "video_id": "lZWdSCfzneo",
-      "type": "video",
-      "title": "CURSOR dalla A alla Z 🤖 CORSO COMPLETO sugli AGENTI AI che LAVORANO e PROGRAMMANO",
-      "date": "2026-11-13",
-      "duration": 6758,
-      "url": "https://youtu.be/lZWdSCfzneo"
-    },
-    {
       "video_id": "wzs1si6eD5g",
       "type": "video",
       "title": "T3 CODE per usare TUTTE LE AI in un posto solo! [CORSO COMPLETO]",
       "date": "2026-11-13",
       "duration": 6483,
       "url": "https://youtu.be/wzs1si6eD5g"
+    },
+    {
+      "video_id": "lZWdSCfzneo",
+      "type": "video",
+      "title": "CURSOR dalla A alla Z 🤖 CORSO COMPLETO sugli AGENTI AI che LAVORANO e PROGRAMMANO",
+      "date": "2026-11-13",
+      "duration": 6758,
+      "url": "https://youtu.be/lZWdSCfzneo"
     },
     {
       "video_id": "PLKBavlV19HMg",
@@ -192,20 +192,20 @@
       "url": "https://youtu.be/mhi2srCIMrY"
     },
     {
-      "video_id": "SjUfAyFhZag",
-      "type": "video",
-      "title": "CREARE un AGENTE VOCALE AI che RISPONDE AL TELEFONO 📞 24 ORE SU 24",
-      "date": "2026-07-22",
-      "duration": 1290,
-      "url": "https://youtu.be/SjUfAyFhZag"
-    },
-    {
       "video_id": "hhf-HWl0FWY",
       "type": "video",
       "title": "CAPCUT in 15 MINUTI ⏱️ MONTARE VIDEO GRATIS con l'AI",
       "date": "2026-07-22",
       "duration": 1049,
       "url": "https://youtu.be/hhf-HWl0FWY"
+    },
+    {
+      "video_id": "SjUfAyFhZag",
+      "type": "video",
+      "title": "CREARE un AGENTE VOCALE AI che RISPONDE AL TELEFONO 📞 24 ORE SU 24",
+      "date": "2026-07-22",
+      "duration": 1290,
+      "url": "https://youtu.be/SjUfAyFhZag"
     },
     {
       "video_id": "iNeZXW29nYo",
